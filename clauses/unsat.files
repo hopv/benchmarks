@@ -1,0 +1,9 @@
+clauses/lia/mochi/a-copy-print.smt2
+clauses/lia/mochi/apply.smt2
+clauses/lia/mochi/bcopy5.smt2
+clauses/lia/mochi/dotprod5.smt2
+clauses/lia/termination/CE-0CFA03.smt2
+clauses/lia/termination/CE-1CFA03.smt2
+clauses/lia/termination/CE-1CFA04.smt2
+clauses/lia/termination/CE-1CFA07.smt2
+clauses/lia/termination/CE-1CFA09.smt2
