@@ -1,3 +1,6 @@
 runs/2017_*
 libz3.so
 runs/graphs
+*.hors
+*.annot
+*.trecs_out
