@@ -2,7 +2,7 @@
   (*
   USED: PLDI2011 as e-simpl
   USED: PEPM2013 as e-simpl
-  FROM: Leroy & Pessaux, TOPLAS, 2000
+  FROM: Leroy & Pessaux, Type-Based Analysis of Uncaught Exceptionis, TOPLAS, 2000
   
   let ff n = if n >= 0 then () else raise (Failer 0)
   let main n = try ff n with Failer 0 -> ()
@@ -42,7 +42,7 @@
 (assert
   (forall ( (|$alpha-4:n| Int) )
     (=>
-      ( and true )
+      true
       (|f$unknown:1| |$alpha-4:n|)
     )
   )
@@ -58,7 +58,7 @@
 (assert
   (forall ( (|$V-reftype:17| Int) (|$knormal:3| Int) (|$alpha-1:n| Int) (|$knormal:2| Int) (|$knormal:1| Bool) )
     (=>
-      ( and (|f$unknown:1| |$alpha-1:n|) (|f$unknown:3| |$knormal:3| |$knormal:2| |$alpha-1:n|) (not |$knormal:1|) (= |$V-reftype:17| |$knormal:3|) (= |$knormal:1| (>= |$alpha-1:n| 0)) (= |$knormal:2| 0) )
+      ( and (= |$knormal:2| 0) (= |$knormal:1| (>= |$alpha-1:n| 0)) (= |$V-reftype:17| |$knormal:3|) (not |$knormal:1|) (|f$unknown:3| |$knormal:3| |$knormal:2| |$alpha-1:n|) (|f$unknown:1| |$alpha-1:n|) )
       (|f$unknown:4| |$V-reftype:17| |$alpha-1:n|)
     )
   )
@@ -66,7 +66,7 @@
 (assert
   (forall ( (|$V-reftype:15| Int) (|$alpha-1:n| Int) (|$knormal:1| Bool) )
     (=>
-      ( and (|f$unknown:1| |$alpha-1:n|) |$knormal:1| (= |$V-reftype:15| 1) (= |$knormal:1| (>= |$alpha-1:n| 0)) )
+      ( and (= |$knormal:1| (>= |$alpha-1:n| 0)) (= |$V-reftype:15| 1) |$knormal:1| (|f$unknown:1| |$alpha-1:n|) )
       (|f$unknown:4| |$V-reftype:15| |$alpha-1:n|)
     )
   )
@@ -74,7 +74,7 @@
 (assert
   (forall ( (|$knormal:2| Int) (|$alpha-1:n| Int) (|$knormal:1| Bool) )
     (=>
-      ( and (|f$unknown:1| |$alpha-1:n|) (not |$knormal:1|) (= |$knormal:1| (>= |$alpha-1:n| 0)) (= |$knormal:2| 0) )
+      ( and (= |$knormal:2| 0) (= |$knormal:1| (>= |$alpha-1:n| 0)) (not |$knormal:1|) (|f$unknown:1| |$alpha-1:n|) )
       (|f$unknown:2| |$knormal:2| |$alpha-1:n|)
     )
   )
@@ -82,7 +82,7 @@
 (assert
   (forall ( (|$V-reftype:10| Int) (|g| Int) (|$alpha-4:n| Int) )
     (=>
-      ( and (|f$unknown:2| |g| |$alpha-4:n|) (|g$unknown:6| |$V-reftype:10| |g|) )
+      ( and (|g$unknown:6| |$V-reftype:10| |g|) (|f$unknown:2| |g| |$alpha-4:n|) )
       (|f$unknown:3| |$V-reftype:10| |g| |$alpha-4:n|)
     )
   )
@@ -90,16 +90,18 @@
 (assert
   (forall ( (|$V-reftype:19| Int) (|$alpha-3:n| Int) (|$knormal:4| Bool) )
     (=>
-      ( and (|g$unknown:5| |$alpha-3:n|) |$knormal:4| (= |$V-reftype:19| 1) (= |$knormal:4| (= |$alpha-3:n| 0)) )
+      ( and (= |$knormal:4| (= |$alpha-3:n| 0)) (= |$V-reftype:19| 1) |$knormal:4| (|g$unknown:5| |$alpha-3:n|) )
       (|g$unknown:6| |$V-reftype:19| |$alpha-3:n|)
     )
   )
 )
 (assert
   (not (exists ( (|$knormal:4| Bool) (|$alpha-3:n| Int) )
-    ( and (|g$unknown:5| |$alpha-3:n|) (not |$knormal:4|) (= |$knormal:4| (= |$alpha-3:n| 0)) )
+    ( and (= |$knormal:4| (= |$alpha-3:n| 0)) (not |$knormal:4|) (|g$unknown:5| |$alpha-3:n|) )
     )
   )
 )
 (check-sat)
+
+(get-model)
 

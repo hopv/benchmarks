@@ -811,3 +811,5 @@
 )
 (check-sat)
 
+(get-model)
+

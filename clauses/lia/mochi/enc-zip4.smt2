@@ -27,7 +27,7 @@
 (assert
   (forall ( (|$alpha-3:n| Int) )
     (=>
-      ( and true )
+      true
       (|zip$unknown:1| |$alpha-3:n|)
     )
   )
@@ -35,7 +35,7 @@
 (assert
   (forall ( (|$alpha-3:n| Int) )
     (=>
-      ( and true )
+      true
       (|zip$unknown:2| |$alpha-3:n| |$alpha-3:n|)
     )
   )
@@ -43,7 +43,7 @@
 (assert
   (forall ( (|$V-reftype:17| Int) (|$knormal:1| Bool) (|$knormal:5| Int) (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:7| Int) (|$knormal:3| Int) (|$knormal:2| Bool) )
     (=>
-      ( and (|zip$unknown:1| |$alpha-1:x|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:3| |$knormal:7| |$knormal:5| |$knormal:3|) (not |$knormal:1|) (not |$knormal:2|) (= |$V-reftype:17| (+ 1 |$knormal:7|)) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$knormal:2| (= |$alpha-2:y| 0)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= |$knormal:5| (- |$alpha-2:y| 1)) )
+      ( and (= |$knormal:5| (- |$alpha-2:y| 1)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= |$knormal:2| (= |$alpha-2:y| 0)) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$V-reftype:17| (+ 1 |$knormal:7|)) (not |$knormal:2|) (not |$knormal:1|) (|zip$unknown:3| |$knormal:7| |$knormal:5| |$knormal:3|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:1| |$alpha-1:x|) )
       (|zip$unknown:3| |$V-reftype:17| |$alpha-2:y| |$alpha-1:x|)
     )
   )
@@ -51,27 +51,27 @@
 (assert
   (forall ( (|$knormal:9| Bool) (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Bool) (|$V-reftype:11| Int) )
     (=>
-      ( and (|zip$unknown:1| |$alpha-1:x|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) |$knormal:1| |$knormal:9| (= |$V-reftype:11| 0) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$knormal:9| (= |$alpha-2:y| 0)) )
+      ( and (= |$knormal:9| (= |$alpha-2:y| 0)) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$V-reftype:11| 0) |$knormal:9| |$knormal:1| (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:1| |$alpha-1:x|) )
       (|zip$unknown:3| |$V-reftype:11| |$alpha-2:y| |$alpha-1:x|)
     )
   )
 )
 (assert
   (not (exists ( (|$knormal:9| Bool) (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Bool) )
-    ( and (|zip$unknown:1| |$alpha-1:x|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) |$knormal:1| (not |$knormal:9|) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$knormal:9| (= |$alpha-2:y| 0)) )
+    ( and (= |$knormal:9| (= |$alpha-2:y| 0)) (= |$knormal:1| (= |$alpha-1:x| 0)) (not |$knormal:9|) |$knormal:1| (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:1| |$alpha-1:x|) )
     )
   )
 )
 (assert
   (not (exists ( (|$knormal:1| Bool) (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:2| Bool) )
-    ( and (|zip$unknown:1| |$alpha-1:x|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) |$knormal:2| (not |$knormal:1|) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$knormal:2| (= |$alpha-2:y| 0)) )
+    ( and (= |$knormal:2| (= |$alpha-2:y| 0)) (= |$knormal:1| (= |$alpha-1:x| 0)) (not |$knormal:1|) |$knormal:2| (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:1| |$alpha-1:x|) )
     )
   )
 )
 (assert
   (forall ( (|$knormal:5| Int) (|$knormal:3| Int) (|$knormal:1| Bool) (|$alpha-2:y| Int) (|$alpha-1:x| Int) (|$knormal:2| Bool) )
     (=>
-      ( and (|zip$unknown:1| |$alpha-1:x|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (not |$knormal:1|) (not |$knormal:2|) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$knormal:2| (= |$alpha-2:y| 0)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= |$knormal:5| (- |$alpha-2:y| 1)) )
+      ( and (= |$knormal:5| (- |$alpha-2:y| 1)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= |$knormal:2| (= |$alpha-2:y| 0)) (= |$knormal:1| (= |$alpha-1:x| 0)) (not |$knormal:2|) (not |$knormal:1|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:1| |$alpha-1:x|) )
       (|zip$unknown:1| |$knormal:3|)
     )
   )
@@ -79,16 +79,18 @@
 (assert
   (forall ( (|$knormal:2| Bool) (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Bool) (|$knormal:3| Int) (|$knormal:5| Int) )
     (=>
-      ( and (|zip$unknown:1| |$alpha-1:x|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (not |$knormal:1|) (not |$knormal:2|) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$knormal:2| (= |$alpha-2:y| 0)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= |$knormal:5| (- |$alpha-2:y| 1)) )
+      ( and (= |$knormal:5| (- |$alpha-2:y| 1)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= |$knormal:2| (= |$alpha-2:y| 0)) (= |$knormal:1| (= |$alpha-1:x| 0)) (not |$knormal:2|) (not |$knormal:1|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:1| |$alpha-1:x|) )
       (|zip$unknown:2| |$knormal:5| |$knormal:3|)
     )
   )
 )
 (assert
   (not (exists ( (|$knormal:10| Bool) (|$knormal:15| Int) (|$alpha-3:n| Int) (|$knormal:12| Bool) (|$knormal:11| Bool) )
-    ( and (|zip$unknown:3| |$knormal:15| |$alpha-3:n| |$alpha-3:n|) (not |$knormal:12|) (= |$knormal:10| (>= |$knormal:15| |$alpha-3:n|)) (= |$knormal:11| (<= |$knormal:15| |$alpha-3:n|)) (= |$knormal:12| (and |$knormal:10| |$knormal:11|)) )
+    ( and (= |$knormal:12| (and |$knormal:10| |$knormal:11|)) (= |$knormal:11| (<= |$knormal:15| |$alpha-3:n|)) (= |$knormal:10| (>= |$knormal:15| |$alpha-3:n|)) (not |$knormal:12|) (|zip$unknown:3| |$knormal:15| |$alpha-3:n| |$alpha-3:n|) )
     )
   )
 )
 (check-sat)
+
+(get-model)
 

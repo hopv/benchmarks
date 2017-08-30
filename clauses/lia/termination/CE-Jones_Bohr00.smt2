@@ -2020,3 +2020,5 @@
 )
 (check-sat)
 
+(get-model)
+

@@ -142,7 +142,7 @@
 (assert
   (forall ( (|$V-reftype:51| Int) (|$knormal:2| Int) (|$alpha-1:$$tmp::1| Int) (|$knormal:1| Int) )
     (=>
-      ( and (|bot$unknown:1| |$alpha-1:$$tmp::1|) (|bot$unknown:2| |$knormal:2| |$knormal:1|) (= |$V-reftype:51| |$knormal:2|) (= |$knormal:1| 1) )
+      ( and (= |$knormal:1| 1) (= |$V-reftype:51| |$knormal:2|) (|bot$unknown:2| |$knormal:2| |$knormal:1|) (|bot$unknown:1| |$alpha-1:$$tmp::1|) )
       (|bot$unknown:2| |$V-reftype:51| |$alpha-1:$$tmp::1|)
     )
   )
@@ -150,7 +150,7 @@
 (assert
   (forall ( (|$alpha-1:$$tmp::1| Int) (|$knormal:1| Int) )
     (=>
-      ( and (|bot$unknown:1| |$alpha-1:$$tmp::1|) (= |$knormal:1| 1) )
+      ( and (= |$knormal:1| 1) (|bot$unknown:1| |$alpha-1:$$tmp::1|) )
       (|bot$unknown:1| |$knormal:1|)
     )
   )
@@ -158,7 +158,7 @@
 (assert
   (forall ( (|$knormal:18| Int) (|$V-reftype:10| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$knormal:16| Int) (|$knormal:15| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$knormal:17| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:16| |$knormal:15|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:10| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_1030$unknown:6| |$V-reftype:10| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|bot$unknown:2| |$knormal:16| |$knormal:15|) )
       (|f_without_checking_1098$unknown:13| |$V-reftype:10| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -166,7 +166,7 @@
 (assert
   (forall ( (|$knormal:17| Int) (|$V-reftype:12| Int) (|$V-reftype:24| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$knormal:16| Int) (|$knormal:15| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$knormal:18| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:16| |$knormal:15|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:12| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_1030$unknown:7| |$V-reftype:12| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|bot$unknown:2| |$knormal:16| |$knormal:15|) )
       (|f_without_checking_1098$unknown:14| |$V-reftype:12| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -174,7 +174,7 @@
 (assert
   (forall ( (|$knormal:18| Int) (|$V-reftype:14| Int) (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$V-reftype:24| Int) (|$V-reftype:26| Int) (|$knormal:17| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:16| |$knormal:15|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:8| |$V-reftype:14| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_1030$unknown:8| |$V-reftype:14| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|bot$unknown:2| |$knormal:16| |$knormal:15|) )
       (|f_without_checking_1098$unknown:15| |$V-reftype:14| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -182,7 +182,7 @@
 (assert
   (forall ( (|$knormal:17| Int) (|$V-reftype:29| Int) (|$V-reftype:28| Int) (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$V-reftype:24| Int) (|$V-reftype:26| Int) (|$knormal:18| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:16| |$knormal:15|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:8| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:8| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|bot$unknown:2| |$knormal:16| |$knormal:15|) )
       (|f_1030$unknown:9| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -190,7 +190,7 @@
 (assert
   (forall ( (|$knormal:17| Int) (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$knormal:18| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:16| |$knormal:15|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|bot$unknown:2| |$knormal:16| |$knormal:15|) )
       (|f_without_checking_1098$unknown:10| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -198,7 +198,7 @@
 (assert
   (forall ( (|$knormal:18| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$knormal:16| Int) (|$knormal:15| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$knormal:17| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:16| |$knormal:15|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|bot$unknown:2| |$knormal:16| |$knormal:15|) )
       (|f_without_checking_1098$unknown:11| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -206,7 +206,7 @@
 (assert
   (forall ( (|$knormal:17| Int) (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$knormal:18| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:16| |$knormal:15|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|bot$unknown:2| |$knormal:16| |$knormal:15|) )
       (|f_without_checking_1098$unknown:12| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -214,7 +214,7 @@
 (assert
   (forall ( (|$alpha-15:u| Int) (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$V-reftype:10| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:10| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (= |$alpha-11:prev_set_flag_f_1088| 0) (= |$alpha-15:u| 1) )
+      ( and (= |$alpha-15:u| 1) (= |$alpha-11:prev_set_flag_f_1088| 0) (|f_1030$unknown:6| |$V-reftype:10| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|f_without_checking_1098$unknown:13| |$V-reftype:10| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -222,7 +222,7 @@
 (assert
   (forall ( (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$V-reftype:24| Int) (|$V-reftype:12| Int) (|$alpha-15:u| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:12| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (= |$alpha-11:prev_set_flag_f_1088| 0) (= |$alpha-15:u| 1) )
+      ( and (= |$alpha-15:u| 1) (= |$alpha-11:prev_set_flag_f_1088| 0) (|f_1030$unknown:7| |$V-reftype:12| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|f_without_checking_1098$unknown:14| |$V-reftype:12| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -230,7 +230,7 @@
 (assert
   (forall ( (|$alpha-15:u| Int) (|$V-reftype:26| Int) (|$V-reftype:24| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$V-reftype:14| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:8| |$V-reftype:14| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (= |$alpha-11:prev_set_flag_f_1088| 0) (= |$alpha-15:u| 1) )
+      ( and (= |$alpha-15:u| 1) (= |$alpha-11:prev_set_flag_f_1088| 0) (|f_1030$unknown:8| |$V-reftype:14| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|f_without_checking_1098$unknown:15| |$V-reftype:14| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -238,7 +238,7 @@
 (assert
   (forall ( (|$V-reftype:26| Int) (|$V-reftype:24| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$V-reftype:28| Int) (|$V-reftype:29| Int) (|$alpha-15:u| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:8| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (= |$alpha-11:prev_set_flag_f_1088| 0) (= |$alpha-15:u| 1) )
+      ( and (= |$alpha-15:u| 1) (= |$alpha-11:prev_set_flag_f_1088| 0) (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:8| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:7| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:6| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|f_1030$unknown:9| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -246,7 +246,7 @@
 (assert
   (forall ( (|$knormal:15| Int) (|$knormal:17| Int) (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-11:prev_set_flag_f_1088| Int) (|$knormal:18| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:15| 1) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (= |$knormal:15| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|fail$unknown:18| |$knormal:18| |$knormal:17|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|bot$unknown:1| |$knormal:15|)
     )
   )
@@ -254,7 +254,7 @@
 (assert
   (forall ( (|$alpha-11:prev_set_flag_f_1088| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$knormal:17| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (= |$knormal:17| 1) )
+      ( and (= |$knormal:17| 1) (not (= |$alpha-11:prev_set_flag_f_1088| 0)) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|fail$unknown:17| |$knormal:17|)
     )
   )
@@ -262,7 +262,7 @@
 (assert
   (forall ( (|$alpha-11:prev_set_flag_f_1088| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$alpha-15:u| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (= |$alpha-11:prev_set_flag_f_1088| 0) (= |$alpha-15:u| 1) )
+      ( and (= |$alpha-15:u| 1) (= |$alpha-11:prev_set_flag_f_1088| 0) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|f_without_checking_1098$unknown:10| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -270,7 +270,7 @@
 (assert
   (forall ( (|$alpha-15:u| Int) (|$alpha-13:x_1032| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-11:prev_set_flag_f_1088| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (= |$alpha-11:prev_set_flag_f_1088| 0) (= |$alpha-15:u| 1) )
+      ( and (= |$alpha-15:u| 1) (= |$alpha-11:prev_set_flag_f_1088| 0) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|f_without_checking_1098$unknown:11| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -278,7 +278,7 @@
 (assert
   (forall ( (|$alpha-11:prev_set_flag_f_1088| Int) (|$alpha-12:s_prev_f_x_1087| Int) (|$alpha-13:x_1032| Int) (|$alpha-15:u| Int) )
     (=>
-      ( and (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (= |$alpha-11:prev_set_flag_f_1088| 0) (= |$alpha-15:u| 1) )
+      ( and (= |$alpha-15:u| 1) (= |$alpha-11:prev_set_flag_f_1088| 0) (|f_1030$unknown:5| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:4| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|) (|f_1030$unknown:3| |$alpha-11:prev_set_flag_f_1088|) )
       (|f_without_checking_1098$unknown:12| |$alpha-13:x_1032| |$alpha-12:s_prev_f_x_1087| |$alpha-11:prev_set_flag_f_1088|)
     )
   )
@@ -286,7 +286,7 @@
 (assert
   (forall ( (|$alpha-18:u_1036| Int) (|$knormal:33| Int) (|$knormal:38| Int) (|$alpha-17:s_f_x_1086| Int) (|$knormal:32| Int) (|$knormal:30| Int) (|$alpha-16:set_flag_f_1089| Int) (|$knormal:35| Int) (|$V-reftype:64| Int) )
     (=>
-      ( and (|f_1030$unknown:9| |$knormal:32| |$knormal:30| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089| |$knormal:38| |$knormal:35| |$knormal:33|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (= |$V-reftype:64| |$knormal:32|) (= |$knormal:30| 2) (= |$knormal:33| 0) (= |$knormal:35| 0) (= |$knormal:38| 1) )
+      ( and (= |$knormal:38| 1) (= |$knormal:35| 0) (= |$knormal:33| 0) (= |$knormal:30| 2) (= |$V-reftype:64| |$knormal:32|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|f_1030$unknown:9| |$knormal:32| |$knormal:30| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089| |$knormal:38| |$knormal:35| |$knormal:33|) )
       (|main_1035$unknown:26| |$V-reftype:64| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|)
     )
   )
@@ -294,7 +294,7 @@
 (assert
   (forall ( (|$alpha-9:set_flag_f_1089| Int) (|$alpha-8:x_1032| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-6:set_flag_f_1089| Int) (|$V-reftype:23| Int) (|$knormal:3| Bool) (|$knormal:7| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:23| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) |$knormal:3| (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$knormal:7| (- |$alpha-8:x_1032| 1)) )
+      ( and (= |$knormal:7| (- |$alpha-8:x_1032| 1)) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) |$knormal:3| (|f_without_checking_1098$unknown:13| |$V-reftype:23| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:13| |$V-reftype:23| |$knormal:7| |$alpha-8:x_1032| |$alpha-9:set_flag_f_1089|)
     )
   )
@@ -302,7 +302,7 @@
 (assert
   (forall ( (|$knormal:3| Bool) (|$V-reftype:23| Int) (|$alpha-6:set_flag_f_1089| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-8:x_1032| Int) (|$alpha-9:set_flag_f_1089| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:23| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (not |$knormal:3|) (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) )
+      ( and (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) (not |$knormal:3|) (|f_without_checking_1098$unknown:13| |$V-reftype:23| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|lambda_1031$unknown:19| |$V-reftype:23|)
     )
   )
@@ -310,7 +310,7 @@
 (assert
   (forall ( (|$knormal:7| Int) (|$knormal:3| Bool) (|$alpha-8:x_1032| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-6:set_flag_f_1089| Int) (|$V-reftype:24| Int) (|$V-reftype:25| Int) (|$alpha-9:set_flag_f_1089| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:25| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) |$knormal:3| (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$knormal:7| (- |$alpha-8:x_1032| 1)) )
+      ( and (= |$knormal:7| (- |$alpha-8:x_1032| 1)) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) |$knormal:3| (|f_without_checking_1098$unknown:14| |$V-reftype:25| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:14| |$V-reftype:25| |$V-reftype:24| |$knormal:7| |$alpha-8:x_1032| |$alpha-9:set_flag_f_1089|)
     )
   )
@@ -318,7 +318,7 @@
 (assert
   (forall ( (|$alpha-9:set_flag_f_1089| Int) (|$V-reftype:26| Int) (|$V-reftype:24| Int) (|$alpha-6:set_flag_f_1089| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-8:x_1032| Int) (|$V-reftype:27| Int) (|$knormal:3| Bool) (|$knormal:7| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:15| |$V-reftype:27| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) |$knormal:3| (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$knormal:7| (- |$alpha-8:x_1032| 1)) )
+      ( and (= |$knormal:7| (- |$alpha-8:x_1032| 1)) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) |$knormal:3| (|f_without_checking_1098$unknown:15| |$V-reftype:27| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:15| |$V-reftype:27| |$V-reftype:26| |$V-reftype:24| |$knormal:7| |$alpha-8:x_1032| |$alpha-9:set_flag_f_1089|)
     )
   )
@@ -326,7 +326,7 @@
 (assert
   (forall ( (|$knormal:3| Bool) (|$V-reftype:26| Int) (|$V-reftype:24| Int) (|$alpha-6:set_flag_f_1089| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-8:x_1032| Int) (|$V-reftype:28| Int) (|$V-reftype:29| Int) (|$knormal:7| Int) (|$alpha-9:set_flag_f_1089| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:15| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$knormal:7| |$alpha-8:x_1032| |$alpha-9:set_flag_f_1089|) |$knormal:3| (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$knormal:7| (- |$alpha-8:x_1032| 1)) )
+      ( and (= |$knormal:7| (- |$alpha-8:x_1032| 1)) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) |$knormal:3| (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$knormal:7| |$alpha-8:x_1032| |$alpha-9:set_flag_f_1089|) (|f_without_checking_1098$unknown:15| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|)
     )
   )
@@ -334,7 +334,7 @@
 (assert
   (forall ( (|$alpha-9:set_flag_f_1089| Int) (|$V-reftype:25| Int) (|$V-reftype:34| Int) (|$alpha-6:set_flag_f_1089| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-8:x_1032| Int) (|$knormal:3| Bool) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:25| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (not |$knormal:3|) (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) )
+      ( and (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) (not |$knormal:3|) (|f_without_checking_1098$unknown:14| |$V-reftype:25| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|lambda_1031$unknown:20| |$V-reftype:25| |$V-reftype:34|)
     )
   )
@@ -342,7 +342,7 @@
 (assert
   (forall ( (|$knormal:3| Bool) (|$V-reftype:27| Int) (|$alpha-8:x_1032| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-6:set_flag_f_1089| Int) (|$V-reftype:34| Int) (|$V-reftype:36| Int) (|$alpha-9:set_flag_f_1089| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:15| |$V-reftype:27| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (not |$knormal:3|) (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) )
+      ( and (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) (not |$knormal:3|) (|f_without_checking_1098$unknown:15| |$V-reftype:27| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|lambda_1031$unknown:21| |$V-reftype:27| |$V-reftype:36| |$V-reftype:34|)
     )
   )
@@ -350,7 +350,7 @@
 (assert
   (forall ( (|$knormal:3| Bool) (|$V-reftype:39| Int) (|$V-reftype:38| Int) (|$alpha-8:x_1032| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-6:set_flag_f_1089| Int) (|$V-reftype:34| Int) (|$V-reftype:36| Int) (|$alpha-9:set_flag_f_1089| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:15| |$V-reftype:38| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|lambda_1031$unknown:22| |$V-reftype:39| |$V-reftype:38| |$V-reftype:36| |$V-reftype:34|) (not |$knormal:3|) (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) )
+      ( and (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) (not |$knormal:3|) (|lambda_1031$unknown:22| |$V-reftype:39| |$V-reftype:38| |$V-reftype:36| |$V-reftype:34|) (|f_without_checking_1098$unknown:15| |$V-reftype:38| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:14| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:13| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:16| |$V-reftype:39| |$V-reftype:38| |$V-reftype:36| |$V-reftype:34| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|)
     )
   )
@@ -358,7 +358,7 @@
 (assert
   (forall ( (|$knormal:7| Int) (|$knormal:3| Bool) (|$alpha-6:set_flag_f_1089| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-8:x_1032| Int) (|$alpha-9:set_flag_f_1089| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) |$knormal:3| (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$knormal:7| (- |$alpha-8:x_1032| 1)) )
+      ( and (= |$knormal:7| (- |$alpha-8:x_1032| 1)) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) |$knormal:3| (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:10| |$alpha-9:set_flag_f_1089|)
     )
   )
@@ -366,7 +366,7 @@
 (assert
   (forall ( (|$alpha-9:set_flag_f_1089| Int) (|$alpha-8:x_1032| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-6:set_flag_f_1089| Int) (|$knormal:3| Bool) (|$knormal:7| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) |$knormal:3| (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$knormal:7| (- |$alpha-8:x_1032| 1)) )
+      ( and (= |$knormal:7| (- |$alpha-8:x_1032| 1)) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) |$knormal:3| (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:11| |$alpha-8:x_1032| |$alpha-9:set_flag_f_1089|)
     )
   )
@@ -374,7 +374,7 @@
 (assert
   (forall ( (|$knormal:7| Int) (|$knormal:3| Bool) (|$alpha-6:set_flag_f_1089| Int) (|$alpha-7:s_f_x_1086| Int) (|$alpha-8:x_1032| Int) (|$alpha-9:set_flag_f_1089| Int) )
     (=>
-      ( and (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) |$knormal:3| (= |$alpha-9:set_flag_f_1089| 1) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$knormal:7| (- |$alpha-8:x_1032| 1)) )
+      ( and (= |$knormal:7| (- |$alpha-8:x_1032| 1)) (= |$knormal:3| (> |$alpha-8:x_1032| 0)) (= |$alpha-9:set_flag_f_1089| 1) |$knormal:3| (|f_without_checking_1098$unknown:12| |$alpha-8:x_1032| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:11| |$alpha-7:s_f_x_1086| |$alpha-6:set_flag_f_1089|) (|f_without_checking_1098$unknown:10| |$alpha-6:set_flag_f_1089|) )
       (|f_without_checking_1098$unknown:12| |$knormal:7| |$alpha-8:x_1032| |$alpha-9:set_flag_f_1089|)
     )
   )
@@ -388,7 +388,7 @@
 (assert
   (forall ( (|$alpha-5:x_1033| Int) (|$alpha-4:s_f_x_1086| Int) (|$alpha-3:set_flag_f_1089| Int) (|$V-reftype:53| Int) )
     (=>
-      ( and (|lambda_1031$unknown:19| |$alpha-3:set_flag_f_1089|) (|lambda_1031$unknown:20| |$alpha-4:s_f_x_1086| |$alpha-3:set_flag_f_1089|) (|lambda_1031$unknown:21| |$alpha-5:x_1033| |$alpha-4:s_f_x_1086| |$alpha-3:set_flag_f_1089|) (= |$V-reftype:53| (+ |$alpha-5:x_1033| 1)) )
+      ( and (= |$V-reftype:53| (+ |$alpha-5:x_1033| 1)) (|lambda_1031$unknown:21| |$alpha-5:x_1033| |$alpha-4:s_f_x_1086| |$alpha-3:set_flag_f_1089|) (|lambda_1031$unknown:20| |$alpha-4:s_f_x_1086| |$alpha-3:set_flag_f_1089|) (|lambda_1031$unknown:19| |$alpha-3:set_flag_f_1089|) )
       (|lambda_1031$unknown:22| |$V-reftype:53| |$alpha-5:x_1033| |$alpha-4:s_f_x_1086| |$alpha-3:set_flag_f_1089|)
     )
   )
@@ -396,7 +396,7 @@
 (assert
   (forall ( (|$knormal:38| Int) (|$knormal:33| Int) (|$alpha-18:u_1036| Int) (|$alpha-17:s_f_x_1086| Int) (|$alpha-16:set_flag_f_1089| Int) (|$knormal:30| Int) (|$knormal:35| Int) )
     (=>
-      ( and (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (= |$knormal:30| 2) (= |$knormal:33| 0) (= |$knormal:35| 0) (= |$knormal:38| 1) )
+      ( and (= |$knormal:38| 1) (= |$knormal:35| 0) (= |$knormal:33| 0) (= |$knormal:30| 2) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) )
       (|f_1030$unknown:6| |$alpha-16:set_flag_f_1089| |$knormal:38| |$knormal:35| |$knormal:33|)
     )
   )
@@ -404,7 +404,7 @@
 (assert
   (forall ( (|$knormal:35| Int) (|$knormal:30| Int) (|$alpha-16:set_flag_f_1089| Int) (|$alpha-17:s_f_x_1086| Int) (|$alpha-18:u_1036| Int) (|$knormal:33| Int) (|$knormal:38| Int) )
     (=>
-      ( and (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (= |$knormal:30| 2) (= |$knormal:33| 0) (= |$knormal:35| 0) (= |$knormal:38| 1) )
+      ( and (= |$knormal:38| 1) (= |$knormal:35| 0) (= |$knormal:33| 0) (= |$knormal:30| 2) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) )
       (|f_1030$unknown:7| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089| |$knormal:38| |$knormal:35| |$knormal:33|)
     )
   )
@@ -412,7 +412,7 @@
 (assert
   (forall ( (|$knormal:38| Int) (|$knormal:33| Int) (|$alpha-18:u_1036| Int) (|$alpha-17:s_f_x_1086| Int) (|$alpha-16:set_flag_f_1089| Int) (|$knormal:30| Int) (|$knormal:35| Int) )
     (=>
-      ( and (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (= |$knormal:30| 2) (= |$knormal:33| 0) (= |$knormal:35| 0) (= |$knormal:38| 1) )
+      ( and (= |$knormal:38| 1) (= |$knormal:35| 0) (= |$knormal:33| 0) (= |$knormal:30| 2) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) )
       (|f_1030$unknown:8| |$knormal:30| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089| |$knormal:38| |$knormal:35| |$knormal:33|)
     )
   )
@@ -420,7 +420,7 @@
 (assert
   (forall ( (|$knormal:35| Int) (|$alpha-18:u_1036| Int) (|$alpha-17:s_f_x_1086| Int) (|$alpha-16:set_flag_f_1089| Int) (|$knormal:33| Int) (|$knormal:38| Int) )
     (=>
-      ( and (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (= |$knormal:33| 0) (= |$knormal:35| 0) (= |$knormal:38| 1) )
+      ( and (= |$knormal:38| 1) (= |$knormal:35| 0) (= |$knormal:33| 0) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) )
       (|f_1030$unknown:3| |$knormal:33|)
     )
   )
@@ -428,7 +428,7 @@
 (assert
   (forall ( (|$knormal:38| Int) (|$knormal:33| Int) (|$alpha-16:set_flag_f_1089| Int) (|$alpha-17:s_f_x_1086| Int) (|$alpha-18:u_1036| Int) (|$knormal:35| Int) )
     (=>
-      ( and (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (= |$knormal:33| 0) (= |$knormal:35| 0) (= |$knormal:38| 1) )
+      ( and (= |$knormal:38| 1) (= |$knormal:35| 0) (= |$knormal:33| 0) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) )
       (|f_1030$unknown:4| |$knormal:35| |$knormal:33|)
     )
   )
@@ -436,7 +436,7 @@
 (assert
   (forall ( (|$knormal:35| Int) (|$alpha-18:u_1036| Int) (|$alpha-17:s_f_x_1086| Int) (|$alpha-16:set_flag_f_1089| Int) (|$knormal:33| Int) (|$knormal:38| Int) )
     (=>
-      ( and (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (= |$knormal:33| 0) (= |$knormal:35| 0) (= |$knormal:38| 1) )
+      ( and (= |$knormal:38| 1) (= |$knormal:35| 0) (= |$knormal:33| 0) (|main_1035$unknown:25| |$alpha-18:u_1036| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:24| |$alpha-17:s_f_x_1086| |$alpha-16:set_flag_f_1089|) (|main_1035$unknown:23| |$alpha-16:set_flag_f_1089|) )
       (|f_1030$unknown:5| |$knormal:38| |$knormal:35| |$knormal:33|)
     )
   )
@@ -444,7 +444,7 @@
 (assert
   (forall ( (|$knormal:43| Int) (|$knormal:41| Int) (|$knormal:46| Int) )
     (=>
-      ( and (= |$knormal:41| 0) (= |$knormal:43| 0) (= |$knormal:46| 1) )
+      ( and (= |$knormal:46| 1) (= |$knormal:43| 0) (= |$knormal:41| 0) )
       (|main_1035$unknown:23| |$knormal:41|)
     )
   )
@@ -452,7 +452,7 @@
 (assert
   (forall ( (|$knormal:46| Int) (|$knormal:41| Int) (|$knormal:43| Int) )
     (=>
-      ( and (= |$knormal:41| 0) (= |$knormal:43| 0) (= |$knormal:46| 1) )
+      ( and (= |$knormal:46| 1) (= |$knormal:43| 0) (= |$knormal:41| 0) )
       (|main_1035$unknown:24| |$knormal:43| |$knormal:41|)
     )
   )
@@ -460,10 +460,12 @@
 (assert
   (forall ( (|$knormal:43| Int) (|$knormal:41| Int) (|$knormal:46| Int) )
     (=>
-      ( and (= |$knormal:41| 0) (= |$knormal:43| 0) (= |$knormal:46| 1) )
+      ( and (= |$knormal:46| 1) (= |$knormal:43| 0) (= |$knormal:41| 0) )
       (|main_1035$unknown:25| |$knormal:46| |$knormal:43| |$knormal:41|)
     )
   )
 )
 (check-sat)
+
+(get-model)
 

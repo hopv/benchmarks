@@ -10,20 +10,24 @@
 
 (set-logic HORN)
 
-(declare-fun |lamp$unknown:12|
+(declare-fun |lamp$unknown:14|
   ( Int Int ) Bool
+)
+
+(declare-fun |$innerFunc:6-$innerFunc:2$unknown:12|
+  ( Int Int Int ) Bool
+)
+
+(declare-fun |$innerFunc:5-id$unknown:9|
+  ( Int Int Int ) Bool
 )
 
 (declare-fun |$innerFunc:5-id$unknown:8|
   ( Int Int ) Bool
 )
 
-(declare-fun |$innerFunc:5-id$unknown:6|
-  ( Int Int ) Bool
-)
-
-(declare-fun |$innerFunc:6-$innerFunc:2$unknown:10|
-  ( Int Int ) Bool
+(declare-fun |$innerFunc:5-id$unknown:7|
+  ( Int Int Int ) Bool
 )
 
 (declare-fun |$innerFunc:4-$innerFunc:1$unknown:3|
@@ -38,15 +42,19 @@
   ( Int ) Bool
 )
 
-(declare-fun |lamp$unknown:11|
+(declare-fun |lamp$unknown:13|
   ( Int ) Bool
 )
 
-(declare-fun |$innerFunc:5-id$unknown:7|
-  ( Int ) Bool
+(declare-fun |$innerFunc:6-$innerFunc:2$unknown:11|
+  ( Int Int ) Bool
 )
 
-(declare-fun |$innerFunc:6-$innerFunc:2$unknown:9|
+(declare-fun |$innerFunc:5-id$unknown:6|
+  ( Int Int ) Bool
+)
+
+(declare-fun |$innerFunc:6-$innerFunc:2$unknown:10|
   ( Int ) Bool
 )
 
@@ -55,18 +63,26 @@
 )
 
 (assert
-  (forall ( (|$V-reftype:7| Int) )
+  (forall ( (|$alpha-3:i| Int) )
     (=>
-      ( and (|$innerFunc:5-id$unknown:5| |$V-reftype:7|) )
-      (|$innerFunc:6-$innerFunc:2$unknown:9| |$V-reftype:7|)
+      true
+      (|$innerFunc:5-id$unknown:5| |$alpha-3:i|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:11| Int) )
+  (forall ( (|$alpha-3:i| Int) )
     (=>
-      ( and (|$innerFunc:5-id$unknown:7| |$V-reftype:11|) )
-      (|$innerFunc:5-id$unknown:5| |$V-reftype:11|)
+      true
+      (|$innerFunc:6-$innerFunc:2$unknown:10| |$alpha-3:i|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-3:i| Int) (|$V-reftype:9| Int) )
+    (=>
+      ( and (|$innerFunc:5-id$unknown:6| |$V-reftype:9| |$alpha-3:i|) )
+      (|$innerFunc:6-$innerFunc:2$unknown:11| |$V-reftype:9| |$alpha-3:i|)
     )
   )
 )
@@ -74,53 +90,63 @@
   (forall ( (|$knormal:2| Int) )
     (=>
       ( and (= |$knormal:2| 1) )
-      (|lamp$unknown:11| |$knormal:2|)
+      (|lamp$unknown:13| |$knormal:2|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-9:x| Int) (|$V-reftype:28| Int) )
+  (forall ( (|$alpha-11:x| Int) (|$V-reftype:32| Int) )
     (=>
-      ( and (|$innerFunc:3-id$unknown:1| |$alpha-9:x|) (= |$V-reftype:28| |$alpha-9:x|) )
-      (|$innerFunc:3-id$unknown:2| |$V-reftype:28| |$alpha-9:x|)
+      ( and (= |$V-reftype:32| |$alpha-11:x|) (|$innerFunc:3-id$unknown:1| |$alpha-11:x|) )
+      (|$innerFunc:3-id$unknown:2| |$V-reftype:32| |$alpha-11:x|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-8:$$tmp::1| Int) )
-    ( and (|$innerFunc:4-$innerFunc:1$unknown:3| |$alpha-8:$$tmp::1|) )
+  (not (exists ( (|$alpha-10:$$tmp::1| Int) )
+    ( and (|$innerFunc:4-$innerFunc:1$unknown:3| |$alpha-10:$$tmp::1|) )
     )
   )
 )
 (assert
-  (forall ( (|$innerFunc:6-$innerFunc:2| Int) (|$V-reftype:16| Int) )
+  (forall ( (|$V-reftype:10| Int) (|$alpha-8:i| Int) (|$V-reftype:11| Int) )
     (=>
-      ( and (|$innerFunc:5-id$unknown:5| |$innerFunc:6-$innerFunc:2|) (|$innerFunc:6-$innerFunc:2$unknown:10| |$V-reftype:16| |$innerFunc:6-$innerFunc:2|) )
-      (|$innerFunc:5-id$unknown:6| |$V-reftype:16| |$innerFunc:6-$innerFunc:2|)
+      ( and (|$innerFunc:5-id$unknown:8| |$V-reftype:10| |$alpha-8:i|) (|$innerFunc:5-id$unknown:7| |$V-reftype:11| |$V-reftype:10| |$alpha-8:i|) (|$innerFunc:5-id$unknown:5| |$alpha-8:i|) )
+      (|$innerFunc:5-id$unknown:9| |$V-reftype:11| |$V-reftype:10| |$alpha-8:i|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:9| Int) (|$V-reftype:8| Int) )
+  (forall ( (|$alpha-8:i| Int) (|$V-reftype:13| Int) )
     (=>
-      ( and (|$innerFunc:5-id$unknown:6| |$V-reftype:9| |$V-reftype:8|) (|$innerFunc:5-id$unknown:7| |$V-reftype:8|) )
-      (|$innerFunc:5-id$unknown:8| |$V-reftype:9| |$V-reftype:8|)
+      ( and (|$innerFunc:5-id$unknown:8| |$V-reftype:13| |$alpha-8:i|) (|$innerFunc:5-id$unknown:5| |$alpha-8:i|) )
+      (|$innerFunc:5-id$unknown:6| |$V-reftype:13| |$alpha-8:i|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-6:$$tmp::1| Int) )
-    ( and (|$innerFunc:6-$innerFunc:2$unknown:9| |$alpha-6:$$tmp::1|) )
-    )
-  )
-)
-(assert
-  (forall ( (|$alpha-1:x| Int) (|$V-reftype:23| Int) )
+  (forall ( (|$alpha-3:i| Int) (|$knormal:4| Int) (|$V-reftype:20| Int) )
     (=>
-      ( and (|lamp$unknown:11| |$alpha-1:x|) (= |$V-reftype:23| |$alpha-1:x|) )
-      (|lamp$unknown:12| |$V-reftype:23| |$alpha-1:x|)
+      ( and (|$innerFunc:6-$innerFunc:2$unknown:12| |$V-reftype:20| |$knormal:4| |$alpha-3:i|) (|$innerFunc:5-id$unknown:6| |$knormal:4| |$alpha-3:i|) )
+      (|$innerFunc:5-id$unknown:7| |$V-reftype:20| |$knormal:4| |$alpha-3:i|)
+    )
+  )
+)
+(assert
+  (not (exists ( (|$alpha-6:i| Int) (|$alpha-7:$$tmp::1| Int) )
+    ( and (|$innerFunc:6-$innerFunc:2$unknown:11| |$alpha-7:$$tmp::1| |$alpha-6:i|) (|$innerFunc:6-$innerFunc:2$unknown:10| |$alpha-6:i|) )
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$V-reftype:27| Int) )
+    (=>
+      ( and (= |$V-reftype:27| |$alpha-1:x|) (|lamp$unknown:13| |$alpha-1:x|) )
+      (|lamp$unknown:14| |$V-reftype:27| |$alpha-1:x|)
     )
   )
 )
 (check-sat)
+
+(get-model)
 

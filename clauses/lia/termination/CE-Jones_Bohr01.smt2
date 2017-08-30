@@ -3349,3 +3349,5 @@
 )
 (check-sat)
 
+(get-model)
+

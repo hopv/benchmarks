@@ -144,6 +144,8 @@ clauses/lia/termination/toChurch00.smt2
 clauses/lia/termination/toChurch01.smt2
 clauses/lia/termination/toChurch02.smt2
 clauses/lia/termination/toChurch03.smt2
+clauses/lia/termination/toChurch04.smt2
+clauses/lia/termination/toChurch05.smt2
 clauses/lia/termination/up_down00.smt2
 clauses/lia/termination/up_down01.smt2
 clauses/lia/termination/up_down02.smt2

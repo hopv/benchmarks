@@ -55,7 +55,7 @@
 (assert
   (forall ( (|$alpha-7:x| Int) )
     (=>
-      ( and true )
+      true
       (|max$unknown:7| |$alpha-7:x|)
     )
   )
@@ -63,7 +63,7 @@
 (assert
   (forall ( (|$alpha-7:x| Int) (|$alpha-8:y| Int) )
     (=>
-      ( and true )
+      true
       (|max$unknown:8| |$alpha-8:y| |$alpha-7:x|)
     )
   )
@@ -71,7 +71,7 @@
 (assert
   (forall ( (|$alpha-7:x| Int) (|$alpha-9:z| Int) (|$alpha-8:y| Int) )
     (=>
-      ( and true )
+      true
       (|max$unknown:9| |$alpha-9:z| |$alpha-8:y| |$alpha-7:x|)
     )
   )
@@ -103,7 +103,7 @@
 (assert
   (forall ( (|$knormal:8| Bool) (|$alpha-6:y| Int) (|$alpha-5:x| Int) (|$V-reftype:28| Int) )
     (=>
-      ( and (|f$unknown:1| |$alpha-5:x|) (|f$unknown:2| |$alpha-6:y| |$alpha-5:x|) |$knormal:8| (= |$V-reftype:28| |$alpha-5:x|) (= |$knormal:8| (>= |$alpha-5:x| |$alpha-6:y|)) )
+      ( and (= |$knormal:8| (>= |$alpha-5:x| |$alpha-6:y|)) (= |$V-reftype:28| |$alpha-5:x|) |$knormal:8| (|f$unknown:2| |$alpha-6:y| |$alpha-5:x|) (|f$unknown:1| |$alpha-5:x|) )
       (|f$unknown:3| |$V-reftype:28| |$alpha-6:y| |$alpha-5:x|)
     )
   )
@@ -111,7 +111,7 @@
 (assert
   (forall ( (|$knormal:8| Bool) (|$alpha-6:y| Int) (|$alpha-5:x| Int) (|$V-reftype:29| Int) )
     (=>
-      ( and (|f$unknown:1| |$alpha-5:x|) (|f$unknown:2| |$alpha-6:y| |$alpha-5:x|) (not |$knormal:8|) (= |$V-reftype:29| |$alpha-6:y|) (= |$knormal:8| (>= |$alpha-5:x| |$alpha-6:y|)) )
+      ( and (= |$knormal:8| (>= |$alpha-5:x| |$alpha-6:y|)) (= |$V-reftype:29| |$alpha-6:y|) (not |$knormal:8|) (|f$unknown:2| |$alpha-6:y| |$alpha-5:x|) (|f$unknown:1| |$alpha-5:x|) )
       (|f$unknown:3| |$V-reftype:29| |$alpha-6:y| |$alpha-5:x|)
     )
   )
@@ -119,21 +119,21 @@
 (assert
   (forall ( (|f| Int) (|$V-reftype:5| Int) (|$V-reftype:4| Int) )
     (=>
-      ( and (|f$unknown:3| |$V-reftype:5| |$V-reftype:4| |f|) (|max$unknown:4| |f|) (|max$unknown:5| |$V-reftype:4| |f|) )
+      ( and (|max$unknown:5| |$V-reftype:4| |f|) (|max$unknown:4| |f|) (|f$unknown:3| |$V-reftype:5| |$V-reftype:4| |f|) )
       (|max$unknown:6| |$V-reftype:5| |$V-reftype:4| |f|)
     )
   )
 )
 (assert
   (not (exists ( (|$alpha-9:z| Int) (|$alpha-7:x| Int) (|$knormal:11| Int) (|$knormal:20| Int) (|$alpha-8:y| Int) (|$knormal:13| Bool) )
-    ( and (|f$unknown:3| |$knormal:11| |$knormal:20| |$alpha-7:x|) (|max$unknown:10| |$knormal:20| |$alpha-9:z| |$alpha-8:y| |$alpha-7:x|) (not |$knormal:13|) (= |$knormal:13| (= |$knormal:11| |$knormal:20|)) )
+    ( and (= |$knormal:13| (= |$knormal:11| |$knormal:20|)) (not |$knormal:13|) (|max$unknown:10| |$knormal:20| |$alpha-9:z| |$alpha-8:y| |$alpha-7:x|) (|f$unknown:3| |$knormal:11| |$knormal:20| |$alpha-7:x|) )
     )
   )
 )
 (assert
   (forall ( (|f| Int) (|$V-reftype:15| Int) )
     (=>
-      ( and (|max$unknown:4| |f|) (|max$unknown:5| |$V-reftype:15| |f|) )
+      ( and (|max$unknown:5| |$V-reftype:15| |f|) (|max$unknown:4| |f|) )
       (|f$unknown:2| |$V-reftype:15| |f|)
     )
   )
@@ -141,7 +141,7 @@
 (assert
   (forall ( (|$knormal:7| Int) (|$alpha-3:y| Int) (|$knormal:3| Int) (|$alpha-2:x| Int) (|$alpha-4:z| Int) (|$V-reftype:26| Int) )
     (=>
-      ( and (|max$unknown:6| |$knormal:3| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:6| |$knormal:7| |$alpha-4:z| |$knormal:3|) (|max$unknown:7| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) (= |$V-reftype:26| |$knormal:7|) )
+      ( and (= |$V-reftype:26| |$knormal:7|) (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:7| |$alpha-2:x|) (|max$unknown:6| |$knormal:7| |$alpha-4:z| |$knormal:3|) (|max$unknown:6| |$knormal:3| |$alpha-3:y| |$alpha-2:x|) )
       (|max$unknown:10| |$V-reftype:26| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|)
     )
   )
@@ -149,7 +149,7 @@
 (assert
   (forall ( (|$alpha-3:y| Int) (|$knormal:3| Int) (|$alpha-2:x| Int) (|$alpha-4:z| Int) )
     (=>
-      ( and (|max$unknown:6| |$knormal:3| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:7| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) )
+      ( and (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:7| |$alpha-2:x|) (|max$unknown:6| |$knormal:3| |$alpha-3:y| |$alpha-2:x|) )
       (|max$unknown:4| |$knormal:3|)
     )
   )
@@ -157,7 +157,7 @@
 (assert
   (forall ( (|$alpha-4:z| Int) (|$alpha-2:x| Int) (|$knormal:3| Int) (|$alpha-3:y| Int) )
     (=>
-      ( and (|max$unknown:6| |$knormal:3| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:7| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) )
+      ( and (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:7| |$alpha-2:x|) (|max$unknown:6| |$knormal:3| |$alpha-3:y| |$alpha-2:x|) )
       (|max$unknown:5| |$alpha-4:z| |$knormal:3|)
     )
   )
@@ -165,7 +165,7 @@
 (assert
   (forall ( (|$alpha-2:x| Int) (|$alpha-3:y| Int) (|$alpha-4:z| Int) )
     (=>
-      ( and (|max$unknown:7| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) )
+      ( and (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:7| |$alpha-2:x|) )
       (|max$unknown:4| |$alpha-2:x|)
     )
   )
@@ -173,10 +173,12 @@
 (assert
   (forall ( (|$alpha-4:z| Int) (|$alpha-3:y| Int) (|$alpha-2:x| Int) )
     (=>
-      ( and (|max$unknown:7| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) )
+      ( and (|max$unknown:9| |$alpha-4:z| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:8| |$alpha-3:y| |$alpha-2:x|) (|max$unknown:7| |$alpha-2:x|) )
       (|max$unknown:5| |$alpha-3:y| |$alpha-2:x|)
     )
   )
 )
 (check-sat)
+
+(get-model)
 
