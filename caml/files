@@ -144,6 +144,8 @@ caml/lia/termination/toChurch00.ml
 caml/lia/termination/toChurch01.ml
 caml/lia/termination/toChurch02.ml
 caml/lia/termination/toChurch03.ml
+caml/lia/termination/toChurch04.ml
+caml/lia/termination/toChurch05.ml
 caml/lia/termination/up_down00.ml
 caml/lia/termination/up_down01.ml
 caml/lia/termination/up_down02.ml
