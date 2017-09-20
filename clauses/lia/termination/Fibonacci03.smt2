@@ -108,7 +108,7 @@
 )
 
 (assert
-  (forall ( (|$V-reftype:33| Int) (|$knormal:2| Int) (|$alpha-1:$$tmp::1| Int) (|$knormal:1| Int) )
+  (forall ( (|$V-reftype:33| Int) (|$alpha-1:$$tmp::1| Int) (|$knormal:1| Int) (|$knormal:2| Int) )
     (=>
       ( and (= |$knormal:1| 1) (= |$V-reftype:33| |$knormal:2|) (|bot$unknown:2| |$knormal:2| |$knormal:1|) (|bot$unknown:1| |$alpha-1:$$tmp::1|) )
       (|bot$unknown:2| |$V-reftype:33| |$alpha-1:$$tmp::1|)
@@ -124,33 +124,33 @@
   )
 )
 (assert
-  (forall ( (|$knormal:17| Int) (|$knormal:16| Int) (|$knormal:14| Bool) (|$knormal:11| Int) (|$knormal:8| Int) (|$knormal:19| Bool) (|$knormal:7| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$knormal:22| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:23| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$V-reftype:51| Int) (|$knormal:10| Int) (|$knormal:9| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:18| Bool) )
+  (forall ( (|$V-reftype:51| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:7| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$V-reftype:51| |$knormal:7|) (not |$knormal:19|) (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:8| |$knormal:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$V-reftype:51| |$knormal:7|) (not (not (= 0 |$knormal:19|))) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:8| |$knormal:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
       (|fib_1030$unknown:12| |$V-reftype:51| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:18| Bool) (|$knormal:15| Int) (|$knormal:13| Int) (|$knormal:12| Int) (|$knormal:9| Int) (|$knormal:10| Int) (|$alpha-6:n_1031| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$knormal:23| Int) (|$knormal:21| Int) (|$knormal:20| Int) (|$knormal:22| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$knormal:19| Bool) (|$knormal:8| Int) (|$knormal:11| Int) (|$knormal:14| Bool) (|$knormal:16| Int) (|$knormal:17| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not |$knormal:19|) (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not (not (= 0 |$knormal:19|))) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
       (|fib_1030$unknown:5| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:17| Int) (|$knormal:16| Int) (|$knormal:14| Bool) (|$knormal:11| Int) (|$knormal:8| Int) (|$knormal:19| Bool) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$knormal:22| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:23| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:9| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:18| Bool) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not |$knormal:19|) (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not (not (= 0 |$knormal:19|))) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
       (|fib_1030$unknown:6| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:18| Bool) (|$knormal:15| Int) (|$knormal:13| Int) (|$knormal:12| Int) (|$knormal:9| Int) (|$knormal:10| Int) (|$alpha-6:n_1031| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$knormal:23| Int) (|$knormal:21| Int) (|$knormal:20| Int) (|$knormal:22| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$knormal:19| Bool) (|$knormal:8| Int) (|$knormal:11| Int) (|$knormal:14| Bool) (|$knormal:16| Int) (|$knormal:17| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not |$knormal:19|) (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not (not (= 0 |$knormal:19|))) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) (|bot$unknown:2| |$knormal:21| |$knormal:20|) )
       (|fib_1030$unknown:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
@@ -162,183 +162,183 @@
   )
 )
 (assert
-  (forall ( (|$knormal:18| Bool) (|$knormal:15| Int) (|$knormal:13| Int) (|$knormal:12| Int) (|$knormal:9| Int) (|$knormal:10| Int) (|$alpha-6:n_1031| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$knormal:23| Int) (|$knormal:22| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$knormal:19| Bool) (|$knormal:8| Int) (|$knormal:11| Int) (|$knormal:14| Bool) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:20| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not |$knormal:19|) (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:20| 1) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not (not (= 0 |$knormal:19|))) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fail$unknown:4| |$knormal:23| |$knormal:22|) )
       (|bot$unknown:1| |$knormal:20|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:17| Int) (|$knormal:16| Int) (|$knormal:14| Bool) (|$knormal:11| Int) (|$knormal:8| Int) (|$alpha-8:u| Int) (|$V-reftype:48| Int) (|$alpha-6:n_1031| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$knormal:7| Int) (|$knormal:19| Bool) (|$knormal:10| Int) (|$knormal:9| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:18| Bool) )
+  (forall ( (|$V-reftype:48| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:7| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) (= |$V-reftype:48| |$knormal:7|) |$knormal:19| (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:8| |$knormal:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) (= |$V-reftype:48| |$knormal:7|) (not (= 0 |$knormal:19|)) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:8| |$knormal:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:12| |$V-reftype:48| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-8:u| Int) (|$V-reftype:53| Int) (|$knormal:7| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) )
+  (forall ( (|$V-reftype:53| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) (|$knormal:7| Int) )
     (=>
-      ( and (= |$alpha-8:u| 1) (= |$V-reftype:53| |$knormal:7|) (= |$alpha-4:prev_set_flag_fib_1051| 0) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:8| |$knormal:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$alpha-8:u| 1) (= |$V-reftype:53| |$knormal:7|) (not (not (= 0 |$alpha-4:prev_set_flag_fib_1051|))) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:8| |$knormal:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:12| |$V-reftype:53| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:18| Bool) (|$knormal:15| Int) (|$knormal:13| Int) (|$knormal:12| Int) (|$knormal:9| Int) (|$knormal:10| Int) (|$knormal:19| Bool) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) (|$knormal:8| Int) (|$knormal:11| Int) (|$knormal:14| Bool) (|$knormal:16| Int) (|$knormal:17| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) |$knormal:19| (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) (not (= 0 |$knormal:19|)) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:5| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:17| Int) (|$knormal:16| Int) (|$knormal:14| Bool) (|$knormal:11| Int) (|$knormal:8| Int) (|$alpha-8:u| Int) (|$alpha-6:n_1031| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$knormal:19| Bool) (|$knormal:10| Int) (|$knormal:9| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:18| Bool) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) |$knormal:19| (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) (not (= 0 |$knormal:19|)) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:6| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:18| Bool) (|$knormal:15| Int) (|$knormal:13| Int) (|$knormal:12| Int) (|$knormal:9| Int) (|$knormal:10| Int) (|$knormal:19| Bool) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) (|$knormal:8| Int) (|$knormal:11| Int) (|$knormal:14| Bool) (|$knormal:16| Int) (|$knormal:17| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) |$knormal:19| (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (= |$alpha-8:u| 1) (not (= 0 |$knormal:19|)) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:22| Int) (|$knormal:17| Int) (|$knormal:16| Int) (|$knormal:14| Bool) (|$knormal:11| Int) (|$knormal:8| Int) (|$knormal:19| Bool) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:9| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:18| Bool) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$knormal:10| Int) (|$knormal:11| Int) (|$knormal:12| Int) (|$knormal:13| Int) (|$knormal:14| Int) (|$knormal:15| Int) (|$knormal:16| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:22| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= |$knormal:19| (and |$knormal:14| |$knormal:18|)) (= |$knormal:18| (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= |$knormal:14| (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not |$knormal:19|) (not (= |$alpha-4:prev_set_flag_fib_1051| 0)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$knormal:9| |$alpha-5:s_prev_fib_n_1050|) (= |$knormal:8| 0) (= |$knormal:22| 1) (= (not (= 0 |$knormal:19|)) (and (not (= 0 |$knormal:14|)) (not (= 0 |$knormal:18|)))) (= (not (= 0 |$knormal:18|)) (>= |$knormal:17| 0)) (= |$knormal:17| (+ |$knormal:15| |$knormal:16|)) (= |$knormal:16| |$alpha-6:n_1031|) (= |$knormal:15| 0) (= (not (= 0 |$knormal:14|)) (> |$knormal:10| |$knormal:13|)) (= |$knormal:13| (+ |$knormal:11| |$knormal:12|)) (= |$knormal:12| |$alpha-6:n_1031|) (= |$knormal:11| 0) (= |$knormal:10| (+ |$knormal:8| |$knormal:9|)) (not (not (= 0 |$knormal:19|))) (not (= 0 |$alpha-4:prev_set_flag_fib_1051|)) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fail$unknown:3| |$knormal:22|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-6:n_1031| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-8:u| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) )
     (=>
-      ( and (= |$alpha-8:u| 1) (= |$alpha-4:prev_set_flag_fib_1051| 0) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$alpha-8:u| 1) (not (not (= 0 |$alpha-4:prev_set_flag_fib_1051|))) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:5| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-8:u| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) )
     (=>
-      ( and (= |$alpha-8:u| 1) (= |$alpha-4:prev_set_flag_fib_1051| 0) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$alpha-8:u| 1) (not (not (= 0 |$alpha-4:prev_set_flag_fib_1051|))) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:6| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-6:n_1031| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-8:u| Int) )
+  (forall ( (|$alpha-4:prev_set_flag_fib_1051| Int) (|$alpha-5:s_prev_fib_n_1050| Int) (|$alpha-6:n_1031| Int) (|$alpha-8:u| Int) )
     (=>
-      ( and (= |$alpha-8:u| 1) (= |$alpha-4:prev_set_flag_fib_1051| 0) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
+      ( and (= |$alpha-8:u| 1) (not (not (= 0 |$alpha-4:prev_set_flag_fib_1051|))) (|fib_1030$unknown:9| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:11| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) (|fib_1030$unknown:10| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|) )
       (|fib_1030$unknown:7| |$alpha-6:n_1031| |$alpha-5:s_prev_fib_n_1050| |$alpha-4:prev_set_flag_fib_1051|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:24| Bool) (|$knormal:39| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$alpha-11:n_1031| Int) (|$knormal:32| Int) (|$knormal:30| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-10:s_fib_n_1049| Int) (|$knormal:37| Int) (|$V-reftype:59| Int) )
+  (forall ( (|$V-reftype:59| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) (|$knormal:32| Int) (|$knormal:37| Int) (|$knormal:39| Int) )
     (=>
-      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (= |$V-reftype:59| (+ |$knormal:32| |$knormal:39|)) (not |$knormal:24|) (|fib_without_checking_1060$unknown:16| |$knormal:39| |$knormal:37| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
+      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (= |$V-reftype:59| (+ |$knormal:32| |$knormal:39|)) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:16| |$knormal:39| |$knormal:37| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
       (|fib_without_checking_1060$unknown:16| |$V-reftype:59| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:37| Int) (|$knormal:24| Bool) (|$alpha-9:set_flag_fib_1052| Int) (|$alpha-11:n_1031| Int) (|$knormal:32| Int) (|$knormal:30| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-10:s_fib_n_1049| Int) )
+  (forall ( (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) (|$knormal:32| Int) (|$knormal:37| Int) )
     (=>
-      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
+      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
       (|fib_without_checking_1060$unknown:13| |$alpha-12:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-10:s_fib_n_1049| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$knormal:30| Int) (|$knormal:32| Int) (|$alpha-11:n_1031| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Bool) (|$knormal:37| Int) )
+  (forall ( (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) (|$knormal:32| Int) (|$knormal:37| Int) )
     (=>
-      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
+      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
       (|fib_without_checking_1060$unknown:14| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:37| Int) (|$knormal:24| Bool) (|$alpha-9:set_flag_fib_1052| Int) (|$alpha-11:n_1031| Int) (|$knormal:32| Int) (|$knormal:30| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-10:s_fib_n_1049| Int) )
+  (forall ( (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) (|$knormal:32| Int) (|$knormal:37| Int) )
     (=>
-      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
+      ( and (= |$knormal:37| (- |$alpha-11:n_1031| 2)) (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:12| |$knormal:32| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|) )
       (|fib_without_checking_1060$unknown:15| |$knormal:37| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:30| Int) (|$knormal:24| Bool) (|$alpha-9:set_flag_fib_1052| Int) (|$V-reftype:7| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) )
+  (forall ( (|$V-reftype:7| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) )
     (=>
-      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:5| |$V-reftype:7|) )
+      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:5| |$V-reftype:7|) )
       (|fib_without_checking_1060$unknown:13| |$V-reftype:7|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:30| Int) (|$knormal:24| Bool) (|$alpha-9:set_flag_fib_1052| Int) (|fib_without_checking_1060| Int) (|$V-reftype:25| Int) (|$V-reftype:11| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) )
+  (forall ( (|$V-reftype:11| Int) (|$V-reftype:25| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) (|fib_without_checking_1060| Int) )
     (=>
-      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:7| |$V-reftype:11| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:6| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:5| |fib_without_checking_1060|) )
+      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:7| |$V-reftype:11| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:6| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:5| |fib_without_checking_1060|) )
       (|fib_without_checking_1060$unknown:15| |$V-reftype:11| |$V-reftype:25| |fib_without_checking_1060|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-11:n_1031| Int) (|$alpha-10:s_fib_n_1049| Int) (|$V-reftype:27| Int) (|$V-reftype:25| Int) (|fib_without_checking_1060| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$V-reftype:28| Int) (|$knormal:24| Bool) (|$knormal:30| Int) )
+  (forall ( (|$V-reftype:25| Int) (|$V-reftype:27| Int) (|$V-reftype:28| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) (|fib_without_checking_1060| Int) )
     (=>
-      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:16| |$V-reftype:28| |$V-reftype:27| |$V-reftype:25| |fib_without_checking_1060|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:7| |$V-reftype:27| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:6| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:5| |fib_without_checking_1060|) )
+      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:16| |$V-reftype:28| |$V-reftype:27| |$V-reftype:25| |fib_without_checking_1060|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:7| |$V-reftype:27| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:6| |$V-reftype:25| |fib_without_checking_1060|) (|fib_1030$unknown:5| |fib_without_checking_1060|) )
       (|fib_1030$unknown:8| |$V-reftype:28| |$V-reftype:27| |$V-reftype:25| |fib_without_checking_1060|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-11:n_1031| Int) (|$alpha-10:s_fib_n_1049| Int) (|fib_without_checking_1060| Int) (|$V-reftype:9| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Bool) (|$knormal:30| Int) )
+  (forall ( (|$V-reftype:9| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) (|fib_without_checking_1060| Int) )
     (=>
-      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:6| |$V-reftype:9| |fib_without_checking_1060|) (|fib_1030$unknown:5| |fib_without_checking_1060|) )
+      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) (|fib_1030$unknown:6| |$V-reftype:9| |fib_without_checking_1060|) (|fib_1030$unknown:5| |fib_without_checking_1060|) )
       (|fib_without_checking_1060$unknown:14| |$V-reftype:9| |fib_without_checking_1060|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-12:set_flag_fib_1052| Int) (|$knormal:24| Bool) (|$alpha-9:set_flag_fib_1052| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$V-reftype:56| Int) )
+  (forall ( (|$V-reftype:56| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) )
     (=>
-      ( and (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (= |$V-reftype:56| 1) |$knormal:24| (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
+      ( and (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (= |$V-reftype:56| 1) (not (= 0 |$knormal:24|)) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
       (|fib_without_checking_1060$unknown:16| |$V-reftype:56| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-11:n_1031| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Bool) (|$knormal:30| Int) )
+  (forall ( (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) )
     (=>
-      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
+      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
       (|fib_1030$unknown:10| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:30| Int) (|$knormal:24| Bool) (|$alpha-9:set_flag_fib_1052| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) )
+  (forall ( (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) )
     (=>
-      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
+      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
       (|fib_1030$unknown:11| |$knormal:30| |$alpha-11:n_1031| |$alpha-12:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:30| Int) (|$knormal:24| Bool) (|$alpha-9:set_flag_fib_1052| Int) (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) )
+  (forall ( (|$alpha-10:s_fib_n_1049| Int) (|$alpha-11:n_1031| Int) (|$alpha-12:set_flag_fib_1052| Int) (|$alpha-9:set_flag_fib_1052| Int) (|$knormal:24| Int) (|$knormal:30| Int) )
     (=>
-      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= |$knormal:24| (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not |$knormal:24|) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
+      ( and (= |$knormal:30| (- |$alpha-11:n_1031| 1)) (= (not (= 0 |$knormal:24|)) (< |$alpha-11:n_1031| 2)) (= |$alpha-12:set_flag_fib_1052| 1) (not (not (= 0 |$knormal:24|))) (|fib_without_checking_1060$unknown:15| |$alpha-11:n_1031| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:14| |$alpha-10:s_fib_n_1049| |$alpha-9:set_flag_fib_1052|) (|fib_without_checking_1060$unknown:13| |$alpha-9:set_flag_fib_1052|) )
       (|fib_1030$unknown:9| |$alpha-12:set_flag_fib_1052|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-16:s_fib_n_1049| Int) (|$knormal:45| Int) (|$alpha-14:r| Int) (|$alpha-15:set_flag_fib_1052| Int) (|$V-reftype:62| Int) )
+  (forall ( (|$V-reftype:62| Int) (|$alpha-14:r| Int) (|$alpha-15:set_flag_fib_1052| Int) (|$alpha-16:s_fib_n_1049| Int) (|$knormal:45| Int) )
     (=>
       ( and (= |$alpha-16:s_fib_n_1049| 0) (= |$alpha-15:set_flag_fib_1052| 0) (= |$V-reftype:62| |$knormal:45|) (|main_1032$unknown:17| |$alpha-14:r|) (|fib_without_checking_1060$unknown:16| |$knormal:45| |$alpha-14:r| |$alpha-16:s_fib_n_1049| |$alpha-15:set_flag_fib_1052|) )
       (|main_1032$unknown:18| |$V-reftype:62| |$alpha-14:r|)
@@ -346,7 +346,7 @@
   )
 )
 (assert
-  (forall ( (|$alpha-15:set_flag_fib_1052| Int) (|$alpha-14:r| Int) (|$alpha-16:s_fib_n_1049| Int) )
+  (forall ( (|$alpha-14:r| Int) (|$alpha-15:set_flag_fib_1052| Int) (|$alpha-16:s_fib_n_1049| Int) )
     (=>
       ( and (= |$alpha-16:s_fib_n_1049| 0) (= |$alpha-15:set_flag_fib_1052| 0) (|main_1032$unknown:17| |$alpha-14:r|) )
       (|fib_without_checking_1060$unknown:13| |$alpha-15:set_flag_fib_1052|)
@@ -354,7 +354,7 @@
   )
 )
 (assert
-  (forall ( (|$alpha-16:s_fib_n_1049| Int) (|$alpha-14:r| Int) (|$alpha-15:set_flag_fib_1052| Int) )
+  (forall ( (|$alpha-14:r| Int) (|$alpha-15:set_flag_fib_1052| Int) (|$alpha-16:s_fib_n_1049| Int) )
     (=>
       ( and (= |$alpha-16:s_fib_n_1049| 0) (= |$alpha-15:set_flag_fib_1052| 0) (|main_1032$unknown:17| |$alpha-14:r|) )
       (|fib_without_checking_1060$unknown:14| |$alpha-16:s_fib_n_1049| |$alpha-15:set_flag_fib_1052|)
@@ -362,7 +362,7 @@
   )
 )
 (assert
-  (forall ( (|$alpha-15:set_flag_fib_1052| Int) (|$alpha-14:r| Int) (|$alpha-16:s_fib_n_1049| Int) )
+  (forall ( (|$alpha-14:r| Int) (|$alpha-15:set_flag_fib_1052| Int) (|$alpha-16:s_fib_n_1049| Int) )
     (=>
       ( and (= |$alpha-16:s_fib_n_1049| 0) (= |$alpha-15:set_flag_fib_1052| 0) (|main_1032$unknown:17| |$alpha-14:r|) )
       (|fib_without_checking_1060$unknown:15| |$alpha-14:r| |$alpha-16:s_fib_n_1049| |$alpha-15:set_flag_fib_1052|)

@@ -57,23 +57,23 @@
   )
 )
 (assert
-  (forall ( (|$knormal:9| Int) (|$knormal:6| Int) (|$V-reftype:4| Int) (|$alpha-3:n| Int) (|$knormal:5| Bool) )
+  (forall ( (|$V-reftype:4| Int) (|$alpha-3:n| Int) (|$knormal:5| Int) (|$knormal:6| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= |$knormal:5| (<= |$alpha-3:n| 0)) (not |$knormal:5|) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) (|sigma$unknown:1| |$V-reftype:4|) )
+      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= (not (= 0 |$knormal:5|)) (<= |$alpha-3:n| 0)) (not (not (= 0 |$knormal:5|))) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) (|sigma$unknown:1| |$V-reftype:4|) )
       (|sigma$unknown:1| |$V-reftype:4|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:5| Bool) (|$alpha-3:n| Int) (|$alpha-2:f| Int) (|$V-reftype:6| Int) (|$knormal:6| Int) (|$knormal:9| Int) )
+  (forall ( (|$V-reftype:6| Int) (|$alpha-2:f| Int) (|$alpha-3:n| Int) (|$knormal:5| Int) (|$knormal:6| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= |$knormal:5| (<= |$alpha-3:n| 0)) (not |$knormal:5|) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) (|sigma$unknown:2| |$V-reftype:6| |$alpha-2:f|) (|sigma$unknown:1| |$alpha-2:f|) )
+      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= (not (= 0 |$knormal:5|)) (<= |$alpha-3:n| 0)) (not (not (= 0 |$knormal:5|))) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) (|sigma$unknown:2| |$V-reftype:6| |$alpha-2:f|) (|sigma$unknown:1| |$alpha-2:f|) )
       (|sigma$unknown:2| |$V-reftype:6| |$alpha-2:f|)
     )
   )
 )
 (assert
-  (forall ( (|sum| Int) (|$V-reftype:13| Int) )
+  (forall ( (|$V-reftype:13| Int) (|sum| Int) )
     (=>
       ( and (|sum$unknown:6| |$V-reftype:13| |sum|) (|sigma$unknown:1| |sum|) )
       (|sigma$unknown:2| |$V-reftype:13| |sum|)
@@ -81,63 +81,63 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:21| Int) (|$knormal:9| Int) (|$knormal:6| Int) (|$alpha-3:n| Int) (|$knormal:11| Int) (|$knormal:5| Bool) )
+  (forall ( (|$V-reftype:21| Int) (|$alpha-3:n| Int) (|$knormal:11| Int) (|$knormal:5| Int) (|$knormal:6| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= |$knormal:5| (<= |$alpha-3:n| 0)) (= |$V-reftype:21| (+ |$knormal:6| |$knormal:11|)) (not |$knormal:5|) (|sigma$unknown:4| |$knormal:11| |$knormal:9|) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) )
+      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= (not (= 0 |$knormal:5|)) (<= |$alpha-3:n| 0)) (= |$V-reftype:21| (+ |$knormal:6| |$knormal:11|)) (not (not (= 0 |$knormal:5|))) (|sigma$unknown:4| |$knormal:11| |$knormal:9|) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) )
       (|sigma$unknown:4| |$V-reftype:21| |$alpha-3:n|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:9| Int) (|$knormal:6| Int) (|$alpha-3:n| Int) (|$knormal:5| Bool) )
+  (forall ( (|$alpha-3:n| Int) (|$knormal:5| Int) (|$knormal:6| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= |$knormal:5| (<= |$alpha-3:n| 0)) (not |$knormal:5|) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) )
+      ( and (= |$knormal:9| (- |$alpha-3:n| 1)) (= (not (= 0 |$knormal:5|)) (<= |$alpha-3:n| 0)) (not (not (= 0 |$knormal:5|))) (|sigma$unknown:3| |$alpha-3:n|) (|sigma$unknown:2| |$knormal:6| |$alpha-3:n|) )
       (|sigma$unknown:3| |$knormal:9|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:19| Int) (|$alpha-3:n| Int) (|$knormal:5| Bool) )
+  (forall ( (|$V-reftype:19| Int) (|$alpha-3:n| Int) (|$knormal:5| Int) )
     (=>
-      ( and (= |$knormal:5| (<= |$alpha-3:n| 0)) (= |$V-reftype:19| 0) |$knormal:5| (|sigma$unknown:3| |$alpha-3:n|) )
+      ( and (= (not (= 0 |$knormal:5|)) (<= |$alpha-3:n| 0)) (= |$V-reftype:19| 0) (not (= 0 |$knormal:5|)) (|sigma$unknown:3| |$alpha-3:n|) )
       (|sigma$unknown:4| |$V-reftype:19| |$alpha-3:n|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-3:n| Int) (|$knormal:5| Bool) )
+  (forall ( (|$alpha-3:n| Int) (|$knormal:5| Int) )
     (=>
-      ( and (= |$knormal:5| (<= |$alpha-3:n| 0)) (not |$knormal:5|) (|sigma$unknown:3| |$alpha-3:n|) )
+      ( and (= (not (= 0 |$knormal:5|)) (<= |$alpha-3:n| 0)) (not (not (= 0 |$knormal:5|))) (|sigma$unknown:3| |$alpha-3:n|) )
       (|sigma$unknown:1| |$alpha-3:n|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-4:n| Int) (|$knormal:15| Int) (|$knormal:17| Bool) )
-    ( and (= |$knormal:17| (>= |$knormal:15| |$alpha-4:n|)) (not |$knormal:17|) (|sigma$unknown:4| |$knormal:15| |$alpha-4:n|) )
+  (not (exists ( (|$alpha-4:n| Int) (|$knormal:15| Int) (|$knormal:17| Int) )
+    ( and (= (not (= 0 |$knormal:17|)) (>= |$knormal:15| |$alpha-4:n|)) (not (not (= 0 |$knormal:17|))) (|sigma$unknown:4| |$knormal:15| |$alpha-4:n|) )
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:17| Int) (|$knormal:2| Int) (|$alpha-1:n| Int) (|$knormal:3| Int) (|$knormal:1| Bool) )
+  (forall ( (|$V-reftype:17| Int) (|$alpha-1:n| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) )
     (=>
-      ( and (= |$knormal:2| (- |$alpha-1:n| 1)) (= |$knormal:1| (<= |$alpha-1:n| 0)) (= |$V-reftype:17| (+ |$alpha-1:n| |$knormal:3|)) (not |$knormal:1|) (|sum$unknown:6| |$knormal:3| |$knormal:2|) (|sum$unknown:5| |$alpha-1:n|) )
+      ( and (= |$knormal:2| (- |$alpha-1:n| 1)) (= (not (= 0 |$knormal:1|)) (<= |$alpha-1:n| 0)) (= |$V-reftype:17| (+ |$alpha-1:n| |$knormal:3|)) (not (not (= 0 |$knormal:1|))) (|sum$unknown:6| |$knormal:3| |$knormal:2|) (|sum$unknown:5| |$alpha-1:n|) )
       (|sum$unknown:6| |$V-reftype:17| |$alpha-1:n|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:15| Int) (|$alpha-1:n| Int) (|$knormal:1| Bool) )
+  (forall ( (|$V-reftype:15| Int) (|$alpha-1:n| Int) (|$knormal:1| Int) )
     (=>
-      ( and (= |$knormal:1| (<= |$alpha-1:n| 0)) (= |$V-reftype:15| 0) |$knormal:1| (|sum$unknown:5| |$alpha-1:n|) )
+      ( and (= (not (= 0 |$knormal:1|)) (<= |$alpha-1:n| 0)) (= |$V-reftype:15| 0) (not (= 0 |$knormal:1|)) (|sum$unknown:5| |$alpha-1:n|) )
       (|sum$unknown:6| |$V-reftype:15| |$alpha-1:n|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:2| Int) (|$alpha-1:n| Int) (|$knormal:1| Bool) )
+  (forall ( (|$alpha-1:n| Int) (|$knormal:1| Int) (|$knormal:2| Int) )
     (=>
-      ( and (= |$knormal:2| (- |$alpha-1:n| 1)) (= |$knormal:1| (<= |$alpha-1:n| 0)) (not |$knormal:1|) (|sum$unknown:5| |$alpha-1:n|) )
+      ( and (= |$knormal:2| (- |$alpha-1:n| 1)) (= (not (= 0 |$knormal:1|)) (<= |$alpha-1:n| 0)) (not (not (= 0 |$knormal:1|))) (|sum$unknown:5| |$alpha-1:n|) )
       (|sum$unknown:5| |$knormal:2|)
     )
   )
