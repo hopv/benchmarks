@@ -76,10 +76,6 @@
 
 (set-logic HORN)
 
-(declare-fun |fail$unknown:4|
-  ( Int Int ) Bool
-)
-
 (declare-fun |zero_1039$unknown:87|
   ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
 )
@@ -88,37 +84,17 @@
   ( Int Int ) Bool
 )
 
-(declare-fun |bot$unknown:1|
-  ( Int ) Bool
-)
-
 (assert
-  (forall ( (|$V-reftype:197| Int) (|$knormal:2| Int) (|$alpha-1:$$tmp::1| Int) (|$knormal:1| Int) )
+  (forall ( (|$alpha-1:$$tmp::1| Int) (|$knormal:2| Int) )
     (=>
-      ( and (= |$knormal:1| 1) (= |$V-reftype:197| |$knormal:2|) (|bot$unknown:2| |$knormal:2| |$knormal:1|) (|bot$unknown:1| |$alpha-1:$$tmp::1|) )
-      (|bot$unknown:2| |$V-reftype:197| |$alpha-1:$$tmp::1|)
+      ( and (|bot$unknown:2| |$knormal:2| 1) )
+      (|bot$unknown:2| |$knormal:2| |$alpha-1:$$tmp::1|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:$$tmp::1| Int) (|$knormal:1| Int) )
-    (=>
-      ( and (= |$knormal:1| 1) (|bot$unknown:1| |$alpha-1:$$tmp::1|) )
-      (|bot$unknown:1| |$knormal:1|)
-    )
-  )
-)
-(assert
-  (not (exists ( (|$alpha-2:$$tmp::2| Int) (|$cond-alpha-rename:28| Int) (|$cond-alpha-rename:30| Int) (|$cond-alpha-rename:32| Int) (|$cond-alpha-rename:34| Int) (|$cond-alpha-rename:36| Int) (|$cond-alpha-rename:38| Int) (|$cond-alpha-rename:39| Int) (|$cond-alpha-rename:37| Int) (|$cond-alpha-rename:35| Int) (|$cond-alpha-rename:33| Int) (|$cond-alpha-rename:31| Int) (|$cond-alpha-rename:29| Int) )
-    ( and (= |$alpha-2:$$tmp::2| 1) (not (= |$cond-alpha-rename:36| 0)) (|zero_1039$unknown:87| |$cond-alpha-rename:39| |$cond-alpha-rename:38| |$cond-alpha-rename:37| |$cond-alpha-rename:36| |$cond-alpha-rename:35| |$cond-alpha-rename:34| |$cond-alpha-rename:33| |$cond-alpha-rename:32| |$cond-alpha-rename:31| |$cond-alpha-rename:30| |$cond-alpha-rename:29| |$cond-alpha-rename:28|) )
-    )
-  )
-)
-(assert
-  (forall ( (|$knormal:102| Int) (|$alpha-68:x_DO_NOT_CARE_1524| Int) (|$alpha-70:x_DO_NOT_CARE_1526| Int) (|$alpha-72:x_DO_NOT_CARE_1521| Int) (|$alpha-74:x_DO_NOT_CARE_1523| Int) (|$alpha-76:prev_set_flag_zero_1506| Int) (|$alpha-78:s_prev_zero_z_1505| Int) (|$knormal:104| Int) (|$knormal:105| Int) (|$alpha-79:z_1041| Int) (|$alpha-77:s_prev_zero_f_EXPARAM_1503| Int) (|$alpha-75:f_1040| Int) (|$alpha-73:x_DO_NOT_CARE_1522| Int) (|$alpha-71:f_EXPARAM_1204| Int) (|$alpha-69:x_DO_NOT_CARE_1525| Int) )
-    (=>
-      ( and (= |$knormal:104| 1) (= |$knormal:102| 1) (not (= |$alpha-76:prev_set_flag_zero_1506| 0)) (|zero_1039$unknown:87| |$alpha-79:z_1041| |$alpha-78:s_prev_zero_z_1505| |$alpha-77:s_prev_zero_f_EXPARAM_1503| |$alpha-76:prev_set_flag_zero_1506| |$alpha-75:f_1040| |$alpha-74:x_DO_NOT_CARE_1523| |$alpha-73:x_DO_NOT_CARE_1522| |$alpha-72:x_DO_NOT_CARE_1521| |$alpha-71:f_EXPARAM_1204| |$alpha-70:x_DO_NOT_CARE_1526| |$alpha-69:x_DO_NOT_CARE_1525| |$alpha-68:x_DO_NOT_CARE_1524|) true true true true true true true true true true true (|fail$unknown:4| |$knormal:105| |$knormal:104|) )
-      (|bot$unknown:1| |$knormal:102|)
+  (not (exists ( (|$cond-alpha-rename:10| Int) (|$cond-alpha-rename:11| Int) (|$cond-alpha-rename:12| Int) (|$cond-alpha-rename:13| Int) (|$cond-alpha-rename:14| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:17| Int) (|$cond-alpha-rename:18| Int) (|$cond-alpha-rename:7| Int) (|$cond-alpha-rename:8| Int) (|$cond-alpha-rename:9| Int) )
+    ( and (|zero_1039$unknown:87| |$cond-alpha-rename:18| |$cond-alpha-rename:17| |$cond-alpha-rename:16| |$cond-alpha-rename:15| |$cond-alpha-rename:14| |$cond-alpha-rename:13| |$cond-alpha-rename:12| |$cond-alpha-rename:11| |$cond-alpha-rename:10| |$cond-alpha-rename:9| |$cond-alpha-rename:8| |$cond-alpha-rename:7|) (not (= 0 |$cond-alpha-rename:15|)) )
     )
   )
 )

@@ -21,129 +21,65 @@
   ( Int Int ) Bool
 )
 
-(declare-fun |f$unknown:1|
-  ( Int ) Bool
-)
-
-(declare-fun |f$unknown:3|
-  ( Int ) Bool
-)
-
 (assert
-  (forall ( (|$knormal:15| Int) )
+  (forall ( (|$V-reftype:3| Int) (|$alpha-1:g| Int) (|$alpha-2:x| Int) )
     (=>
-      ( and (= |$knormal:15| 3) )
-      (|f$unknown:3| |$knormal:15|)
-    )
-  )
-)
-(assert
-  (forall ( (|$alpha-2:x| Int) (|$V-reftype:1| Int) (|$knormal:1| Bool) )
-    (=>
-      ( and (= |$knormal:1| (< |$alpha-2:x| (- 3))) |$knormal:1| (|f$unknown:3| |$alpha-2:x|) (|f$unknown:1| |$V-reftype:1|) )
-      (|f$unknown:1| |$V-reftype:1|)
-    )
-  )
-)
-(assert
-  (forall ( (|$knormal:6| Int) (|$knormal:1| Bool) (|$V-reftype:1| Int) (|$alpha-2:x| Int) (|$knormal:2| Bool) )
-    (=>
-      ( and (= |$knormal:6| (- |$alpha-2:x| 2)) (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (not |$knormal:2|) (not |$knormal:1|) (|f$unknown:3| |$alpha-2:x|) (|f$unknown:1| |$V-reftype:1|) )
-      (|f$unknown:1| |$V-reftype:1|)
-    )
-  )
-)
-(assert
-  (forall ( (|$knormal:6| Int) (|$knormal:1| Bool) (|$V-reftype:1| Int) (|$alpha-2:x| Int) (|$knormal:2| Bool) )
-    (=>
-      ( and (= |$knormal:6| (- |$alpha-2:x| 2)) (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (not |$knormal:2|) (not |$knormal:1|) (|f$unknown:3| |$alpha-2:x|) (|f$unknown:1| |$V-reftype:1|) )
-      (|f$unknown:3| |$V-reftype:1|)
-    )
-  )
-)
-(assert
-  (forall ( (|$knormal:1| Bool) (|$alpha-1:g| Int) (|$V-reftype:3| Int) (|$alpha-2:x| Int) )
-    (=>
-      ( and (= |$knormal:1| (< |$alpha-2:x| (- 3))) |$knormal:1| (|f$unknown:3| |$alpha-2:x|) (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) (|f$unknown:1| |$alpha-1:g|) )
+      ( and (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) (< |$alpha-2:x| (- 3)) )
       (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:2| Bool) (|$alpha-2:x| Int) (|$V-reftype:3| Int) (|$alpha-1:g| Int) (|$knormal:1| Bool) (|$knormal:6| Int) )
+  (forall ( (|$V-reftype:3| Int) (|$alpha-1:g| Int) (|$alpha-2:x| Int) )
     (=>
-      ( and (= |$knormal:6| (- |$alpha-2:x| 2)) (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (not |$knormal:2|) (not |$knormal:1|) (|f$unknown:3| |$alpha-2:x|) (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) (|f$unknown:1| |$alpha-1:g|) )
+      ( and (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) (not (< |$alpha-2:x| (- 3))) (not (<= |$alpha-2:x| 1)) )
       (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:2| Bool) (|$alpha-2:x| Int) (|$knormal:3| Int) (|$V-reftype:7| Int) (|$knormal:1| Bool) (|$knormal:6| Int) )
+  (forall ( (|$V-reftype:7| Int) (|$alpha-2:x| Int) (|$knormal:3| Int) )
     (=>
-      ( and (= |$knormal:6| (- |$alpha-2:x| 2)) (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (not |$knormal:2|) (not |$knormal:1|) (|f$unknown:4| |$V-reftype:7| |$knormal:3|) (|f$unknown:3| |$alpha-2:x|) (|f$unknown:1| |$knormal:3|) )
+      ( and (|f$unknown:4| |$V-reftype:7| |$knormal:3|) (not (< |$alpha-2:x| (- 3))) (not (<= |$alpha-2:x| 1)) )
       (|f$unknown:2| |$V-reftype:7| |$knormal:3|)
     )
   )
 )
 (assert
-  (forall ( (|incr| Int) (|$V-reftype:10| Int) )
+  (forall ( (|incr| Int) )
     (=>
-      ( and (= |$V-reftype:10| (+ |incr| 1)) (|f$unknown:1| |incr|) )
-      (|f$unknown:2| |$V-reftype:10| |incr|)
+      ( and true )
+      (|f$unknown:2| (+ |incr| 1) |incr|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:1| Bool) (|$knormal:9| Int) (|$alpha-2:x| Int) (|$knormal:2| Bool) (|$V-reftype:18| Int) )
+  (forall ( (|$alpha-2:x| Int) (|$knormal:9| Int) )
     (=>
-      ( and (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (= |$V-reftype:18| |$knormal:9|) (not |$knormal:1|) |$knormal:2| (|f$unknown:3| |$alpha-2:x|) (|f$unknown:2| |$knormal:9| |$alpha-2:x|) )
-      (|f$unknown:4| |$V-reftype:18| |$alpha-2:x|)
+      ( and (|f$unknown:2| |$knormal:9| |$alpha-2:x|) (<= |$alpha-2:x| 1) (not (< |$alpha-2:x| (- 3))) )
+      (|f$unknown:4| |$knormal:9| |$alpha-2:x|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:16| Int) (|$knormal:11| Int) (|$alpha-2:x| Int) (|$knormal:13| Int) (|$knormal:1| Bool) )
+  (forall ( (|$alpha-2:x| Int) (|$knormal:13| Int) )
     (=>
-      ( and (= |$knormal:11| (- 4)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (= |$V-reftype:16| |$knormal:13|) |$knormal:1| (|f$unknown:4| |$knormal:13| |$knormal:11|) (|f$unknown:3| |$alpha-2:x|) )
-      (|f$unknown:4| |$V-reftype:16| |$alpha-2:x|)
+      ( and (|f$unknown:4| |$knormal:13| (- 4)) (< |$alpha-2:x| (- 3)) )
+      (|f$unknown:4| |$knormal:13| |$alpha-2:x|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:2| Bool) (|$knormal:6| Int) (|$alpha-2:x| Int) (|$knormal:8| Int) (|$knormal:1| Bool) (|$V-reftype:20| Int) )
+  (forall ( (|$alpha-2:x| Int) (|$knormal:8| Int) )
     (=>
-      ( and (= |$knormal:6| (- |$alpha-2:x| 2)) (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (= |$V-reftype:20| |$knormal:8|) (not |$knormal:2|) (not |$knormal:1|) (|f$unknown:4| |$knormal:8| |$knormal:6|) (|f$unknown:3| |$alpha-2:x|) )
-      (|f$unknown:4| |$V-reftype:20| |$alpha-2:x|)
+      ( and (|f$unknown:4| |$knormal:8| (- |$alpha-2:x| 2)) (not (< |$alpha-2:x| (- 3))) (not (<= |$alpha-2:x| 1)) )
+      (|f$unknown:4| |$knormal:8| |$alpha-2:x|)
     )
   )
 )
 (assert
-  (forall ( (|$knormal:1| Bool) (|$alpha-2:x| Int) (|$knormal:11| Int) )
-    (=>
-      ( and (= |$knormal:11| (- 4)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) |$knormal:1| (|f$unknown:3| |$alpha-2:x|) )
-      (|f$unknown:3| |$knormal:11|)
-    )
-  )
-)
-(assert
-  (forall ( (|$knormal:2| Bool) (|$alpha-2:x| Int) (|$knormal:1| Bool) )
-    (=>
-      ( and (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (not |$knormal:1|) |$knormal:2| (|f$unknown:3| |$alpha-2:x|) )
-      (|f$unknown:1| |$alpha-2:x|)
-    )
-  )
-)
-(assert
-  (forall ( (|$knormal:6| Int) (|$knormal:1| Bool) (|$alpha-2:x| Int) (|$knormal:2| Bool) )
-    (=>
-      ( and (= |$knormal:6| (- |$alpha-2:x| 2)) (= |$knormal:2| (<= |$alpha-2:x| 1)) (= |$knormal:1| (< |$alpha-2:x| (- 3))) (not |$knormal:2|) (not |$knormal:1|) (|f$unknown:3| |$alpha-2:x|) )
-      (|f$unknown:3| |$knormal:6|)
-    )
-  )
-)
-(assert
-  (not (exists ( (|$knormal:15| Int) (|$knormal:17| Int) (|$knormal:19| Bool) )
-    ( and (= |$knormal:19| (>= |$knormal:17| (- 3))) (= |$knormal:15| 3) (not |$knormal:19|) (|f$unknown:4| |$knormal:17| |$knormal:15|) )
+  (not (exists ( (|$knormal:17| Int) )
+    ( and (|f$unknown:4| |$knormal:17| 3) (not (>= |$knormal:17| (- 3))) )
     )
   )
 )

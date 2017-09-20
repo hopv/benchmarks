@@ -1,6 +1,6 @@
 (set-info :origin "Verification conditions for the caml program
   (*
-  Leroy & Pessaux, Type-Based Analysis of Uncaught Exceptionis,  TOPLAS, 2000
+  Leroy & Pessaux, "Type-Based Analysis of Uncaught Exceptionis, " TOPLAS, 2000
   
   let ff n = if n >= 0 then () else raise 0 in
     try ff ?n? with Failer 0 -> ()

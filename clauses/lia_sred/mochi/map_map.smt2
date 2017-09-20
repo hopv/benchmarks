@@ -13,24 +13,24 @@
 )
 
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$knormal:1| Bool) (|$knormal:3| Int) (|$knormal:2| Int) (|$V-reftype:10| Int) )
+  (forall ( (|$alpha-1:x| Int) (|$knormal:3| Int) )
     (=>
-      ( and (= |$knormal:2| (- |$alpha-1:x| 1)) (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$V-reftype:10| (+ 1 |$knormal:3|)) (not |$knormal:1|) (|map$unknown:2| |$knormal:3| |$knormal:2|) true )
-      (|map$unknown:2| |$V-reftype:10| |$alpha-1:x|)
+      ( and (|map$unknown:2| |$knormal:3| (- |$alpha-1:x| 1)) (not (= |$alpha-1:x| 0)) )
+      (|map$unknown:2| (+ 1 |$knormal:3|) |$alpha-1:x|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$knormal:1| Bool) (|$V-reftype:8| Int) )
+  (forall ( (|$alpha-1:x| Int) )
     (=>
-      ( and (= |$knormal:1| (= |$alpha-1:x| 0)) (= |$V-reftype:8| |$alpha-1:x|) |$knormal:1| true )
-      (|map$unknown:2| |$V-reftype:8| |$alpha-1:x|)
+      ( and (= |$alpha-1:x| 0) )
+      (|map$unknown:2| |$alpha-1:x| |$alpha-1:x|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-2:n| Int) (|$knormal:5| Int) (|$knormal:7| Int) (|$knormal:9| Bool) )
-    ( and (= |$knormal:9| (= |$knormal:7| |$alpha-2:n|)) (not |$knormal:9|) (|map$unknown:2| |$knormal:7| |$knormal:5|) (|map$unknown:2| |$knormal:5| |$alpha-2:n|) )
+  (not (exists ( (|$alpha-2:n| Int) (|$knormal:5| Int) (|$knormal:7| Int) )
+    ( and (|map$unknown:2| |$knormal:5| |$alpha-2:n|) (|map$unknown:2| |$knormal:7| |$knormal:5|) (not (= |$knormal:7| |$alpha-2:n|)) )
     )
   )
 )
