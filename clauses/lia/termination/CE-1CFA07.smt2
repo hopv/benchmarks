@@ -1603,6 +1603,3 @@
   )
 )
 (check-sat)
-
-(get-model)
-

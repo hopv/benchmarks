@@ -57,7 +57,7 @@
 (assert
   (forall ( (|$alpha-10:ys_1032| Int) (|$alpha-3:x_DO_NOT_CARE_1078| Int) (|$alpha-4:x_DO_NOT_CARE_1079| Int) (|$alpha-5:x_DO_NOT_CARE_1080| Int) (|$alpha-6:xs_1031| Int) (|$alpha-7:set_flag_append_1059| Int) (|$alpha-8:s_append_xs_1054| Int) (|$alpha-9:s_append_ys_1055| Int) (|$knormal:18| Int) )
     (=>
-      ( and (|append_without_checking_1072$unknown:18| |$knormal:18| |$alpha-10:ys_1032| |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1 (- |$alpha-6:xs_1031| 1) |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1) (not (<= |$alpha-6:xs_1031| 0)) )
+      ( and (not (<= |$alpha-6:xs_1031| 0)) (|append_without_checking_1072$unknown:18| |$knormal:18| |$alpha-10:ys_1032| |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1 (- |$alpha-6:xs_1031| 1) |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1) )
       (|append_without_checking_1072$unknown:18| (+ 1 |$knormal:18|) |$alpha-10:ys_1032| |$alpha-9:s_append_ys_1055| |$alpha-8:s_append_xs_1054| |$alpha-7:set_flag_append_1059| |$alpha-6:xs_1031| |$alpha-5:x_DO_NOT_CARE_1080| |$alpha-4:x_DO_NOT_CARE_1079| |$alpha-3:x_DO_NOT_CARE_1078|)
     )
   )

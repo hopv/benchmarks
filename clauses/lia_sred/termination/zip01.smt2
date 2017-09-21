@@ -57,16 +57,16 @@
   ( Int Int Int Int Int Int Int Int Int ) Bool
 )
 
-(declare-fun |fail$unknown:4|
-  ( Int Int ) Bool
+(declare-fun |zip_without_checking_1077$unknown:25|
+  ( Int Int Int Int Int Int Int Int Int ) Bool
 )
 
 (declare-fun |main_1035$unknown:6|
   ( Int Int ) Bool
 )
 
-(declare-fun |zip_without_checking_1077$unknown:25|
-  ( Int Int Int Int Int Int Int Int Int ) Bool
+(declare-fun |fail$unknown:4|
+  ( Int Int ) Bool
 )
 
 (declare-fun |bot$unknown:2|
@@ -84,21 +84,21 @@
 (assert
   (forall ( (|$alpha-19:xs_1031| Int) (|$alpha-23:ys_1032| Int) (|$knormal:35| Int) (|$knormal:55| Int) (|$knormal:57| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:55| 1) (|fail$unknown:4| |$knormal:57| 1) (|main_1035$unknown:6| |$alpha-23:ys_1032| |$alpha-19:xs_1031|) (|zip_without_checking_1077$unknown:25| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0) (not (= 0 0)) (not (and (> (+ (+ 0 0) 0) (+ (+ 0 |$alpha-19:xs_1031|) 0)) (>= (+ (+ 0 |$alpha-19:xs_1031|) 0) 0))) )
+      ( and (not (and (>= |$alpha-19:xs_1031| 0) (> 0 |$alpha-19:xs_1031|))) (not (= 0 0)) (|zip_without_checking_1077$unknown:25| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0) (|main_1035$unknown:6| |$alpha-23:ys_1032| |$alpha-19:xs_1031|) (|fail$unknown:4| |$knormal:57| 1) (|bot$unknown:2| |$knormal:55| 1) )
       (|zip_1030$unknown:16| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0)
     )
   )
 )
 (assert
   (not (exists ( (|$cond-alpha-rename:10| Int) (|$cond-alpha-rename:14| Int) )
-    ( and (|main_1035$unknown:6| |$cond-alpha-rename:14| |$cond-alpha-rename:10|) (not (= 0 0)) (not (and (> (+ (+ 0 0) 0) (+ (+ 0 |$cond-alpha-rename:10|) 0)) (>= (+ (+ 0 |$cond-alpha-rename:10|) 0) 0))) )
+    ( and (not (and (>= |$cond-alpha-rename:10| 0) (> 0 |$cond-alpha-rename:10|))) (not (= 0 0)) (|main_1035$unknown:6| |$cond-alpha-rename:14| |$cond-alpha-rename:10|) )
     )
   )
 )
 (assert
   (forall ( (|$alpha-19:xs_1031| Int) (|$alpha-23:ys_1032| Int) (|$knormal:35| Int) )
     (=>
-      ( and (|main_1035$unknown:6| |$alpha-23:ys_1032| |$alpha-19:xs_1031|) (|zip_without_checking_1077$unknown:25| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0) (not (= 0 0)) (>= (+ (+ 0 |$alpha-19:xs_1031|) 0) 0) (> (+ (+ 0 0) 0) (+ (+ 0 |$alpha-19:xs_1031|) 0)) )
+      ( and (> 0 |$alpha-19:xs_1031|) (>= |$alpha-19:xs_1031| 0) (not (= 0 0)) (|zip_without_checking_1077$unknown:25| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0) (|main_1035$unknown:6| |$alpha-23:ys_1032| |$alpha-19:xs_1031|) )
       (|zip_1030$unknown:16| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0)
     )
   )
@@ -106,7 +106,7 @@
 (assert
   (forall ( (|$alpha-19:xs_1031| Int) (|$alpha-23:ys_1032| Int) (|$knormal:35| Int) )
     (=>
-      ( and (|main_1035$unknown:6| |$alpha-23:ys_1032| |$alpha-19:xs_1031|) (|zip_without_checking_1077$unknown:25| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0) (not (not (= 0 0))) )
+      ( and (not (not (= 0 0))) (|zip_without_checking_1077$unknown:25| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0) (|main_1035$unknown:6| |$alpha-23:ys_1032| |$alpha-19:xs_1031|) )
       (|zip_1030$unknown:16| |$knormal:35| |$alpha-23:ys_1032| 0 0 0 |$alpha-19:xs_1031| 0 0 0)
     )
   )
@@ -114,7 +114,7 @@
 (assert
   (forall ( (|$alpha-10:ys_1032| Int) (|$alpha-3:x_DO_NOT_CARE_1083| Int) (|$alpha-4:x_DO_NOT_CARE_1084| Int) (|$alpha-5:x_DO_NOT_CARE_1085| Int) (|$alpha-6:xs_1031| Int) (|$alpha-7:set_flag_zip_1063| Int) (|$alpha-8:s_zip_xs_1058| Int) (|$alpha-9:s_zip_ys_1059| Int) (|$knormal:19| Int) )
     (=>
-      ( and (|zip_without_checking_1077$unknown:25| |$knormal:19| (- |$alpha-10:ys_1032| 1) |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1 (- |$alpha-6:xs_1031| 1) |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1) (not (<= |$alpha-6:xs_1031| 0)) (not (<= |$alpha-10:ys_1032| 0)) )
+      ( and (not (<= |$alpha-10:ys_1032| 0)) (not (<= |$alpha-6:xs_1031| 0)) (|zip_without_checking_1077$unknown:25| |$knormal:19| (- |$alpha-10:ys_1032| 1) |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1 (- |$alpha-6:xs_1031| 1) |$alpha-10:ys_1032| |$alpha-6:xs_1031| 1) )
       (|zip_without_checking_1077$unknown:25| (+ 1 |$knormal:19|) |$alpha-10:ys_1032| |$alpha-9:s_zip_ys_1059| |$alpha-8:s_zip_xs_1058| |$alpha-7:set_flag_zip_1063| |$alpha-6:xs_1031| |$alpha-5:x_DO_NOT_CARE_1085| |$alpha-4:x_DO_NOT_CARE_1084| |$alpha-3:x_DO_NOT_CARE_1083|)
     )
   )
@@ -130,7 +130,7 @@
 (assert
   (forall ( (|$alpha-10:ys_1032| Int) (|$alpha-3:x_DO_NOT_CARE_1083| Int) (|$alpha-4:x_DO_NOT_CARE_1084| Int) (|$alpha-5:x_DO_NOT_CARE_1085| Int) (|$alpha-6:xs_1031| Int) (|$alpha-7:set_flag_zip_1063| Int) (|$alpha-8:s_zip_xs_1058| Int) (|$alpha-9:s_zip_ys_1059| Int) )
     (=>
-      ( and (<= |$alpha-10:ys_1032| 0) (not (<= |$alpha-6:xs_1031| 0)) )
+      ( and (not (<= |$alpha-6:xs_1031| 0)) (<= |$alpha-10:ys_1032| 0) )
       (|zip_without_checking_1077$unknown:25| 0 |$alpha-10:ys_1032| |$alpha-9:s_zip_ys_1059| |$alpha-8:s_zip_xs_1058| |$alpha-7:set_flag_zip_1063| |$alpha-6:xs_1031| |$alpha-5:x_DO_NOT_CARE_1085| |$alpha-4:x_DO_NOT_CARE_1084| |$alpha-3:x_DO_NOT_CARE_1083|)
     )
   )

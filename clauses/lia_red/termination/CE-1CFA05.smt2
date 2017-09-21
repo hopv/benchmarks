@@ -69,10 +69,66 @@
   ( Int Int Int Int Int Int ) Bool
 )
 
+(declare-fun |fail$unknown:97|
+  ( Int Int ) Bool
+)
+
 (declare-fun |bot$unknown:23|
   ( Int Int ) Bool
 )
 
+(declare-fun |app_1038$unknown:15|
+  ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
+)
+
+(assert
+  (forall ( (|$V-reftype:179| Int) (|$V-reftype:181| Int) (|$V-reftype:183| Int) (|$V-reftype:185| Int) (|$cond-alpha-rename:1319| Int) (|$knormal:193| Int) )
+    (=>
+      ( and (= 0 0) (|app_1038$unknown:15| |$cond-alpha-rename:1319| |$V-reftype:185| |$V-reftype:185| 0 0 1 0 0 0 0 0 0 0 0 0) )
+      (|app_1038$unknown:15| |$cond-alpha-rename:1319| |$V-reftype:185| |$V-reftype:183| |$V-reftype:181| |$V-reftype:179| |$knormal:193| 0 0 0 0 0 0 0 0 0)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:179| Int) (|$V-reftype:181| Int) (|$V-reftype:183| Int) (|$V-reftype:185| Int) (|$cond-alpha-rename:1334| Int) (|$cond-alpha-rename:1344| Int) (|$cond-alpha-rename:1346| Int) (|$knormal:193| Int) )
+    (=>
+      ( and (= 0 0) (not (= 0 0)) (|fail$unknown:97| |$cond-alpha-rename:1346| 1) (|bot$unknown:23| |$cond-alpha-rename:1344| 1) (|app_1038$unknown:15| |$cond-alpha-rename:1334| |$V-reftype:185| |$V-reftype:185| 0 0 1 0 0 0 0 0 0 0 0 0) )
+      (|app_1038$unknown:15| |$cond-alpha-rename:1334| |$V-reftype:185| |$V-reftype:183| |$V-reftype:181| |$V-reftype:179| |$knormal:193| 0 0 0 0 0 0 0 0 0)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:179| Int) (|$V-reftype:181| Int) (|$V-reftype:183| Int) (|$V-reftype:185| Int) (|$cond-alpha-rename:1353| Int) (|$knormal:193| Int) )
+    (=>
+      ( and (= 0 0) (not (not (= 0 0))) (|app_1038$unknown:15| |$cond-alpha-rename:1353| |$V-reftype:185| |$V-reftype:185| 0 0 1 0 0 0 0 0 0 0 0 0) )
+      (|app_1038$unknown:15| |$cond-alpha-rename:1353| |$V-reftype:185| |$V-reftype:183| |$V-reftype:181| |$V-reftype:179| |$knormal:193| 0 0 0 0 0 0 0 0 0)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:193| Int) (|$V-reftype:195| Int) (|$V-reftype:197| Int) (|$V-reftype:199| Int) (|id_1030| Int) )
+    (=>
+      ( and true )
+      (|app_1038$unknown:15| |$V-reftype:199| |$V-reftype:199| |$V-reftype:197| |$V-reftype:195| |$V-reftype:193| |id_1030| 0 0 0 0 0 0 0 0 0)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:193| Int) (|$V-reftype:195| Int) (|$V-reftype:197| Int) (|$V-reftype:199| Int) (|id_1030| Int) )
+    (=>
+      ( and true )
+      (|app_1038$unknown:15| |$V-reftype:199| |$V-reftype:199| |$V-reftype:197| |$V-reftype:195| |$V-reftype:193| |id_1030| 0 0 0 0 0 0 0 0 0)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:207| Int) (|$V-reftype:209| Int) (|$V-reftype:211| Int) (|$V-reftype:213| Int) (|$V-reftype:214| Int) (|omega_1032| Int) )
+    (=>
+      ( and (|omega_1032$unknown:109| |$V-reftype:214| |$V-reftype:213| |$V-reftype:211| |$V-reftype:209| |$V-reftype:207| |omega_1032|) )
+      (|app_1038$unknown:15| |$V-reftype:214| |$V-reftype:213| |$V-reftype:211| |$V-reftype:209| |$V-reftype:207| |omega_1032| 0 0 0 0 0 0 0 0 0)
+    )
+  )
+)
 (assert
   (forall ( (|$alpha-1:$$tmp::1| Int) (|$knormal:2| Int) )
     (=>

@@ -2405,6 +2405,3 @@
   )
 )
 (check-sat)
-
-(get-model)
-

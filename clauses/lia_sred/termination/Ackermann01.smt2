@@ -120,18 +120,18 @@
   )
 )
 (assert
-  (forall ( (|$alpha-10:n_1032| Int) (|$alpha-3:x_DO_NOT_CARE_1093| Int) (|$alpha-4:x_DO_NOT_CARE_1094| Int) (|$alpha-5:x_DO_NOT_CARE_1095| Int) (|$alpha-6:m_1031| Int) (|$alpha-7:set_flag_ack_1075| Int) (|$alpha-8:s_ack_m_1070| Int) (|$alpha-9:s_ack_n_1071| Int) (|$knormal:54| Int) )
+  (forall ( (|$alpha-3:x_DO_NOT_CARE_1093| Int) (|$alpha-4:x_DO_NOT_CARE_1094| Int) (|$alpha-5:x_DO_NOT_CARE_1095| Int) (|$alpha-6:m_1031| Int) (|$alpha-7:set_flag_ack_1075| Int) (|$alpha-8:s_ack_m_1070| Int) (|$alpha-9:s_ack_n_1071| Int) (|$knormal:54| Int) )
     (=>
-      ( and (|ack_without_checking_1087$unknown:18| |$knormal:54| 1 |$alpha-10:n_1032| |$alpha-6:m_1031| 1 (- |$alpha-6:m_1031| 1) |$alpha-10:n_1032| |$alpha-6:m_1031| 1) (= |$alpha-10:n_1032| 0) (not (= |$alpha-6:m_1031| 0)) )
-      (|ack_without_checking_1087$unknown:18| |$knormal:54| |$alpha-10:n_1032| |$alpha-9:s_ack_n_1071| |$alpha-8:s_ack_m_1070| |$alpha-7:set_flag_ack_1075| |$alpha-6:m_1031| |$alpha-5:x_DO_NOT_CARE_1095| |$alpha-4:x_DO_NOT_CARE_1094| |$alpha-3:x_DO_NOT_CARE_1093|)
+      ( and (|ack_without_checking_1087$unknown:18| |$knormal:54| 1 0 |$alpha-6:m_1031| 1 (- |$alpha-6:m_1031| 1) 0 |$alpha-6:m_1031| 1) (not (= |$alpha-6:m_1031| 0)) )
+      (|ack_without_checking_1087$unknown:18| |$knormal:54| 0 |$alpha-9:s_ack_n_1071| |$alpha-8:s_ack_m_1070| |$alpha-7:set_flag_ack_1075| |$alpha-6:m_1031| |$alpha-5:x_DO_NOT_CARE_1095| |$alpha-4:x_DO_NOT_CARE_1094| |$alpha-3:x_DO_NOT_CARE_1093|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-10:n_1032| Int) (|$alpha-3:x_DO_NOT_CARE_1093| Int) (|$alpha-4:x_DO_NOT_CARE_1094| Int) (|$alpha-5:x_DO_NOT_CARE_1095| Int) (|$alpha-6:m_1031| Int) (|$alpha-7:set_flag_ack_1075| Int) (|$alpha-8:s_ack_m_1070| Int) (|$alpha-9:s_ack_n_1071| Int) )
+  (forall ( (|$alpha-10:n_1032| Int) (|$alpha-3:x_DO_NOT_CARE_1093| Int) (|$alpha-4:x_DO_NOT_CARE_1094| Int) (|$alpha-5:x_DO_NOT_CARE_1095| Int) (|$alpha-7:set_flag_ack_1075| Int) (|$alpha-8:s_ack_m_1070| Int) (|$alpha-9:s_ack_n_1071| Int) )
     (=>
-      ( and (= |$alpha-6:m_1031| 0) )
-      (|ack_without_checking_1087$unknown:18| (+ |$alpha-10:n_1032| 1) |$alpha-10:n_1032| |$alpha-9:s_ack_n_1071| |$alpha-8:s_ack_m_1070| |$alpha-7:set_flag_ack_1075| |$alpha-6:m_1031| |$alpha-5:x_DO_NOT_CARE_1095| |$alpha-4:x_DO_NOT_CARE_1094| |$alpha-3:x_DO_NOT_CARE_1093|)
+      ( and true )
+      (|ack_without_checking_1087$unknown:18| (+ |$alpha-10:n_1032| 1) |$alpha-10:n_1032| |$alpha-9:s_ack_n_1071| |$alpha-8:s_ack_m_1070| |$alpha-7:set_flag_ack_1075| 0 |$alpha-5:x_DO_NOT_CARE_1095| |$alpha-4:x_DO_NOT_CARE_1094| |$alpha-3:x_DO_NOT_CARE_1093|)
     )
   )
 )
@@ -144,8 +144,8 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:40| Int) (|$cond-alpha-rename:44| Int) )
-    ( and (|main_1033$unknown:24| |$cond-alpha-rename:44| |$cond-alpha-rename:40|) (not (= 0 0)) (> |$cond-alpha-rename:40| 0) (> |$cond-alpha-rename:44| 0) (not (and (> (+ (+ 0 0) 0) (+ (+ 0 0) |$cond-alpha-rename:44|)) (>= (+ (+ 0 0) |$cond-alpha-rename:44|) 0))) )
+  (not (exists ( (|$cond-alpha-rename:62| Int) (|$cond-alpha-rename:66| Int) )
+    ( and (not (and (> (+ (+ 0 0) 0) (+ (+ 0 0) |$cond-alpha-rename:66|)) (>= (+ (+ 0 0) |$cond-alpha-rename:66|) 0))) (> |$cond-alpha-rename:66| 0) (> |$cond-alpha-rename:62| 0) (not (= 0 0)) (|main_1033$unknown:24| |$cond-alpha-rename:66| |$cond-alpha-rename:62|) )
     )
   )
 )

@@ -24,7 +24,7 @@
 (assert
   (forall ( (|$V-reftype:3| Int) (|$alpha-1:g| Int) (|$alpha-2:x| Int) )
     (=>
-      ( and (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) (< |$alpha-2:x| (- 3)) )
+      ( and (< |$alpha-2:x| (- 3)) (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) )
       (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|)
     )
   )
@@ -32,7 +32,7 @@
 (assert
   (forall ( (|$V-reftype:3| Int) (|$alpha-1:g| Int) (|$alpha-2:x| Int) )
     (=>
-      ( and (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) (not (< |$alpha-2:x| (- 3))) (not (<= |$alpha-2:x| 1)) )
+      ( and (not (<= |$alpha-2:x| 1)) (not (< |$alpha-2:x| (- 3))) (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|) )
       (|f$unknown:2| |$V-reftype:3| |$alpha-1:g|)
     )
   )
@@ -40,7 +40,7 @@
 (assert
   (forall ( (|$V-reftype:7| Int) (|$alpha-2:x| Int) (|$knormal:3| Int) )
     (=>
-      ( and (|f$unknown:4| |$V-reftype:7| |$knormal:3|) (not (< |$alpha-2:x| (- 3))) (not (<= |$alpha-2:x| 1)) )
+      ( and (not (<= |$alpha-2:x| 1)) (not (< |$alpha-2:x| (- 3))) (|f$unknown:4| |$V-reftype:7| |$knormal:3|) )
       (|f$unknown:2| |$V-reftype:7| |$knormal:3|)
     )
   )
@@ -56,7 +56,7 @@
 (assert
   (forall ( (|$alpha-2:x| Int) (|$knormal:9| Int) )
     (=>
-      ( and (|f$unknown:2| |$knormal:9| |$alpha-2:x|) (<= |$alpha-2:x| 1) (not (< |$alpha-2:x| (- 3))) )
+      ( and (not (< |$alpha-2:x| (- 3))) (<= |$alpha-2:x| 1) (|f$unknown:2| |$knormal:9| |$alpha-2:x|) )
       (|f$unknown:4| |$knormal:9| |$alpha-2:x|)
     )
   )
@@ -64,7 +64,7 @@
 (assert
   (forall ( (|$alpha-2:x| Int) (|$knormal:13| Int) )
     (=>
-      ( and (|f$unknown:4| |$knormal:13| (- 4)) (< |$alpha-2:x| (- 3)) )
+      ( and (< |$alpha-2:x| (- 3)) (|f$unknown:4| |$knormal:13| (- 4)) )
       (|f$unknown:4| |$knormal:13| |$alpha-2:x|)
     )
   )
@@ -72,14 +72,14 @@
 (assert
   (forall ( (|$alpha-2:x| Int) (|$knormal:8| Int) )
     (=>
-      ( and (|f$unknown:4| |$knormal:8| (- |$alpha-2:x| 2)) (not (< |$alpha-2:x| (- 3))) (not (<= |$alpha-2:x| 1)) )
+      ( and (not (<= |$alpha-2:x| 1)) (not (< |$alpha-2:x| (- 3))) (|f$unknown:4| |$knormal:8| (- |$alpha-2:x| 2)) )
       (|f$unknown:4| |$knormal:8| |$alpha-2:x|)
     )
   )
 )
 (assert
   (not (exists ( (|$knormal:17| Int) )
-    ( and (|f$unknown:4| |$knormal:17| 3) (not (>= |$knormal:17| (- 3))) )
+    ( and (not (>= |$knormal:17| (- 3))) (|f$unknown:4| |$knormal:17| 3) )
     )
   )
 )

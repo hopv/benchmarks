@@ -58,7 +58,7 @@
 )
 (assert
   (not (exists ( (|$cond-alpha-rename:1| Int) )
-    ( and (|main_1032$unknown:5| |$cond-alpha-rename:1|) (not (= 0 0)) (not (and (> (+ 111 (- 0)) (+ 111 (- |$cond-alpha-rename:1|))) (>= (+ 111 (- |$cond-alpha-rename:1|)) 0))) )
+    ( and (|main_1032$unknown:5| |$cond-alpha-rename:1|) (not (= 0 0)) (not (and (>= (+ 111 (- |$cond-alpha-rename:1|)) 0) (> (+ 111 (- 0)) (+ 111 (- |$cond-alpha-rename:1|))))) )
     )
   )
 )

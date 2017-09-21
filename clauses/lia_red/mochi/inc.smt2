@@ -41,25 +41,25 @@
   )
 )
 (assert
-  (forall ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) (|$cond-alpha-rename:11| Int) (|$cond-alpha-rename:2| Int) (|$cond-alpha-rename:4| Int) (|$cond-alpha-rename:5| Int) (|$knormal:11| Int) (|$knormal:4| Int) )
+  (forall ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) (|$cond-alpha-rename:33| Int) (|$cond-alpha-rename:34| Int) (|$cond-alpha-rename:40| Int) (|$cond-alpha-rename:43| Int) (|$knormal:11| Int) (|$knormal:4| Int) )
     (=>
-      ( and (|g$unknown:5| |$cond-alpha-rename:11| |$cond-alpha-rename:5| |$cond-alpha-rename:4|) (|g$unknown:5| |$cond-alpha-rename:2| |$knormal:11| |$cond-alpha-rename:4|) (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:6| |$cond-alpha-rename:5| |$cond-alpha-rename:4|) (< |$cond-alpha-rename:5| |$cond-alpha-rename:4|) (< |$cond-alpha-rename:5| |$cond-alpha-rename:4|) (<= 0 |$cond-alpha-rename:5|) (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|) (not (= |$knormal:11| |$alpha-8:j|)) )
-      (|g$unknown:5| |$cond-alpha-rename:2| |$knormal:11| |$alpha-6:e|)
+      ( and (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (not (= |$knormal:11| |$alpha-8:j|)) (< |$cond-alpha-rename:34| |$cond-alpha-rename:33|) (<= 0 |$cond-alpha-rename:34|) (< |$cond-alpha-rename:34| |$cond-alpha-rename:33|) (|g$unknown:6| |$cond-alpha-rename:34| |$cond-alpha-rename:33|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:5| |$cond-alpha-rename:43| |$knormal:11| |$cond-alpha-rename:33|) (|g$unknown:5| |$cond-alpha-rename:40| |$cond-alpha-rename:34| |$cond-alpha-rename:33|) )
+      (|g$unknown:5| |$cond-alpha-rename:43| |$knormal:11| |$alpha-6:e|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) (|$knormal:11| Int) (|$knormal:4| Int) )
+  (forall ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) (|$knormal:4| Int) )
     (=>
-      ( and (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (= |$knormal:11| |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|) )
-      (|g$unknown:5| (+ |$knormal:4| 1) |$knormal:11| |$alpha-6:e|)
+      ( and (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) )
+      (|g$unknown:5| (+ |$knormal:4| 1) |$alpha-8:j| |$alpha-6:e|)
     )
   )
 )
 (assert
   (forall ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) (|$knormal:18| Int) (|$knormal:4| Int) )
     (=>
-      ( and (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:7| |$knormal:18| (+ |$alpha-8:j| 1) |$alpha-6:e|) (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|) )
+      ( and (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|) (|g$unknown:7| |$knormal:18| (+ |$alpha-8:j| 1) |$alpha-6:e|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) )
       (|g$unknown:7| |$knormal:18| |$alpha-8:j| |$alpha-6:e|)
     )
   )
@@ -67,21 +67,21 @@
 (assert
   (forall ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) (|$knormal:4| Int) )
     (=>
-      ( and (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|) )
+      ( and (< |$alpha-8:j| |$alpha-6:e|) (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (|g$unknown:5| |$knormal:4| |$alpha-8:j| |$alpha-6:e|) )
       (|g$unknown:6| (+ |$alpha-8:j| 1) |$alpha-6:e|)
     )
   )
 )
 (assert
   (not (exists ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) )
-    ( and (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (< |$alpha-8:j| |$alpha-6:e|) (not (and (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|))) )
+    ( and (not (and (<= 0 |$alpha-8:j|) (< |$alpha-8:j| |$alpha-6:e|))) (< |$alpha-8:j| |$alpha-6:e|) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) )
     )
   )
 )
 (assert
   (forall ( (|$alpha-6:e| Int) (|$alpha-8:j| Int) )
     (=>
-      ( and (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) (not (< |$alpha-8:j| |$alpha-6:e|)) )
+      ( and (not (< |$alpha-8:j| |$alpha-6:e|)) (|g$unknown:6| |$alpha-8:j| |$alpha-6:e|) )
       (|g$unknown:7| 1 |$alpha-8:j| |$alpha-6:e|)
     )
   )

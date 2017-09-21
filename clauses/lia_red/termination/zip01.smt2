@@ -75,7 +75,7 @@
 )
 (assert
   (not (exists ( (|$cond-alpha-rename:10| Int) (|$cond-alpha-rename:14| Int) )
-    ( and (|main_1035$unknown:6| |$cond-alpha-rename:14| |$cond-alpha-rename:10|) (not (= 0 0)) (not (and (> (+ (+ 0 0) 0) (+ (+ 0 |$cond-alpha-rename:10|) 0)) (>= (+ (+ 0 |$cond-alpha-rename:10|) 0) 0))) )
+    ( and (|main_1035$unknown:6| |$cond-alpha-rename:14| |$cond-alpha-rename:10|) (not (= 0 0)) (not (and (>= |$cond-alpha-rename:10| 0) (> 0 |$cond-alpha-rename:10|))) )
     )
   )
 )

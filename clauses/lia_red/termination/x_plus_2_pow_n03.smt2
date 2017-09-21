@@ -51,6 +51,10 @@
   ( Int Int ) Bool
 )
 
+(declare-fun |f_without_checking_1189$unknown:16|
+  ( Int Int Int Int Int Int Int ) Bool
+)
+
 (declare-fun |bot$unknown:2|
   ( Int Int ) Bool
 )
@@ -64,8 +68,24 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:207| Int) (|$cond-alpha-rename:208| Int) )
-    ( and (|main_1037$unknown:33| |$cond-alpha-rename:208| |$cond-alpha-rename:207|) (not (= 0 0)) (>= |$cond-alpha-rename:208| 0) (>= |$cond-alpha-rename:207| 0) (not (and (> (+ 0 0) (+ 0 |$cond-alpha-rename:207|)) (>= (+ 0 |$cond-alpha-rename:207|) 0))) )
+  (forall ( (|$V-reftype:52| Int) (|$V-reftype:54| Int) (|$V-reftype:56| Int) (|$alpha-15:set_flag_f_1181| Int) (|$alpha-16:s_f_n_1178| Int) (|$cond-alpha-rename:136| Int) (|$cond-alpha-rename:143| Int) (|$cond-alpha-rename:144| Int) )
+    (=>
+      ( and (|f_without_checking_1189$unknown:16| |$cond-alpha-rename:143| |$cond-alpha-rename:144| |$V-reftype:54| |$V-reftype:52| (- |$cond-alpha-rename:136| 1) |$cond-alpha-rename:136| 1) (|f_without_checking_1189$unknown:16| |$cond-alpha-rename:144| |$V-reftype:56| |$V-reftype:54| |$V-reftype:52| (- |$cond-alpha-rename:136| 1) |$cond-alpha-rename:136| 1) (not (= |$cond-alpha-rename:136| 0)) (not (= |$cond-alpha-rename:136| 0)) (not (= |$cond-alpha-rename:136| 0)) (= 0 (+ (* 0 |$cond-alpha-rename:136|) 0)) (= 0 (+ (* 0 |$cond-alpha-rename:136|) 0)) (= 1 1) (= 1 1) )
+      (|f_without_checking_1189$unknown:16| |$cond-alpha-rename:143| |$V-reftype:56| |$V-reftype:54| |$V-reftype:52| |$cond-alpha-rename:136| |$alpha-16:s_f_n_1178| |$alpha-15:set_flag_f_1181|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:64| Int) (|$V-reftype:66| Int) (|$V-reftype:68| Int) (|$alpha-15:set_flag_f_1181| Int) (|$alpha-16:s_f_n_1178| Int) )
+    (=>
+      ( and true )
+      (|f_without_checking_1189$unknown:16| (+ |$V-reftype:68| 1) |$V-reftype:68| |$V-reftype:66| |$V-reftype:64| 0 |$alpha-16:s_f_n_1178| |$alpha-15:set_flag_f_1181|)
+    )
+  )
+)
+(assert
+  (not (exists ( (|$cond-alpha-rename:54| Int) (|$cond-alpha-rename:55| Int) )
+    ( and (|main_1037$unknown:33| |$cond-alpha-rename:55| |$cond-alpha-rename:54|) (not (= 0 0)) (>= |$cond-alpha-rename:55| 0) (>= |$cond-alpha-rename:54| 0) (not (and (> (+ 0 0) (+ 0 |$cond-alpha-rename:54|)) (>= (+ 0 |$cond-alpha-rename:54|) 0))) )
     )
   )
 )

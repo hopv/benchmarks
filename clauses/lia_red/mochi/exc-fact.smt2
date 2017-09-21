@@ -29,37 +29,37 @@
 )
 
 (assert
-  (not (exists ( (|$cond-alpha-rename:27| Int) )
-    ( and (|fact$unknown:6| |$cond-alpha-rename:27|) (|fact$unknown:6| (- |$cond-alpha-rename:27| 1)) (<= (- |$cond-alpha-rename:27| 1) 0) (not (<= |$cond-alpha-rename:27| 0)) (not (= 0 0)) )
+  (not (exists ( (|$cond-alpha-rename:72| Int) )
+    ( and (|fact$unknown:6| |$cond-alpha-rename:72|) (|fact$unknown:6| (- |$cond-alpha-rename:72| 1)) (<= (- |$cond-alpha-rename:72| 1) 0) (not (<= |$cond-alpha-rename:72| 0)) (not (= 0 0)) )
     )
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:31| Int) )
-    ( and (|fact$unknown:6| |$cond-alpha-rename:31|) (> |$cond-alpha-rename:31| 0) (<= |$cond-alpha-rename:31| 0) )
+  (not (exists ( (|$cond-alpha-rename:77| Int) )
+    ( and (|fact$unknown:6| |$cond-alpha-rename:77|) (<= |$cond-alpha-rename:77| 0) (> |$cond-alpha-rename:77| 0) )
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:50| Int) (|$cond-alpha-rename:54| Int) )
+  (forall ( (|$cond-alpha-rename:89| Int) (|$cond-alpha-rename:95| Int) )
     (=>
-      ( and (|exn$unknown:5| |$cond-alpha-rename:54| 0) (|fact$unknown:6| (- |$cond-alpha-rename:50| 1)) (|fact$unknown:6| |$cond-alpha-rename:50|) (|fact$unknown:6| (- |$cond-alpha-rename:50| 1)) (<= (- |$cond-alpha-rename:50| 1) 0) (<= (- |$cond-alpha-rename:50| 1) 0) (<= (- |$cond-alpha-rename:50| 1) 0) (not (<= |$cond-alpha-rename:50| 0)) (not (= 0 0)) (not (<= |$cond-alpha-rename:50| 0)) )
-      (|fact$unknown:9| |$cond-alpha-rename:54| (- |$cond-alpha-rename:50| 1))
+      ( and (<= (- |$cond-alpha-rename:89| 1) 0) (= 0 0) (not (<= |$cond-alpha-rename:89| 0)) (not (= 0 0)) (not (<= |$cond-alpha-rename:89| 0)) (<= (- |$cond-alpha-rename:89| 1) 0) (<= (- |$cond-alpha-rename:89| 1) 0) (|fact$unknown:6| (- |$cond-alpha-rename:89| 1)) (|fact$unknown:6| |$cond-alpha-rename:89|) (|fact$unknown:6| (- |$cond-alpha-rename:89| 1)) (|exn$unknown:5| |$cond-alpha-rename:95| 0) )
+      (|fact$unknown:9| |$cond-alpha-rename:95| (- |$cond-alpha-rename:89| 1))
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:58| Int) )
+  (forall ( (|$cond-alpha-rename:97| Int) )
     (=>
-      ( and (|fact$unknown:6| (- |$cond-alpha-rename:58| 1)) (|fact$unknown:6| |$cond-alpha-rename:58|) (|fact$unknown:6| (- |$cond-alpha-rename:58| 1)) (= 0 0) (<= (- |$cond-alpha-rename:58| 1) 0) (<= (- |$cond-alpha-rename:58| 1) 0) (<= (- |$cond-alpha-rename:58| 1) 0) (not (<= |$cond-alpha-rename:58| 0)) (not (<= |$cond-alpha-rename:58| 0)) )
-      (|fact$unknown:9| 1 (- |$cond-alpha-rename:58| 1))
+      ( and (<= (- |$cond-alpha-rename:97| 1) 0) (= 0 0) (not (<= |$cond-alpha-rename:97| 0)) (not (<= |$cond-alpha-rename:97| 0)) (<= (- |$cond-alpha-rename:97| 1) 0) (= 0 0) (<= (- |$cond-alpha-rename:97| 1) 0) (|fact$unknown:6| |$cond-alpha-rename:97|) (|fact$unknown:6| (- |$cond-alpha-rename:97| 1)) (|fact$unknown:6| (- |$cond-alpha-rename:97| 1)) )
+      (|fact$unknown:9| 1 (- |$cond-alpha-rename:97| 1))
     )
   )
 )
 (assert
   (forall ( (|$alpha-1:n| Int) (|$knormal:10| Int) )
     (=>
-      ( and (|exn$unknown:5| |$knormal:10| 0) (|fact$unknown:6| |$alpha-1:n|) (<= |$alpha-1:n| 0) (> |$alpha-1:n| 0) (<= |$alpha-1:n| 0) )
+      ( and (<= |$alpha-1:n| 0) (= 0 0) (> |$alpha-1:n| 0) (<= |$alpha-1:n| 0) (|fact$unknown:6| |$alpha-1:n|) (|exn$unknown:5| |$knormal:10| 0) )
       (|fact$unknown:9| |$knormal:10| |$alpha-1:n|)
     )
   )
@@ -67,7 +67,7 @@
 (assert
   (forall ( (|$alpha-1:n| Int) (|$knormal:7| Int) )
     (=>
-      ( and (|fact$unknown:6| |$alpha-1:n|) (|fact$unknown:9| |$knormal:7| (- |$alpha-1:n| 1)) (not (<= |$alpha-1:n| 0)) )
+      ( and (not (<= |$alpha-1:n| 0)) (|fact$unknown:9| |$knormal:7| (- |$alpha-1:n| 1)) (|fact$unknown:6| |$alpha-1:n|) )
       (|fact$unknown:9| (* |$alpha-1:n| |$knormal:7|) |$alpha-1:n|)
     )
   )
@@ -75,7 +75,7 @@
 (assert
   (forall ( (|$alpha-1:n| Int) )
     (=>
-      ( and (|fact$unknown:6| |$alpha-1:n|) (not (<= |$alpha-1:n| 0)) )
+      ( and (not (<= |$alpha-1:n| 0)) (|fact$unknown:6| |$alpha-1:n|) )
       (|fact$unknown:6| (- |$alpha-1:n| 1))
     )
   )

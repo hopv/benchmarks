@@ -40,16 +40,16 @@
   ( Int Int Int Int ) Bool
 )
 
-(declare-fun |fail$unknown:4|
-  ( Int Int ) Bool
+(declare-fun |mc91_without_checking_1058$unknown:14|
+  ( Int Int Int Int ) Bool
 )
 
 (declare-fun |main_1032$unknown:5|
   ( Int ) Bool
 )
 
-(declare-fun |mc91_without_checking_1058$unknown:14|
-  ( Int Int Int Int ) Bool
+(declare-fun |fail$unknown:4|
+  ( Int Int ) Bool
 )
 
 (declare-fun |bot$unknown:2|
@@ -67,21 +67,21 @@
 (assert
   (forall ( (|$alpha-10:n_1031| Int) (|$knormal:20| Int) (|$knormal:34| Int) (|$knormal:36| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:34| 1) (|fail$unknown:4| |$knormal:36| 1) (|main_1032$unknown:5| |$alpha-10:n_1031|) (|mc91_without_checking_1058$unknown:14| |$knormal:20| |$alpha-10:n_1031| 0 0) (not (= 0 0)) (not (and (> (+ 111 (- 0)) (+ 111 (- |$alpha-10:n_1031|))) (>= (+ 111 (- |$alpha-10:n_1031|)) 0))) )
+      ( and (not (and (>= (+ 111 (- |$alpha-10:n_1031|)) 0) (> (+ 111 (- 0)) (+ 111 (- |$alpha-10:n_1031|))))) (not (= 0 0)) (|mc91_without_checking_1058$unknown:14| |$knormal:20| |$alpha-10:n_1031| 0 0) (|main_1032$unknown:5| |$alpha-10:n_1031|) (|fail$unknown:4| |$knormal:36| 1) (|bot$unknown:2| |$knormal:34| 1) )
       (|mc91_1030$unknown:10| |$knormal:20| |$alpha-10:n_1031| 0 0)
     )
   )
 )
 (assert
   (not (exists ( (|$cond-alpha-rename:1| Int) )
-    ( and (|main_1032$unknown:5| |$cond-alpha-rename:1|) (not (= 0 0)) (not (and (> (+ 111 (- 0)) (+ 111 (- |$cond-alpha-rename:1|))) (>= (+ 111 (- |$cond-alpha-rename:1|)) 0))) )
+    ( and (not (and (>= (+ 111 (- |$cond-alpha-rename:1|)) 0) (> (+ 111 (- 0)) (+ 111 (- |$cond-alpha-rename:1|))))) (not (= 0 0)) (|main_1032$unknown:5| |$cond-alpha-rename:1|) )
     )
   )
 )
 (assert
   (forall ( (|$alpha-10:n_1031| Int) (|$knormal:20| Int) )
     (=>
-      ( and (|main_1032$unknown:5| |$alpha-10:n_1031|) (|mc91_without_checking_1058$unknown:14| |$knormal:20| |$alpha-10:n_1031| 0 0) (not (= 0 0)) (>= (+ 111 (- |$alpha-10:n_1031|)) 0) (> (+ 111 (- 0)) (+ 111 (- |$alpha-10:n_1031|))) )
+      ( and (> (+ 111 (- 0)) (+ 111 (- |$alpha-10:n_1031|))) (>= (+ 111 (- |$alpha-10:n_1031|)) 0) (not (= 0 0)) (|mc91_without_checking_1058$unknown:14| |$knormal:20| |$alpha-10:n_1031| 0 0) (|main_1032$unknown:5| |$alpha-10:n_1031|) )
       (|mc91_1030$unknown:10| |$knormal:20| |$alpha-10:n_1031| 0 0)
     )
   )
@@ -89,7 +89,7 @@
 (assert
   (forall ( (|$alpha-10:n_1031| Int) (|$knormal:20| Int) )
     (=>
-      ( and (|main_1032$unknown:5| |$alpha-10:n_1031|) (|mc91_without_checking_1058$unknown:14| |$knormal:20| |$alpha-10:n_1031| 0 0) (not (not (= 0 0))) )
+      ( and (not (not (= 0 0))) (|mc91_without_checking_1058$unknown:14| |$knormal:20| |$alpha-10:n_1031| 0 0) (|main_1032$unknown:5| |$alpha-10:n_1031|) )
       (|mc91_1030$unknown:10| |$knormal:20| |$alpha-10:n_1031| 0 0)
     )
   )
@@ -97,7 +97,7 @@
 (assert
   (forall ( (|$alpha-3:set_flag_mc91_1050| Int) (|$alpha-4:s_mc91_n_1047| Int) (|$alpha-5:n_1031| Int) (|$knormal:15| Int) (|$knormal:9| Int) )
     (=>
-      ( and (|mc91_without_checking_1058$unknown:14| |$knormal:15| |$knormal:9| |$alpha-5:n_1031| 1) (|mc91_without_checking_1058$unknown:14| |$knormal:9| (+ |$alpha-5:n_1031| 11) |$alpha-5:n_1031| 1) (not (> |$alpha-5:n_1031| 100)) )
+      ( and (not (> |$alpha-5:n_1031| 100)) (|mc91_without_checking_1058$unknown:14| |$knormal:9| (+ |$alpha-5:n_1031| 11) |$alpha-5:n_1031| 1) (|mc91_without_checking_1058$unknown:14| |$knormal:15| |$knormal:9| |$alpha-5:n_1031| 1) )
       (|mc91_without_checking_1058$unknown:14| |$knormal:15| |$alpha-5:n_1031| |$alpha-4:s_mc91_n_1047| |$alpha-3:set_flag_mc91_1050|)
     )
   )

@@ -72,55 +72,47 @@
   )
 )
 (assert
-  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:17| Int) (|$cond-alpha-rename:40| Int) (|$cond-alpha-rename:41| Int) (|$cond-alpha-rename:42| Int) (|$knormal:21| Int) (|$knormal:23| Int) (|$knormal:7| Int) )
+  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:26| Int) (|$cond-alpha-rename:27| Int) (|$cond-alpha-rename:75| Int) (|$cond-alpha-rename:76| Int) (|$cond-alpha-rename:77| Int) (|$knormal:21| Int) (|$knormal:23| Int) (|$knormal:7| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:21| 1) (|fail$unknown:4| |$knormal:23| 1) (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:16| |$cond-alpha-rename:17|) (|fib_without_checking_1060$unknown:15| |$cond-alpha-rename:41| |$cond-alpha-rename:40| |$cond-alpha-rename:42|) (|fib_without_checking_1060$unknown:16| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (not (= 0 1)) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (< |$cond-alpha-rename:41| 2)) (not (and (> (+ 0 |$alpha-5:s_prev_fib_n_1050|) (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1))) (>= (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1)) 0))) )
+      ( and (|bot$unknown:2| |$knormal:21| 1) (|fail$unknown:4| |$knormal:23| 1) (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:26| |$cond-alpha-rename:27|) (|fib_without_checking_1060$unknown:15| |$cond-alpha-rename:76| |$cond-alpha-rename:75| |$cond-alpha-rename:77|) (|fib_without_checking_1060$unknown:16| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (not (< |$cond-alpha-rename:76| 2)) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (and (>= (- |$alpha-5:s_prev_fib_n_1050| 1) 0) (> |$alpha-5:s_prev_fib_n_1050| (- |$alpha-5:s_prev_fib_n_1050| 1)))) )
       (|fib_1030$unknown:12| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:19| Int) (|$cond-alpha-rename:20| Int) (|$knormal:21| Int) (|$knormal:23| Int) )
+  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:30| Int) (|$knormal:21| Int) (|$knormal:23| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:21| 1) (|fail$unknown:4| |$knormal:23| 1) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:19| |$cond-alpha-rename:20|) (not (= 0 1)) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (and (> (+ 0 |$alpha-5:s_prev_fib_n_1050|) (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1))) (>= (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1)) 0))) )
+      ( and (not (and (>= (- |$alpha-5:s_prev_fib_n_1050| 1) 0) (> |$alpha-5:s_prev_fib_n_1050| (- |$alpha-5:s_prev_fib_n_1050| 1)))) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (= 0 1)) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:29| |$cond-alpha-rename:30|) (|fail$unknown:4| |$knormal:23| 1) (|bot$unknown:2| |$knormal:21| 1) )
       (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1)
     )
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:2| Int) (|$cond-alpha-rename:22| Int) (|$cond-alpha-rename:23| Int) )
-    ( and (|fib_without_checking_1060$unknown:15| |$cond-alpha-rename:2| |$cond-alpha-rename:22| |$cond-alpha-rename:23|) (not (= 0 1)) (not (and (>= (+ 0 (- |$cond-alpha-rename:2| 1)) 0) (> (+ 0 |$cond-alpha-rename:2|) (+ 0 (- |$cond-alpha-rename:2| 1))))) (not (< |$cond-alpha-rename:2| 2)) )
+  (not (exists ( (|$cond-alpha-rename:2| Int) (|$cond-alpha-rename:32| Int) (|$cond-alpha-rename:33| Int) )
+    ( and (not (and (>= (- |$cond-alpha-rename:2| 1) 0) (> |$cond-alpha-rename:2| (- |$cond-alpha-rename:2| 1)))) (not (< |$cond-alpha-rename:2| 2)) (not (= 0 1)) (|fib_without_checking_1060$unknown:15| |$cond-alpha-rename:2| |$cond-alpha-rename:32| |$cond-alpha-rename:33|) )
     )
   )
 )
 (assert
-  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:25| Int) (|$cond-alpha-rename:26| Int) (|$cond-alpha-rename:45| Int) (|$cond-alpha-rename:46| Int) (|$cond-alpha-rename:47| Int) (|$knormal:7| Int) )
+  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:35| Int) (|$cond-alpha-rename:36| Int) (|$cond-alpha-rename:80| Int) (|$cond-alpha-rename:81| Int) (|$cond-alpha-rename:82| Int) (|$knormal:7| Int) )
     (=>
-      ( and (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:25| |$cond-alpha-rename:26|) (|fib_without_checking_1060$unknown:15| |$cond-alpha-rename:46| |$cond-alpha-rename:45| |$cond-alpha-rename:47|) (|fib_without_checking_1060$unknown:16| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (not (= 0 1)) (>= (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1)) 0) (> (+ 0 |$alpha-5:s_prev_fib_n_1050|) (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1))) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (< |$cond-alpha-rename:46| 2)) )
+      ( and (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:35| |$cond-alpha-rename:36|) (|fib_without_checking_1060$unknown:15| |$cond-alpha-rename:81| |$cond-alpha-rename:80| |$cond-alpha-rename:82|) (|fib_without_checking_1060$unknown:16| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (not (< |$cond-alpha-rename:81| 2)) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (>= (- |$alpha-5:s_prev_fib_n_1050| 1) 0) (> |$alpha-5:s_prev_fib_n_1050| (- |$alpha-5:s_prev_fib_n_1050| 1)) )
       (|fib_1030$unknown:12| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:28| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:50| Int) (|$cond-alpha-rename:51| Int) (|$cond-alpha-rename:52| Int) (|$knormal:7| Int) )
+  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:41| Int) (|$cond-alpha-rename:42| Int) )
     (=>
-      ( and (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:28| |$cond-alpha-rename:29|) (|fib_without_checking_1060$unknown:15| |$cond-alpha-rename:51| |$cond-alpha-rename:50| |$cond-alpha-rename:52|) (|fib_without_checking_1060$unknown:16| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1) (not (not (= 0 1))) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (< |$cond-alpha-rename:51| 2)) )
-      (|fib_1030$unknown:12| |$knormal:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1)
-    )
-  )
-)
-(assert
-  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:31| Int) (|$cond-alpha-rename:32| Int) )
-    (=>
-      ( and (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:31| |$cond-alpha-rename:32|) (not (= 0 1)) (>= (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1)) 0) (> (+ 0 |$alpha-5:s_prev_fib_n_1050|) (+ 0 (- |$alpha-5:s_prev_fib_n_1050| 1))) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) )
+      ( and (> |$alpha-5:s_prev_fib_n_1050| (- |$alpha-5:s_prev_fib_n_1050| 1)) (>= (- |$alpha-5:s_prev_fib_n_1050| 1) 0) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (= 0 1)) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:41| |$cond-alpha-rename:42|) )
       (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:34| Int) (|$cond-alpha-rename:35| Int) )
+  (forall ( (|$alpha-5:s_prev_fib_n_1050| Int) (|$cond-alpha-rename:44| Int) (|$cond-alpha-rename:45| Int) )
     (=>
-      ( and (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:34| |$cond-alpha-rename:35|) (not (not (= 0 1))) (not (< |$alpha-5:s_prev_fib_n_1050| 2)) )
+      ( and (not (< |$alpha-5:s_prev_fib_n_1050| 2)) (not (not (= 0 1))) (|fib_without_checking_1060$unknown:15| |$alpha-5:s_prev_fib_n_1050| |$cond-alpha-rename:44| |$cond-alpha-rename:45|) )
       (|fib_1030$unknown:7| (- |$alpha-5:s_prev_fib_n_1050| 1) |$alpha-5:s_prev_fib_n_1050| 1)
     )
   )

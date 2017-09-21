@@ -49,6 +49,18 @@
   ( Int Int ) Bool
 )
 
+(declare-fun |f_without_checking_1197$unknown:38|
+  ( Int Int Int Int Int Int Int Int Int Int ) Bool
+)
+
+(assert
+  (forall ( (|$V-reftype:26| Int) (|$V-reftype:28| Int) (|$V-reftype:30| Int) (|$alpha-15:x_DO_NOT_CARE_1215| Int) (|$alpha-16:x_DO_NOT_CARE_1216| Int) (|$alpha-18:set_flag_f_1187| Int) (|$alpha-19:s_f_n_1182| Int) (|$alpha-20:u_1037| Int) (|$cond-alpha-rename:36| Int) (|$cond-alpha-rename:43| Int) )
+    (=>
+      ( and (|f_without_checking_1197$unknown:38| |$cond-alpha-rename:43| |$V-reftype:30| |$V-reftype:28| |$V-reftype:26| 1 |$V-reftype:28| |$V-reftype:26| (- |$cond-alpha-rename:36| 1) |$cond-alpha-rename:36| 1) (> |$cond-alpha-rename:36| 0) (= 0 (+ (* 0 |$cond-alpha-rename:36|) 0)) (= 1 1) (> |$cond-alpha-rename:36| 0) )
+      (|f_without_checking_1197$unknown:38| |$cond-alpha-rename:43| |$V-reftype:30| |$V-reftype:28| |$V-reftype:26| |$alpha-20:u_1037| |$alpha-19:s_f_n_1182| |$alpha-18:set_flag_f_1187| |$cond-alpha-rename:36| |$alpha-16:x_DO_NOT_CARE_1216| |$alpha-15:x_DO_NOT_CARE_1215|)
+    )
+  )
+)
 (assert
   (forall ( (|$alpha-1:$$tmp::1| Int) (|$knormal:2| Int) )
     (=>
@@ -58,8 +70,16 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:207| Int) )
-    ( and (|main_1038$unknown:45| |$cond-alpha-rename:207|) (not (= 0 0)) )
+  (forall ( (|$V-reftype:77| Int) (|$V-reftype:79| Int) (|$V-reftype:81| Int) (|$alpha-15:x_DO_NOT_CARE_1215| Int) (|$alpha-16:x_DO_NOT_CARE_1216| Int) (|$alpha-17:n_1036| Int) (|$alpha-18:set_flag_f_1187| Int) (|$alpha-19:s_f_n_1182| Int) (|$alpha-20:u_1037| Int) )
+    (=>
+      ( and (not (> |$alpha-17:n_1036| 0)) )
+      (|f_without_checking_1197$unknown:38| |$V-reftype:81| |$V-reftype:81| |$V-reftype:79| |$V-reftype:77| |$alpha-20:u_1037| |$alpha-19:s_f_n_1182| |$alpha-18:set_flag_f_1187| |$alpha-17:n_1036| |$alpha-16:x_DO_NOT_CARE_1216| |$alpha-15:x_DO_NOT_CARE_1215|)
+    )
+  )
+)
+(assert
+  (not (exists ( (|$cond-alpha-rename:89| Int) )
+    ( and (|main_1038$unknown:45| |$cond-alpha-rename:89|) (not (= 0 0)) )
     )
   )
 )

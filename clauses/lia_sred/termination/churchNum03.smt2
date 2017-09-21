@@ -80,12 +80,12 @@
   ( Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
 )
 
-(declare-fun |fail$unknown:4|
-  ( Int Int ) Bool
-)
-
 (declare-fun |zero_1039$unknown:87|
   ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
+)
+
+(declare-fun |fail$unknown:4|
+  ( Int Int ) Bool
 )
 
 (declare-fun |bot$unknown:2|
@@ -103,7 +103,7 @@
 (assert
   (forall ( (|$alpha-68:x_DO_NOT_CARE_1524| Int) (|$alpha-69:x_DO_NOT_CARE_1525| Int) (|$alpha-70:x_DO_NOT_CARE_1526| Int) (|$alpha-71:f_EXPARAM_1204| Int) (|$alpha-72:x_DO_NOT_CARE_1521| Int) (|$alpha-73:x_DO_NOT_CARE_1522| Int) (|$alpha-74:x_DO_NOT_CARE_1523| Int) (|$alpha-75:f_1040| Int) (|$alpha-76:prev_set_flag_zero_1506| Int) (|$alpha-77:s_prev_zero_f_EXPARAM_1503| Int) (|$alpha-78:s_prev_zero_z_1505| Int) (|$alpha-79:z_1041| Int) (|$knormal:103| Int) (|$knormal:105| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:103| 1) (|fail$unknown:4| |$knormal:105| 1) (|zero_1039$unknown:87| |$alpha-79:z_1041| |$alpha-78:s_prev_zero_z_1505| |$alpha-77:s_prev_zero_f_EXPARAM_1503| |$alpha-76:prev_set_flag_zero_1506| |$alpha-75:f_1040| |$alpha-74:x_DO_NOT_CARE_1523| |$alpha-73:x_DO_NOT_CARE_1522| |$alpha-72:x_DO_NOT_CARE_1521| |$alpha-71:f_EXPARAM_1204| |$alpha-70:x_DO_NOT_CARE_1526| |$alpha-69:x_DO_NOT_CARE_1525| |$alpha-68:x_DO_NOT_CARE_1524|) (not (= 0 |$alpha-76:prev_set_flag_zero_1506|)) )
+      ( and (not (= 0 |$alpha-76:prev_set_flag_zero_1506|)) (|zero_1039$unknown:87| |$alpha-79:z_1041| |$alpha-78:s_prev_zero_z_1505| |$alpha-77:s_prev_zero_f_EXPARAM_1503| |$alpha-76:prev_set_flag_zero_1506| |$alpha-75:f_1040| |$alpha-74:x_DO_NOT_CARE_1523| |$alpha-73:x_DO_NOT_CARE_1522| |$alpha-72:x_DO_NOT_CARE_1521| |$alpha-71:f_EXPARAM_1204| |$alpha-70:x_DO_NOT_CARE_1526| |$alpha-69:x_DO_NOT_CARE_1525| |$alpha-68:x_DO_NOT_CARE_1524|) (|fail$unknown:4| |$knormal:105| 1) (|bot$unknown:2| |$knormal:103| 1) )
       (|zero_1039$unknown:88| |$alpha-79:z_1041| |$alpha-79:z_1041| |$alpha-78:s_prev_zero_z_1505| |$alpha-77:s_prev_zero_f_EXPARAM_1503| |$alpha-76:prev_set_flag_zero_1506| |$alpha-75:f_1040| |$alpha-74:x_DO_NOT_CARE_1523| |$alpha-73:x_DO_NOT_CARE_1522| |$alpha-72:x_DO_NOT_CARE_1521| |$alpha-71:f_EXPARAM_1204| |$alpha-70:x_DO_NOT_CARE_1526| |$alpha-69:x_DO_NOT_CARE_1525| |$alpha-68:x_DO_NOT_CARE_1524|)
     )
   )
@@ -117,7 +117,7 @@
 (assert
   (forall ( (|$alpha-68:x_DO_NOT_CARE_1524| Int) (|$alpha-69:x_DO_NOT_CARE_1525| Int) (|$alpha-70:x_DO_NOT_CARE_1526| Int) (|$alpha-71:f_EXPARAM_1204| Int) (|$alpha-72:x_DO_NOT_CARE_1521| Int) (|$alpha-73:x_DO_NOT_CARE_1522| Int) (|$alpha-74:x_DO_NOT_CARE_1523| Int) (|$alpha-75:f_1040| Int) (|$alpha-76:prev_set_flag_zero_1506| Int) (|$alpha-77:s_prev_zero_f_EXPARAM_1503| Int) (|$alpha-78:s_prev_zero_z_1505| Int) (|$alpha-79:z_1041| Int) )
     (=>
-      ( and (|zero_1039$unknown:87| |$alpha-79:z_1041| |$alpha-78:s_prev_zero_z_1505| |$alpha-77:s_prev_zero_f_EXPARAM_1503| |$alpha-76:prev_set_flag_zero_1506| |$alpha-75:f_1040| |$alpha-74:x_DO_NOT_CARE_1523| |$alpha-73:x_DO_NOT_CARE_1522| |$alpha-72:x_DO_NOT_CARE_1521| |$alpha-71:f_EXPARAM_1204| |$alpha-70:x_DO_NOT_CARE_1526| |$alpha-69:x_DO_NOT_CARE_1525| |$alpha-68:x_DO_NOT_CARE_1524|) (not (not (= 0 |$alpha-76:prev_set_flag_zero_1506|))) )
+      ( and (not (not (= 0 |$alpha-76:prev_set_flag_zero_1506|))) (|zero_1039$unknown:87| |$alpha-79:z_1041| |$alpha-78:s_prev_zero_z_1505| |$alpha-77:s_prev_zero_f_EXPARAM_1503| |$alpha-76:prev_set_flag_zero_1506| |$alpha-75:f_1040| |$alpha-74:x_DO_NOT_CARE_1523| |$alpha-73:x_DO_NOT_CARE_1522| |$alpha-72:x_DO_NOT_CARE_1521| |$alpha-71:f_EXPARAM_1204| |$alpha-70:x_DO_NOT_CARE_1526| |$alpha-69:x_DO_NOT_CARE_1525| |$alpha-68:x_DO_NOT_CARE_1524|) )
       (|zero_1039$unknown:88| |$alpha-79:z_1041| |$alpha-79:z_1041| |$alpha-78:s_prev_zero_z_1505| |$alpha-77:s_prev_zero_f_EXPARAM_1503| |$alpha-76:prev_set_flag_zero_1506| |$alpha-75:f_1040| |$alpha-74:x_DO_NOT_CARE_1523| |$alpha-73:x_DO_NOT_CARE_1522| |$alpha-72:x_DO_NOT_CARE_1521| |$alpha-71:f_EXPARAM_1204| |$alpha-70:x_DO_NOT_CARE_1526| |$alpha-69:x_DO_NOT_CARE_1525| |$alpha-68:x_DO_NOT_CARE_1524|)
     )
   )

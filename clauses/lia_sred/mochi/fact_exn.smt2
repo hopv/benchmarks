@@ -44,18 +44,18 @@
   ( Int Int Int ) Bool
 )
 
-(declare-fun |exn$unknown:5|
-  ( Int Int ) Bool
-)
-
 (declare-fun |fact$unknown:6|
   ( Int ) Bool
+)
+
+(declare-fun |exn$unknown:5|
+  ( Int Int ) Bool
 )
 
 (assert
   (forall ( (|$alpha-7:n| Int) (|$knormal:16| Int) )
     (=>
-      ( and (|exn$unknown:5| |$knormal:16| 0) (|fact$unknown:6| |$alpha-7:n|) (|fact$unknown:6| (- |$alpha-7:n| 1)) (<= (- |$alpha-7:n| 1) 0) (not (<= |$alpha-7:n| 0)) (not (= 0 0)) )
+      ( and (not (<= |$alpha-7:n| 0)) (not (= 0 0)) (<= (- |$alpha-7:n| 1) 0) (|fact$unknown:6| (- |$alpha-7:n| 1)) (|fact$unknown:6| |$alpha-7:n|) (|exn$unknown:5| |$knormal:16| 0) )
       (|$innerFunc:1-exn$unknown:3| |$knormal:16| 0 |$alpha-7:n|)
     )
   )
@@ -63,7 +63,7 @@
 (assert
   (forall ( (|$alpha-7:n| Int) )
     (=>
-      ( and (|fact$unknown:6| |$alpha-7:n|) (|fact$unknown:6| (- |$alpha-7:n| 1)) (<= (- |$alpha-7:n| 1) 0) (= 0 0) (not (<= |$alpha-7:n| 0)) )
+      ( and (not (<= |$alpha-7:n| 0)) (<= (- |$alpha-7:n| 1) 0) (|fact$unknown:6| (- |$alpha-7:n| 1)) (|fact$unknown:6| |$alpha-7:n|) )
       (|$innerFunc:1-exn$unknown:3| 1 0 |$alpha-7:n|)
     )
   )
@@ -71,7 +71,7 @@
 (assert
   (forall ( (|$alpha-7:n| Int) )
     (=>
-      ( and (|fact$unknown:6| |$alpha-7:n|) (|fact$unknown:6| (- |$alpha-7:n| 1)) (<= (- |$alpha-7:n| 1) 0) (not (<= |$alpha-7:n| 0)) (not (= 0 0)) )
+      ( and (not (<= |$alpha-7:n| 0)) (not (= 0 0)) (<= (- |$alpha-7:n| 1) 0) (|fact$unknown:6| (- |$alpha-7:n| 1)) (|fact$unknown:6| |$alpha-7:n|) )
       (|exn$unknown:4| 0)
     )
   )
@@ -79,7 +79,7 @@
 (assert
   (forall ( (|$V-reftype:5| Int) (|$alpha-1:n| Int) )
     (=>
-      ( and (|$innerFunc:1-exn$unknown:3| |$V-reftype:5| 0 |$alpha-1:n|) (|fact$unknown:6| |$alpha-1:n|) (|fact$unknown:6| (- |$alpha-1:n| 1)) (<= (- |$alpha-1:n| 1) 0) (not (<= |$alpha-1:n| 0)) )
+      ( and (not (<= |$alpha-1:n| 0)) (<= (- |$alpha-1:n| 1) 0) (|fact$unknown:6| (- |$alpha-1:n| 1)) (|fact$unknown:6| |$alpha-1:n|) (|$innerFunc:1-exn$unknown:3| |$V-reftype:5| 0 |$alpha-1:n|) )
       (|fact$unknown:8| |$V-reftype:5| 0 (- |$alpha-1:n| 1))
     )
   )
@@ -93,7 +93,7 @@
 (assert
   (forall ( (|$V-reftype:8| Int) (|$alpha-5:n| Int) )
     (=>
-      ( and (|exn$unknown:5| |$V-reftype:8| 0) (|fact$unknown:6| |$alpha-5:n|) (<= |$alpha-5:n| 0) (> |$alpha-5:n| 0) )
+      ( and (> |$alpha-5:n| 0) (<= |$alpha-5:n| 0) (|fact$unknown:6| |$alpha-5:n|) (|exn$unknown:5| |$V-reftype:8| 0) )
       (|fact$unknown:8| |$V-reftype:8| 0 |$alpha-5:n|)
     )
   )
@@ -125,7 +125,7 @@
 (assert
   (forall ( (|$alpha-5:n| Int) )
     (=>
-      ( and (|fact$unknown:6| |$alpha-5:n|) (<= |$alpha-5:n| 0) (> |$alpha-5:n| 0) )
+      ( and (> |$alpha-5:n| 0) (<= |$alpha-5:n| 0) (|fact$unknown:6| |$alpha-5:n|) )
       (|exn$unknown:4| 0)
     )
   )

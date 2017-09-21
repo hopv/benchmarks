@@ -15,28 +15,25 @@
 )
 
 (assert
-  (forall ( (|$cond-alpha-rename:13| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:17| Int) (|$knormal:1| Int) )
+  (forall ( (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:17| Int) (|$cond-alpha-rename:20| Int) (|$knormal:1| Int) )
     (=>
-      ( and (|twice$unknown:9| |$cond-alpha-rename:16| 1) (>= |$cond-alpha-rename:17| 0) (>= |$cond-alpha-rename:13| 0) )
-      (|twice$unknown:9| (- |$cond-alpha-rename:16|) |$knormal:1|)
+      ( and (>= |$cond-alpha-rename:16| 0) (>= |$cond-alpha-rename:17| 0) (|twice$unknown:9| |$cond-alpha-rename:20| 1) )
+      (|twice$unknown:9| (- |$cond-alpha-rename:20|) |$knormal:1|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-4:x| Int) (|$cond-alpha-rename:31| Int) )
+  (forall ( (|$alpha-4:x| Int) (|$cond-alpha-rename:36| Int) )
     (=>
-      ( and (>= |$cond-alpha-rename:31| 0) )
-      (|twice$unknown:9| |$cond-alpha-rename:31| |$alpha-4:x|)
+      ( and (>= |$cond-alpha-rename:36| 0) )
+      (|twice$unknown:9| |$cond-alpha-rename:36| |$alpha-4:x|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-8:n| Int) (|$cond-alpha-rename:33| Int) (|$cond-alpha-rename:36| Int) (|$cond-alpha-rename:37| Int) )
-    ( and (|twice$unknown:9| |$cond-alpha-rename:36| 1) (>= |$cond-alpha-rename:37| 0) (>= |$cond-alpha-rename:33| 0) (>= |$alpha-8:n| 0) (not (>= (- |$cond-alpha-rename:36|) 0)) )
+  (not (exists ( (|$alpha-8:n| Int) (|$cond-alpha-rename:40| Int) (|$cond-alpha-rename:41| Int) (|$cond-alpha-rename:44| Int) )
+    ( and (>= |$alpha-8:n| 0) (not (>= (- |$cond-alpha-rename:44|) 0)) (>= |$cond-alpha-rename:40| 0) (>= |$cond-alpha-rename:41| 0) (|twice$unknown:9| |$cond-alpha-rename:44| 1) )
     )
   )
 )
 (check-sat)
-
-(get-model)
-

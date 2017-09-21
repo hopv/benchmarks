@@ -20,7 +20,7 @@
 )
 
 (assert
-  (forall ( )
+  (forall ( (useless Int) )
     (=>
       ( and true )
       (|k$unknown:8| 0)
@@ -28,17 +28,17 @@
   )
 )
 (assert
-  (forall ( (|$alpha-5:n| Int) (|$cond-alpha-rename:3| Int) (|$knormal:4| Int) )
+  (forall ( (|$alpha-5:n| Int) (|$knormal:4| Int) )
     (=>
-      ( and (|k$unknown:8| |$alpha-5:n|) (|k$unknown:8| |$cond-alpha-rename:3|) (|k$unknown:9| |$knormal:4| (+ |$alpha-5:n| 1)) (= |$cond-alpha-rename:3| |$alpha-5:n|) )
+      ( and (|k$unknown:9| |$knormal:4| (+ |$alpha-5:n| 1)) (|k$unknown:8| |$alpha-5:n|) (|k$unknown:8| |$alpha-5:n|) )
       (|k$unknown:9| |$knormal:4| |$alpha-5:n|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-5:n| Int) (|$cond-alpha-rename:5| Int) )
+  (forall ( (|$alpha-5:n| Int) )
     (=>
-      ( and (|k$unknown:8| |$alpha-5:n|) (|k$unknown:8| |$cond-alpha-rename:5|) (= |$cond-alpha-rename:5| |$alpha-5:n|) )
+      ( and (|k$unknown:8| |$alpha-5:n|) (|k$unknown:8| |$alpha-5:n|) )
       (|k$unknown:8| (+ |$alpha-5:n| 1))
     )
   )
@@ -50,6 +50,3 @@
   )
 )
 (check-sat)
-
-(get-model)
-

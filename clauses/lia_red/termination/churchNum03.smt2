@@ -94,7 +94,7 @@
 )
 (assert
   (not (exists ( (|$cond-alpha-rename:10| Int) (|$cond-alpha-rename:11| Int) (|$cond-alpha-rename:12| Int) (|$cond-alpha-rename:13| Int) (|$cond-alpha-rename:14| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:17| Int) (|$cond-alpha-rename:18| Int) (|$cond-alpha-rename:7| Int) (|$cond-alpha-rename:8| Int) (|$cond-alpha-rename:9| Int) )
-    ( and (|zero_1039$unknown:87| |$cond-alpha-rename:18| |$cond-alpha-rename:17| |$cond-alpha-rename:16| |$cond-alpha-rename:15| |$cond-alpha-rename:14| |$cond-alpha-rename:13| |$cond-alpha-rename:12| |$cond-alpha-rename:11| |$cond-alpha-rename:10| |$cond-alpha-rename:9| |$cond-alpha-rename:8| |$cond-alpha-rename:7|) (not (= 0 |$cond-alpha-rename:15|)) )
+    ( and (not (= 0 |$cond-alpha-rename:15|)) (|zero_1039$unknown:87| |$cond-alpha-rename:18| |$cond-alpha-rename:17| |$cond-alpha-rename:16| |$cond-alpha-rename:15| |$cond-alpha-rename:14| |$cond-alpha-rename:13| |$cond-alpha-rename:12| |$cond-alpha-rename:11| |$cond-alpha-rename:10| |$cond-alpha-rename:9| |$cond-alpha-rename:8| |$cond-alpha-rename:7|) )
     )
   )
 )

@@ -85,7 +85,7 @@
 (assert
   (forall ( (|$alpha-3:set_flag_fib_1052| Int) (|$alpha-4:s_fib_n_1049| Int) (|$alpha-5:n_1031| Int) (|$knormal:16| Int) (|$knormal:9| Int) )
     (=>
-      ( and (|fib_without_checking_1060$unknown:12| |$knormal:16| (- |$alpha-5:n_1031| 2) |$alpha-5:n_1031| 1) (|fib_without_checking_1060$unknown:12| |$knormal:9| (- |$alpha-5:n_1031| 1) |$alpha-5:n_1031| 1) (not (< |$alpha-5:n_1031| 2)) )
+      ( and (not (< |$alpha-5:n_1031| 2)) (|fib_without_checking_1060$unknown:12| |$knormal:9| (- |$alpha-5:n_1031| 1) |$alpha-5:n_1031| 1) (|fib_without_checking_1060$unknown:12| |$knormal:16| (- |$alpha-5:n_1031| 2) |$alpha-5:n_1031| 1) )
       (|fib_without_checking_1060$unknown:12| (+ |$knormal:9| |$knormal:16|) |$alpha-5:n_1031| |$alpha-4:s_fib_n_1049| |$alpha-3:set_flag_fib_1052|)
     )
   )

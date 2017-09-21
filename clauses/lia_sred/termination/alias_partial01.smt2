@@ -35,16 +35,8 @@
 
 (set-logic HORN)
 
-(declare-fun |f_1030$unknown:9|
-  ( Int Int Int Int Int Int Int ) Bool
-)
-
 (declare-fun |f_without_checking_1098$unknown:16|
   ( Int Int Int Int Int Int Int ) Bool
-)
-
-(declare-fun |fail$unknown:18|
-  ( Int Int ) Bool
 )
 
 (declare-fun |bot$unknown:2|
@@ -56,22 +48,6 @@
     (=>
       ( and (|bot$unknown:2| |$knormal:2| 1) )
       (|bot$unknown:2| |$knormal:2| |$alpha-1:$$tmp::1|)
-    )
-  )
-)
-(assert
-  (forall ( (|$V-reftype:24| Int) (|$V-reftype:26| Int) (|$V-reftype:28| Int) (|$V-reftype:29| Int) (|$knormal:16| Int) (|$knormal:18| Int) )
-    (=>
-      ( and (|bot$unknown:2| |$knormal:16| 1) (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| 1 0 0) (|fail$unknown:18| |$knormal:18| 1) (not (= 0 0)) )
-      (|f_1030$unknown:9| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| 1 0 0)
-    )
-  )
-)
-(assert
-  (forall ( (|$V-reftype:24| Int) (|$V-reftype:26| Int) (|$V-reftype:28| Int) (|$V-reftype:29| Int) )
-    (=>
-      ( and (|f_without_checking_1098$unknown:16| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| 1 0 0) (not (not (= 0 0))) )
-      (|f_1030$unknown:9| |$V-reftype:29| |$V-reftype:28| |$V-reftype:26| |$V-reftype:24| 1 0 0)
     )
   )
 )

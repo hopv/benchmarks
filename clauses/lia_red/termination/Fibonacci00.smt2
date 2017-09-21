@@ -54,7 +54,7 @@
 )
 (assert
   (not (exists ( (|$cond-alpha-rename:1| Int) )
-    ( and (|main_1032$unknown:13| |$cond-alpha-rename:1|) (not (= 0 0)) )
+    ( and (not (= 0 0)) (|main_1032$unknown:13| |$cond-alpha-rename:1|) )
     )
   )
 )

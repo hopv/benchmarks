@@ -33,10 +33,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-1:n| Int) (|$cond-alpha-rename:26| Int) (|$cond-alpha-rename:29| Int) (|$knormal:4| Int) )
+  (forall ( (|$alpha-1:n| Int) (|$cond-alpha-rename:39| Int) (|$cond-alpha-rename:46| Int) (|$knormal:4| Int) )
     (=>
-      ( and (|cps_sum$unknown:10| |$cond-alpha-rename:26| (- |$alpha-1:n| 1)) (|cps_sum$unknown:10| |$knormal:4| (- |$alpha-1:n| 1)) (|cps_sum$unknown:10| |$knormal:4| (- |$alpha-1:n| 1)) (|cps_sum$unknown:11| |$cond-alpha-rename:29| (+ |$cond-alpha-rename:26| |$alpha-1:n|) |$alpha-1:n|) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (= (+ |$cond-alpha-rename:26| |$alpha-1:n|) (+ |$knormal:4| |$alpha-1:n|)) )
-      (|cps_sum$unknown:11| |$cond-alpha-rename:29| |$knormal:4| (- |$alpha-1:n| 1))
+      ( and (= (+ |$cond-alpha-rename:39| |$alpha-1:n|) (+ |$knormal:4| |$alpha-1:n|)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (|cps_sum$unknown:11| |$cond-alpha-rename:46| (+ |$cond-alpha-rename:39| |$alpha-1:n|) |$alpha-1:n|) (|cps_sum$unknown:10| |$knormal:4| (- |$alpha-1:n| 1)) (|cps_sum$unknown:10| |$knormal:4| (- |$alpha-1:n| 1)) (|cps_sum$unknown:10| |$cond-alpha-rename:39| (- |$alpha-1:n| 1)) )
+      (|cps_sum$unknown:11| |$cond-alpha-rename:46| |$knormal:4| (- |$alpha-1:n| 1))
     )
   )
 )
@@ -49,7 +49,7 @@
 (assert
   (forall ( (|$alpha-3:n| Int) (|$knormal:12| Int) )
     (=>
-      ( and (|cps_sum$unknown:10| |$knormal:12| |$alpha-3:n|) (>= |$knormal:12| |$alpha-3:n|) )
+      ( and (>= |$knormal:12| |$alpha-3:n|) (|cps_sum$unknown:10| |$knormal:12| |$alpha-3:n|) )
       (|cps_sum$unknown:11| 1 |$knormal:12| |$alpha-3:n|)
     )
   )

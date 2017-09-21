@@ -147,25 +147,25 @@
 )
 
 (assert
-  (forall ( (|$alpha-40:i| Int) (|$alpha-41:n| Int) (|$alpha-44:$$tmp::2| Int) (|$alpha-45:j| Int) (|$cond-alpha-rename:128| Int) (|$cond-alpha-rename:129| Int) (|$cond-alpha-rename:131| Int) (|$cond-alpha-rename:133| Int) (|$cond-alpha-rename:139| Int) (|$cond-alpha-rename:140| Int) (|$cond-alpha-rename:142| Int) (|$cond-alpha-rename:144| Int) (|$cond-alpha-rename:150| Int) (|$cond-alpha-rename:151| Int) (|$cond-alpha-rename:153| Int) (|$cond-alpha-rename:155| Int) (|$cond-alpha-rename:161| Int) (|$cond-alpha-rename:162| Int) (|$cond-alpha-rename:164| Int) (|$cond-alpha-rename:166| Int) (|$cond-alpha-rename:20| Int) (|$cond-alpha-rename:22| Int) (|$cond-alpha-rename:282| Int) (|$cond-alpha-rename:283| Int) (|$cond-alpha-rename:285| Int) (|$cond-alpha-rename:287| Int) (|$cond-alpha-rename:292| Int) (|$cond-alpha-rename:293| Int) (|$cond-alpha-rename:295| Int) (|$cond-alpha-rename:297| Int) (|$cond-alpha-rename:302| Int) (|$cond-alpha-rename:303| Int) (|$cond-alpha-rename:305| Int) (|$cond-alpha-rename:307| Int) (|$cond-alpha-rename:412| Int) (|$cond-alpha-rename:413| Int) (|$cond-alpha-rename:415| Int) (|$cond-alpha-rename:417| Int) (|$cond-alpha-rename:420| Int) (|$cond-alpha-rename:424| Int) (|$cond-alpha-rename:425| Int) (|$cond-alpha-rename:427| Int) (|$cond-alpha-rename:429| Int) (|$cond-alpha-rename:432| Int) (|$knormal:200| Int) )
+  (forall ( (|$alpha-40:i| Int) (|$alpha-41:n| Int) (|$alpha-44:$$tmp::2| Int) (|$alpha-45:j| Int) (|$cond-alpha-rename:561| Int) (|$cond-alpha-rename:562| Int) (|$cond-alpha-rename:564| Int) (|$cond-alpha-rename:566| Int) (|$cond-alpha-rename:572| Int) (|$cond-alpha-rename:573| Int) (|$cond-alpha-rename:575| Int) (|$cond-alpha-rename:577| Int) (|$cond-alpha-rename:583| Int) (|$cond-alpha-rename:584| Int) (|$cond-alpha-rename:586| Int) (|$cond-alpha-rename:588| Int) (|$cond-alpha-rename:594| Int) (|$cond-alpha-rename:595| Int) (|$cond-alpha-rename:597| Int) (|$cond-alpha-rename:599| Int) (|$cond-alpha-rename:67| Int) (|$cond-alpha-rename:69| Int) (|$cond-alpha-rename:771| Int) (|$cond-alpha-rename:772| Int) (|$cond-alpha-rename:774| Int) (|$cond-alpha-rename:776| Int) (|$cond-alpha-rename:781| Int) (|$cond-alpha-rename:782| Int) (|$cond-alpha-rename:784| Int) (|$cond-alpha-rename:786| Int) (|$cond-alpha-rename:791| Int) (|$cond-alpha-rename:792| Int) (|$cond-alpha-rename:794| Int) (|$cond-alpha-rename:796| Int) (|$cond-alpha-rename:958| Int) (|$cond-alpha-rename:959| Int) (|$cond-alpha-rename:961| Int) (|$cond-alpha-rename:963| Int) (|$cond-alpha-rename:966| Int) (|$cond-alpha-rename:970| Int) (|$cond-alpha-rename:971| Int) (|$cond-alpha-rename:973| Int) (|$cond-alpha-rename:975| Int) (|$cond-alpha-rename:978| Int) (|$knormal:200| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:131| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:128|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:133| (+ |$cond-alpha-rename:129| 1) |$alpha-41:n| |$cond-alpha-rename:128|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:142| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:139|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:144| (+ |$cond-alpha-rename:140| 1) |$alpha-41:n| |$cond-alpha-rename:139|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:153| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:150|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:155| (+ |$cond-alpha-rename:151| 1) |$alpha-41:n| |$cond-alpha-rename:150|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:164| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:161|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:166| (+ |$cond-alpha-rename:162| 1) |$alpha-41:n| |$cond-alpha-rename:161|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:285| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:282|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:287| (+ |$cond-alpha-rename:283| 1) |$alpha-41:n| |$cond-alpha-rename:282|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:295| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:292|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:297| (+ |$cond-alpha-rename:293| 1) |$alpha-41:n| |$cond-alpha-rename:292|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:305| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:302|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:307| (+ |$cond-alpha-rename:303| 1) |$alpha-41:n| |$cond-alpha-rename:302|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:415| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:412|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:417| (+ |$cond-alpha-rename:413| 1) |$alpha-41:n| |$cond-alpha-rename:412|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:427| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:424|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:429| (+ |$cond-alpha-rename:425| 1) |$alpha-41:n| |$cond-alpha-rename:424|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:129| |$alpha-41:n| |$cond-alpha-rename:128|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:140| |$alpha-41:n| |$cond-alpha-rename:139|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:151| |$alpha-41:n| |$cond-alpha-rename:150|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:162| |$alpha-41:n| |$cond-alpha-rename:161|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:283| |$alpha-41:n| |$cond-alpha-rename:282|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:293| |$alpha-41:n| |$cond-alpha-rename:292|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:303| |$alpha-41:n| |$cond-alpha-rename:302|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:413| |$alpha-41:n| |$cond-alpha-rename:412|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:425| |$alpha-41:n| |$cond-alpha-rename:424|) (|$innerFunc:2-loopShift$unknown:19| |$alpha-45:j| (+ |$alpha-40:i| 1) |$cond-alpha-rename:420| |$alpha-41:n| |$cond-alpha-rename:412|) (|$innerFunc:2-loopShift$unknown:19| |$alpha-45:j| (+ |$alpha-40:i| 1) |$cond-alpha-rename:432| |$alpha-41:n| |$cond-alpha-rename:424|) (|$innerFunc:2-loopShift$unknown:20| |$alpha-44:$$tmp::2| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:129| |$alpha-41:n| |$cond-alpha-rename:128|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:20| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:140| |$alpha-41:n| |$cond-alpha-rename:139|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:22| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:151| |$alpha-41:n| |$cond-alpha-rename:150|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:420| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:413| |$alpha-41:n| |$cond-alpha-rename:412|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:432| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:425| |$alpha-41:n| |$cond-alpha-rename:424|) (|$innerFunc:2-loopShift$unknown:20| |$knormal:200| |$alpha-45:j| |$alpha-40:i| |$cond-alpha-rename:162| |$alpha-41:n| |$cond-alpha-rename:161|) (|update$unknown:49| |$alpha-40:i| |$alpha-41:n| |$alpha-40:i|) (|update$unknown:49| |$alpha-45:j| |$alpha-41:n| |$alpha-40:i|) (< (+ |$cond-alpha-rename:129| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:140| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:151| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:162| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:283| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:293| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:303| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:413| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:425| 1) |$alpha-40:i|) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:131| |$cond-alpha-rename:133|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:142| |$cond-alpha-rename:144|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:153| |$cond-alpha-rename:155|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:164| |$cond-alpha-rename:166|))) (not (= |$alpha-40:i| |$alpha-45:j|)) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:285| |$cond-alpha-rename:287|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:295| |$cond-alpha-rename:297|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:305| |$cond-alpha-rename:307|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:415| |$cond-alpha-rename:417|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:427| |$cond-alpha-rename:429|))) (not (= |$alpha-40:i| |$alpha-45:j|)) (= (+ |$cond-alpha-rename:283| 1) (+ |$cond-alpha-rename:413| 1)) (= (+ |$cond-alpha-rename:303| 1) (+ |$cond-alpha-rename:425| 1)) )
-      (|$innerFunc:1-a$unknown:8| |$knormal:200| |$alpha-45:j| |$alpha-44:$$tmp::2| (+ |$cond-alpha-rename:283| 1) |$alpha-41:n| |$alpha-40:i|)
+      ( and (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:564| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:561|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:566| (+ |$cond-alpha-rename:562| 1) |$alpha-41:n| |$cond-alpha-rename:561|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:575| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:572|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:577| (+ |$cond-alpha-rename:573| 1) |$alpha-41:n| |$cond-alpha-rename:572|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:586| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:583|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:588| (+ |$cond-alpha-rename:584| 1) |$alpha-41:n| |$cond-alpha-rename:583|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:597| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:594|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:599| (+ |$cond-alpha-rename:595| 1) |$alpha-41:n| |$cond-alpha-rename:594|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:774| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:771|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:776| (+ |$cond-alpha-rename:772| 1) |$alpha-41:n| |$cond-alpha-rename:771|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:784| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:781|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:786| (+ |$cond-alpha-rename:782| 1) |$alpha-41:n| |$cond-alpha-rename:781|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:794| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:791|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:796| (+ |$cond-alpha-rename:792| 1) |$alpha-41:n| |$cond-alpha-rename:791|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:961| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:958|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:963| (+ |$cond-alpha-rename:959| 1) |$alpha-41:n| |$cond-alpha-rename:958|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:973| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:970|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:975| (+ |$cond-alpha-rename:971| 1) |$alpha-41:n| |$cond-alpha-rename:970|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:562| |$alpha-41:n| |$cond-alpha-rename:561|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:573| |$alpha-41:n| |$cond-alpha-rename:572|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:584| |$alpha-41:n| |$cond-alpha-rename:583|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:595| |$alpha-41:n| |$cond-alpha-rename:594|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:772| |$alpha-41:n| |$cond-alpha-rename:771|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:782| |$alpha-41:n| |$cond-alpha-rename:781|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:792| |$alpha-41:n| |$cond-alpha-rename:791|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:959| |$alpha-41:n| |$cond-alpha-rename:958|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:971| |$alpha-41:n| |$cond-alpha-rename:970|) (|$innerFunc:2-loopShift$unknown:19| |$alpha-45:j| (+ |$alpha-40:i| 1) |$cond-alpha-rename:966| |$alpha-41:n| |$cond-alpha-rename:958|) (|$innerFunc:2-loopShift$unknown:19| |$alpha-45:j| (+ |$alpha-40:i| 1) |$cond-alpha-rename:978| |$alpha-41:n| |$cond-alpha-rename:970|) (|$innerFunc:2-loopShift$unknown:20| |$alpha-44:$$tmp::2| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:562| |$alpha-41:n| |$cond-alpha-rename:561|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:67| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:573| |$alpha-41:n| |$cond-alpha-rename:572|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:69| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:584| |$alpha-41:n| |$cond-alpha-rename:583|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:966| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:959| |$alpha-41:n| |$cond-alpha-rename:958|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:978| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:971| |$alpha-41:n| |$cond-alpha-rename:970|) (|$innerFunc:2-loopShift$unknown:20| |$knormal:200| |$alpha-45:j| |$alpha-40:i| |$cond-alpha-rename:595| |$alpha-41:n| |$cond-alpha-rename:594|) (|update$unknown:49| |$alpha-40:i| |$alpha-41:n| |$alpha-40:i|) (|update$unknown:49| |$alpha-45:j| |$alpha-41:n| |$alpha-40:i|) (< (+ |$cond-alpha-rename:959| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:971| 1) |$alpha-40:i|) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:961| |$cond-alpha-rename:963|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:973| |$cond-alpha-rename:975|))) (not (not (= |$cond-alpha-rename:564| |$cond-alpha-rename:566|))) (not (not (= |$cond-alpha-rename:575| |$cond-alpha-rename:577|))) (not (not (= |$cond-alpha-rename:586| |$cond-alpha-rename:588|))) (not (not (= |$cond-alpha-rename:597| |$cond-alpha-rename:599|))) (not (not (= |$cond-alpha-rename:774| |$cond-alpha-rename:776|))) (not (not (= |$cond-alpha-rename:784| |$cond-alpha-rename:786|))) (not (not (= |$cond-alpha-rename:794| |$cond-alpha-rename:796|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (= |$alpha-40:i| |$alpha-45:j|)) (= (+ |$cond-alpha-rename:772| 1) (+ |$cond-alpha-rename:959| 1)) (= (+ |$cond-alpha-rename:792| 1) (+ |$cond-alpha-rename:971| 1)) (< (+ |$cond-alpha-rename:562| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:573| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:584| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:595| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:772| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:782| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:792| 1) |$alpha-40:i|) )
+      (|$innerFunc:1-a$unknown:8| |$knormal:200| |$alpha-45:j| |$alpha-44:$$tmp::2| (+ |$cond-alpha-rename:792| 1) |$alpha-41:n| |$alpha-40:i|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-40:i| Int) (|$alpha-41:n| Int) (|$alpha-44:$$tmp::2| Int) (|$alpha-45:j| Int) (|$cond-alpha-rename:172| Int) (|$cond-alpha-rename:173| Int) (|$cond-alpha-rename:175| Int) (|$cond-alpha-rename:177| Int) (|$cond-alpha-rename:312| Int) (|$cond-alpha-rename:313| Int) (|$cond-alpha-rename:315| Int) (|$cond-alpha-rename:317| Int) (|$cond-alpha-rename:436| Int) (|$cond-alpha-rename:437| Int) (|$cond-alpha-rename:439| Int) (|$cond-alpha-rename:441| Int) (|$cond-alpha-rename:444| Int) )
+  (forall ( (|$alpha-41:n| Int) (|$alpha-44:$$tmp::2| Int) (|$alpha-45:j| Int) (|$cond-alpha-rename:605| Int) (|$cond-alpha-rename:606| Int) (|$cond-alpha-rename:608| Int) (|$cond-alpha-rename:610| Int) (|$cond-alpha-rename:801| Int) (|$cond-alpha-rename:802| Int) (|$cond-alpha-rename:804| Int) (|$cond-alpha-rename:806| Int) (|$cond-alpha-rename:982| Int) (|$cond-alpha-rename:983| Int) (|$cond-alpha-rename:985| Int) (|$cond-alpha-rename:987| Int) (|$cond-alpha-rename:990| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:175| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:172|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:177| (+ |$cond-alpha-rename:173| 1) |$alpha-41:n| |$cond-alpha-rename:172|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:315| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:312|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:317| (+ |$cond-alpha-rename:313| 1) |$alpha-41:n| |$cond-alpha-rename:312|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:439| |$alpha-40:i| |$alpha-41:n| |$cond-alpha-rename:436|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:441| (+ |$cond-alpha-rename:437| 1) |$alpha-41:n| |$cond-alpha-rename:436|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:173| |$alpha-41:n| |$cond-alpha-rename:172|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:313| |$alpha-41:n| |$cond-alpha-rename:312|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-40:i| |$cond-alpha-rename:437| |$alpha-41:n| |$cond-alpha-rename:436|) (|$innerFunc:2-loopShift$unknown:19| |$alpha-45:j| (+ |$alpha-40:i| 1) |$cond-alpha-rename:444| |$alpha-41:n| |$cond-alpha-rename:436|) (|$innerFunc:2-loopShift$unknown:20| |$alpha-44:$$tmp::2| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:173| |$alpha-41:n| |$cond-alpha-rename:172|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:444| |$alpha-40:i| |$alpha-40:i| |$cond-alpha-rename:437| |$alpha-41:n| |$cond-alpha-rename:436|) (|update$unknown:49| |$alpha-40:i| |$alpha-41:n| |$alpha-40:i|) (< (+ |$cond-alpha-rename:173| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:313| 1) |$alpha-40:i|) (< (+ |$cond-alpha-rename:437| 1) |$alpha-40:i|) (= |$alpha-40:i| |$alpha-45:j|) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:175| |$cond-alpha-rename:177|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:315| |$cond-alpha-rename:317|))) (not (= |$alpha-40:i| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:439| |$cond-alpha-rename:441|))) (= (+ |$cond-alpha-rename:313| 1) (+ |$cond-alpha-rename:437| 1)) )
-      (|$innerFunc:1-a$unknown:8| (+ |$cond-alpha-rename:313| 1) |$alpha-45:j| |$alpha-44:$$tmp::2| (+ |$cond-alpha-rename:313| 1) |$alpha-41:n| |$alpha-40:i|)
+      ( and (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:608| |$alpha-45:j| |$alpha-41:n| |$cond-alpha-rename:605|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:610| (+ |$cond-alpha-rename:606| 1) |$alpha-41:n| |$cond-alpha-rename:605|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:804| |$alpha-45:j| |$alpha-41:n| |$cond-alpha-rename:801|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:806| (+ |$cond-alpha-rename:802| 1) |$alpha-41:n| |$cond-alpha-rename:801|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:985| |$alpha-45:j| |$alpha-41:n| |$cond-alpha-rename:982|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:987| (+ |$cond-alpha-rename:983| 1) |$alpha-41:n| |$cond-alpha-rename:982|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-45:j| |$cond-alpha-rename:606| |$alpha-41:n| |$cond-alpha-rename:605|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-45:j| |$cond-alpha-rename:802| |$alpha-41:n| |$cond-alpha-rename:801|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-45:j| |$cond-alpha-rename:983| |$alpha-41:n| |$cond-alpha-rename:982|) (|$innerFunc:2-loopShift$unknown:19| |$alpha-45:j| (+ |$alpha-45:j| 1) |$cond-alpha-rename:990| |$alpha-41:n| |$cond-alpha-rename:982|) (|$innerFunc:2-loopShift$unknown:20| |$alpha-44:$$tmp::2| |$alpha-45:j| |$alpha-45:j| |$cond-alpha-rename:606| |$alpha-41:n| |$cond-alpha-rename:605|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:990| |$alpha-45:j| |$alpha-45:j| |$cond-alpha-rename:983| |$alpha-41:n| |$cond-alpha-rename:982|) (|update$unknown:49| |$alpha-45:j| |$alpha-41:n| |$alpha-45:j|) (< (+ |$cond-alpha-rename:983| 1) |$alpha-45:j|) (not (= |$alpha-45:j| |$alpha-41:n|)) (not (not (= |$cond-alpha-rename:985| |$cond-alpha-rename:987|))) (not (not (= |$cond-alpha-rename:608| |$cond-alpha-rename:610|))) (not (not (= |$cond-alpha-rename:804| |$cond-alpha-rename:806|))) (not (= |$alpha-45:j| |$alpha-41:n|)) (= (+ |$cond-alpha-rename:802| 1) (+ |$cond-alpha-rename:983| 1)) (< (+ |$cond-alpha-rename:606| 1) |$alpha-45:j|) (< (+ |$cond-alpha-rename:802| 1) |$alpha-45:j|) )
+      (|$innerFunc:1-a$unknown:8| (+ |$cond-alpha-rename:802| 1) |$alpha-45:j| |$alpha-44:$$tmp::2| (+ |$cond-alpha-rename:802| 1) |$alpha-41:n| |$alpha-45:j|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:5| Int) (|$alpha-5:i| Int) (|$alpha-6:n| Int) (|$cond-alpha-rename:10| Int) (|$cond-alpha-rename:183| Int) (|$cond-alpha-rename:184| Int) (|$cond-alpha-rename:186| Int) (|$cond-alpha-rename:188| Int) (|$cond-alpha-rename:194| Int) (|$cond-alpha-rename:195| Int) (|$cond-alpha-rename:197| Int) (|$cond-alpha-rename:199| Int) (|$cond-alpha-rename:322| Int) (|$cond-alpha-rename:323| Int) (|$cond-alpha-rename:325| Int) (|$cond-alpha-rename:327| Int) (|$cond-alpha-rename:332| Int) (|$cond-alpha-rename:333| Int) (|$cond-alpha-rename:335| Int) (|$cond-alpha-rename:337| Int) (|$cond-alpha-rename:448| Int) (|$cond-alpha-rename:449| Int) (|$cond-alpha-rename:451| Int) (|$cond-alpha-rename:453| Int) (|$cond-alpha-rename:456| Int) (|$knormal:13| Int) )
+  (forall ( (|$V-reftype:5| Int) (|$alpha-5:i| Int) (|$alpha-6:n| Int) (|$cond-alpha-rename:10| Int) (|$cond-alpha-rename:1002| Int) (|$cond-alpha-rename:616| Int) (|$cond-alpha-rename:617| Int) (|$cond-alpha-rename:619| Int) (|$cond-alpha-rename:621| Int) (|$cond-alpha-rename:627| Int) (|$cond-alpha-rename:628| Int) (|$cond-alpha-rename:630| Int) (|$cond-alpha-rename:632| Int) (|$cond-alpha-rename:811| Int) (|$cond-alpha-rename:812| Int) (|$cond-alpha-rename:814| Int) (|$cond-alpha-rename:816| Int) (|$cond-alpha-rename:821| Int) (|$cond-alpha-rename:822| Int) (|$cond-alpha-rename:824| Int) (|$cond-alpha-rename:826| Int) (|$cond-alpha-rename:994| Int) (|$cond-alpha-rename:995| Int) (|$cond-alpha-rename:997| Int) (|$cond-alpha-rename:999| Int) (|$knormal:13| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:186| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:183|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:188| (+ |$cond-alpha-rename:184| 1) |$alpha-6:n| |$cond-alpha-rename:183|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:197| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:194|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:199| (+ |$cond-alpha-rename:195| 1) |$alpha-6:n| |$cond-alpha-rename:194|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:325| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:322|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:327| (+ |$cond-alpha-rename:323| 1) |$alpha-6:n| |$cond-alpha-rename:322|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:335| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:332|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:337| (+ |$cond-alpha-rename:333| 1) |$alpha-6:n| |$cond-alpha-rename:332|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:451| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:448|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:453| (+ |$cond-alpha-rename:449| 1) |$alpha-6:n| |$cond-alpha-rename:448|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:184| |$alpha-6:n| |$cond-alpha-rename:183|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:195| |$alpha-6:n| |$cond-alpha-rename:194|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:323| |$alpha-6:n| |$cond-alpha-rename:322|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:333| |$alpha-6:n| |$cond-alpha-rename:332|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:449| |$alpha-6:n| |$cond-alpha-rename:448|) (|$innerFunc:2-loopShift$unknown:19| |$V-reftype:5| (+ |$alpha-5:i| 1) |$cond-alpha-rename:456| |$alpha-6:n| |$cond-alpha-rename:448|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:10| |$alpha-5:i| |$alpha-5:i| |$cond-alpha-rename:184| |$alpha-6:n| |$cond-alpha-rename:183|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:456| |$alpha-5:i| |$alpha-5:i| |$cond-alpha-rename:449| |$alpha-6:n| |$cond-alpha-rename:448|) (|$innerFunc:2-loopShift$unknown:20| |$knormal:13| |$alpha-5:i| |$alpha-5:i| |$cond-alpha-rename:195| |$alpha-6:n| |$cond-alpha-rename:194|) (|update$unknown:49| |$alpha-5:i| |$alpha-6:n| |$alpha-5:i|) (< (+ |$cond-alpha-rename:184| 1) |$alpha-5:i|) (< (+ |$cond-alpha-rename:195| 1) |$alpha-5:i|) (< (+ |$cond-alpha-rename:323| 1) |$alpha-5:i|) (< (+ |$cond-alpha-rename:333| 1) |$alpha-5:i|) (< (+ |$cond-alpha-rename:449| 1) |$alpha-5:i|) (not (= |$alpha-5:i| |$V-reftype:5|)) (not (= |$alpha-5:i| |$alpha-6:n|)) (not (not (= |$cond-alpha-rename:186| |$cond-alpha-rename:188|))) (not (= |$alpha-5:i| |$alpha-6:n|)) (not (not (= |$cond-alpha-rename:197| |$cond-alpha-rename:199|))) (not (= |$alpha-5:i| |$alpha-6:n|)) (not (not (= |$cond-alpha-rename:325| |$cond-alpha-rename:327|))) (not (= |$alpha-5:i| |$alpha-6:n|)) (not (not (= |$cond-alpha-rename:335| |$cond-alpha-rename:337|))) (not (= |$alpha-5:i| |$alpha-6:n|)) (not (not (= |$cond-alpha-rename:451| |$cond-alpha-rename:453|))) (= (+ |$cond-alpha-rename:333| 1) (+ |$cond-alpha-rename:449| 1)) )
+      ( and (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:619| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:616|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:621| (+ |$cond-alpha-rename:617| 1) |$alpha-6:n| |$cond-alpha-rename:616|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:630| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:627|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:632| (+ |$cond-alpha-rename:628| 1) |$alpha-6:n| |$cond-alpha-rename:627|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:814| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:811|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:816| (+ |$cond-alpha-rename:812| 1) |$alpha-6:n| |$cond-alpha-rename:811|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:824| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:821|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:826| (+ |$cond-alpha-rename:822| 1) |$alpha-6:n| |$cond-alpha-rename:821|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:997| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:994|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:999| (+ |$cond-alpha-rename:995| 1) |$alpha-6:n| |$cond-alpha-rename:994|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:617| |$alpha-6:n| |$cond-alpha-rename:616|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:628| |$alpha-6:n| |$cond-alpha-rename:627|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:812| |$alpha-6:n| |$cond-alpha-rename:811|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:822| |$alpha-6:n| |$cond-alpha-rename:821|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:995| |$alpha-6:n| |$cond-alpha-rename:994|) (|$innerFunc:2-loopShift$unknown:19| |$V-reftype:5| (+ |$alpha-5:i| 1) |$cond-alpha-rename:1002| |$alpha-6:n| |$cond-alpha-rename:994|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:10| |$alpha-5:i| |$alpha-5:i| |$cond-alpha-rename:617| |$alpha-6:n| |$cond-alpha-rename:616|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:1002| |$alpha-5:i| |$alpha-5:i| |$cond-alpha-rename:995| |$alpha-6:n| |$cond-alpha-rename:994|) (|$innerFunc:2-loopShift$unknown:20| |$knormal:13| |$alpha-5:i| |$alpha-5:i| |$cond-alpha-rename:628| |$alpha-6:n| |$cond-alpha-rename:627|) (|update$unknown:49| |$alpha-5:i| |$alpha-6:n| |$alpha-5:i|) (< (+ |$cond-alpha-rename:995| 1) |$alpha-5:i|) (not (not (= |$cond-alpha-rename:997| |$cond-alpha-rename:999|))) (not (= |$alpha-5:i| |$alpha-6:n|)) (not (not (= |$cond-alpha-rename:619| |$cond-alpha-rename:621|))) (not (not (= |$cond-alpha-rename:630| |$cond-alpha-rename:632|))) (not (not (= |$cond-alpha-rename:814| |$cond-alpha-rename:816|))) (not (not (= |$cond-alpha-rename:824| |$cond-alpha-rename:826|))) (not (= |$alpha-5:i| |$V-reftype:5|)) (not (= |$alpha-5:i| |$alpha-6:n|)) (= (+ |$cond-alpha-rename:812| 1) (+ |$cond-alpha-rename:995| 1)) (< (+ |$cond-alpha-rename:617| 1) |$alpha-5:i|) (< (+ |$cond-alpha-rename:628| 1) |$alpha-5:i|) (< (+ |$cond-alpha-rename:812| 1) |$alpha-5:i|) (< (+ |$cond-alpha-rename:822| 1) |$alpha-5:i|) )
       (|update$unknown:49| |$V-reftype:5| |$alpha-6:n| |$alpha-5:i|)
     )
   )
@@ -211,10 +211,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-10:slen| Int) (|$alpha-11:str| Int) (|$alpha-12:plen| Int) (|$cond-alpha-rename:23| Int) (|$cond-alpha-rename:24| Int) )
+  (forall ( (|$alpha-10:slen| Int) (|$alpha-11:str| Int) (|$alpha-12:plen| Int) (|$cond-alpha-rename:180| Int) (|$cond-alpha-rename:181| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:10| |$alpha-11:str| |$alpha-10:slen|) (|kmpMatch$unknown:37| |$alpha-11:str| |$alpha-10:slen|) (|make_array$unknown:45| |$alpha-11:str| |$cond-alpha-rename:23| |$alpha-10:slen|) (< |$alpha-11:str| |$alpha-10:slen|) (<= 0 |$alpha-11:str|) (> |$cond-alpha-rename:24| 0) (> |$alpha-10:slen| 0) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) )
-      (|$innerFunc:2-loopShift$unknown:11| |$cond-alpha-rename:23| |$alpha-11:str| |$alpha-10:slen|)
+      ( and (> |$cond-alpha-rename:181| 0) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (<= 0 |$alpha-11:str|) (< |$alpha-11:str| |$alpha-10:slen|) (|make_array$unknown:45| |$alpha-11:str| |$cond-alpha-rename:180| |$alpha-10:slen|) (|kmpMatch$unknown:37| |$alpha-11:str| |$alpha-10:slen|) (|$innerFunc:2-loopShift$unknown:10| |$alpha-11:str| |$alpha-10:slen|) )
+      (|$innerFunc:2-loopShift$unknown:11| |$cond-alpha-rename:180| |$alpha-11:str| |$alpha-10:slen|)
     )
   )
 )
@@ -427,9 +427,9 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:109| Int) (|$alpha-31:slen| Int) (|$alpha-33:plen| Int) (|$alpha-36:i| Int) (|$alpha-37:j| Int) (|$cond-alpha-rename:520| Int) (|$cond-alpha-rename:521| Int) (|$cond-alpha-rename:523| Int) (|$cond-alpha-rename:525| Int) (|$cond-alpha-rename:531| Int) (|$cond-alpha-rename:532| Int) (|$cond-alpha-rename:534| Int) (|$cond-alpha-rename:536| Int) (|$cond-alpha-rename:541| Int) (|$cond-alpha-rename:542| Int) (|$cond-alpha-rename:544| Int) (|$cond-alpha-rename:546| Int) (|$cond-alpha-rename:549| Int) (|$cond-alpha-rename:553| Int) (|$knormal:129| Int) (|$knormal:132| Int) (|$knormal:136| Int) (|$knormal:163| Int) )
+  (forall ( (|$V-reftype:109| Int) (|$alpha-31:slen| Int) (|$alpha-33:plen| Int) (|$alpha-36:i| Int) (|$alpha-37:j| Int) (|$cond-alpha-rename:1122| Int) (|$cond-alpha-rename:1123| Int) (|$cond-alpha-rename:1125| Int) (|$cond-alpha-rename:1127| Int) (|$cond-alpha-rename:1130| Int) (|$cond-alpha-rename:1134| Int) (|$cond-alpha-rename:1135| Int) (|$cond-alpha-rename:1137| Int) (|$cond-alpha-rename:1139| Int) (|$cond-alpha-rename:1145| Int) (|$cond-alpha-rename:1146| Int) (|$cond-alpha-rename:1148| Int) (|$cond-alpha-rename:1150| Int) (|$cond-alpha-rename:1155| Int) (|$knormal:129| Int) (|$knormal:132| Int) (|$knormal:136| Int) (|$knormal:163| Int) )
     (=>
-      ( and (|$innerFunc:1-a$unknown:8| |$V-reftype:109| |$knormal:163| |$cond-alpha-rename:553| (+ |$alpha-36:i| 1) |$alpha-33:plen| |$alpha-37:j|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:523| |$alpha-37:j| |$alpha-33:plen| |$cond-alpha-rename:520|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:525| (+ |$cond-alpha-rename:521| 1) |$alpha-33:plen| |$cond-alpha-rename:520|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:534| |$alpha-37:j| |$alpha-33:plen| |$cond-alpha-rename:531|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:536| (+ |$cond-alpha-rename:532| 1) |$alpha-33:plen| |$cond-alpha-rename:531|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:544| |$alpha-37:j| |$alpha-33:plen| |$cond-alpha-rename:541|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:546| (+ |$cond-alpha-rename:542| 1) |$alpha-33:plen| |$cond-alpha-rename:541|) (|$innerFunc:2-loopShift$unknown:14| |$knormal:129| |$alpha-37:j| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:14| |$knormal:132| (+ |$alpha-36:i| 1) |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$cond-alpha-rename:521| |$alpha-33:plen| |$cond-alpha-rename:520|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$cond-alpha-rename:532| |$alpha-33:plen| |$cond-alpha-rename:531|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$cond-alpha-rename:542| |$alpha-33:plen| |$cond-alpha-rename:541|) (|$innerFunc:2-loopShift$unknown:19| |$knormal:163| (+ |$alpha-37:j| 1) |$cond-alpha-rename:549| |$alpha-33:plen| |$cond-alpha-rename:541|) (|$innerFunc:2-loopShift$unknown:19| |$knormal:163| (+ |$alpha-37:j| 1) |$knormal:136| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:549| |$alpha-37:j| |$alpha-37:j| |$cond-alpha-rename:542| |$alpha-33:plen| |$cond-alpha-rename:541|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:553| |$alpha-37:j| |$alpha-37:j| |$cond-alpha-rename:521| |$alpha-33:plen| |$cond-alpha-rename:520|) (|$innerFunc:2-loopShift$unknown:20| |$knormal:136| |$alpha-37:j| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|update$unknown:49| |$alpha-37:j| |$alpha-33:plen| |$alpha-37:j|) (< (+ |$cond-alpha-rename:521| 1) |$alpha-37:j|) (< (+ |$cond-alpha-rename:532| 1) |$alpha-37:j|) (< (+ |$cond-alpha-rename:542| 1) |$alpha-37:j|) (< (+ |$alpha-36:i| 1) |$alpha-37:j|) (not (= |$alpha-37:j| |$alpha-33:plen|)) (not (not (= |$cond-alpha-rename:523| |$cond-alpha-rename:525|))) (not (= |$alpha-37:j| |$alpha-33:plen|)) (not (not (= |$cond-alpha-rename:534| |$cond-alpha-rename:536|))) (not (= |$alpha-37:j| |$alpha-33:plen|)) (not (not (= |$cond-alpha-rename:544| |$cond-alpha-rename:546|))) (not (= |$alpha-37:j| |$alpha-33:plen|)) (not (not (= |$knormal:129| |$knormal:132|))) (= (+ |$alpha-36:i| 1) (+ |$cond-alpha-rename:532| 1)) (= (+ |$alpha-36:i| 1) (+ |$cond-alpha-rename:542| 1)) )
+      ( and (< (+ |$alpha-36:i| 1) |$alpha-37:j|) (= (+ |$alpha-36:i| 1) (+ |$cond-alpha-rename:1146| 1)) (= (+ |$alpha-36:i| 1) (+ |$cond-alpha-rename:1123| 1)) (not (= |$alpha-37:j| |$alpha-33:plen|)) (not (not (= |$knormal:129| |$knormal:132|))) (not (not (= |$cond-alpha-rename:1148| |$cond-alpha-rename:1150|))) (not (= |$alpha-37:j| |$alpha-33:plen|)) (not (not (= |$cond-alpha-rename:1137| |$cond-alpha-rename:1139|))) (not (= |$alpha-37:j| |$alpha-33:plen|)) (not (not (= |$cond-alpha-rename:1125| |$cond-alpha-rename:1127|))) (not (= |$alpha-37:j| |$alpha-33:plen|)) (< (+ |$cond-alpha-rename:1146| 1) |$alpha-37:j|) (< (+ |$cond-alpha-rename:1135| 1) |$alpha-37:j|) (< (+ |$cond-alpha-rename:1123| 1) |$alpha-37:j|) (|update$unknown:49| |$alpha-37:j| |$alpha-33:plen| |$alpha-37:j|) (|$innerFunc:2-loopShift$unknown:20| |$knormal:136| |$alpha-37:j| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:1155| |$alpha-37:j| |$alpha-37:j| |$cond-alpha-rename:1135| |$alpha-33:plen| |$cond-alpha-rename:1134|) (|$innerFunc:2-loopShift$unknown:20| |$cond-alpha-rename:1130| |$alpha-37:j| |$alpha-37:j| |$cond-alpha-rename:1123| |$alpha-33:plen| |$cond-alpha-rename:1122|) (|$innerFunc:2-loopShift$unknown:19| |$knormal:163| (+ |$alpha-37:j| 1) |$knormal:136| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:19| |$knormal:163| (+ |$alpha-37:j| 1) |$cond-alpha-rename:1130| |$alpha-33:plen| |$cond-alpha-rename:1122|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$cond-alpha-rename:1146| |$alpha-33:plen| |$cond-alpha-rename:1145|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$cond-alpha-rename:1135| |$alpha-33:plen| |$cond-alpha-rename:1134|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$cond-alpha-rename:1123| |$alpha-33:plen| |$cond-alpha-rename:1122|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:14| |$knormal:132| (+ |$alpha-36:i| 1) |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:14| |$knormal:129| |$alpha-37:j| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:1150| (+ |$cond-alpha-rename:1146| 1) |$alpha-33:plen| |$cond-alpha-rename:1145|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:1148| |$alpha-37:j| |$alpha-33:plen| |$cond-alpha-rename:1145|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:1139| (+ |$cond-alpha-rename:1135| 1) |$alpha-33:plen| |$cond-alpha-rename:1134|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:1137| |$alpha-37:j| |$alpha-33:plen| |$cond-alpha-rename:1134|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:1127| (+ |$cond-alpha-rename:1123| 1) |$alpha-33:plen| |$cond-alpha-rename:1122|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:1125| |$alpha-37:j| |$alpha-33:plen| |$cond-alpha-rename:1122|) (|$innerFunc:1-a$unknown:8| |$V-reftype:109| |$knormal:163| |$cond-alpha-rename:1155| (+ |$alpha-36:i| 1) |$alpha-33:plen| |$alpha-37:j|) )
       (|$innerFunc:2-loopShift$unknown:20| |$V-reftype:109| |$knormal:163| (+ |$alpha-37:j| 1) |$knormal:136| |$alpha-33:plen| |$alpha-31:slen|)
     )
   )
@@ -571,18 +571,18 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:37| Int) (|$V-reftype:38| Int) (|$alpha-31:slen| Int) (|$alpha-33:plen| Int) (|$alpha-36:i| Int) (|$alpha-37:j| Int) )
+  (forall ( (|$V-reftype:37| Int) (|$V-reftype:38| Int) (|$alpha-31:slen| Int) (|$alpha-33:plen| Int) (|$alpha-36:i| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:20| |$V-reftype:38| |$V-reftype:37| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:21| |$V-reftype:37| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (= |$alpha-37:j| |$alpha-33:plen|) )
-      (|$innerFunc:2-loopShift$unknown:22| |$V-reftype:38| |$V-reftype:37| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|)
+      ( and (|$innerFunc:2-loopShift$unknown:18| |$alpha-33:plen| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:20| |$V-reftype:38| |$V-reftype:37| |$alpha-33:plen| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:21| |$V-reftype:37| |$alpha-33:plen| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) )
+      (|$innerFunc:2-loopShift$unknown:22| |$V-reftype:38| |$V-reftype:37| |$alpha-33:plen| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:40| Int) (|$alpha-31:slen| Int) (|$alpha-33:plen| Int) (|$alpha-36:i| Int) (|$alpha-37:j| Int) )
+  (forall ( (|$V-reftype:40| Int) (|$alpha-31:slen| Int) (|$alpha-33:plen| Int) (|$alpha-36:i| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:18| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:21| |$V-reftype:40| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (= |$alpha-37:j| |$alpha-33:plen|) )
-      (|$innerFunc:2-loopShift$unknown:19| |$V-reftype:40| |$alpha-37:j| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|)
+      ( and (|$innerFunc:2-loopShift$unknown:18| |$alpha-33:plen| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) (|$innerFunc:2-loopShift$unknown:21| |$V-reftype:40| |$alpha-33:plen| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|) )
+      (|$innerFunc:2-loopShift$unknown:19| |$V-reftype:40| |$alpha-33:plen| |$alpha-36:i| |$alpha-33:plen| |$alpha-31:slen|)
     )
   )
 )
@@ -603,10 +603,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-10:slen| Int) (|$alpha-12:plen| Int) (|$alpha-13:pat| Int) (|$cond-alpha-rename:93| Int) )
+  (forall ( (|$alpha-10:slen| Int) (|$alpha-12:plen| Int) (|$alpha-13:pat| Int) (|$cond-alpha-rename:360| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:13| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) (|kmpMatch$unknown:40| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) (|make_array$unknown:45| |$alpha-13:pat| |$cond-alpha-rename:93| |$alpha-12:plen|) (< |$alpha-13:pat| |$alpha-12:plen|) (<= 0 |$alpha-13:pat|) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) )
-      (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:93| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|)
+      ( and (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (<= 0 |$alpha-13:pat|) (< |$alpha-13:pat| |$alpha-12:plen|) (|make_array$unknown:45| |$alpha-13:pat| |$cond-alpha-rename:360| |$alpha-12:plen|) (|kmpMatch$unknown:40| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) (|$innerFunc:2-loopShift$unknown:13| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) )
+      (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:360| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|)
     )
   )
 )
@@ -621,7 +621,7 @@
 (assert
   (forall ( (|$alpha-10:slen| Int) (|$alpha-12:plen| Int) (|$knormal:51| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:15| |$knormal:51| |$alpha-12:plen| |$alpha-10:slen|) (|make_array$unknown:45| |$knormal:51| (- 1) |$alpha-12:plen|) (< |$knormal:51| |$alpha-12:plen|) (<= 0 |$knormal:51|) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) )
+      ( and (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (<= 0 |$knormal:51|) (< |$knormal:51| |$alpha-12:plen|) (|make_array$unknown:45| |$knormal:51| (- 1) |$alpha-12:plen|) (|$innerFunc:2-loopShift$unknown:15| |$knormal:51| |$alpha-12:plen| |$alpha-10:slen|) )
       (|$innerFunc:2-loopShift$unknown:16| (- 1) |$knormal:51| |$alpha-12:plen| |$alpha-10:slen|)
     )
   )
@@ -637,7 +637,7 @@
 (assert
   (forall ( (|$alpha-10:slen| Int) (|$alpha-12:plen| Int) (|$knormal:51| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:19| |$knormal:51| 1 (- 1) |$alpha-12:plen| |$alpha-10:slen|) (|make_array$unknown:45| |$knormal:51| (- 1) |$alpha-12:plen|) (< |$knormal:51| |$alpha-12:plen|) (<= 0 |$knormal:51|) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) )
+      ( and (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (<= 0 |$knormal:51|) (< |$knormal:51| |$alpha-12:plen|) (|make_array$unknown:45| |$knormal:51| (- 1) |$alpha-12:plen|) (|$innerFunc:2-loopShift$unknown:19| |$knormal:51| 1 (- 1) |$alpha-12:plen| |$alpha-10:slen|) )
       (|$innerFunc:2-loopShift$unknown:20| (- 1) |$knormal:51| 1 (- 1) |$alpha-12:plen| |$alpha-10:slen|)
     )
   )
@@ -659,17 +659,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:45| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:45| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:24| |$V-reftype:45| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:24| |$V-reftype:45| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:24| |$V-reftype:45| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:45| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:45| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:24| |$V-reftype:45| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:24| |$V-reftype:45| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:24| |$V-reftype:45| |$alpha-23:slen|)
     )
   )
@@ -683,17 +683,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:47| Int) (|$alpha-23:slen| Int) (|$alpha-24:str| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:47| Int) (|$alpha-23:slen| Int) (|$alpha-24:str| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:24| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$V-reftype:47| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:24| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$V-reftype:47| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:25| |$V-reftype:47| |$alpha-24:str| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:47| Int) (|$alpha-23:slen| Int) (|$alpha-24:str| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:47| Int) (|$alpha-23:slen| Int) (|$alpha-24:str| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:24| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$V-reftype:47| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:24| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$V-reftype:47| |$alpha-24:str| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:25| |$V-reftype:47| |$alpha-24:str| |$alpha-23:slen|)
     )
   )
@@ -707,17 +707,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:51| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:51| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$V-reftype:51| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$V-reftype:51| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:27| |$V-reftype:51| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:51| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:51| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$V-reftype:51| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$V-reftype:51| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:27| |$V-reftype:51| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
@@ -731,17 +731,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:53| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-26:pat| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:53| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-26:pat| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$V-reftype:53| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$V-reftype:53| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:28| |$V-reftype:53| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:53| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-26:pat| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:53| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-26:pat| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$V-reftype:53| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:27| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$V-reftype:53| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:28| |$V-reftype:53| |$alpha-26:pat| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
@@ -755,17 +755,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:55| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:55| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$V-reftype:55| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$V-reftype:55| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:29| |$V-reftype:55| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:55| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:55| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$V-reftype:55| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$V-reftype:55| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:29| |$V-reftype:55| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
@@ -779,17 +779,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:57| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-27:shiftArray0| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:57| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-27:shiftArray0| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:30| |$V-reftype:57| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:30| |$V-reftype:57| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:30| |$V-reftype:57| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:57| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-27:shiftArray0| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:57| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-27:shiftArray0| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:30| |$V-reftype:57| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:29| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:30| |$V-reftype:57| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:30| |$V-reftype:57| |$alpha-27:shiftArray0| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
@@ -803,17 +803,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:59| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:59| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$V-reftype:59| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$V-reftype:59| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:31| |$V-reftype:59| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:59| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:59| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$V-reftype:59| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$V-reftype:59| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:31| |$V-reftype:59| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
@@ -827,17 +827,17 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:61| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-28:shiftArray3| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:61| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-28:shiftArray3| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:32| |$V-reftype:61| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:32| |$V-reftype:61| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:32| |$V-reftype:61| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:61| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-28:shiftArray3| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$V-reftype:61| Int) (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-28:shiftArray3| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:32| |$V-reftype:61| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:31| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:32| |$V-reftype:61| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
       (|$innerFunc:3-loop$unknown:32| |$V-reftype:61| |$alpha-28:shiftArray3| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
@@ -859,34 +859,34 @@
   )
 )
 (assert
-  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:110| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$knormal:110| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:35| |$knormal:110| |$alpha-30:p| (+ |$alpha-29:s| 1) |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
-      (|$innerFunc:3-loop$unknown:35| |$knormal:110| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|)
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:35| |$knormal:110| 0 (+ |$alpha-29:s| 1) |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
+      (|$innerFunc:3-loop$unknown:35| |$knormal:110| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:127| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:127| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:35| |$knormal:127| (+ |$alpha-30:p| 1) (+ |$alpha-29:s| 1) |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:35| |$knormal:127| (+ |$alpha-30:p| 1) (+ |$alpha-29:s| 1) |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:35| |$knormal:127| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$knormal:70| |$knormal:72|) )
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:72| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) )
       (|$innerFunc:3-loop$unknown:34| (+ |$alpha-30:p| 1) (+ |$alpha-29:s| 1) |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$alpha-30:p| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
+  (forall ( (|$alpha-23:slen| Int) (|$alpha-25:plen| Int) (|$alpha-29:s| Int) (|$knormal:70| Int) (|$knormal:72| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| |$alpha-30:p| |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< |$alpha-30:p| |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (= |$alpha-30:p| 0) (not (= |$knormal:70| |$knormal:72|)) )
-      (|$innerFunc:3-loop$unknown:34| |$alpha-30:p| (+ |$alpha-29:s| 1) |$alpha-25:plen| |$alpha-23:slen|)
+      ( and (|$innerFunc:3-loop$unknown:25| |$knormal:70| |$alpha-29:s| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:28| |$knormal:72| 0 |$alpha-25:plen| |$alpha-23:slen|) (|$innerFunc:3-loop$unknown:34| 0 |$alpha-29:s| |$alpha-25:plen| |$alpha-23:slen|) (< 0 |$alpha-25:plen|) (< |$alpha-29:s| |$alpha-23:slen|) (not (= |$knormal:70| |$knormal:72|)) )
+      (|$innerFunc:3-loop$unknown:34| 0 (+ |$alpha-29:s| 1) |$alpha-25:plen| |$alpha-23:slen|)
     )
   )
 )
@@ -939,10 +939,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-10:slen| Int) (|$alpha-11:str| Int) (|$alpha-12:plen| Int) (|$cond-alpha-rename:28| Int) (|$cond-alpha-rename:29| Int) )
+  (forall ( (|$alpha-10:slen| Int) (|$alpha-11:str| Int) (|$alpha-12:plen| Int) (|$cond-alpha-rename:185| Int) (|$cond-alpha-rename:186| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:24| |$alpha-11:str| |$alpha-10:slen|) (|kmpMatch$unknown:37| |$alpha-11:str| |$alpha-10:slen|) (|make_array$unknown:45| |$alpha-11:str| |$cond-alpha-rename:28| |$alpha-10:slen|) (< |$alpha-11:str| |$alpha-10:slen|) (<= 0 |$alpha-11:str|) (> |$cond-alpha-rename:29| 0) (> |$alpha-10:slen| 0) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) )
-      (|$innerFunc:3-loop$unknown:25| |$cond-alpha-rename:28| |$alpha-11:str| |$alpha-10:slen|)
+      ( and (> |$cond-alpha-rename:186| 0) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (<= 0 |$alpha-11:str|) (< |$alpha-11:str| |$alpha-10:slen|) (|make_array$unknown:45| |$alpha-11:str| |$cond-alpha-rename:185| |$alpha-10:slen|) (|kmpMatch$unknown:37| |$alpha-11:str| |$alpha-10:slen|) (|$innerFunc:3-loop$unknown:24| |$alpha-11:str| |$alpha-10:slen|) )
+      (|$innerFunc:3-loop$unknown:25| |$cond-alpha-rename:185| |$alpha-11:str| |$alpha-10:slen|)
     )
   )
 )
@@ -955,10 +955,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-10:slen| Int) (|$alpha-12:plen| Int) (|$alpha-13:pat| Int) (|$cond-alpha-rename:97| Int) )
+  (forall ( (|$alpha-10:slen| Int) (|$alpha-12:plen| Int) (|$alpha-13:pat| Int) (|$cond-alpha-rename:364| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:27| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) (|kmpMatch$unknown:40| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) (|make_array$unknown:45| |$alpha-13:pat| |$cond-alpha-rename:97| |$alpha-12:plen|) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (< |$alpha-13:pat| |$alpha-12:plen|) (<= 0 |$alpha-13:pat|) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) )
-      (|$innerFunc:3-loop$unknown:28| |$cond-alpha-rename:97| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|)
+      ( and (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (<= 0 |$alpha-13:pat|) (< |$alpha-13:pat| |$alpha-12:plen|) (|make_array$unknown:45| |$alpha-13:pat| |$cond-alpha-rename:364| |$alpha-12:plen|) (|kmpMatch$unknown:40| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) (|$innerFunc:3-loop$unknown:27| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|) )
+      (|$innerFunc:3-loop$unknown:28| |$cond-alpha-rename:364| |$alpha-13:pat| |$alpha-12:plen| |$alpha-10:slen|)
     )
   )
 )
@@ -973,7 +973,7 @@
 (assert
   (forall ( (|$alpha-10:slen| Int) (|$alpha-12:plen| Int) (|$knormal:51| Int) )
     (=>
-      ( and (|$innerFunc:3-loop$unknown:29| |$knormal:51| |$alpha-12:plen| |$alpha-10:slen|) (|make_array$unknown:45| |$knormal:51| (- 1) |$alpha-12:plen|) (< |$knormal:51| |$alpha-12:plen|) (<= 0 |$knormal:51|) (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) )
+      ( and (> |$alpha-12:plen| 0) (> |$alpha-10:slen| 0) (<= 0 |$knormal:51|) (< |$knormal:51| |$alpha-12:plen|) (|make_array$unknown:45| |$knormal:51| (- 1) |$alpha-12:plen|) (|$innerFunc:3-loop$unknown:29| |$knormal:51| |$alpha-12:plen| |$alpha-10:slen|) )
       (|$innerFunc:3-loop$unknown:30| (- 1) |$knormal:51| |$alpha-12:plen| |$alpha-10:slen|)
     )
   )
@@ -1025,9 +1025,9 @@
   )
 )
 (assert
-  (forall ( (|$alpha-5:i| Int) (|$alpha-6:n| Int) (|$cond-alpha-rename:352| Int) (|$cond-alpha-rename:353| Int) (|$cond-alpha-rename:355| Int) (|$cond-alpha-rename:357| Int) )
+  (forall ( (|$alpha-5:i| Int) (|$alpha-6:n| Int) (|$cond-alpha-rename:841| Int) (|$cond-alpha-rename:842| Int) (|$cond-alpha-rename:844| Int) (|$cond-alpha-rename:846| Int) )
     (=>
-      ( and (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:355| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:352|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:357| (+ |$cond-alpha-rename:353| 1) |$alpha-6:n| |$cond-alpha-rename:352|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:353| |$alpha-6:n| |$cond-alpha-rename:352|) (< (+ |$cond-alpha-rename:353| 1) |$alpha-5:i|) (not (= |$alpha-5:i| |$alpha-6:n|)) (not (not (= |$cond-alpha-rename:355| |$cond-alpha-rename:357|))) )
+      ( and (not (not (= |$cond-alpha-rename:844| |$cond-alpha-rename:846|))) (not (= |$alpha-5:i| |$alpha-6:n|)) (< (+ |$cond-alpha-rename:842| 1) |$alpha-5:i|) (|$innerFunc:2-loopShift$unknown:18| |$alpha-5:i| |$cond-alpha-rename:842| |$alpha-6:n| |$cond-alpha-rename:841|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:846| (+ |$cond-alpha-rename:842| 1) |$alpha-6:n| |$cond-alpha-rename:841|) (|$innerFunc:2-loopShift$unknown:14| |$cond-alpha-rename:844| |$alpha-5:i| |$alpha-6:n| |$cond-alpha-rename:841|) )
       (|update$unknown:49| |$alpha-5:i| |$alpha-6:n| |$alpha-5:i|)
     )
   )

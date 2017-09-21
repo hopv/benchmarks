@@ -11,7 +11,7 @@
 
 (assert
   (not (exists ( (|$cond-alpha-rename:4| Int) )
-    ( and (|g$unknown:4| |$cond-alpha-rename:4|) (not (not (and (> |$cond-alpha-rename:4| 0) (<= |$cond-alpha-rename:4| 0)))) )
+    ( and (not (not (and (> |$cond-alpha-rename:4| 0) (<= |$cond-alpha-rename:4| 0)))) (|g$unknown:4| |$cond-alpha-rename:4|) )
     )
   )
 )

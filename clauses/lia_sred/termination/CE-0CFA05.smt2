@@ -56,20 +56,12 @@
   ( Int Int Int Int Int Int ) Bool
 )
 
-(declare-fun |f_1034$unknown:38|
-  ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
-)
-
 (declare-fun |f_without_checking_1206$unknown:53|
   ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
 )
 
 (declare-fun |f_without_checking_1206$unknown:68|
   ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
-)
-
-(declare-fun |fail$unknown:76|
-  ( Int Int ) Bool
 )
 
 (declare-fun |bot$unknown:2|
@@ -85,50 +77,18 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:25| Int) (|$V-reftype:27| Int) (|$V-reftype:29| Int) (|$V-reftype:31| Int) (|$alpha-51:x_1035| Int) (|$cond-alpha-rename:38| Int) (|$knormal:71| Int) (|$knormal:73| Int) )
+  (forall ( (|$V-reftype:25| Int) (|$V-reftype:27| Int) (|$V-reftype:29| Int) (|$V-reftype:31| Int) (|$alpha-51:x_1035| Int) (|$cond-alpha-rename:368| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:71| 1) (|f_without_checking_1206$unknown:68| |$cond-alpha-rename:38| |$V-reftype:31| |$V-reftype:31| 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (|fail$unknown:76| |$knormal:73| 1) (not (= 0 0)) )
-      (|f_without_checking_1206$unknown:53| |$cond-alpha-rename:38| |$V-reftype:31| |$V-reftype:29| |$V-reftype:27| |$V-reftype:25| |$alpha-51:x_1035| 0 0 0 0 0 0 0 0 0)
-    )
-  )
-)
-(assert
-  (forall ( (|$V-reftype:55| Int) (|$V-reftype:57| Int) (|$V-reftype:59| Int) (|$V-reftype:61| Int) (|$alpha-61:y_1036| Int) (|$knormal:71| Int) (|$knormal:73| Int) )
-    (=>
-      ( and (|bot$unknown:2| |$knormal:71| 1) (|fail$unknown:76| |$knormal:73| 1) (not (= 0 0)) )
-      (|f_without_checking_1206$unknown:68| |$V-reftype:61| |$V-reftype:61| |$V-reftype:59| |$V-reftype:57| |$V-reftype:55| |$alpha-61:y_1036| 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
-    )
-  )
-)
-(assert
-  (forall ( (|$cond-alpha-rename:40| Int) (|$knormal:71| Int) (|$knormal:73| Int) )
-    (=>
-      ( and (|bot$unknown:2| |$knormal:71| 1) (|f_without_checking_1206$unknown:68| |$cond-alpha-rename:40| 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (|fail$unknown:76| |$knormal:73| 1) (not (= 0 0)) )
-      (|f_1034$unknown:38| |$cond-alpha-rename:40| 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
-    )
-  )
-)
-(assert
-  (forall ( (|$V-reftype:25| Int) (|$V-reftype:27| Int) (|$V-reftype:29| Int) (|$V-reftype:31| Int) (|$alpha-51:x_1035| Int) (|$cond-alpha-rename:42| Int) )
-    (=>
-      ( and (|f_without_checking_1206$unknown:68| |$cond-alpha-rename:42| |$V-reftype:31| |$V-reftype:31| 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (not (not (= 0 0))) )
-      (|f_without_checking_1206$unknown:53| |$cond-alpha-rename:42| |$V-reftype:31| |$V-reftype:29| |$V-reftype:27| |$V-reftype:25| |$alpha-51:x_1035| 0 0 0 0 0 0 0 0 0)
+      ( and (|f_without_checking_1206$unknown:68| |$cond-alpha-rename:368| |$V-reftype:31| |$V-reftype:31| 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (= 0 0) )
+      (|f_without_checking_1206$unknown:53| |$cond-alpha-rename:368| |$V-reftype:31| |$V-reftype:29| |$V-reftype:27| |$V-reftype:25| |$alpha-51:x_1035| 0 0 0 0 0 0 0 0 0)
     )
   )
 )
 (assert
   (forall ( (|$V-reftype:55| Int) (|$V-reftype:57| Int) (|$V-reftype:59| Int) (|$V-reftype:61| Int) (|$alpha-61:y_1036| Int) )
     (=>
-      ( and (not (not (= 0 0))) )
+      ( and (= 0 0) )
       (|f_without_checking_1206$unknown:68| |$V-reftype:61| |$V-reftype:61| |$V-reftype:59| |$V-reftype:57| |$V-reftype:55| |$alpha-61:y_1036| 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
-    )
-  )
-)
-(assert
-  (forall ( (|$cond-alpha-rename:44| Int) )
-    (=>
-      ( and (|f_without_checking_1206$unknown:68| |$cond-alpha-rename:44| 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (not (not (= 0 0))) )
-      (|f_1034$unknown:38| |$cond-alpha-rename:44| 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
     )
   )
 )

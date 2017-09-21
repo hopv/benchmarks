@@ -30,7 +30,7 @@
 (assert
   (forall ( (|$V-reftype:7| Int) (|$alpha-3:n| Int) (|$alpha-4:i| Int) (|$alpha-5:a| Int) (|$alpha-6:m| Int) (|$knormal:11| Int) )
     (=>
-      ( and (|array_max$unknown:4| |$V-reftype:7| |$alpha-5:a| |$alpha-4:i| |$alpha-3:n|) (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) (> |$knormal:11| |$alpha-6:m|) (not (>= |$alpha-4:i| |$alpha-3:n|)) )
+      ( and (not (>= |$alpha-4:i| |$alpha-3:n|)) (> |$knormal:11| |$alpha-6:m|) (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) (|array_max$unknown:4| |$V-reftype:7| |$alpha-5:a| |$alpha-4:i| |$alpha-3:n|) )
       (|array_max$unknown:4| |$V-reftype:7| |$alpha-5:a| (+ |$alpha-4:i| 1) |$alpha-3:n|)
     )
   )
@@ -38,7 +38,7 @@
 (assert
   (forall ( (|$V-reftype:7| Int) (|$alpha-3:n| Int) (|$alpha-4:i| Int) (|$alpha-5:a| Int) (|$alpha-6:m| Int) (|$knormal:11| Int) )
     (=>
-      ( and (|array_max$unknown:4| |$V-reftype:7| |$alpha-5:a| |$alpha-4:i| |$alpha-3:n|) (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) (not (>= |$alpha-4:i| |$alpha-3:n|)) (not (> |$knormal:11| |$alpha-6:m|)) )
+      ( and (not (> |$knormal:11| |$alpha-6:m|)) (not (>= |$alpha-4:i| |$alpha-3:n|)) (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) (|array_max$unknown:4| |$V-reftype:7| |$alpha-5:a| |$alpha-4:i| |$alpha-3:n|) )
       (|array_max$unknown:4| |$V-reftype:7| |$alpha-5:a| (+ |$alpha-4:i| 1) |$alpha-3:n|)
     )
   )
@@ -46,7 +46,7 @@
 (assert
   (forall ( (|$alpha-3:n| Int) (|$alpha-4:i| Int) (|$alpha-6:m| Int) (|$knormal:11| Int) (|$knormal:9| Int) )
     (=>
-      ( and (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) (|array_max$unknown:6| |$knormal:9| |$alpha-6:m| (+ |$alpha-4:i| 1) |$alpha-3:n|) (not (>= |$alpha-4:i| |$alpha-3:n|)) (not (> |$knormal:11| |$alpha-6:m|)) )
+      ( and (not (> |$knormal:11| |$alpha-6:m|)) (not (>= |$alpha-4:i| |$alpha-3:n|)) (|array_max$unknown:6| |$knormal:9| |$alpha-6:m| (+ |$alpha-4:i| 1) |$alpha-3:n|) (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) )
       (|array_max$unknown:6| |$knormal:9| |$alpha-6:m| |$alpha-4:i| |$alpha-3:n|)
     )
   )
@@ -54,7 +54,7 @@
 (assert
   (forall ( (|$alpha-3:n| Int) (|$alpha-4:i| Int) (|$alpha-6:m| Int) (|$knormal:11| Int) (|$knormal:9| Int) )
     (=>
-      ( and (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) (|array_max$unknown:6| |$knormal:9| |$knormal:11| (+ |$alpha-4:i| 1) |$alpha-3:n|) (> |$knormal:11| |$alpha-6:m|) (not (>= |$alpha-4:i| |$alpha-3:n|)) )
+      ( and (not (>= |$alpha-4:i| |$alpha-3:n|)) (> |$knormal:11| |$alpha-6:m|) (|array_max$unknown:6| |$knormal:9| |$knormal:11| (+ |$alpha-4:i| 1) |$alpha-3:n|) (|array_max$unknown:4| |$knormal:11| |$alpha-4:i| |$alpha-4:i| |$alpha-3:n|) )
       (|array_max$unknown:6| |$knormal:9| |$alpha-6:m| |$alpha-4:i| |$alpha-3:n|)
     )
   )
@@ -70,14 +70,14 @@
 (assert
   (forall ( (|$alpha-10:i| Int) (|$alpha-9:n| Int) (|$knormal:18| Int) )
     (=>
-      ( and (<= |$alpha-10:i| 0) (>= |$alpha-10:i| 0) (> |$alpha-9:n| 0) )
+      ( and (> |$alpha-9:n| 0) (>= |$alpha-10:i| 0) (<= |$alpha-10:i| 0) )
       (|array_max$unknown:4| (- |$alpha-9:n| |$knormal:18|) |$knormal:18| |$alpha-10:i| |$alpha-9:n|)
     )
   )
 )
 (assert
   (not (exists ( (|$alpha-10:i| Int) (|$alpha-9:n| Int) (|$knormal:27| Int) )
-    ( and (|array_max$unknown:6| |$knormal:27| (- 1) |$alpha-10:i| |$alpha-9:n|) (<= |$alpha-10:i| 0) (>= |$alpha-10:i| 0) (> |$alpha-9:n| 0) (not (>= |$knormal:27| |$alpha-9:n|)) )
+    ( and (not (>= |$knormal:27| |$alpha-9:n|)) (> |$alpha-9:n| 0) (>= |$alpha-10:i| 0) (<= |$alpha-10:i| 0) (|array_max$unknown:6| |$knormal:27| (- 1) |$alpha-10:i| |$alpha-9:n|) )
     )
   )
 )

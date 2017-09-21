@@ -62,10 +62,10 @@
 )
 
 (assert
-  (forall ( (|$V-reftype:26| Int) (|$V-reftype:28| Int) (|$V-reftype:30| Int) (|$alpha-15:x_DO_NOT_CARE_1215| Int) (|$alpha-16:x_DO_NOT_CARE_1216| Int) (|$alpha-18:set_flag_f_1187| Int) (|$alpha-19:s_f_n_1182| Int) (|$alpha-20:u_1037| Int) (|$cond-alpha-rename:23| Int) (|$cond-alpha-rename:30| Int) )
+  (forall ( (|$V-reftype:26| Int) (|$V-reftype:28| Int) (|$V-reftype:30| Int) (|$alpha-15:x_DO_NOT_CARE_1215| Int) (|$alpha-16:x_DO_NOT_CARE_1216| Int) (|$alpha-18:set_flag_f_1187| Int) (|$alpha-19:s_f_n_1182| Int) (|$alpha-20:u_1037| Int) (|$cond-alpha-rename:36| Int) (|$cond-alpha-rename:43| Int) )
     (=>
-      ( and (|f_without_checking_1197$unknown:38| |$cond-alpha-rename:30| |$V-reftype:30| |$V-reftype:28| |$V-reftype:26| 1 |$V-reftype:28| |$V-reftype:26| (- |$cond-alpha-rename:23| 1) |$cond-alpha-rename:23| 1) (> |$cond-alpha-rename:23| 0) (> |$cond-alpha-rename:23| 0) (= 1 1) (= (+ (* 0 |$cond-alpha-rename:23|) 0) (+ (* 0 |$cond-alpha-rename:23|) 0)) )
-      (|f_without_checking_1197$unknown:38| |$cond-alpha-rename:30| |$V-reftype:30| |$V-reftype:28| |$V-reftype:26| |$alpha-20:u_1037| |$alpha-19:s_f_n_1182| |$alpha-18:set_flag_f_1187| |$cond-alpha-rename:23| |$alpha-16:x_DO_NOT_CARE_1216| |$alpha-15:x_DO_NOT_CARE_1215|)
+      ( and (> |$cond-alpha-rename:36| 0) (= 1 1) (= 0 (+ (* 0 |$cond-alpha-rename:36|) 0)) (> |$cond-alpha-rename:36| 0) (|f_without_checking_1197$unknown:38| |$cond-alpha-rename:43| |$V-reftype:30| |$V-reftype:28| |$V-reftype:26| 1 |$V-reftype:28| |$V-reftype:26| (- |$cond-alpha-rename:36| 1) |$cond-alpha-rename:36| 1) )
+      (|f_without_checking_1197$unknown:38| |$cond-alpha-rename:43| |$V-reftype:30| |$V-reftype:28| |$V-reftype:26| |$alpha-20:u_1037| |$alpha-19:s_f_n_1182| |$alpha-18:set_flag_f_1187| |$cond-alpha-rename:36| |$alpha-16:x_DO_NOT_CARE_1216| |$alpha-15:x_DO_NOT_CARE_1215|)
     )
   )
 )
@@ -102,8 +102,8 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:42| Int) )
-    ( and (|main_1038$unknown:45| |$cond-alpha-rename:42|) (not (= 0 0)) )
+  (not (exists ( (|$cond-alpha-rename:76| Int) )
+    ( and (not (= 0 0)) (|main_1038$unknown:45| |$cond-alpha-rename:76|) )
     )
   )
 )

@@ -22,7 +22,7 @@
 (assert
   (forall ( (|$V-reftype:6| Int) (|$alpha-2:f| Int) (|$alpha-3:n| Int) )
     (=>
-      ( and (|repeat$unknown:2| |$V-reftype:6| |$alpha-2:f|) (not (= |$alpha-3:n| 0)) )
+      ( and (not (= |$alpha-3:n| 0)) (|repeat$unknown:2| |$V-reftype:6| |$alpha-2:f|) )
       (|repeat$unknown:2| |$V-reftype:6| |$alpha-2:f|)
     )
   )
@@ -38,22 +38,22 @@
 (assert
   (forall ( (|$alpha-3:n| Int) (|$knormal:5| Int) (|$knormal:7| Int) )
     (=>
-      ( and (|repeat$unknown:2| |$knormal:7| |$knormal:5|) (|repeat$unknown:4| |$knormal:5| (- |$alpha-3:n| 1)) (not (= |$alpha-3:n| 0)) )
+      ( and (not (= |$alpha-3:n| 0)) (|repeat$unknown:4| |$knormal:5| (- |$alpha-3:n| 1)) (|repeat$unknown:2| |$knormal:7| |$knormal:5|) )
       (|repeat$unknown:4| |$knormal:7| |$alpha-3:n|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-3:n| Int) )
+  (forall ( (useless Int) )
     (=>
-      ( and (= |$alpha-3:n| 0) )
-      (|repeat$unknown:4| 0 |$alpha-3:n|)
+      ( and true )
+      (|repeat$unknown:4| 0 0)
     )
   )
 )
 (assert
   (not (exists ( (|$alpha-4:n| Int) (|$knormal:10| Int) )
-    ( and (|repeat$unknown:4| |$knormal:10| |$alpha-4:n|) (not (= |$knormal:10| |$alpha-4:n|)) )
+    ( and (not (= |$knormal:10| |$alpha-4:n|)) (|repeat$unknown:4| |$knormal:10| |$alpha-4:n|) )
     )
   )
 )

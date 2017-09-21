@@ -55,12 +55,12 @@
   ( Int Int Int Int ) Bool
 )
 
-(declare-fun |f_1034$unknown:10|
-  ( Int Int Int Int Int Int Int Int ) Bool
-)
-
 (declare-fun |fail$unknown:26|
   ( Int Int ) Bool
+)
+
+(declare-fun |f_1034$unknown:10|
+  ( Int Int Int Int Int Int Int Int ) Bool
 )
 
 (declare-fun |bot$unknown:2|
@@ -78,7 +78,7 @@
 (assert
   (forall ( (|$alpha-10:x_1031| Int) (|$alpha-8:prev_set_flag_id_1098| Int) (|$alpha-9:s_prev_id_x_1097| Int) (|$knormal:11| Int) (|$knormal:9| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:9| 1) (|f_1034$unknown:10| |$alpha-10:x_1031| |$alpha-9:s_prev_id_x_1097| |$alpha-8:prev_set_flag_id_1098| 0 0 0 0 0) (|fail$unknown:26| |$knormal:11| 1) (not (= 0 |$alpha-8:prev_set_flag_id_1098|)) )
+      ( and (not (= 0 |$alpha-8:prev_set_flag_id_1098|)) (|fail$unknown:26| |$knormal:11| 1) (|f_1034$unknown:10| |$alpha-10:x_1031| |$alpha-9:s_prev_id_x_1097| |$alpha-8:prev_set_flag_id_1098| 0 0 0 0 0) (|bot$unknown:2| |$knormal:9| 1) )
       (|id_1030$unknown:30| |$alpha-10:x_1031| |$alpha-10:x_1031| |$alpha-9:s_prev_id_x_1097| |$alpha-8:prev_set_flag_id_1098|)
     )
   )
@@ -116,15 +116,15 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:2| Int) (|$cond-alpha-rename:3| Int) (|$cond-alpha-rename:4| Int) )
-    ( and (|f_1034$unknown:10| |$cond-alpha-rename:2| |$cond-alpha-rename:4| |$cond-alpha-rename:3| 0 0 0 0 0) (not (= 0 |$cond-alpha-rename:3|)) )
+  (not (exists ( (|$cond-alpha-rename:35| Int) (|$cond-alpha-rename:36| Int) (|$cond-alpha-rename:37| Int) )
+    ( and (|f_1034$unknown:10| |$cond-alpha-rename:35| |$cond-alpha-rename:37| |$cond-alpha-rename:36| 0 0 0 0 0) (not (= 0 |$cond-alpha-rename:36|)) )
     )
   )
 )
 (assert
   (forall ( (|$alpha-10:x_1031| Int) (|$alpha-8:prev_set_flag_id_1098| Int) (|$alpha-9:s_prev_id_x_1097| Int) )
     (=>
-      ( and (|f_1034$unknown:10| |$alpha-10:x_1031| |$alpha-9:s_prev_id_x_1097| |$alpha-8:prev_set_flag_id_1098| 0 0 0 0 0) (not (not (= 0 |$alpha-8:prev_set_flag_id_1098|))) )
+      ( and (not (not (= 0 |$alpha-8:prev_set_flag_id_1098|))) (|f_1034$unknown:10| |$alpha-10:x_1031| |$alpha-9:s_prev_id_x_1097| |$alpha-8:prev_set_flag_id_1098| 0 0 0 0 0) )
       (|id_1030$unknown:30| |$alpha-10:x_1031| |$alpha-10:x_1031| |$alpha-9:s_prev_id_x_1097| |$alpha-8:prev_set_flag_id_1098|)
     )
   )

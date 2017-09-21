@@ -63,20 +63,20 @@
   ( Int Int Int Int Int Int Int ) Bool
 )
 
-(declare-fun |f_1035$unknown:5|
-  ( Int Int Int ) Bool
-)
-
-(declare-fun |f_without_checking_1189$unknown:19|
-  ( Int Int Int ) Bool
+(declare-fun |fail$unknown:25|
+  ( Int Int ) Bool
 )
 
 (declare-fun |f_without_checking_1189$unknown:23|
   ( Int Int Int Int Int Int Int ) Bool
 )
 
-(declare-fun |fail$unknown:25|
-  ( Int Int ) Bool
+(declare-fun |f_without_checking_1189$unknown:19|
+  ( Int Int Int ) Bool
+)
+
+(declare-fun |f_1035$unknown:5|
+  ( Int Int Int ) Bool
 )
 
 (declare-fun |bot$unknown:2|
@@ -92,9 +92,9 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:11| Int) (|$V-reftype:13| Int) (|$V-reftype:15| Int) (|$V-reftype:16| Int) (|$alpha-17:s_prev_f_n_1179| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:30| Int) (|$cond-alpha-rename:31| Int) (|$cond-alpha-rename:5| Int) (|$cond-alpha-rename:6| Int) (|$knormal:32| Int) (|$knormal:34| Int) )
+  (forall ( (|$V-reftype:11| Int) (|$V-reftype:13| Int) (|$V-reftype:15| Int) (|$V-reftype:16| Int) (|$alpha-17:s_prev_f_n_1179| Int) (|$cond-alpha-rename:5| Int) (|$cond-alpha-rename:58| Int) (|$cond-alpha-rename:59| Int) (|$cond-alpha-rename:6| Int) (|$cond-alpha-rename:60| Int) (|$knormal:32| Int) (|$knormal:34| Int) )
     (=>
-      ( and (|bot$unknown:2| |$knormal:32| 1) (|f_1035$unknown:5| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (|f_without_checking_1189$unknown:19| |$alpha-17:s_prev_f_n_1179| |$cond-alpha-rename:6| |$cond-alpha-rename:5|) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:31| |$cond-alpha-rename:30| |$cond-alpha-rename:29|) (|f_without_checking_1189$unknown:23| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (|fail$unknown:25| |$knormal:34| 1) (not (= 0 1)) (not (= |$cond-alpha-rename:31| 0)) (not (= |$alpha-17:s_prev_f_n_1179| 0)) (not (and (> (+ 0 |$alpha-17:s_prev_f_n_1179|) (+ 0 (- |$alpha-17:s_prev_f_n_1179| 1))) (>= (+ 0 (- |$alpha-17:s_prev_f_n_1179| 1)) 0))) )
+      ( and (not (and (>= (- |$alpha-17:s_prev_f_n_1179| 1) 0) (> |$alpha-17:s_prev_f_n_1179| (- |$alpha-17:s_prev_f_n_1179| 1)))) (not (= |$alpha-17:s_prev_f_n_1179| 0)) (not (= |$cond-alpha-rename:60| 0)) (|fail$unknown:25| |$knormal:34| 1) (|f_without_checking_1189$unknown:23| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:60| |$cond-alpha-rename:59| |$cond-alpha-rename:58|) (|f_without_checking_1189$unknown:19| |$alpha-17:s_prev_f_n_1179| |$cond-alpha-rename:6| |$cond-alpha-rename:5|) (|f_1035$unknown:5| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (|bot$unknown:2| |$knormal:32| 1) )
       (|f_1035$unknown:16| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1)
     )
   )
@@ -108,17 +108,9 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:11| Int) (|$V-reftype:13| Int) (|$V-reftype:15| Int) (|$V-reftype:16| Int) (|$alpha-17:s_prev_f_n_1179| Int) (|$cond-alpha-rename:11| Int) (|$cond-alpha-rename:12| Int) (|$cond-alpha-rename:34| Int) (|$cond-alpha-rename:35| Int) (|$cond-alpha-rename:36| Int) )
+  (forall ( (|$V-reftype:11| Int) (|$V-reftype:13| Int) (|$V-reftype:15| Int) (|$V-reftype:16| Int) (|$alpha-17:s_prev_f_n_1179| Int) (|$cond-alpha-rename:11| Int) (|$cond-alpha-rename:12| Int) (|$cond-alpha-rename:63| Int) (|$cond-alpha-rename:64| Int) (|$cond-alpha-rename:65| Int) )
     (=>
-      ( and (|f_1035$unknown:5| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (|f_without_checking_1189$unknown:19| |$alpha-17:s_prev_f_n_1179| |$cond-alpha-rename:12| |$cond-alpha-rename:11|) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:36| |$cond-alpha-rename:35| |$cond-alpha-rename:34|) (|f_without_checking_1189$unknown:23| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (not (= 0 1)) (>= (+ 0 (- |$alpha-17:s_prev_f_n_1179| 1)) 0) (> (+ 0 |$alpha-17:s_prev_f_n_1179|) (+ 0 (- |$alpha-17:s_prev_f_n_1179| 1))) (not (= |$alpha-17:s_prev_f_n_1179| 0)) (not (= |$cond-alpha-rename:36| 0)) )
-      (|f_1035$unknown:16| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1)
-    )
-  )
-)
-(assert
-  (forall ( (|$V-reftype:11| Int) (|$V-reftype:13| Int) (|$V-reftype:15| Int) (|$V-reftype:16| Int) (|$alpha-17:s_prev_f_n_1179| Int) (|$cond-alpha-rename:14| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:39| Int) (|$cond-alpha-rename:40| Int) (|$cond-alpha-rename:41| Int) )
-    (=>
-      ( and (|f_1035$unknown:5| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (|f_without_checking_1189$unknown:19| |$alpha-17:s_prev_f_n_1179| |$cond-alpha-rename:15| |$cond-alpha-rename:14|) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:41| |$cond-alpha-rename:40| |$cond-alpha-rename:39|) (|f_without_checking_1189$unknown:23| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (not (not (= 0 1))) (not (= |$alpha-17:s_prev_f_n_1179| 0)) (not (= |$cond-alpha-rename:41| 0)) )
+      ( and (> |$alpha-17:s_prev_f_n_1179| (- |$alpha-17:s_prev_f_n_1179| 1)) (>= (- |$alpha-17:s_prev_f_n_1179| 1) 0) (not (= |$alpha-17:s_prev_f_n_1179| 0)) (not (= |$cond-alpha-rename:65| 0)) (|f_without_checking_1189$unknown:23| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:65| |$cond-alpha-rename:64| |$cond-alpha-rename:63|) (|f_without_checking_1189$unknown:19| |$alpha-17:s_prev_f_n_1179| |$cond-alpha-rename:12| |$cond-alpha-rename:11|) (|f_1035$unknown:5| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1) )
       (|f_1035$unknown:16| |$V-reftype:16| |$V-reftype:15| |$V-reftype:13| |$V-reftype:11| (- |$alpha-17:s_prev_f_n_1179| 1) |$alpha-17:s_prev_f_n_1179| 1)
     )
   )
@@ -148,18 +140,18 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:66| Int) (|$V-reftype:68| Int) (|$V-reftype:70| Int) (|$alpha-21:set_flag_f_1181| Int) (|$alpha-22:s_f_n_1178| Int) (|$cond-alpha-rename:107| Int) (|$cond-alpha-rename:108| Int) (|$cond-alpha-rename:109| Int) (|$cond-alpha-rename:116| Int) (|$cond-alpha-rename:117| Int) (|$cond-alpha-rename:98| Int) (|$cond-alpha-rename:99| Int) )
+  (forall ( (|$V-reftype:66| Int) (|$V-reftype:68| Int) (|$V-reftype:70| Int) (|$alpha-21:set_flag_f_1181| Int) (|$alpha-22:s_f_n_1178| Int) (|$cond-alpha-rename:206| Int) (|$cond-alpha-rename:207| Int) (|$cond-alpha-rename:215| Int) (|$cond-alpha-rename:216| Int) (|$cond-alpha-rename:217| Int) (|$cond-alpha-rename:224| Int) (|$cond-alpha-rename:225| Int) )
     (=>
-      ( and (|f_1035$unknown:16| |$cond-alpha-rename:116| |$cond-alpha-rename:117| |$V-reftype:68| |$V-reftype:66| (- |$cond-alpha-rename:109| 1) |$cond-alpha-rename:109| 1) (|f_1035$unknown:16| |$cond-alpha-rename:117| |$V-reftype:70| |$V-reftype:68| |$V-reftype:66| (- |$cond-alpha-rename:109| 1) |$cond-alpha-rename:109| 1) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:109| |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:109| |$cond-alpha-rename:99| |$cond-alpha-rename:98|) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:109| |$cond-alpha-rename:108| |$cond-alpha-rename:107|) (not (= |$cond-alpha-rename:109| 0)) (not (= |$cond-alpha-rename:109| 0)) (not (= |$cond-alpha-rename:109| 0)) (= 1 1) (= 1 1) (= (+ (* 0 |$cond-alpha-rename:109|) 0) (+ (* 0 |$cond-alpha-rename:109|) 0)) (= (+ (* 0 |$cond-alpha-rename:109|) 0) (+ (* 0 |$cond-alpha-rename:109|) 0)) )
-      (|f_without_checking_1189$unknown:23| |$cond-alpha-rename:116| |$V-reftype:70| |$V-reftype:68| |$V-reftype:66| |$cond-alpha-rename:109| |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|)
+      ( and (|f_1035$unknown:16| |$cond-alpha-rename:224| |$cond-alpha-rename:225| |$V-reftype:68| |$V-reftype:66| (- |$cond-alpha-rename:217| 1) |$cond-alpha-rename:217| 1) (|f_1035$unknown:16| |$cond-alpha-rename:225| |$V-reftype:70| |$V-reftype:68| |$V-reftype:66| (- |$cond-alpha-rename:217| 1) |$cond-alpha-rename:217| 1) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:217| |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:217| |$cond-alpha-rename:207| |$cond-alpha-rename:206|) (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:217| |$cond-alpha-rename:216| |$cond-alpha-rename:215|) (not (= |$cond-alpha-rename:217| 0)) (not (= |$cond-alpha-rename:217| 0)) (not (= |$cond-alpha-rename:217| 0)) (= 0 (+ (* 0 |$cond-alpha-rename:217|) 0)) (= 0 (+ (* 0 |$cond-alpha-rename:217|) 0)) (= 1 1) (= 1 1) )
+      (|f_without_checking_1189$unknown:23| |$cond-alpha-rename:224| |$V-reftype:70| |$V-reftype:68| |$V-reftype:66| |$cond-alpha-rename:217| |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:78| Int) (|$V-reftype:80| Int) (|$V-reftype:82| Int) (|$alpha-21:set_flag_f_1181| Int) (|$alpha-22:s_f_n_1178| Int) (|$alpha-23:n_1036| Int) )
+  (forall ( (|$V-reftype:78| Int) (|$V-reftype:80| Int) (|$V-reftype:82| Int) (|$alpha-21:set_flag_f_1181| Int) (|$alpha-22:s_f_n_1178| Int) )
     (=>
-      ( and (|f_without_checking_1189$unknown:19| |$alpha-23:n_1036| |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|) (= |$alpha-23:n_1036| 0) )
-      (|f_without_checking_1189$unknown:23| (+ |$V-reftype:82| 1) |$V-reftype:82| |$V-reftype:80| |$V-reftype:78| |$alpha-23:n_1036| |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|)
+      ( and (|f_without_checking_1189$unknown:19| 0 |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|) )
+      (|f_without_checking_1189$unknown:23| (+ |$V-reftype:82| 1) |$V-reftype:82| |$V-reftype:80| |$V-reftype:78| 0 |$alpha-22:s_f_n_1178| |$alpha-21:set_flag_f_1181|)
     )
   )
 )
@@ -172,8 +164,8 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:45| Int) (|$cond-alpha-rename:47| Int) (|$cond-alpha-rename:48| Int) )
-    ( and (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:45| |$cond-alpha-rename:48| |$cond-alpha-rename:47|) (not (= 0 1)) (not (= |$cond-alpha-rename:45| 0)) (not (and (> (+ 0 |$cond-alpha-rename:45|) (+ 0 (- |$cond-alpha-rename:45| 1))) (>= (+ 0 (- |$cond-alpha-rename:45| 1)) 0))) )
+  (not (exists ( (|$cond-alpha-rename:101| Int) (|$cond-alpha-rename:103| Int) (|$cond-alpha-rename:104| Int) )
+    ( and (|f_without_checking_1189$unknown:19| |$cond-alpha-rename:101| |$cond-alpha-rename:104| |$cond-alpha-rename:103|) (not (= 0 1)) (not (= |$cond-alpha-rename:101| 0)) (not (and (> (+ 0 |$cond-alpha-rename:101|) (+ 0 (- |$cond-alpha-rename:101| 1))) (>= (+ 0 (- |$cond-alpha-rename:101| 1)) 0))) )
     )
   )
 )

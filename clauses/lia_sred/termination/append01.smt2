@@ -65,7 +65,7 @@
 (assert
   (forall ( (|$alpha-18:xs_1031| Int) (|$alpha-22:ys_1032| Int) (|$knormal:34| Int) (|$knormal:54| Int) (|$knormal:56| Int) )
     (=>
-      ( and (|append_without_checking_1072$unknown:18| |$knormal:34| |$alpha-22:ys_1032| 0 0 0 |$alpha-18:xs_1031| 0 0 0) (|bot$unknown:20| |$knormal:54| 1) (|fail$unknown:22| |$knormal:56| 1) (not (= 0 0)) (not (and (> (+ (+ 0 0) 0) (+ (+ 0 |$alpha-18:xs_1031|) 0)) (>= (+ (+ 0 |$alpha-18:xs_1031|) 0) 0))) )
+      ( and (|append_without_checking_1072$unknown:18| |$knormal:34| |$alpha-22:ys_1032| 0 0 0 |$alpha-18:xs_1031| 0 0 0) (|bot$unknown:20| |$knormal:54| 1) (|fail$unknown:22| |$knormal:56| 1) (not (= 0 0)) (not (and (>= |$alpha-18:xs_1031| 0) (> 0 |$alpha-18:xs_1031|))) )
       (|append_1030$unknown:9| |$knormal:34| |$alpha-22:ys_1032| 0 0 0 |$alpha-18:xs_1031| 0 0 0)
     )
   )
@@ -73,7 +73,7 @@
 (assert
   (forall ( (|$alpha-18:xs_1031| Int) (|$alpha-22:ys_1032| Int) (|$knormal:34| Int) )
     (=>
-      ( and (|append_without_checking_1072$unknown:18| |$knormal:34| |$alpha-22:ys_1032| 0 0 0 |$alpha-18:xs_1031| 0 0 0) (not (= 0 0)) (>= (+ (+ 0 |$alpha-18:xs_1031|) 0) 0) (> (+ (+ 0 0) 0) (+ (+ 0 |$alpha-18:xs_1031|) 0)) )
+      ( and (|append_without_checking_1072$unknown:18| |$knormal:34| |$alpha-22:ys_1032| 0 0 0 |$alpha-18:xs_1031| 0 0 0) (not (= 0 0)) (>= |$alpha-18:xs_1031| 0) (> 0 |$alpha-18:xs_1031|) )
       (|append_1030$unknown:9| |$knormal:34| |$alpha-22:ys_1032| 0 0 0 |$alpha-18:xs_1031| 0 0 0)
     )
   )

@@ -54,7 +54,7 @@
 (assert
   (forall ( (|$V-reftype:17| Int) (|$alpha-5:v1| Int) (|$alpha-7:n| Int) (|$alpha-8:i| Int) (|$alpha-9:sum| Int) (|$knormal:4| Int) (|$knormal:6| Int) )
     (=>
-      ( and (|dotprod$unknown:10| |$V-reftype:17| |$alpha-5:v1|) (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (<= |$alpha-8:i| |$alpha-7:n|) (<= 0 |$alpha-8:i|) (not (> |$alpha-8:i| |$alpha-7:n|)) )
+      ( and (not (> |$alpha-8:i| |$alpha-7:n|)) (<= 0 |$alpha-8:i|) (<= |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) (|dotprod$unknown:10| |$V-reftype:17| |$alpha-5:v1|) )
       (|dotprod$unknown:10| |$V-reftype:17| |$alpha-5:v1|)
     )
   )
@@ -62,7 +62,7 @@
 (assert
   (forall ( (|$V-reftype:21| Int) (|$alpha-6:v2| Int) (|$alpha-7:n| Int) (|$alpha-8:i| Int) (|$alpha-9:sum| Int) (|$knormal:4| Int) (|$knormal:6| Int) )
     (=>
-      ( and (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) (|dotprod$unknown:12| |$V-reftype:21| |$alpha-6:v2|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (<= |$alpha-8:i| |$alpha-7:n|) (<= 0 |$alpha-8:i|) (not (> |$alpha-8:i| |$alpha-7:n|)) )
+      ( and (not (> |$alpha-8:i| |$alpha-7:n|)) (<= 0 |$alpha-8:i|) (<= |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:12| |$V-reftype:21| |$alpha-6:v2|) (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) )
       (|dotprod$unknown:12| |$V-reftype:21| |$alpha-6:v2|)
     )
   )
@@ -70,7 +70,7 @@
 (assert
   (forall ( (|$alpha-7:n| Int) (|$alpha-8:i| Int) (|$alpha-9:sum| Int) (|$knormal:19| Int) (|$knormal:4| Int) (|$knormal:6| Int) )
     (=>
-      ( and (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:16| |$knormal:19| (+ |$alpha-9:sum| (* |$knormal:4| |$knormal:6|)) (+ |$alpha-8:i| 1) |$alpha-7:n|) (<= |$alpha-8:i| |$alpha-7:n|) (<= 0 |$alpha-8:i|) (not (> |$alpha-8:i| |$alpha-7:n|)) )
+      ( and (not (> |$alpha-8:i| |$alpha-7:n|)) (<= 0 |$alpha-8:i|) (<= |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:16| |$knormal:19| (+ |$alpha-9:sum| (* |$knormal:4| |$knormal:6|)) (+ |$alpha-8:i| 1) |$alpha-7:n|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) )
       (|dotprod$unknown:16| |$knormal:19| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|)
     )
   )
@@ -78,7 +78,7 @@
 (assert
   (forall ( (|$alpha-7:n| Int) (|$alpha-8:i| Int) (|$alpha-9:sum| Int) (|$knormal:4| Int) (|$knormal:6| Int) )
     (=>
-      ( and (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (<= |$alpha-8:i| |$alpha-7:n|) (<= 0 |$alpha-8:i|) (not (> |$alpha-8:i| |$alpha-7:n|)) )
+      ( and (not (> |$alpha-8:i| |$alpha-7:n|)) (<= 0 |$alpha-8:i|) (<= |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:12| |$knormal:6| |$alpha-8:i|) (|dotprod$unknown:10| |$knormal:4| |$alpha-8:i|) )
       (|dotprod$unknown:15| (+ |$alpha-9:sum| (* |$knormal:4| |$knormal:6|)) (+ |$alpha-8:i| 1) |$alpha-7:n|)
     )
   )
@@ -86,14 +86,14 @@
 (assert
   (forall ( (|$alpha-7:n| Int) (|$alpha-8:i| Int) (|$alpha-9:sum| Int) )
     (=>
-      ( and (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (> |$alpha-8:i| |$alpha-7:n|) )
+      ( and (> |$alpha-8:i| |$alpha-7:n|) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) )
       (|dotprod$unknown:16| |$alpha-9:sum| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|)
     )
   )
 )
 (assert
   (not (exists ( (|$alpha-7:n| Int) (|$alpha-8:i| Int) (|$alpha-9:sum| Int) )
-    ( and (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) (not (and (<= 0 |$alpha-8:i|) (<= |$alpha-8:i| |$alpha-7:n|))) (not (> |$alpha-8:i| |$alpha-7:n|)) )
+    ( and (not (> |$alpha-8:i| |$alpha-7:n|)) (not (and (<= 0 |$alpha-8:i|) (<= |$alpha-8:i| |$alpha-7:n|))) (|dotprod$unknown:15| |$alpha-9:sum| |$alpha-8:i| |$alpha-7:n|) )
     )
   )
 )

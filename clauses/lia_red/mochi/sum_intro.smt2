@@ -21,7 +21,7 @@
 (assert
   (forall ( (|$alpha-3:n| Int) (|$knormal:3| Int) )
     (=>
-      ( and (|sum$unknown:5| |$knormal:3| (- |$alpha-3:n| 1)) (not (<= |$alpha-3:n| 0)) )
+      ( and (not (<= |$alpha-3:n| 0)) (|sum$unknown:5| |$knormal:3| (- |$alpha-3:n| 1)) )
       (|sum$unknown:5| (+ |$alpha-3:n| |$knormal:3|) |$alpha-3:n|)
     )
   )
@@ -36,7 +36,7 @@
 )
 (assert
   (not (exists ( (|$alpha-4:n| Int) (|$knormal:8| Int) )
-    ( and (|sum$unknown:5| |$knormal:8| |$alpha-4:n|) (not (<= |$alpha-4:n| |$knormal:8|)) )
+    ( and (not (<= |$alpha-4:n| |$knormal:8|)) (|sum$unknown:5| |$knormal:8| |$alpha-4:n|) )
     )
   )
 )

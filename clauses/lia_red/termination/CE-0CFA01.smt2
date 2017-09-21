@@ -60,8 +60,8 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:80| Int) (|$cond-alpha-rename:81| Int) (|$cond-alpha-rename:82| Int) )
-    ( and (|f_1034$unknown:10| |$cond-alpha-rename:80| |$cond-alpha-rename:82| |$cond-alpha-rename:81| 0 0 0 0 0) (not (= 0 |$cond-alpha-rename:81|)) )
+  (not (exists ( (|$cond-alpha-rename:115| Int) (|$cond-alpha-rename:116| Int) (|$cond-alpha-rename:117| Int) )
+    ( and (|f_1034$unknown:10| |$cond-alpha-rename:115| |$cond-alpha-rename:117| |$cond-alpha-rename:116| 0 0 0 0 0) (not (= 0 |$cond-alpha-rename:116|)) (= 0 0) )
     )
   )
 )

@@ -1108,5 +1108,3 @@
 )
 (check-sat)
 
-(get-model)
-

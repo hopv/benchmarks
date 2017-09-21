@@ -25,40 +25,40 @@
 )
 
 (assert
-  (not (exists ( (|$alpha-4:n| Int) (|$cond-alpha-rename:80| Int) )
-    ( and (|cps_sum$unknown:10| |$cond-alpha-rename:80| (- |$alpha-4:n| 1)) (not (<= |$alpha-4:n| 0)) (not (<= |$alpha-4:n| 0)) (not (>= (+ |$cond-alpha-rename:80| |$alpha-4:n|) |$alpha-4:n|)) )
+  (forall ( (|$alpha-1:n| Int) (|$cond-alpha-rename:1| Int) )
+    (=>
+      ( and (|cps_sum$unknown:10| |$cond-alpha-rename:1| (- |$alpha-1:n| 1)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) )
+      (|cps_sum$unknown:10| (+ |$cond-alpha-rename:1| |$alpha-1:n|) |$alpha-1:n|)
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:148| Int) (|$cond-alpha-rename:151| Int) (|$cond-alpha-rename:155| Int) (|$cond-alpha-rename:159| Int) (|$cond-alpha-rename:168| Int) )
+  (forall ( (|$alpha-1:n| Int) (|$cond-alpha-rename:42| Int) (|$cond-alpha-rename:49| Int) (|$knormal:4| Int) )
     (=>
-      ( and (|cps_sum$unknown:10| |$cond-alpha-rename:151| (- (- |$cond-alpha-rename:148| 1) 1)) (|cps_sum$unknown:10| |$cond-alpha-rename:155| (- (- |$cond-alpha-rename:148| 1) 1)) (|cps_sum$unknown:10| |$cond-alpha-rename:159| (- (- |$cond-alpha-rename:148| 1) 1)) (|cps_sum$unknown:11| |$cond-alpha-rename:168| (+ (+ |$cond-alpha-rename:159| (- |$cond-alpha-rename:148| 1)) |$cond-alpha-rename:148|) |$cond-alpha-rename:148|) (<= (- |$cond-alpha-rename:148| 1) 0) (not (<= (- |$cond-alpha-rename:148| 1) 0)) (not (<= (- |$cond-alpha-rename:148| 1) 0)) (not (<= (- |$cond-alpha-rename:148| 1) 0)) (not (<= (- |$cond-alpha-rename:148| 1) 0)) (not (<= (- |$cond-alpha-rename:148| 1) 0)) (not (<= (- |$cond-alpha-rename:148| 1) 0)) (not (<= |$cond-alpha-rename:148| 0)) (not (<= |$cond-alpha-rename:148| 0)) (not (<= |$cond-alpha-rename:148| 0)) (not (<= |$cond-alpha-rename:148| 0)) (= (+ (+ |$cond-alpha-rename:159| (- |$cond-alpha-rename:148| 1)) |$cond-alpha-rename:148|) (+ 0 |$cond-alpha-rename:148|)) (= 0 (+ |$cond-alpha-rename:151| (- |$cond-alpha-rename:148| 1))) (= 0 (+ |$cond-alpha-rename:155| (- |$cond-alpha-rename:148| 1))) )
-      (|cps_sum$unknown:12| |$cond-alpha-rename:168| (- |$cond-alpha-rename:148| 1))
+      ( and (= (+ |$cond-alpha-rename:42| |$alpha-1:n|) (+ |$knormal:4| |$alpha-1:n|)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (|cps_sum$unknown:11| |$cond-alpha-rename:49| (+ |$cond-alpha-rename:42| |$alpha-1:n|) |$alpha-1:n|) (|cps_sum$unknown:10| |$knormal:4| (- |$alpha-1:n| 1)) (|cps_sum$unknown:10| |$knormal:4| (- |$alpha-1:n| 1)) (|cps_sum$unknown:10| |$cond-alpha-rename:42| (- |$alpha-1:n| 1)) )
+      (|cps_sum$unknown:11| |$cond-alpha-rename:49| |$knormal:4| (- |$alpha-1:n| 1))
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:170| Int) (|$cond-alpha-rename:181| Int) )
-    (=>
-      ( and (|cps_sum$unknown:11| |$cond-alpha-rename:181| (+ 0 |$cond-alpha-rename:170|) |$cond-alpha-rename:170|) (<= (- |$cond-alpha-rename:170| 1) 0) (<= (- |$cond-alpha-rename:170| 1) 0) (<= (- |$cond-alpha-rename:170| 1) 0) (<= (- |$cond-alpha-rename:170| 1) 0) (not (<= |$cond-alpha-rename:170| 0)) (not (<= |$cond-alpha-rename:170| 0)) (not (<= |$cond-alpha-rename:170| 0)) (not (<= |$cond-alpha-rename:170| 0)) (= (+ 0 |$cond-alpha-rename:170|) (+ 0 |$cond-alpha-rename:170|)) )
-      (|cps_sum$unknown:12| |$cond-alpha-rename:181| (- |$cond-alpha-rename:170| 1))
+  (not (exists ( (|$alpha-4:n| Int) (|$alpha-5:x| Int) )
+    ( and (|cps_sum$unknown:10| |$alpha-5:x| |$alpha-4:n|) (not (>= |$alpha-5:x| |$alpha-4:n|)) )
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:n| Int) (|$cond-alpha-rename:185| Int) (|$cond-alpha-rename:189| Int) )
+  (forall ( (|$alpha-3:n| Int) (|$knormal:12| Int) )
     (=>
-      ( and (|cps_sum$unknown:10| |$cond-alpha-rename:185| (- |$alpha-1:n| 1)) (|cps_sum$unknown:10| |$cond-alpha-rename:189| (- |$alpha-1:n| 1)) (>= 0 |$alpha-1:n|) (<= |$alpha-1:n| 0) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (not (<= |$alpha-1:n| 0)) (= 0 (+ |$cond-alpha-rename:185| |$alpha-1:n|)) (= 0 (+ |$cond-alpha-rename:189| |$alpha-1:n|)) )
-      (|cps_sum$unknown:12| 1 |$alpha-1:n|)
+      ( and (>= |$knormal:12| |$alpha-3:n|) (|cps_sum$unknown:10| |$knormal:12| |$alpha-3:n|) )
+      (|cps_sum$unknown:11| 1 |$knormal:12| |$alpha-3:n|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:n| Int) )
+  (forall ( (|$alpha-1:n| Int) (|$knormal:11| Int) )
     (=>
-      ( and (<= |$alpha-1:n| 0) (<= |$alpha-1:n| 0) (>= 0 |$alpha-1:n|) (<= |$alpha-1:n| 0) )
-      (|cps_sum$unknown:12| 1 |$alpha-1:n|)
+      ( and (|cps_sum$unknown:11| |$knormal:11| 0 |$alpha-1:n|) (<= |$alpha-1:n| 0) )
+      (|cps_sum$unknown:12| |$knormal:11| |$alpha-1:n|)
     )
   )
 )
@@ -67,6 +67,14 @@
     (=>
       ( and (|cps_sum$unknown:12| |$knormal:9| (- |$alpha-1:n| 1)) (not (<= |$alpha-1:n| 0)) )
       (|cps_sum$unknown:12| |$knormal:9| |$alpha-1:n|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:n| Int) )
+    (=>
+      ( and (<= |$alpha-1:n| 0) )
+      (|cps_sum$unknown:10| 0 |$alpha-1:n|)
     )
   )
 )

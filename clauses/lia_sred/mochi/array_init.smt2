@@ -65,18 +65,18 @@
   )
 )
 (assert
-  (forall ( (|$alpha-3:i| Int) (|$alpha-5:x| Int) (|$alpha-6:j| Int) (|$cond-alpha-rename:4| Int) (|$knormal:5| Int) )
+  (forall ( (|$alpha-3:i| Int) (|$alpha-5:x| Int) (|$alpha-6:j| Int) (|$cond-alpha-rename:8| Int) (|$knormal:5| Int) )
     (=>
-      ( and (|init$unknown:4| |$knormal:5| |$alpha-6:j| |$cond-alpha-rename:4| |$alpha-3:i|) (not (>= |$alpha-3:i| |$cond-alpha-rename:4|)) (not (= |$alpha-6:j| |$alpha-3:i|)) )
+      ( and (not (= |$alpha-6:j| |$alpha-3:i|)) (not (>= |$alpha-3:i| |$cond-alpha-rename:8|)) (|init$unknown:4| |$knormal:5| |$alpha-6:j| |$cond-alpha-rename:8| |$alpha-3:i|) )
       (|update$unknown:15| |$knormal:5| |$alpha-6:j| |$alpha-5:x| |$alpha-3:i|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-3:i| Int) (|$alpha-5:x| Int) (|$alpha-6:j| Int) )
+  (forall ( (|$alpha-3:i| Int) (|$alpha-5:x| Int) )
     (=>
-      ( and (= |$alpha-6:j| |$alpha-3:i|) )
-      (|update$unknown:15| |$alpha-5:x| |$alpha-6:j| |$alpha-5:x| |$alpha-3:i|)
+      ( and true )
+      (|update$unknown:15| |$alpha-5:x| |$alpha-3:i| |$alpha-5:x| |$alpha-3:i|)
     )
   )
 )

@@ -37,10 +37,10 @@
 )
 
 (assert
-  (forall ( (|$cond-alpha-rename:6| Int) (|$cond-alpha-rename:7| Int) )
+  (forall ( (|$cond-alpha-rename:19| Int) )
     (=>
-      ( and (= |$cond-alpha-rename:6| |$cond-alpha-rename:7|) (<= 0 |$cond-alpha-rename:6|) )
-      (|dotprod_aux$unknown:10| 0 0 |$cond-alpha-rename:7| |$cond-alpha-rename:6| |$cond-alpha-rename:6|)
+      ( and (<= 0 |$cond-alpha-rename:19|) )
+      (|dotprod_aux$unknown:10| 0 0 |$cond-alpha-rename:19| |$cond-alpha-rename:19| |$cond-alpha-rename:19|)
     )
   )
 )
@@ -69,10 +69,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-10:v1| Int) (|$alpha-11:v2| Int) (|$alpha-12:i| Int) (|$alpha-13:sum| Int) (|$alpha-9:n| Int) )
+  (forall ( (|$alpha-10:v1| Int) (|$alpha-11:v2| Int) (|$alpha-13:sum| Int) (|$alpha-9:n| Int) )
     (=>
-      ( and (|dotprod_aux$unknown:10| |$alpha-13:sum| |$alpha-12:i| |$alpha-11:v2| |$alpha-10:v1| |$alpha-9:n|) (= |$alpha-12:i| |$alpha-9:n|) )
-      (|dotprod_aux$unknown:11| |$alpha-13:sum| |$alpha-13:sum| |$alpha-12:i| |$alpha-11:v2| |$alpha-10:v1| |$alpha-9:n|)
+      ( and (|dotprod_aux$unknown:10| |$alpha-13:sum| |$alpha-9:n| |$alpha-11:v2| |$alpha-10:v1| |$alpha-9:n|) )
+      (|dotprod_aux$unknown:11| |$alpha-13:sum| |$alpha-13:sum| |$alpha-9:n| |$alpha-11:v2| |$alpha-10:v1| |$alpha-9:n|)
     )
   )
 )

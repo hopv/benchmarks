@@ -114,10 +114,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-2:i| Int) (|$alpha-3:x| Int) (|$alpha-4:j| Int) )
+  (forall ( (|$alpha-2:i| Int) (|$alpha-3:x| Int) )
     (=>
-      ( and (= |$alpha-4:j| |$alpha-2:i|) )
-      (|update$unknown:22| |$alpha-3:x| |$alpha-4:j| |$alpha-3:x| |$alpha-2:i|)
+      ( and true )
+      (|update$unknown:22| |$alpha-3:x| |$alpha-2:i| |$alpha-3:x| |$alpha-2:i|)
     )
   )
 )

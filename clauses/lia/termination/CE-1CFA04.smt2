@@ -2268,6 +2268,3 @@
   )
 )
 (check-sat)
-
-(get-model)
-

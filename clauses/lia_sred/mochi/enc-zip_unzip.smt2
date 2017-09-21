@@ -44,26 +44,26 @@
 )
 
 (assert
-  (forall ( (|$alpha-4:x| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:3| Int) (|$cond-alpha-rename:4| Int) )
+  (forall ( (|$alpha-4:x| Int) (|$cond-alpha-rename:3| Int) (|$cond-alpha-rename:39| Int) (|$cond-alpha-rename:4| Int) )
     (=>
-      ( and (|unzip$unknown:9| |$cond-alpha-rename:4| |$cond-alpha-rename:3| (- |$cond-alpha-rename:15| 1)) (not (= |$cond-alpha-rename:15| 0)) (not (= |$alpha-4:x| 0)) )
+      ( and (|unzip$unknown:9| |$cond-alpha-rename:4| |$cond-alpha-rename:3| (- |$cond-alpha-rename:39| 1)) (not (= |$cond-alpha-rename:39| 0)) (not (= |$alpha-4:x| 0)) )
       (|unzip$unknown:9| (+ |$cond-alpha-rename:4| 1) (+ |$cond-alpha-rename:3| 1) |$alpha-4:x|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:10| Int) (|$alpha-4:x| Int) (|$cond-alpha-rename:36| Int) (|$cond-alpha-rename:37| Int) (|$cond-alpha-rename:38| Int) (|$cond-alpha-rename:40| Int) (|$cond-alpha-rename:43| Int) (|$cond-alpha-rename:48| Int) (|$knormal:7| Int) )
+  (forall ( (|$V-reftype:10| Int) (|$alpha-4:x| Int) (|$cond-alpha-rename:73| Int) (|$cond-alpha-rename:74| Int) (|$cond-alpha-rename:75| Int) (|$cond-alpha-rename:77| Int) (|$cond-alpha-rename:80| Int) (|$cond-alpha-rename:85| Int) (|$knormal:7| Int) )
     (=>
-      ( and (|unzip$unknown:10| |$cond-alpha-rename:48| (+ |$V-reftype:10| 1) (+ |$cond-alpha-rename:37| 1) |$cond-alpha-rename:36|) (|unzip$unknown:9| |$V-reftype:10| |$knormal:7| (- |$cond-alpha-rename:40| 1)) (|unzip$unknown:9| |$V-reftype:10| |$knormal:7| (- |$alpha-4:x| 1)) (|unzip$unknown:9| |$cond-alpha-rename:38| |$cond-alpha-rename:37| (- |$cond-alpha-rename:43| 1)) (not (= |$cond-alpha-rename:36| 0)) (not (= |$cond-alpha-rename:40| 0)) (not (= |$cond-alpha-rename:43| 0)) (not (= |$alpha-4:x| 0)) (= (+ |$cond-alpha-rename:37| 1) (+ |$knormal:7| 1)) (= (+ |$V-reftype:10| 1) (+ |$cond-alpha-rename:38| 1)) )
-      (|unzip$unknown:10| |$cond-alpha-rename:48| |$V-reftype:10| |$knormal:7| (- |$alpha-4:x| 1))
+      ( and (= (+ |$V-reftype:10| 1) (+ |$cond-alpha-rename:75| 1)) (= (+ |$cond-alpha-rename:74| 1) (+ |$knormal:7| 1)) (not (= |$alpha-4:x| 0)) (not (= |$cond-alpha-rename:80| 0)) (not (= |$cond-alpha-rename:77| 0)) (not (= |$cond-alpha-rename:73| 0)) (|unzip$unknown:9| |$cond-alpha-rename:75| |$cond-alpha-rename:74| (- |$cond-alpha-rename:80| 1)) (|unzip$unknown:9| |$V-reftype:10| |$knormal:7| (- |$alpha-4:x| 1)) (|unzip$unknown:9| |$V-reftype:10| |$knormal:7| (- |$cond-alpha-rename:77| 1)) (|unzip$unknown:10| |$cond-alpha-rename:85| (+ |$V-reftype:10| 1) (+ |$cond-alpha-rename:74| 1) |$cond-alpha-rename:73|) )
+      (|unzip$unknown:10| |$cond-alpha-rename:85| |$V-reftype:10| |$knormal:7| (- |$alpha-4:x| 1))
     )
   )
 )
 (assert
-  (forall ( (|$alpha-4:x| Int) (|$knormal:17| Int) )
+  (forall ( (|$knormal:17| Int) )
     (=>
-      ( and (|unzip$unknown:10| |$knormal:17| 0 0 |$alpha-4:x|) (= |$alpha-4:x| 0) )
-      (|unzip$unknown:11| |$knormal:17| |$alpha-4:x|)
+      ( and (|unzip$unknown:10| |$knormal:17| 0 0 0) )
+      (|unzip$unknown:11| |$knormal:17| 0)
     )
   )
 )
@@ -76,10 +76,10 @@
   )
 )
 (assert
-  (forall ( (|$alpha-4:x| Int) )
+  (forall ( (useless Int) )
     (=>
-      ( and (= |$alpha-4:x| 0) )
-      (|unzip$unknown:9| 0 0 |$alpha-4:x|)
+      ( and true )
+      (|unzip$unknown:9| 0 0 0)
     )
   )
 )
@@ -108,22 +108,22 @@
   )
 )
 (assert
-  (forall ( (|$alpha-6:x| Int) (|$alpha-7:y| Int) )
+  (forall ( (useless Int) )
     (=>
-      ( and (|zip$unknown:13| |$alpha-7:y| |$alpha-6:x|) (= |$alpha-6:x| 0) (= |$alpha-7:y| 0) )
-      (|zip$unknown:14| 0 |$alpha-7:y| |$alpha-6:x|)
+      ( and (|zip$unknown:13| 0 0) )
+      (|zip$unknown:14| 0 0 0)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-6:x| Int) (|$alpha-7:y| Int) )
-    ( and (|zip$unknown:13| |$alpha-7:y| |$alpha-6:x|) (= |$alpha-6:x| 0) (not (= |$alpha-7:y| 0)) )
+  (not (exists ( (|$alpha-7:y| Int) )
+    ( and (|zip$unknown:13| |$alpha-7:y| 0) (not (= |$alpha-7:y| 0)) )
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-6:x| Int) (|$alpha-7:y| Int) )
-    ( and (|zip$unknown:13| |$alpha-7:y| |$alpha-6:x|) (= |$alpha-7:y| 0) (not (= |$alpha-6:x| 0)) )
+  (not (exists ( (|$alpha-6:x| Int) )
+    ( and (|zip$unknown:13| 0 |$alpha-6:x|) (not (= |$alpha-6:x| 0)) )
     )
   )
 )

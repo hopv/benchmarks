@@ -72,51 +72,51 @@
   ( Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
 )
 
-(declare-fun |bot$unknown:36|
+(declare-fun |fail$unknown:67|
   ( Int Int ) Bool
-)
-
-(declare-fun |f_1034$unknown:47|
-  ( Int Int Int Int Int Int Int Int Int Int Int ) Bool
 )
 
 (declare-fun |f_1034$unknown:60|
   ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
 )
 
-(declare-fun |fail$unknown:67|
+(declare-fun |f_1034$unknown:47|
+  ( Int Int Int Int Int Int Int Int Int Int Int ) Bool
+)
+
+(declare-fun |bot$unknown:36|
   ( Int Int ) Bool
 )
 
 (assert
-  (forall ( (|$V-reftype:18| Int) (|$V-reftype:20| Int) (|$V-reftype:22| Int) (|$alpha-53:h_1039| Int) (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:81| Int) (|$knormal:48| Int) (|$knormal:50| Int) )
+  (forall ( (|$V-reftype:18| Int) (|$V-reftype:20| Int) (|$V-reftype:22| Int) (|$alpha-53:h_1039| Int) (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:356| Int) (|$knormal:48| Int) (|$knormal:50| Int) )
     (=>
-      ( and (|bot$unknown:36| |$knormal:48| 1) (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) (|f_1034$unknown:60| |$cond-alpha-rename:81| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (|fail$unknown:67| |$knormal:50| 1) (not (= 0 |$alpha-54:prev_set_flag_app_1343|)) )
-      (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:81| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0)
+      ( and (= 0 0) (not (= 0 |$alpha-54:prev_set_flag_app_1343|)) (|fail$unknown:67| |$knormal:50| 1) (|f_1034$unknown:60| |$cond-alpha-rename:356| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) (|bot$unknown:36| |$knormal:48| 1) )
+      (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:356| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:18| Int) (|$V-reftype:20| Int) (|$V-reftype:22| Int) (|$alpha-53:h_1039| Int) (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:82| Int) )
+  (forall ( (|$V-reftype:18| Int) (|$V-reftype:20| Int) (|$V-reftype:22| Int) (|$alpha-53:h_1039| Int) (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:357| Int) )
     (=>
-      ( and (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) (|f_1034$unknown:60| |$cond-alpha-rename:82| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (not (not (= 0 |$alpha-54:prev_set_flag_app_1343|))) )
-      (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:82| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0)
+      ( and (= 0 0) (not (not (= 0 |$alpha-54:prev_set_flag_app_1343|))) (|f_1034$unknown:60| |$cond-alpha-rename:357| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0 0 0 0 0 0 0 0) (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) )
+      (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:357| |$V-reftype:22| |$V-reftype:20| |$V-reftype:18| |$alpha-53:h_1039| 0 0 0 0 0 0 0)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:72| Int) (|$knormal:48| Int) (|$knormal:50| Int) )
+  (forall ( (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:253| Int) (|$knormal:48| Int) (|$knormal:50| Int) )
     (=>
-      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:72| |$alpha-57:x_1040| |$alpha-57:x_1040| 0 1 0 0 0 0 0 0 0) (|bot$unknown:36| |$knormal:48| 1) (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) (|fail$unknown:67| |$knormal:50| 1) (not (= 0 |$alpha-54:prev_set_flag_app_1343|)) )
-      (|app_1038$unknown:17| |$cond-alpha-rename:72| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0)
+      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:253| |$alpha-57:x_1040| |$alpha-57:x_1040| 0 1 0 0 0 0 0 0 0) (|bot$unknown:36| |$knormal:48| 1) (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) (|fail$unknown:67| |$knormal:50| 1) (not (= 0 |$alpha-54:prev_set_flag_app_1343|)) )
+      (|app_1038$unknown:17| |$cond-alpha-rename:253| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:74| Int) )
+  (forall ( (|$alpha-54:prev_set_flag_app_1343| Int) (|$alpha-55:s_prev_app_h_EXPARAM_1340| Int) (|$alpha-56:s_prev_app_x_1342| Int) (|$alpha-57:x_1040| Int) (|$cond-alpha-rename:255| Int) )
     (=>
-      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:74| |$alpha-57:x_1040| |$alpha-57:x_1040| 0 1 0 0 0 0 0 0 0) (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) (not (not (= 0 |$alpha-54:prev_set_flag_app_1343|))) )
-      (|app_1038$unknown:17| |$cond-alpha-rename:74| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0)
+      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:255| |$alpha-57:x_1040| |$alpha-57:x_1040| 0 1 0 0 0 0 0 0 0) (|f_1034$unknown:47| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0) (not (not (= 0 |$alpha-54:prev_set_flag_app_1343|))) )
+      (|app_1038$unknown:17| |$cond-alpha-rename:255| |$alpha-57:x_1040| |$alpha-56:s_prev_app_x_1342| |$alpha-55:s_prev_app_h_EXPARAM_1340| |$alpha-54:prev_set_flag_app_1343| 0 0 0 0 0 0 0)
     )
   )
 )
@@ -153,26 +153,26 @@
   )
 )
 (assert
-  (forall ( (|$V-reftype:61| Int) (|$V-reftype:63| Int) (|$V-reftype:65| Int) (|$cond-alpha-rename:76| Int) (|$knormal:180| Int) )
+  (forall ( (|$V-reftype:61| Int) (|$V-reftype:63| Int) (|$V-reftype:65| Int) (|$cond-alpha-rename:257| Int) (|$knormal:180| Int) )
     (=>
-      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:76| |$V-reftype:65| |$V-reftype:65| 0 1 0 0 0 0 0 0 0) )
-      (|f_1034$unknown:60| |$cond-alpha-rename:76| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:180| 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:257| |$V-reftype:65| |$V-reftype:65| 0 1 0 0 0 0 0 0 0) )
+      (|f_1034$unknown:60| |$cond-alpha-rename:257| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:180| 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:61| Int) (|$V-reftype:63| Int) (|$V-reftype:65| Int) (|$cond-alpha-rename:78| Int) (|$knormal:71| Int) )
+  (forall ( (|$V-reftype:61| Int) (|$V-reftype:63| Int) (|$V-reftype:65| Int) (|$cond-alpha-rename:259| Int) (|$knormal:71| Int) )
     (=>
-      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:78| |$V-reftype:65| |$V-reftype:65| 0 1 0 0 0 0 0 0 0) (|f_1034$unknown:47| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:71| 0 0 0 0 0 0 0) )
-      (|f_1034$unknown:48| |$cond-alpha-rename:78| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:71| 0 0 0 0 0 0 0)
+      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:259| |$V-reftype:65| |$V-reftype:65| 0 1 0 0 0 0 0 0 0) (|f_1034$unknown:47| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:71| 0 0 0 0 0 0 0) )
+      (|f_1034$unknown:48| |$cond-alpha-rename:259| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:71| 0 0 0 0 0 0 0)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:61| Int) (|$V-reftype:63| Int) (|$V-reftype:65| Int) (|$cond-alpha-rename:80| Int) (|$knormal:92| Int) )
+  (forall ( (|$V-reftype:61| Int) (|$V-reftype:63| Int) (|$V-reftype:65| Int) (|$cond-alpha-rename:261| Int) (|$knormal:92| Int) )
     (=>
-      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:80| |$V-reftype:65| |$V-reftype:65| 0 1 0 0 0 0 0 0 0) )
-      (|f_1034$unknown:60| |$cond-alpha-rename:80| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:92| 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+      ( and (|app_without_checking_1355$unknown:29| |$cond-alpha-rename:261| |$V-reftype:65| |$V-reftype:65| 0 1 0 0 0 0 0 0 0) )
+      (|f_1034$unknown:60| |$cond-alpha-rename:261| |$V-reftype:65| |$V-reftype:63| |$V-reftype:61| |$knormal:92| 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
     )
   )
 )
@@ -185,8 +185,8 @@
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:91| Int) (|$cond-alpha-rename:92| Int) (|$cond-alpha-rename:93| Int) (|$cond-alpha-rename:94| Int) )
-    ( and (|f_1034$unknown:47| |$cond-alpha-rename:94| |$cond-alpha-rename:93| |$cond-alpha-rename:92| |$cond-alpha-rename:91| 0 0 0 0 0 0 0) (not (= 0 |$cond-alpha-rename:91|)) )
+  (not (exists ( (|$cond-alpha-rename:460| Int) (|$cond-alpha-rename:461| Int) (|$cond-alpha-rename:462| Int) (|$cond-alpha-rename:463| Int) )
+    ( and (|f_1034$unknown:47| |$cond-alpha-rename:463| |$cond-alpha-rename:462| |$cond-alpha-rename:461| |$cond-alpha-rename:460| 0 0 0 0 0 0 0) (not (= 0 |$cond-alpha-rename:460|)) )
     )
   )
 )

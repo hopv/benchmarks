@@ -213,6 +213,3 @@
   )
 )
 (check-sat)
-
-(get-model)
-

@@ -71,6 +71,10 @@
 
 (set-logic HORN)
 
+(declare-fun |f3_without_checking_1535$unknown:125|
+  ( Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Bool
+)
+
 (declare-fun |bot$unknown:2|
   ( Int Int ) Bool
 )
@@ -80,6 +84,22 @@
     (=>
       ( and (|bot$unknown:2| |$knormal:2| 1) )
       (|bot$unknown:2| |$knormal:2| |$alpha-1:$$tmp::1|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:173| Int) (|$V-reftype:175| Int) (|$V-reftype:177| Int) (|$cond-alpha-rename:2005| Int) (|$cond-alpha-rename:2006| Int) (|$cond-alpha-rename:2007| Int) )
+    (=>
+      ( and (= 1 1) (= 0 0) )
+      (|f3_without_checking_1535$unknown:125| |$V-reftype:177| |$V-reftype:177| |$V-reftype:175| |$V-reftype:173| |$cond-alpha-rename:2007| |$cond-alpha-rename:2006| (+ (* 0 |$cond-alpha-rename:2005|) (+ (* 0 (+ 0 0)) 0)) |$cond-alpha-rename:2007| |$cond-alpha-rename:2006| 0 0 0 0 0 1 0 0)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:173| Int) (|$V-reftype:175| Int) (|$V-reftype:177| Int) (|$V-reftype:178| Int) (|$cond-alpha-rename:2025| Int) (|$cond-alpha-rename:2026| Int) (|$cond-alpha-rename:2027| Int) (|$cond-alpha-rename:2028| Int) (|$cond-alpha-rename:2030| Int) (|$cond-alpha-rename:2031| Int) )
+    (=>
+      ( and (= 1 1) (= 0 0) (= (+ (* 0 0) 0) (+ (* 0 0) 0)) (= 1 1) (|f3_without_checking_1535$unknown:125| |$V-reftype:178| |$V-reftype:177| |$V-reftype:175| |$V-reftype:173| 0 1 (+ 0 (+ (* 0 (+ (* 0 0) 0)) 0)) 0 1 |$cond-alpha-rename:2031| |$cond-alpha-rename:2030| 0 |$cond-alpha-rename:2028| |$cond-alpha-rename:2027| 1 |$cond-alpha-rename:2026| |$cond-alpha-rename:2025|) )
+      (|f3_without_checking_1535$unknown:125| |$V-reftype:178| |$V-reftype:177| |$V-reftype:175| |$V-reftype:173| 0 1 (+ (* 0 0) 0) 0 1 0 0 0 0 0 1 0 0)
     )
   )
 )
