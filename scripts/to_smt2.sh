@@ -7,108 +7,76 @@ function run_this {
   options="$1"
   in_file="$2"
   out_file="$3"
-  timeout 25 fpice to-hc $options "$in_file" &> "$out_file"
+  timeout 15 fpice to-hc $options "$in_file" &> "$out_file"
   if [[ "$?" != "0" ]] ; then
-    rm "$out_file"
+    # rm "$out_file"
     echo $flag_error
   else
     echo $flag_success
   fi
 }
 
-inactive_options=""
-red_options="--vc-reduction"
-sred_options="$red_options --reduce-only-simple-vc"
+inactive_options="--no-vc-reduction --no-effect-analysis"
+ea_options="--no-vc-reduction"
+ea_red_options=""
 
-inactive_files_error="clauses/files.errors"
-red_files_error="clauses/files_red.errors"
-sred_files_error="clauses/files_sred.errors"
-rm -f "$inactive_files_error"
-rm -f "$red_files_error"
-rm -f "$sred_files_error"
-touch "$inactive_files_error"
-touch "$red_files_error"
-touch "$sred_files_error"
+inactive_options="--no-vc-reduction --no-effect-analysis"
+ea_options="--no-vc-reduction"
+ea_red_options=""
 
 inactive_files="clauses/files"
-red_files="clauses/files_red"
-sred_files="clauses/files_sred"
+ea_files="clauses/files_ea"
+ea_red_files="clauses/files_red_ea"
 rm -f "$inactive_files"
-rm -f "$red_files"
-rm -f "$sred_files"
+rm -f "$ea_files"
+rm -f "$ea_red_files"
 touch "$inactive_files"
-touch "$red_files"
-touch "$sred_files"
+touch "$ea_files"
+touch "$ea_red_files"
 
-inactive_files_not_red="clauses/files_not_red"
-sred_files_not_red="clauses/files_sred_not_red"
-rm -f "$inactive_files_not_red"
-rm -f "$sred_files_not_red"
-touch "$inactive_files_not_red"
-touch "$sred_files_not_red"
+inactive_dir="clauses/lia"
+ea_dir="clauses/lia_ea"
+ea_red_dir="clauses/lia_red_ea"
 
-inactive_files_not_sred="clauses/files_not_sred"
-rm -f "$inactive_files_not_sred"
-touch "$inactive_files_not_sred"
+mkdir -p inactive_dir
+mkdir -p ea_dir
+mkdir -p ea_red_dir
 
 for ml_file in `find caml -iname "*.ml"` ; do
-  hc_file=`echo "$ml_file" | sed -e 's:^caml:clauses:' -e 's:/lia/:/lia/:' -e 's:ml$:smt2:'`
-  sred_hc_file=`echo "$ml_file" | sed -e 's:^caml:clauses:' -e 's:/lia/:/lia_sred/:' -e 's:ml$:smt2:'`
-  red_hc_file=`echo "$ml_file" | sed -e 's:^caml:clauses:' -e 's:/lia/:/lia_red/:' -e 's:ml$:smt2:'`
-  # folder=`echo "$hc_file" | sed -e 's:/[^/]*$::'`
-  # mkdir -p $folder
+  inactive_file=`echo "$ml_file" | sed -e 's:^caml:clauses:' -e 's:ml$:smt2:'`
+  ea_file=`echo "$inactive_file" | sed -e 's:/lia/:/lia_ea/:'`
+  ea_red_dir=`echo "$ml_file" | sed -e 's:/lia/:/lia_ea_red/:'`
+
+  folder=`echo "$inactive_file" | sed -e 's:/[^/]*$::'`
+  # echo "   folder: '$folder'"
+  subfolder=`echo "$folder" | sed -e 's:.*/::'`
+  # echo "subfolder: '$subfolder'"
+  mkdir -p "clauses/lia_ea/$subfolder"
+  mkdir -p "clauses/lia_ea_red/$subfolder"
 
   echo "$ml_file"
 
   printf "  inactive... "
-  inactive_outcome=`run_this "$inactive_options" "$ml_file" "$hc_file"`
+  inactive_outcome=`run_this "$inactive_options" "$ml_file" "$inactive_file"`
   echo "$inactive_outcome"
 
-  printf "      sred... "
-  sred_outcome=`run_this "$sred_options" "$ml_file" "$sred_hc_file"`
-  echo "$sred_outcome"
+  printf "        ea... "
+  ea_outcome=`run_this "$ea_options" "$ml_file" "$ea_file"`
+  echo "$ea_outcome"
 
-  printf "       red... "
-  red_outcome=`run_this "$red_options" "$ml_file" "$red_hc_file"`
-  echo "$red_outcome"
+  printf "  red + ea... "
+  ea_red_outcome=`run_this "$ea_red_options" "$ml_file" "$ea_red_file"`
+  echo "$ea_red_outcome"
 
-  if [ "$red_outcome" = "$flag_success" ] \
-  && [ "$sred_outcome" = "$flag_success" ] \
-  && [ "$inactive_outcome" = "$flag_success" ] ; then
-    echo "$red_hc_file" >> "$red_files"
-    echo "$sred_hc_file" >> "$sred_files"
-    echo "$hc_file" >> "$inactive_files"
-  elif [ "$red_outcome" = "$flag_error" ] \
-  && [ "$sred_outcome" = "$flag_success" ] \
-  && [ "$inactive_outcome" = "$flag_success" ] ; then
-    echo "$red_hc_file" >> "$red_files_error"
-    echo "$sred_hc_file" >> "$sred_files_not_red"
-    echo "$hc_file" >> "$inactive_files_not_red"
-  elif [ "$red_outcome" = "$flag_error" ] \
-  && [ "$sred_outcome" = "$flag_error" ] \
-  && [ "$inactive_outcome" = "$flag_success" ] ; then
-    echo "$red_hc_file" >> "$red_files_error"
-    echo "$sred_hc_file" >> "$sred_files_error"
-    echo "$hc_file" >> "$inactive_files_not_sred"
-  elif [ "$red_outcome" = "$flag_error" ] \
-  && [ "$sred_outcome" = "$flag_error" ] \
-  && [ "$inactive_outcome" = "$flag_error" ] ; then
-    echo "$red_hc_file" >> "$red_files_error"
-    echo "$sred_hc_file" >> "$sred_files_error"
-    echo "$hc_file" >> "$inactive_files_error"
-    echo "  total failure..."
+  if [ "$inactive_outcome" = "$flag_success" ]
+  && [ "$ea_outcome" = "$flag_success" ]
+  && [ "$ea_red_outcome" = "$flag_success" ] ; then
+    echo "$inactive_file" >> "$inactive_files"
+    echo "$ea_file" >> "$ea_files"
+    echo "$ea_red_file" >> "$ea_red_files"
   else
-    echo "  can't handle this combination of results..."
+    echo "error, exiting..."
     exit 2
   fi
 
 done
-
-
-cat "$inactive_files_not_red" >> "$inactive_files"
-rm "$inactive_files_not_red"
-cat "$sred_files_not_red" >> "$sred_files"
-rm "$sred_files_not_red"
-
-cat "$inactive_files_not_sred" >> "$inactive_files"
-rm "$inactive_files_not_sred"

@@ -1602,3 +1602,6 @@
   )
 )
 (check-sat)
+
+(get-model)
+
