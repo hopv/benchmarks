@@ -1902,7 +1902,5 @@
 )
 (check-sat)
 
-(get-model)
-
 (exit)
 
