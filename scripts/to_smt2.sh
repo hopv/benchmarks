@@ -36,7 +36,7 @@ touch "$ea_red_files"
 
 inactive_dir="clauses/lia"
 ea_dir="clauses/lia_ea"
-ea_red_dir="clauses/lia_red_ea"
+ea_red_dir="clauses/lia_ea_red"
 
 mkdir -p inactive_dir
 mkdir -p ea_dir
@@ -44,15 +44,13 @@ mkdir -p ea_red_dir
 
 for ml_file in `find caml -iname "*.ml"` ; do
   inactive_file=`echo "$ml_file" | sed -e 's:^caml:clauses:' -e 's:ml$:smt2:'`
-  ea_file=`echo "$inactive_file" | sed -e 's:/lia/:/lia_ea/:'`
-  ea_red_dir=`echo "$ml_file" | sed -e 's:/lia/:/lia_ea_red/:'`
+  ea_file=`echo "$inactive_file" | sed -e "s:$inactive_dir/:$ea_dir/:"`
+  ea_red_file=`echo "$inactive_file" | sed -e "s:$inactive_dir/:$ea_red_dir/:"`
 
   folder=`echo "$inactive_file" | sed -e 's:/[^/]*$::'`
-  # echo "   folder: '$folder'"
   subfolder=`echo "$folder" | sed -e 's:.*/::'`
-  # echo "subfolder: '$subfolder'"
-  mkdir -p "clauses/lia_ea/$subfolder"
-  mkdir -p "clauses/lia_ea_red/$subfolder"
+  mkdir -p "$ea_dir/$subfolder"
+  mkdir -p "$ea_red_dir/$subfolder"
 
   echo "$ml_file"
 
@@ -68,8 +66,8 @@ for ml_file in `find caml -iname "*.ml"` ; do
   ea_red_outcome=`run_this "$ea_red_options" "$ml_file" "$ea_red_file"`
   echo "$ea_red_outcome"
 
-  if [ "$inactive_outcome" = "$flag_success" ]
-  && [ "$ea_outcome" = "$flag_success" ]
+  if [ "$inactive_outcome" = "$flag_success" ] \
+  && [ "$ea_outcome" = "$flag_success" ] \
   && [ "$ea_red_outcome" = "$flag_success" ] ; then
     echo "$inactive_file" >> "$inactive_files"
     echo "$ea_file" >> "$ea_files"
