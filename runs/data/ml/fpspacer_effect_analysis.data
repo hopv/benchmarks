@@ -1,0 +1,196 @@
+FpSpacer EA {
+  short: fpspacer_effect_analysis
+  graph: FpSpacer EA
+  cmd: "fpspacer --no-vc-reduction"
+  validator: ```
+#!/bin/bash
+bench="$1"
+code="$2"
+out="$3"
+err="$4"
+
+# Safe
+safe="0"
+# Unsafe
+unsafe="10"
+
+if [ `cat $out | grep -e "^unsat$" | wc -l | tr -d ' '` -ne 0 ] ; then
+  exit $unsafe
+elif [ `cat $out | grep -e "^sat$" | wc -l | tr -d ' '` -ne 0 ] ; then
+  exit $safe
+else
+  exit 2
+fi
+  
+  ```
+}
+validators {
+  success: 0, safe, Safe
+  success: 10, unsafe, Unsafe
+}
+timeout: 100.000000000
+#
+000 "caml/lia/fpice/inductive.ml" 0.049782378 0
+001 "caml/lia/fpice/inductive2.ml" 0.026901384 0
+002 "caml/lia/fpice/inductive3-2.ml" 0.025675152 0
+003 "caml/lia/fpice/inductive3.ml" 0.025238934 0
+004 "caml/lia/fpice/inductive4.ml" 0.031469820 0
+005 "caml/lia/fpice/inductive5.ml" 0.025863027 0
+006 "caml/lia/fpice/inductive6-2.ml" 0.022165184 0
+007 "caml/lia/fpice/inductive6-3.ml" 0.025131554 0
+008 "caml/lia/fpice/inductive6.ml" 0.018859408 0
+009 "caml/lia/fpice/repeat.ml" 0.026079978 0
+010 "caml/lia/mochi/a-copy-print.ml" 0.243933265 0
+011 "caml/lia/mochi/a-dotprod.ml" 0.127294787 0
+012 "caml/lia/mochi/a-init.ml" 0.086897914 0
+013 "caml/lia/mochi/a-max.ml" 0.046011708 0
+014 "caml/lia/mochi/ack.ml" 0.026359432 0
+015 "caml/lia/mochi/apply.ml" 0.047759885 10
+016 "caml/lia/mochi/array_init.ml" 0.152836067 0
+017 "caml/lia/mochi/bcopy.ml" 0.045368975 0
+018 "caml/lia/mochi/bcopy2.ml" 0.100223397 0
+019 "caml/lia/mochi/bcopy3.ml" 0.034823857 0
+020 "caml/lia/mochi/bcopy4.ml" 0.029682804 0
+021 "caml/lia/mochi/bcopy5.ml" 0.213655476 0
+022 "caml/lia/mochi/bsearch.ml" 0.106159388 0
+024 "caml/lia/mochi/dotprod.ml" 0.060689498 0
+025 "caml/lia/mochi/dotprod2.ml" 0.031496072 0
+026 "caml/lia/mochi/dotprod3.ml" 0.078392031 0
+027 "caml/lia/mochi/dotprod4.ml" 0.127357016 0
+028 "caml/lia/mochi/dotprod5.ml" 0.215810842 0
+029 "caml/lia/mochi/dotprod_lin.ml" 6.959223723 0
+030 "caml/lia/mochi/enc-rev_accum.ml" 0.023407259 0
+023 "caml/lia/mochi/copy_intro.ml" timeout 124
+032 "caml/lia/mochi/enc-zip.ml" 0.033994646 0
+033 "caml/lia/mochi/enc-zip3.ml" 0.026327770 0
+034 "caml/lia/mochi/enc-zip4.ml" 0.041617227 0
+031 "caml/lia/mochi/enc-rev_append.ml" timeout 124
+035 "caml/lia/mochi/enc-zip_map.ml" timeout 124
+036 "caml/lia/mochi/enc-zip_map2.ml" timeout 124
+037 "caml/lia/mochi/enc-zip_unzip.ml" timeout 124
+039 "caml/lia/mochi/exc-fact.ml" 0.026634667 0
+040 "caml/lia/mochi/exc-simple.ml" 0.018965893 0
+041 "caml/lia/mochi/exception.ml" 0.019057416 0
+042 "caml/lia/mochi/fact_exn.ml" 0.027785676 0
+043 "caml/lia/mochi/fib.ml" 0.026024599 0
+044 "caml/lia/mochi/file.ml" 0.079303633 0
+045 "caml/lia/mochi/flow.ml" 0.019064769 0
+046 "caml/lia/mochi/fxx.ml" 0.018234254 0
+047 "caml/lia/mochi/gib.ml" 0.034705489 0
+048 "caml/lia/mochi/gib2.ml" 0.032165273 0
+049 "caml/lia/mochi/hors.ml" 0.025769143 0
+050 "caml/lia/mochi/hrec.ml" 0.031034690 0
+051 "caml/lia/mochi/inc.ml" 0.032489132 0
+052 "caml/lia/mochi/inc3.ml" 0.128126585 0
+053 "caml/lia/mochi/inc4.ml" 0.082940900 0
+054 "caml/lia/mochi/intro1.ml" 0.022494235 0
+055 "caml/lia/mochi/intro2.ml" 0.022391631 0
+056 "caml/lia/mochi/intro3.ml" 0.020922410 0
+038 "caml/lia/mochi/enc-zipmap.ml" timeout 124
+058 "caml/lia/mochi/lock.ml" 0.036475342 0
+059 "caml/lia/mochi/map.ml" 0.022136822 0
+057 "caml/lia/mochi/kmp.ml" 2.756558652 0
+060 "caml/lia/mochi/map_map.ml" 3.678539639 0
+061 "caml/lia/mochi/max.ml" 0.032459600 0
+062 "caml/lia/mochi/mc91.ml" 0.028275929 0
+063 "caml/lia/mochi/mc91_95.ml" 0.145223623 0
+064 "caml/lia/mochi/mc91_98.ml" 0.076963153 0
+065 "caml/lia/mochi/mc91_99.ml" 0.039097780 0
+066 "caml/lia/mochi/mc91_cps.ml" 0.042751117 0
+067 "caml/lia/mochi/mult.ml" 0.024171711 0
+068 "caml/lia/mochi/neg1.ml" 0.024020970 10
+069 "caml/lia/mochi/neg2.ml" 0.023546792 0
+070 "caml/lia/mochi/queen.ml" 0.174121155 0
+071 "caml/lia/mochi/recursive.ml" 0.032553261 0
+072 "caml/lia/mochi/repeat.ml" 0.029813828 0
+073 "caml/lia/mochi/repeat4.ml" 0.025994599 0
+074 "caml/lia/mochi/sigma_sum.ml" 0.034153214 0
+075 "caml/lia/mochi/sum.ml" 0.021038995 0
+076 "caml/lia/mochi/sum2.ml" 0.024547883 0
+077 "caml/lia/mochi/sum3.ml" 0.027413900 0
+078 "caml/lia/mochi/sum4.ml" 0.036944995 0
+079 "caml/lia/mochi/sum_cps.ml" 0.043696668 0
+080 "caml/lia/mochi/sum_intro.ml" 0.024511284 0
+081 "caml/lia/mochi/twice.ml" 0.023048091 0
+082 "caml/lia/termination/Ackermann00.ml" 0.040731629 0
+083 "caml/lia/termination/Ackermann01.ml" 0.060308429 0
+084 "caml/lia/termination/Ackermann02.ml" 0.421244657 0
+085 "caml/lia/termination/Ackermann03.ml" 0.070118817 0
+086 "caml/lia/termination/Ackermann04.ml" 0.940442046 0
+087 "caml/lia/termination/Ackermann05.ml" 0.630116264 0
+088 "caml/lia/termination/Ackermann06.ml" 0.621286746 0
+089 "caml/lia/termination/alias_partial00.ml" 0.035865248 0
+090 "caml/lia/termination/alias_partial01.ml" 0.029255406 0
+091 "caml/lia/termination/alias_partial02.ml" 0.035928579 0
+092 "caml/lia/termination/alias_partial03.ml" 0.047591503 0
+093 "caml/lia/termination/append00.ml" 0.037166936 0
+094 "caml/lia/termination/append01.ml" 0.054912213 0
+095 "caml/lia/termination/append02.ml" 0.073180468 0
+096 "caml/lia/termination/binomial00.ml" 0.053173303 0
+097 "caml/lia/termination/binomial01.ml" 0.175431643 0
+098 "caml/lia/termination/binomial02.ml" 0.303305833 0
+099 "caml/lia/termination/binomial03.ml" 0.326163404 0
+100 "caml/lia/termination/binomial04.ml" 0.542114439 0
+101 "caml/lia/termination/binomial05.ml" 0.586892392 0
+102 "caml/lia/termination/CE-0CFA00.ml" 0.049293129 0
+103 "caml/lia/termination/CE-0CFA01.ml" 0.052711566 0
+104 "caml/lia/termination/CE-0CFA02.ml" 0.053115739 0
+105 "caml/lia/termination/CE-0CFA03.ml" 0.055083926 10
+106 "caml/lia/termination/CE-0CFA04.ml" 0.506515578 0
+107 "caml/lia/termination/CE-0CFA05.ml" 0.511846070 0
+108 "caml/lia/termination/CE-1CFA00.ml" 0.112901560 0
+109 "caml/lia/termination/CE-1CFA01.ml" 0.108818113 0
+110 "caml/lia/termination/CE-1CFA02.ml" 0.108677779 0
+111 "caml/lia/termination/CE-1CFA03.ml" 0.109508946 10
+112 "caml/lia/termination/CE-1CFA04.ml" 1.672216459 10
+113 "caml/lia/termination/CE-1CFA05.ml" 1.756642483 0
+114 "caml/lia/termination/CE-1CFA06.ml" 0.338866800 0
+115 "caml/lia/termination/CE-1CFA07.ml" 0.343631312 10
+116 "caml/lia/termination/CE-1CFA08.ml" 0.329750298 0
+117 "caml/lia/termination/CE-1CFA09.ml" 0.346191301 10
+118 "caml/lia/termination/CE-Jones_Bohr00.ml" 0.406506434 0
+120 "caml/lia/termination/CE-Jones_Bohr02.ml" 0.494508335 0
+119 "caml/lia/termination/CE-Jones_Bohr01.ml" 1.934083025 0
+121 "caml/lia/termination/CE-Jones_Bohr03.ml" 0.114356074 0
+122 "caml/lia/termination/CE-Jones_Bohr04.ml" 0.612112384 10
+123 "caml/lia/termination/churchNum01.ml" 0.373303620 0
+124 "caml/lia/termination/churchNum02.ml" 3.007199642 0
+125 "caml/lia/termination/churchNum03.ml" 0.154377607 0
+126 "caml/lia/termination/Fibonacci00.ml" 0.021383305 0
+127 "caml/lia/termination/Fibonacci01.ml" 0.023909964 0
+128 "caml/lia/termination/Fibonacci02.ml" 0.025547223 0
+129 "caml/lia/termination/Fibonacci03.ml" 0.026021075 0
+130 "caml/lia/termination/indirect00.ml" 0.029392074 0
+131 "caml/lia/termination/indirect01.ml" 0.304659496 0
+132 "caml/lia/termination/indirect02.ml" 0.041726578 0
+133 "caml/lia/termination/indirect03.ml" 0.050507962 0
+134 "caml/lia/termination/indirectHO00.ml" 0.029640325 0
+135 "caml/lia/termination/indirectHO01.ml" 0.105977378 0
+136 "caml/lia/termination/indirectHO02.ml" 0.049062659 0
+137 "caml/lia/termination/indirectHO03.ml" 0.062198446 0
+138 "caml/lia/termination/McCarthy9100.ml" 0.020834352 0
+139 "caml/lia/termination/McCarthy9101.ml" 0.023729389 0
+140 "caml/lia/termination/McCarthy9102.ml" 0.024874879 0
+141 "caml/lia/termination/McCarthy9103.ml" 0.025138506 0
+142 "caml/lia/termination/toChurch00.ml" 0.845983353 0
+143 "caml/lia/termination/toChurch01.ml" 0.092701309 0
+144 "caml/lia/termination/toChurch02.ml" 0.172319787 0
+145 "caml/lia/termination/toChurch03.ml" 0.245021549 0
+146 "caml/lia/termination/toChurch04.ml" 0.405876214 0
+147 "caml/lia/termination/toChurch05.ml" 0.609522164 0
+148 "caml/lia/termination/up_down00.ml" 0.039238038 0
+149 "caml/lia/termination/up_down01.ml" 0.045518790 0
+150 "caml/lia/termination/up_down02.ml" 0.047997236 0
+151 "caml/lia/termination/up_down03.ml" 0.120249414 0
+152 "caml/lia/termination/up_down04.ml" 0.045004943 0
+153 "caml/lia/termination/up_down05.ml" 0.048246884 0
+154 "caml/lia/termination/up_down06.ml" 0.085697445 0
+155 "caml/lia/termination/up_down07.ml" 0.085027265 0
+156 "caml/lia/termination/x_plus_2_pow_n00.ml" 0.036726340 0
+157 "caml/lia/termination/x_plus_2_pow_n01.ml" 0.148255755 0
+158 "caml/lia/termination/x_plus_2_pow_n02.ml" 0.038719463 0
+159 "caml/lia/termination/x_plus_2_pow_n03.ml" 0.047831921 0
+160 "caml/lia/termination/x_plus_2_pow_n04.ml" 0.052409871 0
+161 "caml/lia/termination/zip00.ml" 0.031091504 0
+162 "caml/lia/termination/zip01.ml" 0.047620462 0
+163 "caml/lia/termination/zip02.ml" 0.061862561 0
