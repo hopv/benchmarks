@@ -1,0 +1,200 @@
+eldarica EA {
+  short: eld_ea
+  graph: eldarica EA
+  cmd: "eldarica -ssol"
+  validator: ```
+#!/bin/bash
+bench="$1"
+code="$2"
+out="$3"
+err="$4"
+
+# Safe
+safe="0"
+# Unsafe
+unsafe="10"
+
+if [ `cat $out | grep -e "^sat" | wc -l | tr -d ' '` -ne 0 ] ; then
+  hoice --check_eld on --check $out $bench
+  if [ `echo "$?"` -ne 0 ] ; then
+    exit 2
+  fi
+  exit $safe
+elif [ `cat $out | grep -e "^unsat" | wc -l | tr -d ' '` -ne 0 ] ; then
+  exit $unsafe
+else
+  exit 2
+fi
+  
+  ```
+}
+validators {
+  success: 0, safe, Safe
+  success: 10, unsafe, Unsafe
+}
+timeout: 100.000000000
+#
+000 "clauses/lia_ea/fpice/inductive.smt2" 1.332505079 0
+001 "clauses/lia_ea/fpice/inductive2.smt2" 1.061498313 0
+002 "clauses/lia_ea/fpice/inductive3-2.smt2" 1.069746406 0
+003 "clauses/lia_ea/fpice/inductive3.smt2" 1.098060245 0
+004 "clauses/lia_ea/fpice/inductive4.smt2" 1.316970472 0
+005 "clauses/lia_ea/fpice/inductive5.smt2" 1.086891898 0
+006 "clauses/lia_ea/fpice/inductive6-2.smt2" 1.024451362 0
+007 "clauses/lia_ea/fpice/inductive6-3.smt2" 1.113893555 0
+008 "clauses/lia_ea/fpice/inductive6.smt2" 1.000811289 0
+009 "clauses/lia_ea/fpice/repeat.smt2" 1.124785065 0
+010 "clauses/lia_ea/mochi/a-copy-print.smt2" 3.263388031 0
+011 "clauses/lia_ea/mochi/a-dotprod.smt2" timeout 124
+012 "clauses/lia_ea/mochi/a-init.smt2" 4.649945885 0
+013 "clauses/lia_ea/mochi/a-max.smt2" 1.279142784 0
+014 "clauses/lia_ea/mochi/ack.smt2" 1.069017492 0
+015 "clauses/lia_ea/mochi/apply.smt2" 1.209317221 10
+016 "clauses/lia_ea/mochi/array_init.smt2" timeout 124
+017 "clauses/lia_ea/mochi/bcopy.smt2" 1.353900003 0
+018 "clauses/lia_ea/mochi/bcopy2.smt2" 1.727435085 0
+019 "clauses/lia_ea/mochi/bcopy3.smt2" 1.283649642 0
+020 "clauses/lia_ea/mochi/bcopy4.smt2" 1.088392715 0
+021 "clauses/lia_ea/mochi/bcopy5.smt2" 2.146263031 0
+022 "clauses/lia_ea/mochi/bsearch.smt2" 1.438486353 0
+023 "clauses/lia_ea/mochi/copy_intro.smt2" 1.188753860 0
+024 "clauses/lia_ea/mochi/dotprod.smt2" 56.007972432 0
+025 "clauses/lia_ea/mochi/dotprod2.smt2" 52.465006096 0
+026 "clauses/lia_ea/mochi/dotprod3.smt2" timeout 124
+027 "clauses/lia_ea/mochi/dotprod4.smt2" timeout 124
+028 "clauses/lia_ea/mochi/dotprod5.smt2" 2.129461784 0
+029 "clauses/lia_ea/mochi/dotprod_lin.smt2" 2.266369343 0
+030 "clauses/lia_ea/mochi/enc-rev_accum.smt2" 1.030396989 0
+031 "clauses/lia_ea/mochi/enc-rev_append.smt2" 1.213235978 0
+032 "clauses/lia_ea/mochi/enc-zip.smt2" 1.142121239 0
+033 "clauses/lia_ea/mochi/enc-zip3.smt2" 1.060619980 0
+034 "clauses/lia_ea/mochi/enc-zip4.smt2" 1.165373243 0
+035 "clauses/lia_ea/mochi/enc-zip_map.smt2" 1.265248348 0
+036 "clauses/lia_ea/mochi/enc-zip_map2.smt2" 1.230392074 0
+037 "clauses/lia_ea/mochi/enc-zip_unzip.smt2" 1.412232714 0
+038 "clauses/lia_ea/mochi/enc-zipmap.smt2" 1.250784100 0
+039 "clauses/lia_ea/mochi/exc-fact.smt2" timeout 124
+040 "clauses/lia_ea/mochi/exc-simple.smt2" 0.879014328 0
+041 "clauses/lia_ea/mochi/exception.smt2" 0.884184632 0
+042 "clauses/lia_ea/mochi/fact_exn.smt2" timeout 124
+043 "clauses/lia_ea/mochi/fib.smt2" 1.070482497 0
+044 "clauses/lia_ea/mochi/file.smt2" 2.335149309 0
+045 "clauses/lia_ea/mochi/flow.smt2" 0.786123024 0
+046 "clauses/lia_ea/mochi/fxx.smt2" 0.810920213 0
+047 "clauses/lia_ea/mochi/gib.smt2" timeout 124
+048 "clauses/lia_ea/mochi/gib2.smt2" timeout 124
+049 "clauses/lia_ea/mochi/hors.smt2" 1.070938226 0
+050 "clauses/lia_ea/mochi/hrec.smt2" 1.123969272 0
+051 "clauses/lia_ea/mochi/inc.smt2" 1.180974799 0
+052 "clauses/lia_ea/mochi/inc3.smt2" 1.508451963 0
+053 "clauses/lia_ea/mochi/inc4.smt2" 1.638746198 0
+054 "clauses/lia_ea/mochi/intro1.smt2" 0.942529127 0
+055 "clauses/lia_ea/mochi/intro2.smt2" 0.910967985 0
+056 "clauses/lia_ea/mochi/intro3.smt2" 0.917868827 0
+057 "clauses/lia_ea/mochi/kmp.smt2" timeout 124
+058 "clauses/lia_ea/mochi/lock.smt2" 1.160021370 0
+059 "clauses/lia_ea/mochi/map.smt2" 1.003132979 0
+060 "clauses/lia_ea/mochi/map_map.smt2" 1.187956967 0
+061 "clauses/lia_ea/mochi/max.smt2" 1.117363791 0
+062 "clauses/lia_ea/mochi/mc91.smt2" 1.021593062 0
+063 "clauses/lia_ea/mochi/mc91_95.smt2" 1.127964719 0
+064 "clauses/lia_ea/mochi/mc91_98.smt2" 1.101082492 0
+065 "clauses/lia_ea/mochi/mc91_99.smt2" 1.096720365 0
+066 "clauses/lia_ea/mochi/mc91_cps.smt2" 1.366829083 0
+067 "clauses/lia_ea/mochi/mult.smt2" 1.095229866 0
+068 "clauses/lia_ea/mochi/neg1.smt2" 0.978250496 10
+069 "clauses/lia_ea/mochi/neg2.smt2" 0.961729167 0
+070 "clauses/lia_ea/mochi/queen.smt2" 2.184416905 0
+071 "clauses/lia_ea/mochi/recursive.smt2" 1.116821125 0
+072 "clauses/lia_ea/mochi/repeat.smt2" 1.119149538 0
+073 "clauses/lia_ea/mochi/repeat4.smt2" 1.058288707 0
+074 "clauses/lia_ea/mochi/sigma_sum.smt2" 1.148785280 0
+075 "clauses/lia_ea/mochi/sum.smt2" 1.016849023 0
+076 "clauses/lia_ea/mochi/sum2.smt2" 1.029008186 0
+077 "clauses/lia_ea/mochi/sum3.smt2" 1.120826986 0
+078 "clauses/lia_ea/mochi/sum4.smt2" 1.272177206 0
+079 "clauses/lia_ea/mochi/sum_cps.smt2" 1.136124344 0
+080 "clauses/lia_ea/mochi/sum_intro.smt2" 1.054097109 0
+081 "clauses/lia_ea/mochi/twice.smt2" 0.928682542 0
+082 "clauses/lia_ea/termination/Ackermann00.smt2" 1.278140499 0
+083 "clauses/lia_ea/termination/Ackermann01.smt2" 1.304037660 0
+084 "clauses/lia_ea/termination/Ackermann02.smt2" 1.555327893 0
+085 "clauses/lia_ea/termination/Ackermann03.smt2" 1.294417731 0
+086 "clauses/lia_ea/termination/Ackermann04.smt2" error 2
+087 "clauses/lia_ea/termination/Ackermann05.smt2" 2.330788083 0
+088 "clauses/lia_ea/termination/Ackermann06.smt2" 1.723491539 0
+089 "clauses/lia_ea/termination/alias_partial00.smt2" 1.048120957 0
+090 "clauses/lia_ea/termination/alias_partial01.smt2" 0.963673605 0
+091 "clauses/lia_ea/termination/alias_partial02.smt2" 1.001775710 0
+092 "clauses/lia_ea/termination/alias_partial03.smt2" 1.278372472 0
+093 "clauses/lia_ea/termination/append00.smt2" 0.988083310 0
+094 "clauses/lia_ea/termination/append01.smt2" 1.321183234 0
+095 "clauses/lia_ea/termination/append02.smt2" 1.277996460 0
+096 "clauses/lia_ea/termination/binomial00.smt2" 1.280239871 0
+097 "clauses/lia_ea/termination/binomial01.smt2" 1.339949964 0
+098 "clauses/lia_ea/termination/binomial02.smt2" 2.129905399 0
+099 "clauses/lia_ea/termination/binomial03.smt2" 1.321731533 0
+100 "clauses/lia_ea/termination/binomial04.smt2" 1.304795946 0
+101 "clauses/lia_ea/termination/binomial05.smt2" 1.642448367 0
+102 "clauses/lia_ea/termination/CE-0CFA00.smt2" 1.403499123 0
+103 "clauses/lia_ea/termination/CE-0CFA01.smt2" 1.276692146 0
+104 "clauses/lia_ea/termination/CE-0CFA02.smt2" 1.305974188 0
+105 "clauses/lia_ea/termination/CE-0CFA03.smt2" 1.321296529 10
+106 "clauses/lia_ea/termination/CE-0CFA04.smt2" 1.184774695 0
+107 "clauses/lia_ea/termination/CE-0CFA05.smt2" 1.311708182 0
+108 "clauses/lia_ea/termination/CE-1CFA00.smt2" 1.461634674 0
+109 "clauses/lia_ea/termination/CE-1CFA01.smt2" 1.551053663 0
+110 "clauses/lia_ea/termination/CE-1CFA02.smt2" 1.486665655 0
+111 "clauses/lia_ea/termination/CE-1CFA03.smt2" 1.346322337 10
+112 "clauses/lia_ea/termination/CE-1CFA04.smt2" 2.090430467 10
+113 "clauses/lia_ea/termination/CE-1CFA05.smt2" 1.531857312 0
+114 "clauses/lia_ea/termination/CE-1CFA06.smt2" 1.313339628 0
+115 "clauses/lia_ea/termination/CE-1CFA07.smt2" 1.874554940 10
+116 "clauses/lia_ea/termination/CE-1CFA08.smt2" 1.351052068 0
+117 "clauses/lia_ea/termination/CE-1CFA09.smt2" 1.758767451 10
+118 "clauses/lia_ea/termination/CE-Jones_Bohr00.smt2" 1.692668868 0
+119 "clauses/lia_ea/termination/CE-Jones_Bohr01.smt2" 2.770615247 0
+120 "clauses/lia_ea/termination/CE-Jones_Bohr02.smt2" 1.681311784 0
+121 "clauses/lia_ea/termination/CE-Jones_Bohr03.smt2" 1.478751630 0
+122 "clauses/lia_ea/termination/CE-Jones_Bohr04.smt2" error 2
+123 "clauses/lia_ea/termination/churchNum01.smt2" 5.072960373 0
+124 "clauses/lia_ea/termination/churchNum02.smt2" 2.039985714 0
+125 "clauses/lia_ea/termination/churchNum03.smt2" 1.372790946 0
+126 "clauses/lia_ea/termination/Fibonacci00.smt2" 0.856443846 0
+127 "clauses/lia_ea/termination/Fibonacci01.smt2" 0.906514198 0
+128 "clauses/lia_ea/termination/Fibonacci02.smt2" 0.912919765 0
+129 "clauses/lia_ea/termination/Fibonacci03.smt2" 0.926253913 0
+130 "clauses/lia_ea/termination/indirect00.smt2" 1.186180342 0
+131 "clauses/lia_ea/termination/indirect01.smt2" 1.711260205 0
+132 "clauses/lia_ea/termination/indirect02.smt2" 1.188951821 0
+133 "clauses/lia_ea/termination/indirect03.smt2" 1.423541925 0
+134 "clauses/lia_ea/termination/indirectHO00.smt2" 1.189791993 0
+135 "clauses/lia_ea/termination/indirectHO01.smt2" 1.630511314 0
+136 "clauses/lia_ea/termination/indirectHO02.smt2" 1.236234834 0
+137 "clauses/lia_ea/termination/indirectHO03.smt2" 1.441854619 0
+138 "clauses/lia_ea/termination/McCarthy9100.smt2" 0.857866247 0
+139 "clauses/lia_ea/termination/McCarthy9101.smt2" 0.995685730 0
+140 "clauses/lia_ea/termination/McCarthy9102.smt2" 0.901032219 0
+141 "clauses/lia_ea/termination/McCarthy9103.smt2" 0.926472040 0
+142 "clauses/lia_ea/termination/toChurch00.smt2" 1.743467341 0
+143 "clauses/lia_ea/termination/toChurch01.smt2" 1.466800667 0
+144 "clauses/lia_ea/termination/toChurch02.smt2" 1.476125101 0
+145 "clauses/lia_ea/termination/toChurch03.smt2" 4.126709307 0
+146 "clauses/lia_ea/termination/toChurch04.smt2" 6.302247139 0
+147 "clauses/lia_ea/termination/toChurch05.smt2" 6.423846710 0
+148 "clauses/lia_ea/termination/up_down00.smt2" 1.405364457 0
+149 "clauses/lia_ea/termination/up_down01.smt2" 1.510418037 0
+150 "clauses/lia_ea/termination/up_down02.smt2" 1.544561656 0
+151 "clauses/lia_ea/termination/up_down03.smt2" 1.458701199 0
+152 "clauses/lia_ea/termination/up_down04.smt2" 1.529599421 0
+153 "clauses/lia_ea/termination/up_down05.smt2" 1.480201346 0
+154 "clauses/lia_ea/termination/up_down06.smt2" 1.382065671 0
+155 "clauses/lia_ea/termination/up_down07.smt2" 1.491956997 0
+156 "clauses/lia_ea/termination/x_plus_2_pow_n00.smt2" 1.279215590 0
+157 "clauses/lia_ea/termination/x_plus_2_pow_n01.smt2" 6.413707183 0
+158 "clauses/lia_ea/termination/x_plus_2_pow_n02.smt2" 1.207935051 0
+159 "clauses/lia_ea/termination/x_plus_2_pow_n03.smt2" 1.323174086 0
+160 "clauses/lia_ea/termination/x_plus_2_pow_n04.smt2" 1.451888401 0
+161 "clauses/lia_ea/termination/zip00.smt2" 0.909010349 0
+162 "clauses/lia_ea/termination/zip01.smt2" 1.288066033 0
+163 "clauses/lia_ea/termination/zip02.smt2" 1.349385866 0
