@@ -20,7 +20,7 @@ fpice_z3="$libs/fpice_libz3.$dylib_ext"
 
 function cleanup {
   printf "cleaning up..."
-  ./scripts/cleanup.sh
+  ./scripts/cleanup.sh &> /dev/null
   rm -f "libz3.$dylib_ext"
   echo " success"
   echo
@@ -33,7 +33,9 @@ function check_code {
   fi
 }
 
-benchi_cmd="benchi -q -f on run -t 100s --benchs 1 --tools 1"
+function bench {
+  benchi -v -f on run --try 2 -t 2s --benchs 1 --tools 1 -o $1 $2 $3
+}
 
 printf "checking for dorder and fpice z3 libs..."
 if [ ! -f "$dorder_z3" ] ; then
@@ -50,8 +52,8 @@ echo " success"
 cleanup
 
 cp "$fpice_z3" "libz3.$dylib_ext"
-printf "running fpice and mochi..."
-$benchi -o runs/ml_\<today\> runs/conf/all_ml.conf caml/files
+printf "running fphoice and mochi..."
+bench runs/ml runs/conf/all_ml.conf caml/files
 check_code
 echo " success"
 echo
@@ -60,8 +62,8 @@ cleanup
 
 cp "$dorder_z3" "libz3.$dylib_ext"
 printf "running dorder..."
-$benchi -o runs/ml_\<today\> runs/conf/dorder.conf caml/files_dorder
-$sed_cmd -i 's:/dorder_lia:/lia:'
+bench runs/ml runs/conf/dorder.conf caml/files_dorder
+$sed_cmd -i 's:/dorder_lia:/lia:' runs/ml/dorder.data
 check_code
 echo " success"
 echo
@@ -69,13 +71,13 @@ echo
 cleanup
 
 printf "running z3 (all variants) and hoice..."
-$benchi -o runs/smt_\<today\> runs/conf/smt2.conf
+bench runs/smt runs/conf/all_smt2.conf clauses/files
 check_code
 echo " success"
 echo
 
 printf "running eldarica..."
-$benchi -o runs/smt_\<today\> runs/conf/eld.conf
+bench runs/smt runs/conf/eld.conf clauses/files
 check_code
 echo " success"
 echo
