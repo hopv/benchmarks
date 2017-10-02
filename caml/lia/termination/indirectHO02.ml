@@ -31,7 +31,7 @@ let fail _ = assert false
             f_without_checking_1197 x_DO_NOT_CARE_1199 x_DO_NOT_CARE_1200
               n_1036 prev_set_flag_f_1186 s_prev_f_n_1184 u_1037
 
-   let main_1038 r =
+   let main r =
      let set_flag_f_1187 = false in
      let s_f_n_1182 = 0 in
      f_1035 set_flag_f_1187 s_f_n_1182 r set_flag_f_1187 s_f_n_1182

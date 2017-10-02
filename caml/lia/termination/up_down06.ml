@@ -43,7 +43,7 @@ let fail _ = assert false
      else
        up_1032 set_flag_app_1179 s_app_f_EXPARAM_1172 s_app_x_1174 (x_1036 + 1)
 
-   let main_1037 t1_1039 t2_1040 =
+   let main t1_1039 t2_1040 =
      let set_flag_app_1179 = false in
      let s_app_f_EXPARAM_1172 = 0 in
      let s_app_x_1174 = 0 in

@@ -30,7 +30,7 @@ let fail _ = assert false
        else
          id_1030
 
-   let main_1038 r =
+   let main r =
      let set_flag_f_1191 = false in
      let s_f_x_1188 = 0 in
      f_without_checking_1199 set_flag_f_1191 s_f_x_1188 r

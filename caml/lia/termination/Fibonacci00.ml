@@ -23,7 +23,7 @@ let fail _ = assert false
             fib_without_checking_1060 prev_set_flag_fib_1051 s_prev_fib_n_1050
               n_1031
 
-   let main_1032 r =
+   let main r =
      let set_flag_fib_1052 = false in
      let s_fib_n_1049 = 0 in
      fib_1030 set_flag_fib_1052 s_fib_n_1049 r

@@ -59,7 +59,7 @@ let fail _ = assert false
               prev_set_flag_zero_1506 s_prev_zero_f_EXPARAM_1503
               s_prev_zero_z_1505 z_1041
 
-   let main_1042 =
+   let main =
      let set_flag_zero_1507 = false in
      let s_zero_f_EXPARAM_1500 = 0 in
      let s_zero_z_1502 = 0 in

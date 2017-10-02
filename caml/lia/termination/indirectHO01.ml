@@ -38,7 +38,7 @@ let fail _ = assert false
      else
        id_1030
 
-   let main_1038 r =
+   let main r =
      let set_flag_app_1138 = false in
      let s_app_h_EXPARAM_1131 = 0 in
      f_1035 set_flag_app_1138 s_app_h_EXPARAM_1131 0

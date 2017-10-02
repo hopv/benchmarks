@@ -33,7 +33,7 @@ let rec ack_1030 x_DO_NOT_CARE_1089 x_DO_NOT_CARE_1090 x_DO_NOT_CARE_1091 m_1031
       x_DO_NOT_CARE_1091 m_1031 prev_set_flag_ack_1074
       s_prev_ack_m_1072 s_prev_ack_n_1073 n_1032
 
-let main_1033 m_1035 n_1036 =
+let main m_1035 n_1036 =
   let set_flag_ack_1075 = false in
   let s_ack_m_1070 = 0 in
   let s_ack_n_1071 = 0 in
