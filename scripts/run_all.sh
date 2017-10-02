@@ -34,7 +34,7 @@ function check_code {
 }
 
 function bench {
-  benchi -v -f on run --try 2 -t 2s --benchs 1 --tools 1 -o $1 $2 $3
+  benchi -v -f on run -t 100s --benchs 1 --tools 1 -o $1 $2 $3
 }
 
 printf "checking for dorder and fpice z3 libs..."
