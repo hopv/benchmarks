@@ -25,5 +25,5 @@ for file in `find caml/lia -iname '*[^(ml)]' -type f` ; do
 done
 
 echo "- 'constraints.dot' 'gmon.out' 'good.mat' and 'mllog'..."
-rm constraints.dot gmon.out good.mat mllog
+rm -f constraints.dot gmon.out good.mat mllog
 
