@@ -15,8 +15,8 @@ for file in `find clauses -iname "*.smt2"` ; do
       echo "  $line"
     done < "$tmp_file"
     read line
-    # subl "$file"
-    # read line
+    subl "$file"
+    read line
   fi
 done
 

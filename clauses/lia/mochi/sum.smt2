@@ -18,45 +18,25 @@
   ( Int Int ) Bool
 )
 
-(declare-fun |sum$unknown:1|
-  ( Int ) Bool
-)
-
 (assert
-  (forall ( (|$alpha-2:n| Int) )
+  (forall ( (|$alpha-1:n| Int) (|$knormal:3| Int) )
     (=>
-      true
-      (|sum$unknown:1| |$alpha-2:n|)
+      ( and (|sum$unknown:2| |$knormal:3| (- |$alpha-1:n| 1)) (not (<= |$alpha-1:n| 0)) )
+      (|sum$unknown:2| (+ |$alpha-1:n| |$knormal:3|) |$alpha-1:n|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:10| Int) (|$alpha-1:n| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) )
+  (forall ( (|$alpha-1:n| Int) )
     (=>
-      ( and (= |$knormal:2| (- |$alpha-1:n| 1)) (= (not (= 0 |$knormal:1|)) (<= |$alpha-1:n| 0)) (= |$V-reftype:10| (+ |$alpha-1:n| |$knormal:3|)) (not (not (= 0 |$knormal:1|))) (|sum$unknown:2| |$knormal:3| |$knormal:2|) (|sum$unknown:1| |$alpha-1:n|) )
-      (|sum$unknown:2| |$V-reftype:10| |$alpha-1:n|)
+      ( and (<= |$alpha-1:n| 0) )
+      (|sum$unknown:2| 0 |$alpha-1:n|)
     )
   )
 )
 (assert
-  (forall ( (|$V-reftype:8| Int) (|$alpha-1:n| Int) (|$knormal:1| Int) )
-    (=>
-      ( and (= (not (= 0 |$knormal:1|)) (<= |$alpha-1:n| 0)) (= |$V-reftype:8| 0) (not (= 0 |$knormal:1|)) (|sum$unknown:1| |$alpha-1:n|) )
-      (|sum$unknown:2| |$V-reftype:8| |$alpha-1:n|)
-    )
-  )
-)
-(assert
-  (forall ( (|$alpha-1:n| Int) (|$knormal:1| Int) (|$knormal:2| Int) )
-    (=>
-      ( and (= |$knormal:2| (- |$alpha-1:n| 1)) (= (not (= 0 |$knormal:1|)) (<= |$alpha-1:n| 0)) (not (not (= 0 |$knormal:1|))) (|sum$unknown:1| |$alpha-1:n|) )
-      (|sum$unknown:1| |$knormal:2|)
-    )
-  )
-)
-(assert
-  (not (exists ( (|$alpha-2:n| Int) (|$knormal:5| Int) (|$knormal:7| Int) )
-    ( and (= (not (= 0 |$knormal:7|)) (<= |$alpha-2:n| |$knormal:5|)) (not (not (= 0 |$knormal:7|))) (|sum$unknown:2| |$knormal:5| |$alpha-2:n|) )
+  (not (exists ( (|$alpha-2:n| Int) (|$knormal:5| Int) )
+    ( and (|sum$unknown:2| |$knormal:5| |$alpha-2:n|) (not (<= |$alpha-2:n| |$knormal:5|)) )
     )
   )
 )

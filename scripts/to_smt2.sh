@@ -16,62 +16,28 @@ function run_this {
   fi
 }
 
-inactive_options="--no-vc-reduction --no-effect-analysis"
-ea_options="--no-vc-reduction"
-ea_red_options=""
+fpice_options=""
 
-inactive_options="--no-vc-reduction --no-effect-analysis"
-ea_options="--no-vc-reduction"
-ea_red_options=""
+file_listing="clauses/file_listing"
+rm -f "$file_listing"
+touch "$file_listing"
 
-inactive_files="clauses/files"
-ea_files="clauses/files_ea"
-ea_red_files="clauses/files_red_ea"
-rm -f "$inactive_files"
-rm -f "$ea_files"
-rm -f "$ea_red_files"
-touch "$inactive_files"
-touch "$ea_files"
-touch "$ea_red_files"
+out_dir="clauses/lia"
 
-inactive_dir="clauses/lia"
-ea_dir="clauses/lia_ea"
-ea_red_dir="clauses/lia_ea_red"
+mkdir -p out_dir
 
-mkdir -p inactive_dir
-mkdir -p ea_dir
-mkdir -p ea_red_dir
+for ml_file in `find caml/lia -iname "*.ml"` ; do
+  smt_file=`echo "$ml_file" | sed -e 's:^caml:clauses:' -e 's:ml$:smt2:'`
 
-for ml_file in `find caml -iname "*.ml"` ; do
-  inactive_file=`echo "$ml_file" | sed -e 's:^caml:clauses:' -e 's:ml$:smt2:'`
-  ea_file=`echo "$inactive_file" | sed -e "s:$inactive_dir/:$ea_dir/:"`
-  ea_red_file=`echo "$inactive_file" | sed -e "s:$inactive_dir/:$ea_red_dir/:"`
-
-  folder=`echo "$inactive_file" | sed -e 's:/[^/]*$::'`
+  folder=`echo "$smt_file" | sed -e 's:/[^/]*$::'`
   subfolder=`echo "$folder" | sed -e 's:.*/::'`
-  mkdir -p "$ea_dir/$subfolder"
-  mkdir -p "$ea_red_dir/$subfolder"
+  mkdir -p "$out_dir/$subfolder"
 
   echo "$ml_file"
+  outcome=`run_this "$fpice_options" "$ml_file" "$smt_file"`
 
-  printf "  inactive... "
-  inactive_outcome=`run_this "$inactive_options" "$ml_file" "$inactive_file"`
-  echo "$inactive_outcome"
-
-  printf "        ea... "
-  ea_outcome=`run_this "$ea_options" "$ml_file" "$ea_file"`
-  echo "$ea_outcome"
-
-  printf "  red + ea... "
-  ea_red_outcome=`run_this "$ea_red_options" "$ml_file" "$ea_red_file"`
-  echo "$ea_red_outcome"
-
-  if [ "$inactive_outcome" = "$flag_success" ] \
-  && [ "$ea_outcome" = "$flag_success" ] \
-  && [ "$ea_red_outcome" = "$flag_success" ] ; then
-    echo "$inactive_file" >> "$inactive_files"
-    echo "$ea_file" >> "$ea_files"
-    echo "$ea_red_file" >> "$ea_red_files"
+  if [ "$outcome" = "$flag_success" ] ; then
+    echo "$smt_file" >> "$file_listing"
   else
     echo "error, exiting..."
     exit 2
