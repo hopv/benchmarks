@@ -53,7 +53,7 @@ let fail _ = assert false
             ((c6_COEFFICIENT_1124 * n_1039) + c7_COEFFICIENT_1125))
            set_flag_id_1234 s_id_x_1231 f_1040)
 
-   let main_1041 x_1043 =
+   let main x_1043 =
      let set_flag_id_1234 = false in
      let s_id_x_1231 = 0 in
        if x_1043 >= 0 then

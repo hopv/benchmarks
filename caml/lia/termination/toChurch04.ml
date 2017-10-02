@@ -73,7 +73,7 @@ let fail _ = assert false
               prev_set_flag_toChurch_1361 s_prev_toChurch_n_1358
               s_prev_toChurch_f_EXPARAM_1359 f_1040
 
-   let main_1041 x_1043 =
+   let main x_1043 =
      let set_flag_toChurch_1362 = false in
      let s_toChurch_n_1355 = 0 in
      let s_toChurch_f_EXPARAM_1356 = 0 in

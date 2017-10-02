@@ -49,5 +49,5 @@ let fail _ = assert false
        else
          0
 
-let mian =
+let main =
      main_1033 false 0 0 ()

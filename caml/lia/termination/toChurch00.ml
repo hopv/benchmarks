@@ -75,7 +75,7 @@ let fail _ = assert false
            set_flag_compose_1148 s_compose_f_EXPARAM_1137
            s_compose_g_EXPARAM_1139 s_compose_x_1141 f_1040)
 
-   let main_1041 x_1043 =
+   let main x_1043 =
    let set_flag_compose_1148 = false in
    let s_compose_f_EXPARAM_1137 = 0 in
    let s_compose_g_EXPARAM_1139 = 0 in

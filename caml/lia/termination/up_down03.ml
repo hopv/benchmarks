@@ -38,7 +38,7 @@ let fail _ = assert false
      else
        up_1032 set_flag_down_1132 s_down_x_1129 (x_1036 + 1)
 
-   let main_1037 t1_1039 t2_1040 =
+   let main t1_1039 t2_1040 =
      let set_flag_down_1132 = false in
      let s_down_x_1129 = 0 in
        if t1_1039 > 0 then

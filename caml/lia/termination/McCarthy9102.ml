@@ -27,7 +27,7 @@ let fail _ = assert false
          mc91_without_checking_1058 set_flag_mc91_1050 s_mc91_n_1047
            (mc91_1030 mc91_without_checking_1058 set_flag_mc91_1050 s_mc91_n_1047 (n_1031 + 11))
 
-   let main_1032 r =
+   let main r =
      let set_flag_mc91_1050 = false in
      let s_mc91_n_1047 = 0 in
      mc91_without_checking_1058 set_flag_mc91_1050 s_mc91_n_1047 r

@@ -38,7 +38,7 @@ let rec zip_without_checking_1077 x_DO_NOT_CARE_1083 x_DO_NOT_CARE_1084 x_DO_NOT
             zip_1030 zip_without_checking_1077 set_flag_zip_1063 s_zip_xs_1058 s_zip_ys_1059 xs'_1033
               set_flag_zip_1063 s_zip_xs_1058 s_zip_ys_1059 ys'_1034
 
-let main_1035 l1_1037 l2_1038 =
+let main l1_1037 l2_1038 =
   let set_flag_zip_1063 = false in
   let s_zip_xs_1058 = 0 in
   let s_zip_ys_1059 = 0 in

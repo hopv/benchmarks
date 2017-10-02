@@ -42,7 +42,7 @@ let fail _ = assert false
               x_DO_NOT_CARE_1081 xs_1031 prev_set_flag_zip_1062
               s_prev_zip_xs_1060 s_prev_zip_ys_1061 ys_1032
 
-   let main_1035 l1_1037 l2_1038 =
+   let main l1_1037 l2_1038 =
      let set_flag_zip_1063 = false in
      let s_zip_xs_1058 = 0 in
      let s_zip_ys_1059 = 0 in

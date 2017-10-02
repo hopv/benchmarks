@@ -29,6 +29,6 @@ let fail _ = assert false
      else
        id_1030
 
-   let main_1038 r =
+   let main r =
      let set_flag_id_1092 = false in
      f_1036 set_flag_id_1092 r set_flag_id_1092 ()

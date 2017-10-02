@@ -41,7 +41,7 @@ let fail _ = assert false
             up_without_checking_1115 prev_set_flag_up_1088 s_prev_up_x_1087
               x_1036
 
-   let main_1037 t1_1039 t2_1040 =
+   let main t1_1039 t2_1040 =
      let set_flag_up_1089 = false in
      let s_up_x_1086 = 0 in
        if t1_1039 > 0 then
