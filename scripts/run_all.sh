@@ -52,7 +52,7 @@ echo " success"
 cleanup
 
 cp "$fpice_z3" "libz3.$dylib_ext"
-printf "running fphoice and mochi..."
+printf "running fphoice and mochi (runs/ml)..."
 bench runs/ml runs/conf/all_ml.conf caml/files
 check_code
 echo " success"
@@ -61,7 +61,7 @@ echo
 cleanup
 
 cp "$dorder_z3" "libz3.$dylib_ext"
-printf "running dorder..."
+printf "running dorder (runs/ml)..."
 bench runs/ml runs/conf/dorder.conf caml/files_dorder
 $sed_cmd -i 's:/dorder_lia:/lia:' runs/ml/dorder.data
 check_code
@@ -70,13 +70,13 @@ echo
 
 cleanup
 
-printf "running z3 (all variants) and hoice..."
+printf "running z3 (all variants) and hoice (runs/smt)..."
 bench runs/smt runs/conf/all_smt2.conf clauses/files
 check_code
 echo " success"
 echo
 
-printf "running eldarica..."
+printf "running eldarica (runs/smt)..."
 bench runs/smt runs/conf/eld.conf clauses/files
 check_code
 echo " success"
