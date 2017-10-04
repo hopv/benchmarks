@@ -9,10 +9,10 @@ code="$2"
 out="$3"
 err="$4"
 
-# Safe
-safe="0"
 # Unsafe
 unsafe="10"
+# Safe
+safe="0"
 
 if [ `cat $out | grep -e "^unsat$" | wc -l | tr -d ' '` -ne 0 ] ; then
   exit $unsafe
@@ -25,8 +25,8 @@ fi
   ```
 }
 validators {
-  success: 0, safe, Safe
   success: 10, unsafe, Unsafe
+  success: 0, safe, Safe
 }
 timeout: 100.000000000
 #

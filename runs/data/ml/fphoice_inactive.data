@@ -1,7 +1,7 @@
-FpHoice EA {
-  short: fphoice_effect_analysis
-  graph: FpHoice EA
-  cmd: "fphoice_no_red --no-vc-reduction"
+FpHoice Inactive {
+  short: fphoice_inactive
+  graph: FpHoice Inactive
+  cmd: "fphoice_no_red --no-vc-reduction --no-effect-analysis"
   validator: ```
 #!/bin/bash
 bench="$1"
