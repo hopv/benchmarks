@@ -20,24 +20,48 @@
 )
 
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$knormal:3| Int) (|$knormal:5| Int) )
+  (forall ( (|$V-reftype:10| Int) (|$alpha-1:x| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) (|$knormal:5| Int) )
     (=>
-      ( and (|mc91$unknown:2| |$knormal:3| (+ |$alpha-1:x| 11)) (|mc91$unknown:2| |$knormal:5| |$knormal:3|) (not (> |$alpha-1:x| 100)) )
-      (|mc91$unknown:2| |$knormal:5| |$alpha-1:x|)
+      ( and (= |$knormal:2| (+ |$alpha-1:x| 11)) (= (not (= 0 |$knormal:1|)) (> |$alpha-1:x| 100)) (= |$V-reftype:10| |$knormal:5|) (not (not (= 0 |$knormal:1|))) (|mc91$unknown:2| |$knormal:5| |$knormal:3|) (|mc91$unknown:2| |$knormal:3| |$knormal:2|) true )
+      (|mc91$unknown:2| |$V-reftype:10| |$alpha-1:x|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) )
+  (forall ( (|$alpha-1:x| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) )
     (=>
-      ( and (> |$alpha-1:x| 100) )
-      (|mc91$unknown:2| (- |$alpha-1:x| 10) |$alpha-1:x|)
+      ( and (= |$knormal:2| (+ |$alpha-1:x| 11)) (= (not (= 0 |$knormal:1|)) (> |$alpha-1:x| 100)) (not (not (= 0 |$knormal:1|))) (|mc91$unknown:2| |$knormal:3| |$knormal:2|) true )
+      true
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-2:n| Int) (|$knormal:7| Int) )
-    ( and (|mc91$unknown:2| |$knormal:7| |$alpha-2:n|) (<= |$alpha-2:n| 101) (not (= |$knormal:7| 91)) )
+  (forall ( (|$V-reftype:8| Int) (|$alpha-1:x| Int) (|$knormal:1| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:1|)) (> |$alpha-1:x| 100)) (= |$V-reftype:8| (- |$alpha-1:x| 10)) (not (= 0 |$knormal:1|)) true )
+      (|mc91$unknown:2| |$V-reftype:8| |$alpha-1:x|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$knormal:1| Int) (|$knormal:2| Int) )
+    (=>
+      ( and (= |$knormal:2| (+ |$alpha-1:x| 11)) (= (not (= 0 |$knormal:1|)) (> |$alpha-1:x| 100)) (not (not (= 0 |$knormal:1|))) true )
+      true
+    )
+  )
+)
+(assert
+  (not (exists ( (|$alpha-2:n| Int) (|$knormal:6| Int) (|$knormal:7| Int) (|$knormal:9| Int) )
+    ( and (= (not (= 0 |$knormal:9|)) (= |$knormal:7| 91)) (= (not (= 0 |$knormal:6|)) (<= |$alpha-2:n| 101)) (not (not (= 0 |$knormal:9|))) (not (= 0 |$knormal:6|)) (|mc91$unknown:2| |$knormal:7| |$alpha-2:n|) )
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-2:n| Int) (|$knormal:6| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:6|)) (<= |$alpha-2:n| 101)) (not (= 0 |$knormal:6|)) )
+      true
     )
   )
 )

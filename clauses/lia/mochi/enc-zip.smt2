@@ -25,52 +25,68 @@
 )
 
 (assert
+  (forall ( (unused Int) )
+    (=>
+      true
+      true
+    )
+  )
+)
+(assert
   (forall ( (|$alpha-3:n| Int) )
     (=>
-      ( and true )
+      true
       (|zip$unknown:2| |$alpha-3:n| |$alpha-3:n|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:7| Int) )
+  (forall ( (|$V-reftype:17| Int) (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) (|$knormal:5| Int) (|$knormal:7| Int) )
     (=>
-      ( and (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (|zip$unknown:3| |$knormal:7| (- |$alpha-2:y| 1) (- |$alpha-1:x| 1)) (not (= |$alpha-1:x| 0)) (not (= |$alpha-2:y| 0)) )
-      (|zip$unknown:3| (+ 1 |$knormal:7|) |$alpha-2:y| |$alpha-1:x|)
+      ( and (= |$knormal:5| (- |$alpha-2:y| 1)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= (not (= 0 |$knormal:2|)) (= |$alpha-2:y| 0)) (= (not (= 0 |$knormal:1|)) (= |$alpha-1:x| 0)) (= |$V-reftype:17| (+ 1 |$knormal:7|)) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) (|zip$unknown:3| |$knormal:7| |$knormal:5| |$knormal:3|) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) true )
+      (|zip$unknown:3| |$V-reftype:17| |$alpha-2:y| |$alpha-1:x|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) )
+  (forall ( (|$V-reftype:11| Int) (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Int) (|$knormal:9| Int) )
     (=>
-      ( and (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (= |$alpha-1:x| 0) (= |$alpha-2:y| 0) )
-      (|zip$unknown:3| 0 |$alpha-2:y| |$alpha-1:x|)
+      ( and (= (not (= 0 |$knormal:9|)) (= |$alpha-2:y| 0)) (= (not (= 0 |$knormal:1|)) (= |$alpha-1:x| 0)) (= |$V-reftype:11| 0) (not (= 0 |$knormal:9|)) (not (= 0 |$knormal:1|)) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) true )
+      (|zip$unknown:3| |$V-reftype:11| |$alpha-2:y| |$alpha-1:x|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) )
-    ( and (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (= |$alpha-1:x| 0) (not (= |$alpha-2:y| 0)) )
+  (not (exists ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Int) (|$knormal:9| Int) )
+    ( and (= (not (= 0 |$knormal:9|)) (= |$alpha-2:y| 0)) (= (not (= 0 |$knormal:1|)) (= |$alpha-1:x| 0)) (not (not (= 0 |$knormal:9|))) (not (= 0 |$knormal:1|)) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) true )
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) )
-    ( and (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (= |$alpha-2:y| 0) (not (= |$alpha-1:x| 0)) )
+  (not (exists ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Int) (|$knormal:2| Int) )
+    ( and (= (not (= 0 |$knormal:2|)) (= |$alpha-2:y| 0)) (= (not (= 0 |$knormal:1|)) (= |$alpha-1:x| 0)) (not (not (= 0 |$knormal:1|))) (not (= 0 |$knormal:2|)) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) true )
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) )
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) (|$knormal:5| Int) )
     (=>
-      ( and (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) (not (= |$alpha-1:x| 0)) (not (= |$alpha-2:y| 0)) )
-      (|zip$unknown:2| (- |$alpha-2:y| 1) (- |$alpha-1:x| 1))
+      ( and (= |$knormal:5| (- |$alpha-2:y| 1)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= (not (= 0 |$knormal:2|)) (= |$alpha-2:y| 0)) (= (not (= 0 |$knormal:1|)) (= |$alpha-1:x| 0)) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) true )
+      true
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-3:n| Int) (|$knormal:12| Int) )
-    ( and (|zip$unknown:3| |$knormal:12| |$alpha-3:n| |$alpha-3:n|) (not (= |$knormal:12| |$alpha-3:n|)) )
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:y| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) (|$knormal:5| Int) )
+    (=>
+      ( and (= |$knormal:5| (- |$alpha-2:y| 1)) (= |$knormal:3| (- |$alpha-1:x| 1)) (= (not (= 0 |$knormal:2|)) (= |$alpha-2:y| 0)) (= (not (= 0 |$knormal:1|)) (= |$alpha-1:x| 0)) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) (|zip$unknown:2| |$alpha-2:y| |$alpha-1:x|) true )
+      (|zip$unknown:2| |$knormal:5| |$knormal:3|)
+    )
+  )
+)
+(assert
+  (not (exists ( (|$alpha-3:n| Int) (|$knormal:12| Int) (|$knormal:14| Int) )
+    ( and (= (not (= 0 |$knormal:14|)) (= |$knormal:12| |$alpha-3:n|)) (not (not (= 0 |$knormal:14|))) (|zip$unknown:3| |$knormal:12| |$alpha-3:n| |$alpha-3:n|) )
     )
   )
 )

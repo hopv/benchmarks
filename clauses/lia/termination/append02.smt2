@@ -47,6 +47,18 @@
 
 (set-logic HORN)
 
+(declare-fun |main_1034$unknown:38|
+  ( Int Int Int Int Int Int Int ) Bool
+)
+
+(declare-fun |main_1034$unknown:37|
+  ( Int Int Int Int Int Int ) Bool
+)
+
+(declare-fun |fail$unknown:30|
+  ( Int ) Bool
+)
+
 (declare-fun |append_1030$unknown:18|
   ( Int Int Int Int Int Int Int Int Int ) Bool
 )
@@ -59,117 +71,549 @@
   ( Int Int ) Bool
 )
 
+(declare-fun |append_1030$unknown:17|
+  ( Int Int Int Int Int Int Int Int ) Bool
+)
+
+(declare-fun |append_1030$unknown:9|
+  ( Int Int Int Int Int Int Int Int Int ) Bool
+)
+
+(declare-fun |append_without_checking_1072$unknown:27|
+  ( Int Int Int Int Int Int Int Int Int ) Bool
+)
+
+(declare-fun |append_1030$unknown:8|
+  ( Int Int Int Int Int Int Int Int ) Bool
+)
+
 (declare-fun |append_without_checking_1072$unknown:26|
   ( Int Int Int Int Int Int Int Int ) Bool
 )
 
 (assert
-  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$cond-alpha-rename:622| Int) (|$cond-alpha-rename:623| Int) (|$cond-alpha-rename:624| Int) (|$cond-alpha-rename:625| Int) (|$cond-alpha-rename:626| Int) (|$cond-alpha-rename:627| Int) (|$cond-alpha-rename:628| Int) (|$cond-alpha-rename:629| Int) (|$cond-alpha-rename:651| Int) (|$cond-alpha-rename:653| Int) )
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
     (=>
-      ( and (not (<= |$alpha-17:xs_1031| 0)) (not (and (> (+ (+ 0 |$cond-alpha-rename:625|) 0) (+ (+ 0 (- |$cond-alpha-rename:625| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:625| 1)) 0) 0))) (not (<= |$cond-alpha-rename:625| 0)) (not (= 0 1)) (|fail$unknown:31| |$cond-alpha-rename:653| 1) (|bot$unknown:29| |$cond-alpha-rename:651| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:629| |$cond-alpha-rename:628| |$cond-alpha-rename:627| |$cond-alpha-rename:626| |$cond-alpha-rename:625| |$cond-alpha-rename:624| |$cond-alpha-rename:623| |$cond-alpha-rename:622|) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) )
-      (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:629| |$cond-alpha-rename:629| |$cond-alpha-rename:625| 1 (- |$cond-alpha-rename:625| 1) |$cond-alpha-rename:629| |$cond-alpha-rename:625| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$cond-alpha-rename:654| Int) (|$cond-alpha-rename:655| Int) (|$cond-alpha-rename:656| Int) (|$cond-alpha-rename:657| Int) (|$cond-alpha-rename:658| Int) (|$cond-alpha-rename:659| Int) (|$cond-alpha-rename:660| Int) (|$cond-alpha-rename:661| Int) )
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
     (=>
-      ( and (not (<= |$alpha-17:xs_1031| 0)) (not (<= |$cond-alpha-rename:657| 0)) (> (+ (+ 0 |$cond-alpha-rename:657|) 0) (+ (+ 0 (- |$cond-alpha-rename:657| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:657| 1)) 0) 0) (not (= 0 1)) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:661| |$cond-alpha-rename:660| |$cond-alpha-rename:659| |$cond-alpha-rename:658| |$cond-alpha-rename:657| |$cond-alpha-rename:656| |$cond-alpha-rename:655| |$cond-alpha-rename:654|) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) )
-      (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:661| |$cond-alpha-rename:661| |$cond-alpha-rename:657| 1 (- |$cond-alpha-rename:657| 1) |$cond-alpha-rename:661| |$cond-alpha-rename:657| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$cond-alpha-rename:682| Int) (|$cond-alpha-rename:683| Int) (|$cond-alpha-rename:684| Int) (|$cond-alpha-rename:685| Int) (|$cond-alpha-rename:686| Int) (|$cond-alpha-rename:687| Int) (|$cond-alpha-rename:688| Int) (|$cond-alpha-rename:689| Int) )
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
     (=>
-      ( and (not (<= |$alpha-17:xs_1031| 0)) (not (<= |$cond-alpha-rename:685| 0)) (not (not (= 0 1))) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:689| |$cond-alpha-rename:688| |$cond-alpha-rename:687| |$cond-alpha-rename:686| |$cond-alpha-rename:685| |$cond-alpha-rename:684| |$cond-alpha-rename:683| |$cond-alpha-rename:682|) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) )
-      (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:689| |$cond-alpha-rename:689| |$cond-alpha-rename:685| 1 (- |$cond-alpha-rename:685| 1) |$cond-alpha-rename:689| |$cond-alpha-rename:685| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:14| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:18| Int) (|$cond-alpha-rename:19| Int) (|$cond-alpha-rename:20| Int) (|$cond-alpha-rename:216| Int) (|$cond-alpha-rename:217| Int) (|$cond-alpha-rename:218| Int) (|$cond-alpha-rename:219| Int) (|$cond-alpha-rename:220| Int) (|$cond-alpha-rename:221| Int) (|$cond-alpha-rename:222| Int) (|$cond-alpha-rename:223| Int) (|$cond-alpha-rename:524| Int) (|$cond-alpha-rename:692| Int) (|$cond-alpha-rename:693| Int) (|$cond-alpha-rename:694| Int) (|$cond-alpha-rename:695| Int) (|$cond-alpha-rename:696| Int) (|$cond-alpha-rename:697| Int) (|$cond-alpha-rename:698| Int) (|$cond-alpha-rename:699| Int) (|$cond-alpha-rename:721| Int) (|$cond-alpha-rename:723| Int) (|$knormal:37| Int) (|$knormal:39| Int) )
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
     (=>
-      ( and (= (- |$cond-alpha-rename:695| 1) (- |$cond-alpha-rename:695| 1)) (= 1 1) (not (and (>= (- |$cond-alpha-rename:695| 1) 0) (> |$cond-alpha-rename:695| (- |$cond-alpha-rename:695| 1)))) (not (<= (- |$cond-alpha-rename:695| 1) 0)) (not (<= |$cond-alpha-rename:219| 0)) (not (<= |$cond-alpha-rename:695| 0)) (not (and (> (+ (+ 0 |$cond-alpha-rename:695|) 0) (+ (+ 0 (- |$cond-alpha-rename:695| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:695| 1)) 0) 0))) (not (<= |$cond-alpha-rename:695| 0)) (|fail$unknown:31| |$knormal:39| 1) (|fail$unknown:31| |$cond-alpha-rename:723| 1) (|bot$unknown:29| |$knormal:37| 1) (|bot$unknown:29| |$cond-alpha-rename:721| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:699| |$cond-alpha-rename:698| |$cond-alpha-rename:697| |$cond-alpha-rename:696| |$cond-alpha-rename:695| |$cond-alpha-rename:694| |$cond-alpha-rename:693| |$cond-alpha-rename:692|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:223| |$cond-alpha-rename:222| |$cond-alpha-rename:221| |$cond-alpha-rename:220| |$cond-alpha-rename:219| |$cond-alpha-rename:218| |$cond-alpha-rename:217| |$cond-alpha-rename:216|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:699| |$cond-alpha-rename:699| |$cond-alpha-rename:695| 1 (- |$cond-alpha-rename:695| 1) |$cond-alpha-rename:699| |$cond-alpha-rename:695| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:699| |$cond-alpha-rename:20| |$cond-alpha-rename:19| |$cond-alpha-rename:18| |$cond-alpha-rename:695| |$cond-alpha-rename:16| |$cond-alpha-rename:15| |$cond-alpha-rename:14|) (|append_1030$unknown:18| |$cond-alpha-rename:524| |$cond-alpha-rename:699| |$cond-alpha-rename:699| (- |$cond-alpha-rename:695| 1) 1 (- (- |$cond-alpha-rename:695| 1) 1) |$cond-alpha-rename:699| (- |$cond-alpha-rename:695| 1) 1) )
-      (|append_1030$unknown:18| (+ 1 |$cond-alpha-rename:524|) |$cond-alpha-rename:699| |$cond-alpha-rename:699| |$cond-alpha-rename:695| 1 (- |$cond-alpha-rename:695| 1) |$cond-alpha-rename:699| |$cond-alpha-rename:695| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:14| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:18| Int) (|$cond-alpha-rename:19| Int) (|$cond-alpha-rename:20| Int) (|$cond-alpha-rename:216| Int) (|$cond-alpha-rename:217| Int) (|$cond-alpha-rename:218| Int) (|$cond-alpha-rename:219| Int) (|$cond-alpha-rename:220| Int) (|$cond-alpha-rename:221| Int) (|$cond-alpha-rename:222| Int) (|$cond-alpha-rename:223| Int) (|$cond-alpha-rename:524| Int) (|$cond-alpha-rename:724| Int) (|$cond-alpha-rename:725| Int) (|$cond-alpha-rename:726| Int) (|$cond-alpha-rename:727| Int) (|$cond-alpha-rename:728| Int) (|$cond-alpha-rename:729| Int) (|$cond-alpha-rename:730| Int) (|$cond-alpha-rename:731| Int) (|$knormal:37| Int) (|$knormal:39| Int) )
+  (forall ( (|$V-reftype:15| Int) (|$V-reftype:39| Int) (|$V-reftype:41| Int) (|$V-reftype:43| Int) (|$V-reftype:45| Int) (|$V-reftype:47| Int) (|$V-reftype:49| Int) (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) (|append_without_checking_1072| Int) )
     (=>
-      ( and (= (- |$cond-alpha-rename:727| 1) (- |$cond-alpha-rename:727| 1)) (= 1 1) (not (and (>= (- |$cond-alpha-rename:727| 1) 0) (> |$cond-alpha-rename:727| (- |$cond-alpha-rename:727| 1)))) (not (<= (- |$cond-alpha-rename:727| 1) 0)) (not (<= |$cond-alpha-rename:219| 0)) (not (<= |$cond-alpha-rename:727| 0)) (not (<= |$cond-alpha-rename:727| 0)) (> (+ (+ 0 |$cond-alpha-rename:727|) 0) (+ (+ 0 (- |$cond-alpha-rename:727| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:727| 1)) 0) 0) (|fail$unknown:31| |$knormal:39| 1) (|bot$unknown:29| |$knormal:37| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:731| |$cond-alpha-rename:730| |$cond-alpha-rename:729| |$cond-alpha-rename:728| |$cond-alpha-rename:727| |$cond-alpha-rename:726| |$cond-alpha-rename:725| |$cond-alpha-rename:724|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:223| |$cond-alpha-rename:222| |$cond-alpha-rename:221| |$cond-alpha-rename:220| |$cond-alpha-rename:219| |$cond-alpha-rename:218| |$cond-alpha-rename:217| |$cond-alpha-rename:216|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:731| |$cond-alpha-rename:731| |$cond-alpha-rename:727| 1 (- |$cond-alpha-rename:727| 1) |$cond-alpha-rename:731| |$cond-alpha-rename:727| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:731| |$cond-alpha-rename:20| |$cond-alpha-rename:19| |$cond-alpha-rename:18| |$cond-alpha-rename:727| |$cond-alpha-rename:16| |$cond-alpha-rename:15| |$cond-alpha-rename:14|) (|append_1030$unknown:18| |$cond-alpha-rename:524| |$cond-alpha-rename:731| |$cond-alpha-rename:731| (- |$cond-alpha-rename:727| 1) 1 (- (- |$cond-alpha-rename:727| 1) 1) |$cond-alpha-rename:731| (- |$cond-alpha-rename:727| 1) 1) )
-      (|append_1030$unknown:18| (+ 1 |$cond-alpha-rename:524|) |$cond-alpha-rename:731| |$cond-alpha-rename:731| |$cond-alpha-rename:727| 1 (- |$cond-alpha-rename:727| 1) |$cond-alpha-rename:731| |$cond-alpha-rename:727| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true (|append_1030$unknown:8| |$V-reftype:15| |$V-reftype:49| |$V-reftype:47| |$V-reftype:45| |$V-reftype:43| |$V-reftype:41| |$V-reftype:39| |append_without_checking_1072|) true true true true true true true )
+      (|append_without_checking_1072$unknown:26| |$V-reftype:15| |$V-reftype:49| |$V-reftype:47| |$V-reftype:45| |$V-reftype:43| |$V-reftype:41| |$V-reftype:39| |append_without_checking_1072|)
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:14| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:18| Int) (|$cond-alpha-rename:19| Int) (|$cond-alpha-rename:20| Int) (|$cond-alpha-rename:216| Int) (|$cond-alpha-rename:217| Int) (|$cond-alpha-rename:218| Int) (|$cond-alpha-rename:219| Int) (|$cond-alpha-rename:220| Int) (|$cond-alpha-rename:221| Int) (|$cond-alpha-rename:222| Int) (|$cond-alpha-rename:223| Int) (|$cond-alpha-rename:762| Int) (|$cond-alpha-rename:763| Int) (|$cond-alpha-rename:764| Int) (|$cond-alpha-rename:765| Int) (|$cond-alpha-rename:766| Int) (|$cond-alpha-rename:767| Int) (|$cond-alpha-rename:768| Int) (|$cond-alpha-rename:769| Int) (|$cond-alpha-rename:791| Int) (|$cond-alpha-rename:793| Int) (|$knormal:37| Int) (|$knormal:39| Int) )
+  (forall ( (|$V-reftype:39| Int) (|$V-reftype:41| Int) (|$V-reftype:43| Int) (|$V-reftype:45| Int) (|$V-reftype:47| Int) (|$V-reftype:49| Int) (|$V-reftype:51| Int) (|$V-reftype:52| Int) (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) (|append_without_checking_1072| Int) )
     (=>
-      ( and (<= (- |$cond-alpha-rename:765| 1) 0) (= (- |$cond-alpha-rename:765| 1) (- |$cond-alpha-rename:765| 1)) (= 1 1) (not (and (>= (- |$cond-alpha-rename:765| 1) 0) (> |$cond-alpha-rename:765| (- |$cond-alpha-rename:765| 1)))) (not (<= |$cond-alpha-rename:219| 0)) (not (<= |$cond-alpha-rename:765| 0)) (not (and (> (+ (+ 0 |$cond-alpha-rename:765|) 0) (+ (+ 0 (- |$cond-alpha-rename:765| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:765| 1)) 0) 0))) (not (<= |$cond-alpha-rename:765| 0)) (|fail$unknown:31| |$knormal:39| 1) (|fail$unknown:31| |$cond-alpha-rename:793| 1) (|bot$unknown:29| |$knormal:37| 1) (|bot$unknown:29| |$cond-alpha-rename:791| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:769| |$cond-alpha-rename:768| |$cond-alpha-rename:767| |$cond-alpha-rename:766| |$cond-alpha-rename:765| |$cond-alpha-rename:764| |$cond-alpha-rename:763| |$cond-alpha-rename:762|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:223| |$cond-alpha-rename:222| |$cond-alpha-rename:221| |$cond-alpha-rename:220| |$cond-alpha-rename:219| |$cond-alpha-rename:218| |$cond-alpha-rename:217| |$cond-alpha-rename:216|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:769| |$cond-alpha-rename:769| |$cond-alpha-rename:765| 1 (- |$cond-alpha-rename:765| 1) |$cond-alpha-rename:769| |$cond-alpha-rename:765| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:769| |$cond-alpha-rename:20| |$cond-alpha-rename:19| |$cond-alpha-rename:18| |$cond-alpha-rename:765| |$cond-alpha-rename:16| |$cond-alpha-rename:15| |$cond-alpha-rename:14|) )
-      (|append_1030$unknown:18| |$cond-alpha-rename:769| |$cond-alpha-rename:769| |$cond-alpha-rename:769| |$cond-alpha-rename:765| 1 (- |$cond-alpha-rename:765| 1) |$cond-alpha-rename:769| |$cond-alpha-rename:765| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:27| |$V-reftype:52| |$V-reftype:51| |$V-reftype:49| |$V-reftype:47| |$V-reftype:45| |$V-reftype:43| |$V-reftype:41| |$V-reftype:39| |append_without_checking_1072|) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true (|append_1030$unknown:8| |$V-reftype:51| |$V-reftype:49| |$V-reftype:47| |$V-reftype:45| |$V-reftype:43| |$V-reftype:41| |$V-reftype:39| |append_without_checking_1072|) true true true true true true true )
+      (|append_1030$unknown:9| |$V-reftype:52| |$V-reftype:51| |$V-reftype:49| |$V-reftype:47| |$V-reftype:45| |$V-reftype:43| |$V-reftype:41| |$V-reftype:39| |append_without_checking_1072|)
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:14| Int) (|$cond-alpha-rename:15| Int) (|$cond-alpha-rename:16| Int) (|$cond-alpha-rename:18| Int) (|$cond-alpha-rename:19| Int) (|$cond-alpha-rename:20| Int) (|$cond-alpha-rename:216| Int) (|$cond-alpha-rename:217| Int) (|$cond-alpha-rename:218| Int) (|$cond-alpha-rename:219| Int) (|$cond-alpha-rename:220| Int) (|$cond-alpha-rename:221| Int) (|$cond-alpha-rename:222| Int) (|$cond-alpha-rename:223| Int) (|$cond-alpha-rename:794| Int) (|$cond-alpha-rename:795| Int) (|$cond-alpha-rename:796| Int) (|$cond-alpha-rename:797| Int) (|$cond-alpha-rename:798| Int) (|$cond-alpha-rename:799| Int) (|$cond-alpha-rename:800| Int) (|$cond-alpha-rename:801| Int) (|$knormal:37| Int) (|$knormal:39| Int) )
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
     (=>
-      ( and (<= (- |$cond-alpha-rename:797| 1) 0) (= (- |$cond-alpha-rename:797| 1) (- |$cond-alpha-rename:797| 1)) (= 1 1) (not (and (>= (- |$cond-alpha-rename:797| 1) 0) (> |$cond-alpha-rename:797| (- |$cond-alpha-rename:797| 1)))) (not (<= |$cond-alpha-rename:219| 0)) (not (<= |$cond-alpha-rename:797| 0)) (not (<= |$cond-alpha-rename:797| 0)) (> (+ (+ 0 |$cond-alpha-rename:797|) 0) (+ (+ 0 (- |$cond-alpha-rename:797| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:797| 1)) 0) 0) (|fail$unknown:31| |$knormal:39| 1) (|bot$unknown:29| |$knormal:37| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:801| |$cond-alpha-rename:800| |$cond-alpha-rename:799| |$cond-alpha-rename:798| |$cond-alpha-rename:797| |$cond-alpha-rename:796| |$cond-alpha-rename:795| |$cond-alpha-rename:794|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:223| |$cond-alpha-rename:222| |$cond-alpha-rename:221| |$cond-alpha-rename:220| |$cond-alpha-rename:219| |$cond-alpha-rename:218| |$cond-alpha-rename:217| |$cond-alpha-rename:216|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:801| |$cond-alpha-rename:801| |$cond-alpha-rename:797| 1 (- |$cond-alpha-rename:797| 1) |$cond-alpha-rename:801| |$cond-alpha-rename:797| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:801| |$cond-alpha-rename:20| |$cond-alpha-rename:19| |$cond-alpha-rename:18| |$cond-alpha-rename:797| |$cond-alpha-rename:16| |$cond-alpha-rename:15| |$cond-alpha-rename:14|) )
-      (|append_1030$unknown:18| |$cond-alpha-rename:801| |$cond-alpha-rename:801| |$cond-alpha-rename:801| |$cond-alpha-rename:797| 1 (- |$cond-alpha-rename:797| 1) |$cond-alpha-rename:801| |$cond-alpha-rename:797| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:226| Int) (|$cond-alpha-rename:227| Int) (|$cond-alpha-rename:228| Int) (|$cond-alpha-rename:229| Int) (|$cond-alpha-rename:230| Int) (|$cond-alpha-rename:231| Int) (|$cond-alpha-rename:232| Int) (|$cond-alpha-rename:233| Int) (|$cond-alpha-rename:24| Int) (|$cond-alpha-rename:25| Int) (|$cond-alpha-rename:26| Int) (|$cond-alpha-rename:28| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:30| Int) (|$cond-alpha-rename:529| Int) (|$cond-alpha-rename:832| Int) (|$cond-alpha-rename:833| Int) (|$cond-alpha-rename:834| Int) (|$cond-alpha-rename:835| Int) (|$cond-alpha-rename:836| Int) (|$cond-alpha-rename:837| Int) (|$cond-alpha-rename:838| Int) (|$cond-alpha-rename:839| Int) (|$cond-alpha-rename:861| Int) (|$cond-alpha-rename:863| Int) )
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
     (=>
-      ( and (> |$cond-alpha-rename:835| (- |$cond-alpha-rename:835| 1)) (>= (- |$cond-alpha-rename:835| 1) 0) (= (- |$cond-alpha-rename:835| 1) (- |$cond-alpha-rename:835| 1)) (= 1 1) (not (<= (- |$cond-alpha-rename:835| 1) 0)) (not (<= |$cond-alpha-rename:835| 0)) (not (<= |$cond-alpha-rename:229| 0)) (not (and (> (+ (+ 0 |$cond-alpha-rename:835|) 0) (+ (+ 0 (- |$cond-alpha-rename:835| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:835| 1)) 0) 0))) (not (<= |$cond-alpha-rename:835| 0)) (|fail$unknown:31| |$cond-alpha-rename:863| 1) (|bot$unknown:29| |$cond-alpha-rename:861| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:839| |$cond-alpha-rename:838| |$cond-alpha-rename:837| |$cond-alpha-rename:836| |$cond-alpha-rename:835| |$cond-alpha-rename:834| |$cond-alpha-rename:833| |$cond-alpha-rename:832|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:839| |$cond-alpha-rename:839| |$cond-alpha-rename:835| 1 (- |$cond-alpha-rename:835| 1) |$cond-alpha-rename:839| |$cond-alpha-rename:835| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:839| |$cond-alpha-rename:30| |$cond-alpha-rename:29| |$cond-alpha-rename:28| |$cond-alpha-rename:835| |$cond-alpha-rename:26| |$cond-alpha-rename:25| |$cond-alpha-rename:24|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:233| |$cond-alpha-rename:232| |$cond-alpha-rename:231| |$cond-alpha-rename:230| |$cond-alpha-rename:229| |$cond-alpha-rename:228| |$cond-alpha-rename:227| |$cond-alpha-rename:226|) (|append_1030$unknown:18| |$cond-alpha-rename:529| |$cond-alpha-rename:839| |$cond-alpha-rename:839| (- |$cond-alpha-rename:835| 1) 1 (- (- |$cond-alpha-rename:835| 1) 1) |$cond-alpha-rename:839| (- |$cond-alpha-rename:835| 1) 1) )
-      (|append_1030$unknown:18| (+ 1 |$cond-alpha-rename:529|) |$cond-alpha-rename:839| |$cond-alpha-rename:839| |$cond-alpha-rename:835| 1 (- |$cond-alpha-rename:835| 1) |$cond-alpha-rename:839| |$cond-alpha-rename:835| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:226| Int) (|$cond-alpha-rename:227| Int) (|$cond-alpha-rename:228| Int) (|$cond-alpha-rename:229| Int) (|$cond-alpha-rename:230| Int) (|$cond-alpha-rename:231| Int) (|$cond-alpha-rename:232| Int) (|$cond-alpha-rename:233| Int) (|$cond-alpha-rename:24| Int) (|$cond-alpha-rename:25| Int) (|$cond-alpha-rename:26| Int) (|$cond-alpha-rename:28| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:30| Int) (|$cond-alpha-rename:529| Int) (|$cond-alpha-rename:864| Int) (|$cond-alpha-rename:865| Int) (|$cond-alpha-rename:866| Int) (|$cond-alpha-rename:867| Int) (|$cond-alpha-rename:868| Int) (|$cond-alpha-rename:869| Int) (|$cond-alpha-rename:870| Int) (|$cond-alpha-rename:871| Int) )
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
     (=>
-      ( and (> |$cond-alpha-rename:867| (- |$cond-alpha-rename:867| 1)) (>= (- |$cond-alpha-rename:867| 1) 0) (= (- |$cond-alpha-rename:867| 1) (- |$cond-alpha-rename:867| 1)) (= 1 1) (not (<= (- |$cond-alpha-rename:867| 1) 0)) (not (<= |$cond-alpha-rename:867| 0)) (not (<= |$cond-alpha-rename:229| 0)) (not (<= |$cond-alpha-rename:867| 0)) (> (+ (+ 0 |$cond-alpha-rename:867|) 0) (+ (+ 0 (- |$cond-alpha-rename:867| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:867| 1)) 0) 0) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:871| |$cond-alpha-rename:870| |$cond-alpha-rename:869| |$cond-alpha-rename:868| |$cond-alpha-rename:867| |$cond-alpha-rename:866| |$cond-alpha-rename:865| |$cond-alpha-rename:864|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:871| |$cond-alpha-rename:871| |$cond-alpha-rename:867| 1 (- |$cond-alpha-rename:867| 1) |$cond-alpha-rename:871| |$cond-alpha-rename:867| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:871| |$cond-alpha-rename:30| |$cond-alpha-rename:29| |$cond-alpha-rename:28| |$cond-alpha-rename:867| |$cond-alpha-rename:26| |$cond-alpha-rename:25| |$cond-alpha-rename:24|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:233| |$cond-alpha-rename:232| |$cond-alpha-rename:231| |$cond-alpha-rename:230| |$cond-alpha-rename:229| |$cond-alpha-rename:228| |$cond-alpha-rename:227| |$cond-alpha-rename:226|) (|append_1030$unknown:18| |$cond-alpha-rename:529| |$cond-alpha-rename:871| |$cond-alpha-rename:871| (- |$cond-alpha-rename:867| 1) 1 (- (- |$cond-alpha-rename:867| 1) 1) |$cond-alpha-rename:871| (- |$cond-alpha-rename:867| 1) 1) )
-      (|append_1030$unknown:18| (+ 1 |$cond-alpha-rename:529|) |$cond-alpha-rename:871| |$cond-alpha-rename:871| |$cond-alpha-rename:867| 1 (- |$cond-alpha-rename:867| 1) |$cond-alpha-rename:871| |$cond-alpha-rename:867| 1)
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:226| Int) (|$cond-alpha-rename:227| Int) (|$cond-alpha-rename:228| Int) (|$cond-alpha-rename:229| Int) (|$cond-alpha-rename:230| Int) (|$cond-alpha-rename:231| Int) (|$cond-alpha-rename:232| Int) (|$cond-alpha-rename:233| Int) (|$cond-alpha-rename:24| Int) (|$cond-alpha-rename:25| Int) (|$cond-alpha-rename:26| Int) (|$cond-alpha-rename:28| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:30| Int) (|$cond-alpha-rename:902| Int) (|$cond-alpha-rename:903| Int) (|$cond-alpha-rename:904| Int) (|$cond-alpha-rename:905| Int) (|$cond-alpha-rename:906| Int) (|$cond-alpha-rename:907| Int) (|$cond-alpha-rename:908| Int) (|$cond-alpha-rename:909| Int) (|$cond-alpha-rename:931| Int) (|$cond-alpha-rename:933| Int) )
+  (forall ( (|$V-reftype:104| Int) (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
     (=>
-      ( and (> |$cond-alpha-rename:905| (- |$cond-alpha-rename:905| 1)) (>= (- |$cond-alpha-rename:905| 1) 0) (<= (- |$cond-alpha-rename:905| 1) 0) (= (- |$cond-alpha-rename:905| 1) (- |$cond-alpha-rename:905| 1)) (= 1 1) (not (<= |$cond-alpha-rename:905| 0)) (not (<= |$cond-alpha-rename:229| 0)) (not (and (> (+ (+ 0 |$cond-alpha-rename:905|) 0) (+ (+ 0 (- |$cond-alpha-rename:905| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:905| 1)) 0) 0))) (not (<= |$cond-alpha-rename:905| 0)) (|fail$unknown:31| |$cond-alpha-rename:933| 1) (|bot$unknown:29| |$cond-alpha-rename:931| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:909| |$cond-alpha-rename:908| |$cond-alpha-rename:907| |$cond-alpha-rename:906| |$cond-alpha-rename:905| |$cond-alpha-rename:904| |$cond-alpha-rename:903| |$cond-alpha-rename:902|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:909| |$cond-alpha-rename:909| |$cond-alpha-rename:905| 1 (- |$cond-alpha-rename:905| 1) |$cond-alpha-rename:909| |$cond-alpha-rename:905| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:909| |$cond-alpha-rename:30| |$cond-alpha-rename:29| |$cond-alpha-rename:28| |$cond-alpha-rename:905| |$cond-alpha-rename:26| |$cond-alpha-rename:25| |$cond-alpha-rename:24|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:233| |$cond-alpha-rename:232| |$cond-alpha-rename:231| |$cond-alpha-rename:230| |$cond-alpha-rename:229| |$cond-alpha-rename:228| |$cond-alpha-rename:227| |$cond-alpha-rename:226|) )
-      (|append_1030$unknown:18| |$cond-alpha-rename:909| |$cond-alpha-rename:909| |$cond-alpha-rename:909| |$cond-alpha-rename:905| 1 (- |$cond-alpha-rename:905| 1) |$cond-alpha-rename:909| |$cond-alpha-rename:905| 1)
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$V-reftype:104| |$knormal:17|) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:9| |$knormal:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      (|append_1030$unknown:18| |$V-reftype:104| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|)
     )
   )
 )
 (assert
-  (forall ( (|$cond-alpha-rename:226| Int) (|$cond-alpha-rename:227| Int) (|$cond-alpha-rename:228| Int) (|$cond-alpha-rename:229| Int) (|$cond-alpha-rename:230| Int) (|$cond-alpha-rename:231| Int) (|$cond-alpha-rename:232| Int) (|$cond-alpha-rename:233| Int) (|$cond-alpha-rename:24| Int) (|$cond-alpha-rename:25| Int) (|$cond-alpha-rename:26| Int) (|$cond-alpha-rename:28| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:30| Int) (|$cond-alpha-rename:934| Int) (|$cond-alpha-rename:935| Int) (|$cond-alpha-rename:936| Int) (|$cond-alpha-rename:937| Int) (|$cond-alpha-rename:938| Int) (|$cond-alpha-rename:939| Int) (|$cond-alpha-rename:940| Int) (|$cond-alpha-rename:941| Int) )
+  (forall ( (|$V-reftype:101| Int) (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:17| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
     (=>
-      ( and (> |$cond-alpha-rename:937| (- |$cond-alpha-rename:937| 1)) (>= (- |$cond-alpha-rename:937| 1) 0) (<= (- |$cond-alpha-rename:937| 1) 0) (= (- |$cond-alpha-rename:937| 1) (- |$cond-alpha-rename:937| 1)) (= 1 1) (not (<= |$cond-alpha-rename:937| 0)) (not (<= |$cond-alpha-rename:229| 0)) (not (<= |$cond-alpha-rename:937| 0)) (> (+ (+ 0 |$cond-alpha-rename:937|) 0) (+ (+ 0 (- |$cond-alpha-rename:937| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:937| 1)) 0) 0) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:941| |$cond-alpha-rename:940| |$cond-alpha-rename:939| |$cond-alpha-rename:938| |$cond-alpha-rename:937| |$cond-alpha-rename:936| |$cond-alpha-rename:935| |$cond-alpha-rename:934|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:941| |$cond-alpha-rename:941| |$cond-alpha-rename:937| 1 (- |$cond-alpha-rename:937| 1) |$cond-alpha-rename:941| |$cond-alpha-rename:937| 1) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:941| |$cond-alpha-rename:30| |$cond-alpha-rename:29| |$cond-alpha-rename:28| |$cond-alpha-rename:937| |$cond-alpha-rename:26| |$cond-alpha-rename:25| |$cond-alpha-rename:24|) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:233| |$cond-alpha-rename:232| |$cond-alpha-rename:231| |$cond-alpha-rename:230| |$cond-alpha-rename:229| |$cond-alpha-rename:228| |$cond-alpha-rename:227| |$cond-alpha-rename:226|) )
-      (|append_1030$unknown:18| |$cond-alpha-rename:941| |$cond-alpha-rename:941| |$cond-alpha-rename:941| |$cond-alpha-rename:937| 1 (- |$cond-alpha-rename:937| 1) |$cond-alpha-rename:941| |$cond-alpha-rename:937| 1)
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (= |$V-reftype:101| |$knormal:17|) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:9| |$knormal:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      (|append_1030$unknown:18| |$V-reftype:101| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:$$tmp::1| Int) (|$knormal:2| Int) )
+  (forall ( (|$V-reftype:106| Int) (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:17| Int) )
     (=>
-      ( and (|bot$unknown:29| |$knormal:2| 1) )
-      (|bot$unknown:29| |$knormal:2| |$alpha-1:$$tmp::1|)
+      ( and (= |$alpha-13:u| 1) (= |$V-reftype:106| |$knormal:17|) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:9| |$knormal:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      (|append_1030$unknown:18| |$V-reftype:106| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|)
     )
   )
 )
 (assert
-  (not (exists ( (|$cond-alpha-rename:338| Int) (|$cond-alpha-rename:339| Int) (|$cond-alpha-rename:340| Int) (|$cond-alpha-rename:341| Int) (|$cond-alpha-rename:342| Int) (|$cond-alpha-rename:343| Int) (|$cond-alpha-rename:344| Int) (|$cond-alpha-rename:345| Int) )
-    ( and (not (and (> (+ (+ 0 |$cond-alpha-rename:341|) 0) (+ (+ 0 (- |$cond-alpha-rename:341| 1)) 0)) (>= (+ (+ 0 (- |$cond-alpha-rename:341| 1)) 0) 0))) (not (<= |$cond-alpha-rename:341| 0)) (not (= 0 1)) (|append_without_checking_1072$unknown:26| |$cond-alpha-rename:345| |$cond-alpha-rename:344| |$cond-alpha-rename:343| |$cond-alpha-rename:342| |$cond-alpha-rename:341| |$cond-alpha-rename:340| |$cond-alpha-rename:339| |$cond-alpha-rename:338|) )
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
     (=>
-      ( and true )
-      (|append_without_checking_1072$unknown:26| |$alpha-31:l2_1037| 0 0 0 |$alpha-30:l1_1036| 0 0 0)
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:37| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|bot$unknown:29| |$knormal:37| |$knormal:36|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      (|append_1030$unknown:8| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:36| Int) (|$knormal:38| Int) (|$knormal:39| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= |$knormal:36| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|fail$unknown:31| |$knormal:39| |$knormal:38|) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (= |$alpha-13:u| 1) (not (= 0 |$knormal:35|)) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      (|append_1030$unknown:8| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) (|$knormal:18| Int) (|$knormal:19| Int) (|$knormal:20| Int) (|$knormal:21| Int) (|$knormal:22| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:25| Int) (|$knormal:26| Int) (|$knormal:27| Int) (|$knormal:28| Int) (|$knormal:29| Int) (|$knormal:30| Int) (|$knormal:31| Int) (|$knormal:32| Int) (|$knormal:33| Int) (|$knormal:34| Int) (|$knormal:35| Int) (|$knormal:38| Int) )
+    (=>
+      ( and (= |$knormal:38| 1) (= (not (= 0 |$knormal:35|)) (and (not (= 0 |$knormal:28|)) (not (= 0 |$knormal:34|)))) (= (not (= 0 |$knormal:34|)) (>= |$knormal:33| 0)) (= |$knormal:33| (+ |$knormal:31| |$knormal:32|)) (= |$knormal:32| 0) (= |$knormal:31| (+ |$knormal:29| |$knormal:30|)) (= |$knormal:30| |$alpha-7:xs_1031|) (= |$knormal:29| 0) (= (not (= 0 |$knormal:28|)) (> |$knormal:22| |$knormal:27|)) (= |$knormal:27| (+ |$knormal:25| |$knormal:26|)) (= |$knormal:26| 0) (= |$knormal:25| (+ |$knormal:23| |$knormal:24|)) (= |$knormal:24| |$alpha-7:xs_1031|) (= |$knormal:23| 0) (= |$knormal:22| (+ |$knormal:20| |$knormal:21|)) (= |$knormal:21| 0) (= |$knormal:20| (+ |$knormal:18| |$knormal:19|)) (= |$knormal:19| |$alpha-9:s_prev_append_xs_1056|) (= |$knormal:18| 0) (not (not (= 0 |$knormal:35|))) (not (= 0 |$alpha-8:prev_set_flag_append_1058|)) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      (|fail$unknown:30| |$knormal:38|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:s_prev_append_ys_1057| Int) (|$alpha-11:ys_1032| Int) (|$alpha-13:u| Int) (|$alpha-4:x_DO_NOT_CARE_1074| Int) (|$alpha-5:x_DO_NOT_CARE_1075| Int) (|$alpha-6:x_DO_NOT_CARE_1076| Int) (|$alpha-7:xs_1031| Int) (|$alpha-8:prev_set_flag_append_1058| Int) (|$alpha-9:s_prev_append_xs_1056| Int) )
+    (=>
+      ( and (= |$alpha-13:u| 1) (not (not (= 0 |$alpha-8:prev_set_flag_append_1058|))) (|append_1030$unknown:17| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|) true true true true true true true )
+      (|append_1030$unknown:8| |$alpha-11:ys_1032| |$alpha-10:s_prev_append_ys_1057| |$alpha-9:s_prev_append_xs_1056| |$alpha-8:prev_set_flag_append_1058| |$alpha-7:xs_1031| |$alpha-6:x_DO_NOT_CARE_1076| |$alpha-5:x_DO_NOT_CARE_1075| |$alpha-4:x_DO_NOT_CARE_1074|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:111| Int) (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) (|$knormal:57| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (= |$V-reftype:111| (+ 1 |$knormal:57|)) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true (|append_1030$unknown:18| |$knormal:57| |$alpha-21:ys_1032| |$alpha-21:ys_1032| |$alpha-17:xs_1031| |$alpha-22:set_flag_append_1059| |$alpha-25:xs'_1033| |$alpha-21:ys_1032| |$alpha-17:xs_1031| |$alpha-22:set_flag_append_1059|) )
+      (|append_without_checking_1072$unknown:27| |$V-reftype:111| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:109| Int) (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-22:set_flag_append_1059| 1) (= |$V-reftype:109| |$alpha-21:ys_1032|) (not (= 0 |$knormal:40|)) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      (|append_without_checking_1072$unknown:27| |$V-reftype:109| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-14:x_DO_NOT_CARE_1078| Int) (|$alpha-15:x_DO_NOT_CARE_1079| Int) (|$alpha-16:x_DO_NOT_CARE_1080| Int) (|$alpha-17:xs_1031| Int) (|$alpha-18:set_flag_append_1059| Int) (|$alpha-19:s_append_xs_1054| Int) (|$alpha-20:s_append_ys_1055| Int) (|$alpha-21:ys_1032| Int) (|$alpha-22:set_flag_append_1059| Int) (|$alpha-25:xs'_1033| Int) (|$knormal:40| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:40|)) (<= |$alpha-17:xs_1031| 0)) (= |$alpha-25:xs'_1033| (- |$alpha-17:xs_1031| 1)) (= |$alpha-22:set_flag_append_1059| 1) (not (not (= 0 |$knormal:40|))) (|append_without_checking_1072$unknown:26| |$alpha-21:ys_1032| |$alpha-20:s_append_ys_1055| |$alpha-19:s_append_xs_1054| |$alpha-18:set_flag_append_1059| |$alpha-17:xs_1031| |$alpha-16:x_DO_NOT_CARE_1080| |$alpha-15:x_DO_NOT_CARE_1079| |$alpha-14:x_DO_NOT_CARE_1078|) true true true true true true true )
+      (|append_1030$unknown:17| |$alpha-21:ys_1032| |$alpha-21:ys_1032| |$alpha-17:xs_1031| |$alpha-22:set_flag_append_1059| |$alpha-25:xs'_1033| |$alpha-21:ys_1032| |$alpha-17:xs_1031| |$alpha-22:set_flag_append_1059|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:112| Int) (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) (|$knormal:73| Int) )
+    (=>
+      ( and (= |$V-reftype:112| |$knormal:73|) (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true (|append_without_checking_1072$unknown:27| |$knormal:73| |$alpha-31:l2_1037| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059| |$alpha-30:l1_1036| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) )
+      (|main_1034$unknown:38| |$V-reftype:112| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:80| Int) (|$alpha-1:$$tmp::1| Int) (|$knormal:1| Int) (|$knormal:2| Int) )
+    (=>
+      ( and (= |$knormal:1| 1) (= |$V-reftype:80| |$knormal:2|) (|bot$unknown:29| |$knormal:2| |$knormal:1|) true )
+      (|bot$unknown:29| |$V-reftype:80| |$alpha-1:$$tmp::1|)
+    )
+  )
+)
+(assert
+  (forall ( (|$knormal:1| Int) )
+    (=>
+      ( and (= |$knormal:1| 1) true )
+      true
+    )
+  )
+)
+(assert
+  (not (exists ( (|$alpha-2:$$tmp::2| Int) )
+    ( and (|fail$unknown:30| |$alpha-2:$$tmp::2|) )
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-26:set_flag_append_1059| Int) (|$alpha-27:s_append_xs_1054| Int) (|$alpha-28:s_append_ys_1055| Int) (|$alpha-29:u_1035| Int) (|$alpha-30:l1_1036| Int) (|$alpha-31:l2_1037| Int) )
+    (=>
+      ( and (|main_1034$unknown:37| |$alpha-31:l2_1037| |$alpha-30:l1_1036| |$alpha-29:u_1035| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|) true true true true true )
+      (|append_without_checking_1072$unknown:26| |$alpha-31:l2_1037| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059| |$alpha-30:l1_1036| |$alpha-28:s_append_ys_1055| |$alpha-27:s_append_xs_1054| |$alpha-26:set_flag_append_1059|)
+    )
+  )
+)
+(assert
+  (forall ( (|$knormal:74| Int) (|$knormal:76| Int) (|$knormal:79| Int) (|$knormal:82| Int) )
+    (=>
+      ( and (= |$knormal:82| 1) (= |$knormal:79| 0) (= |$knormal:76| 0) (= |$knormal:74| 0) )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$knormal:74| Int) (|$knormal:76| Int) (|$knormal:79| Int) (|$knormal:82| Int) )
+    (=>
+      ( and (= |$knormal:82| 1) (= |$knormal:79| 0) (= |$knormal:76| 0) (= |$knormal:74| 0) )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$knormal:74| Int) (|$knormal:76| Int) (|$knormal:79| Int) (|$knormal:82| Int) )
+    (=>
+      ( and (= |$knormal:82| 1) (= |$knormal:79| 0) (= |$knormal:76| 0) (= |$knormal:74| 0) )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$knormal:74| Int) (|$knormal:76| Int) (|$knormal:79| Int) (|$knormal:82| Int) )
+    (=>
+      ( and (= |$knormal:82| 1) (= |$knormal:79| 0) (= |$knormal:76| 0) (= |$knormal:74| 0) )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$knormal:74| Int) (|$knormal:76| Int) (|$knormal:79| Int) (|$knormal:82| Int) )
+    (=>
+      ( and (= |$knormal:82| 1) (= |$knormal:79| 0) (= |$knormal:76| 0) (= |$knormal:74| 0) )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:63| Int) (|$V-reftype:75| Int) (|$knormal:74| Int) (|$knormal:76| Int) (|$knormal:79| Int) (|$knormal:82| Int) )
+    (=>
+      ( and (= |$knormal:82| 1) (= |$knormal:79| 0) (= |$knormal:76| 0) (= |$knormal:74| 0) )
+      (|main_1034$unknown:37| |$V-reftype:63| |$V-reftype:75| |$knormal:82| |$knormal:79| |$knormal:76| |$knormal:74|)
     )
   )
 )

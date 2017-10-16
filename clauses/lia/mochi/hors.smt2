@@ -22,11 +22,43 @@
 
 (set-logic HORN)
 
+(declare-fun |s$unknown:20|
+  ( Int Int Int ) Bool
+)
+
+(declare-fun |c$unknown:12|
+  ( Int Int ) Bool
+)
+
+(declare-fun |b$unknown:8|
+  ( Int Int ) Bool
+)
+
+(declare-fun |b$unknown:10|
+  ( Int Int ) Bool
+)
+
 (declare-fun |f$unknown:17|
   ( Int Int Int ) Bool
 )
 
-(declare-fun |f$unknown:16|
+(declare-fun |a$unknown:3|
+  ( Int ) Bool
+)
+
+(declare-fun |a$unknown:6|
+  ( Int Int ) Bool
+)
+
+(declare-fun |a$unknown:5|
+  ( Int ) Bool
+)
+
+(declare-fun |a$unknown:4|
+  ( Int Int ) Bool
+)
+
+(declare-fun |a$unknown:2|
   ( Int Int ) Bool
 )
 
@@ -34,57 +66,225 @@
   ( Int Int Int ) Bool
 )
 
+(declare-fun |f$unknown:16|
+  ( Int Int ) Bool
+)
+
+(declare-fun |s$unknown:19|
+  ( Int Int ) Bool
+)
+
 (assert
-  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$cond-alpha-rename:23| Int) (|$cond-alpha-rename:24| Int) (|$cond-alpha-rename:29| Int) (|$cond-alpha-rename:89| Int) )
+  (forall ( (|$knormal:28| Int) )
     (=>
-      ( and (not (<= |$cond-alpha-rename:24| 0)) (not (<= |$alpha-8:n| 0)) (not (<= |$cond-alpha-rename:89| 0)) (|f$unknown:16| 0 |$cond-alpha-rename:89|) (|f$unknown:16| |$cond-alpha-rename:23| |$cond-alpha-rename:24|) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) (|f$unknown:15| |$cond-alpha-rename:29| 0 |$cond-alpha-rename:24|) )
-      (|f$unknown:16| 0 (- |$alpha-8:n| 1))
+      ( and (= |$knormal:28| 0) )
+      true
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-6:q| Int) (|$cond-alpha-rename:92| Int) )
-    ( and (not (= |$alpha-6:q| 0)) (not (<= |$cond-alpha-rename:92| 0)) (|f$unknown:16| |$alpha-6:q| |$cond-alpha-rename:92|) )
+  (forall ( (|$alpha-13:n| Int) (|$knormal:28| Int) )
+    (=>
+      ( and (= |$knormal:28| 0) )
+      (|s$unknown:19| |$knormal:28| |$alpha-13:n|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-8:n| Int) (|$cond-alpha-rename:113| Int) (|$cond-alpha-rename:116| Int) (|$cond-alpha-rename:119| Int) (|$cond-alpha-rename:120| Int) (|$cond-alpha-rename:123| Int) (|$cond-alpha-rename:124| Int) (|$cond-alpha-rename:126| Int) (|$cond-alpha-rename:127| Int) (|$cond-alpha-rename:132| Int) (|$cond-alpha-rename:137| Int) (|$cond-alpha-rename:139| Int) )
+  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:8| Int) )
     (=>
-      ( and (|f$unknown:15| |$cond-alpha-rename:132| 0 |$cond-alpha-rename:127|) (|f$unknown:15| |$cond-alpha-rename:139| 0 |$cond-alpha-rename:120|) (|f$unknown:16| 0 |$alpha-8:n|) (|f$unknown:16| 0 |$cond-alpha-rename:113|) (|f$unknown:16| |$cond-alpha-rename:119| |$cond-alpha-rename:120|) (|f$unknown:16| |$cond-alpha-rename:123| |$cond-alpha-rename:124|) (|f$unknown:16| 0 |$cond-alpha-rename:116|) (|f$unknown:16| |$cond-alpha-rename:126| |$cond-alpha-rename:127|) (|f$unknown:17| |$cond-alpha-rename:137| 0 (- |$cond-alpha-rename:124| 1)) (not (<= |$cond-alpha-rename:113| 0)) (not (<= |$cond-alpha-rename:116| 0)) (not (<= |$cond-alpha-rename:120| 0)) (not (<= |$cond-alpha-rename:127| 0)) (not (<= |$cond-alpha-rename:124| 0)) (not (<= |$alpha-8:n| 0)) )
-      (|f$unknown:17| |$cond-alpha-rename:137| 0 |$alpha-8:n|)
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true true )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$cond-alpha-rename:173| Int) (|$cond-alpha-rename:182| Int) (|$cond-alpha-rename:183| Int) (|$knormal:9| Int) )
+  (forall ( (|$V-reftype:26| Int) (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$alpha-9:x| Int) (|$knormal:10| Int) (|$knormal:8| Int) )
     (=>
-      ( and (|f$unknown:15| |$cond-alpha-rename:173| 1 |$cond-alpha-rename:183|) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) (|f$unknown:16| |$cond-alpha-rename:182| |$cond-alpha-rename:183|) (not (<= |$cond-alpha-rename:183| 0)) (not (<= |$alpha-8:n| 0)) )
-      (|f$unknown:15| |$cond-alpha-rename:173| |$knormal:9| (- |$alpha-8:n| 1))
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) (|f$unknown:15| |$V-reftype:26| |$alpha-9:x| |$alpha-8:n|) true true )
+      (|a$unknown:2| |$V-reftype:26| |$alpha-9:x|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-11:n| Int) (|c| Int) )
+  (forall ( (|$V-reftype:45| Int) (|$alpha-6:q| Int) (|$knormal:3| Int) (|$knormal:4| Int) (|$knormal:5| Int) (|$knormal:6| Int) (|$knormal:7| Int) )
     (=>
-      ( and true )
-      (|f$unknown:15| 1 |c| |$alpha-11:n|)
+      ( and (= |$knormal:6| 0) (= |$knormal:4| 0) (= (not (= 0 |$knormal:3|)) (= |$alpha-6:q| 0)) (= |$V-reftype:45| |$knormal:5|) (not (= 0 |$knormal:3|)) (|a$unknown:5| |$alpha-6:q|) (|a$unknown:4| |$knormal:5| |$knormal:4|) (|a$unknown:2| |$knormal:7| |$knormal:6|) )
+      (|a$unknown:6| |$V-reftype:45| |$alpha-6:q|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:21| Int) )
+  (forall ( (|$alpha-6:q| Int) (|$knormal:3| Int) (|$knormal:4| Int) (|$knormal:6| Int) (|$knormal:7| Int) )
     (=>
-      ( and (|f$unknown:15| |$knormal:21| |$alpha-10:q| |$alpha-8:n|) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) (<= |$alpha-8:n| 0) )
-      (|f$unknown:17| |$knormal:21| |$alpha-10:q| |$alpha-8:n|)
+      ( and (= |$knormal:6| 0) (= |$knormal:4| 0) (= (not (= 0 |$knormal:3|)) (= |$alpha-6:q| 0)) (not (= 0 |$knormal:3|)) (|a$unknown:5| |$alpha-6:q|) (|a$unknown:2| |$knormal:7| |$knormal:6|) )
+      (|a$unknown:3| |$knormal:4|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-11:n| Int) )
+  (forall ( (|$V-reftype:5| Int) (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:8| Int) )
     (=>
-      ( and true )
-      (|f$unknown:16| 0 |$alpha-11:n|)
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true (|a$unknown:3| |$V-reftype:5|) )
+      (|f$unknown:16| |$V-reftype:5| |$knormal:10|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:30| Int) (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:14| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:17| |$V-reftype:30| |$knormal:14| |$knormal:10|) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true (|a$unknown:3| |$knormal:14|) )
+      (|a$unknown:4| |$V-reftype:30| |$knormal:14|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-6:q| Int) (|$knormal:3| Int) (|$knormal:6| Int) )
+    (=>
+      ( and (= |$knormal:6| 0) (= (not (= 0 |$knormal:3|)) (= |$alpha-6:q| 0)) (not (= 0 |$knormal:3|)) (|a$unknown:5| |$alpha-6:q|) )
+      true
+    )
+  )
+)
+(assert
+  (not (exists ( (|$alpha-6:q| Int) (|$knormal:3| Int) )
+    ( and (= (not (= 0 |$knormal:3|)) (= |$alpha-6:q| 0)) (not (not (= 0 |$knormal:3|))) (|a$unknown:5| |$alpha-6:q|) )
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:50| Int) (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:20| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (= |$V-reftype:50| |$knormal:20|) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true (|a$unknown:6| |$knormal:20| |$alpha-10:q|) )
+      (|f$unknown:17| |$V-reftype:50| |$alpha-10:q| |$alpha-8:n|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:18| Int) (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:8| Int) (|$knormal:9| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true true (|b$unknown:10| |$V-reftype:18| |$knormal:9|) )
+      (|f$unknown:15| |$V-reftype:18| |$knormal:9| |$knormal:10|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:26| Int) (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$alpha-9:x| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) (|f$unknown:15| |$V-reftype:26| |$alpha-9:x| |$alpha-8:n|) true true )
+      (|b$unknown:8| |$V-reftype:26| |$alpha-9:x|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:41| Int) (|$alpha-3:q| Int) (|$knormal:1| Int) (|$knormal:2| Int) )
+    (=>
+      ( and (= |$knormal:1| 1) (= |$V-reftype:41| |$knormal:2|) true (|b$unknown:8| |$knormal:2| |$knormal:1|) )
+      (|b$unknown:10| |$V-reftype:41| |$alpha-3:q|)
+    )
+  )
+)
+(assert
+  (forall ( (|$knormal:1| Int) )
+    (=>
+      ( and (= |$knormal:1| 1) true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:39| Int) (|$alpha-1:q| Int) )
+    (=>
+      ( and (= |$V-reftype:39| 1) true )
+      (|c$unknown:12| |$V-reftype:39| |$alpha-1:q|)
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:21| Int) (|$alpha-11:n| Int) (|$alpha-12:q| Int) (|c| Int) )
+    (=>
+      ( and (|s$unknown:19| |$alpha-12:q| |$alpha-11:n|) true true (|c$unknown:12| |$V-reftype:21| |c|) )
+      (|f$unknown:15| |$V-reftype:21| |c| |$alpha-11:n|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:48| Int) (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:21| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$V-reftype:48| |$knormal:21|) (not (= 0 |$knormal:8|)) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) (|f$unknown:15| |$knormal:21| |$alpha-10:q| |$alpha-8:n|) true )
+      (|f$unknown:17| |$V-reftype:48| |$alpha-10:q| |$alpha-8:n|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (not (= 0 |$knormal:8|)) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true )
+      (|a$unknown:5| |$alpha-10:q|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-10:q| Int) (|$alpha-8:n| Int) (|$knormal:10| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:8|)) (<= |$alpha-8:n| 0)) (= |$knormal:10| (- |$alpha-8:n| 1)) (not (not (= 0 |$knormal:8|))) (|f$unknown:16| |$alpha-10:q| |$alpha-8:n|) true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-11:n| Int) (|$alpha-12:q| Int) )
+    (=>
+      ( and (|s$unknown:19| |$alpha-12:q| |$alpha-11:n|) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$V-reftype:51| Int) (|$alpha-11:n| Int) (|$alpha-12:q| Int) (|$knormal:26| Int) )
+    (=>
+      ( and (= |$V-reftype:51| |$knormal:26|) (|s$unknown:19| |$alpha-12:q| |$alpha-11:n|) true (|f$unknown:17| |$knormal:26| |$alpha-12:q| |$alpha-11:n|) )
+      (|s$unknown:20| |$V-reftype:51| |$alpha-12:q| |$alpha-11:n|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-11:n| Int) (|$alpha-12:q| Int) )
+    (=>
+      ( and (|s$unknown:19| |$alpha-12:q| |$alpha-11:n|) true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-11:n| Int) (|$alpha-12:q| Int) )
+    (=>
+      ( and (|s$unknown:19| |$alpha-12:q| |$alpha-11:n|) true )
+      (|f$unknown:16| |$alpha-12:q| |$alpha-11:n|)
     )
   )
 )

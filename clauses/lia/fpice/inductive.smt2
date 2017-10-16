@@ -20,46 +20,126 @@
 )
 
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:12| Int) )
+  (forall ( (|$knormal:24| Int) )
     (=>
-      ( and (|loop$unknown:3| |$knormal:12| (- |$alpha-2:i| 1) |$alpha-1:x|) (> |$alpha-1:x| 2) (not (< |$alpha-2:i| 0)) (not (< |$alpha-1:x| 1)) )
-      (|loop$unknown:3| |$knormal:12| |$alpha-2:i| |$alpha-1:x|)
+      ( and (= |$knormal:24| 3) )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:17| Int) )
+  (forall ( (|$knormal:24| Int) )
     (=>
-      ( and (|loop$unknown:3| |$knormal:17| (- |$alpha-2:i| 1) (- |$alpha-1:x| 1)) (< |$alpha-1:x| 1) (not (< |$alpha-2:i| 0)) )
-      (|loop$unknown:3| |$knormal:17| |$alpha-2:i| |$alpha-1:x|)
+      ( and (= |$knormal:24| 3) )
+      true
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:8| Int) )
+  (forall ( (|$V-reftype:17| Int) (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:10| Int) (|$knormal:12| Int) (|$knormal:2| Int) (|$knormal:3| Int) )
     (=>
-      ( and (|loop$unknown:3| |$knormal:8| (- |$alpha-2:i| 1) (- 3 |$alpha-1:x|)) (not (< |$alpha-2:i| 0)) (not (< |$alpha-1:x| 1)) (not (> |$alpha-1:x| 2)) )
-      (|loop$unknown:3| |$knormal:8| |$alpha-2:i| |$alpha-1:x|)
+      ( and (= (not (= 0 |$knormal:3|)) (> |$alpha-1:x| 2)) (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= |$knormal:10| (- |$alpha-2:i| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (= |$V-reftype:17| |$knormal:12|) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) (not (= 0 |$knormal:3|)) (|loop$unknown:3| |$knormal:12| |$knormal:10| |$alpha-1:x|) true true )
+      (|loop$unknown:3| |$V-reftype:17| |$alpha-2:i| |$alpha-1:x|)
     )
   )
 )
 (assert
-  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) )
+  (forall ( (|$V-reftype:14| Int) (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:17| Int) (|$knormal:2| Int) )
     (=>
-      ( and (< |$alpha-2:i| 0) )
-      (|loop$unknown:3| |$alpha-1:x| |$alpha-2:i| |$alpha-1:x|)
+      ( and (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= |$knormal:15| (- |$alpha-2:i| 1)) (= |$knormal:13| (- |$alpha-1:x| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (= |$V-reftype:14| |$knormal:17|) (not (not (= 0 |$knormal:1|))) (not (= 0 |$knormal:2|)) (|loop$unknown:3| |$knormal:17| |$knormal:15| |$knormal:13|) true true )
+      (|loop$unknown:3| |$V-reftype:14| |$alpha-2:i| |$alpha-1:x|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-3:n| Int) (|$knormal:21| Int) (|$knormal:27| Int) )
-    ( and (|loop$unknown:3| |$knormal:21| |$alpha-3:n| 1) (|loop$unknown:3| |$knormal:27| |$alpha-3:n| 3) (>= |$knormal:27| 3) (not (>= |$knormal:21| 0)) )
+  (forall ( (|$V-reftype:20| Int) (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) (|$knormal:4| Int) (|$knormal:6| Int) (|$knormal:8| Int) )
+    (=>
+      ( and (= |$knormal:6| (- |$alpha-2:i| 1)) (= |$knormal:4| (- 3 |$alpha-1:x|)) (= (not (= 0 |$knormal:3|)) (> |$alpha-1:x| 2)) (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (= |$V-reftype:20| |$knormal:8|) (not (not (= 0 |$knormal:3|))) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) (|loop$unknown:3| |$knormal:8| |$knormal:6| |$knormal:4|) true true )
+      (|loop$unknown:3| |$V-reftype:20| |$alpha-2:i| |$alpha-1:x|)
     )
   )
 )
 (assert
-  (not (exists ( (|$alpha-3:n| Int) (|$knormal:27| Int) )
-    ( and (|loop$unknown:3| |$knormal:27| |$alpha-3:n| 3) (not (>= |$knormal:27| 3)) )
+  (forall ( (|$V-reftype:10| Int) (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (= |$V-reftype:10| |$alpha-1:x|) (not (= 0 |$knormal:1|)) true true )
+      (|loop$unknown:3| |$V-reftype:10| |$alpha-2:i| |$alpha-1:x|)
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:2| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= |$knormal:15| (- |$alpha-2:i| 1)) (= |$knormal:13| (- |$alpha-1:x| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (not (not (= 0 |$knormal:1|))) (not (= 0 |$knormal:2|)) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:13| Int) (|$knormal:15| Int) (|$knormal:2| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= |$knormal:15| (- |$alpha-2:i| 1)) (= |$knormal:13| (- |$alpha-1:x| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (not (not (= 0 |$knormal:1|))) (not (= 0 |$knormal:2|)) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:10| Int) (|$knormal:2| Int) (|$knormal:3| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:3|)) (> |$alpha-1:x| 2)) (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= |$knormal:10| (- |$alpha-2:i| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) (not (= 0 |$knormal:3|)) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:10| Int) (|$knormal:2| Int) (|$knormal:3| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:3|)) (> |$alpha-1:x| 2)) (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= |$knormal:10| (- |$alpha-2:i| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) (not (= 0 |$knormal:3|)) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) (|$knormal:4| Int) (|$knormal:6| Int) )
+    (=>
+      ( and (= |$knormal:6| (- |$alpha-2:i| 1)) (= |$knormal:4| (- 3 |$alpha-1:x|)) (= (not (= 0 |$knormal:3|)) (> |$alpha-1:x| 2)) (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (not (not (= 0 |$knormal:3|))) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) true true )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-1:x| Int) (|$alpha-2:i| Int) (|$knormal:1| Int) (|$knormal:2| Int) (|$knormal:3| Int) (|$knormal:4| Int) (|$knormal:6| Int) )
+    (=>
+      ( and (= |$knormal:6| (- |$alpha-2:i| 1)) (= |$knormal:4| (- 3 |$alpha-1:x|)) (= (not (= 0 |$knormal:3|)) (> |$alpha-1:x| 2)) (= (not (= 0 |$knormal:2|)) (< |$alpha-1:x| 1)) (= (not (= 0 |$knormal:1|)) (< |$alpha-2:i| 0)) (not (not (= 0 |$knormal:3|))) (not (not (= 0 |$knormal:2|))) (not (not (= 0 |$knormal:1|))) true true )
+      true
+    )
+  )
+)
+(assert
+  (not (exists ( (|$alpha-3:n| Int) (|$alpha-4:$$tmp::1| Int) (|$knormal:18| Int) (|$knormal:21| Int) (|$knormal:23| Int) (|$knormal:24| Int) (|$knormal:27| Int) (|$knormal:29| Int) )
+    ( and (= (not (= 0 |$knormal:29|)) (>= |$knormal:27| 3)) (= |$knormal:24| 3) (= (not (= 0 |$knormal:23|)) (>= |$knormal:21| 0)) (= |$knormal:18| 1) (= |$alpha-4:$$tmp::1| 1) (not (not (= 0 |$knormal:23|))) (not (= 0 |$knormal:29|)) (|loop$unknown:3| |$knormal:27| |$alpha-3:n| |$knormal:24|) (|loop$unknown:3| |$knormal:21| |$alpha-3:n| |$knormal:18|) )
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-3:n| Int) (|$alpha-4:$$tmp::1| Int) (|$knormal:18| Int) (|$knormal:24| Int) (|$knormal:27| Int) (|$knormal:29| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:29|)) (>= |$knormal:27| 3)) (= |$knormal:24| 3) (= |$knormal:18| 1) (= |$alpha-4:$$tmp::1| 1) (not (= 0 |$knormal:29|)) (|loop$unknown:3| |$knormal:27| |$alpha-3:n| |$knormal:24|) )
+      true
+    )
+  )
+)
+(assert
+  (forall ( (|$alpha-3:n| Int) (|$alpha-4:$$tmp::1| Int) (|$knormal:18| Int) (|$knormal:24| Int) (|$knormal:27| Int) (|$knormal:29| Int) )
+    (=>
+      ( and (= (not (= 0 |$knormal:29|)) (>= |$knormal:27| 3)) (= |$knormal:24| 3) (= |$knormal:18| 1) (= |$alpha-4:$$tmp::1| 1) (not (= 0 |$knormal:29|)) (|loop$unknown:3| |$knormal:27| |$alpha-3:n| |$knormal:24|) )
+      true
+    )
+  )
+)
+(assert
+  (not (exists ( (|$alpha-3:n| Int) (|$knormal:24| Int) (|$knormal:27| Int) (|$knormal:29| Int) )
+    ( and (= (not (= 0 |$knormal:29|)) (>= |$knormal:27| 3)) (= |$knormal:24| 3) (not (not (= 0 |$knormal:29|))) (|loop$unknown:3| |$knormal:27| |$alpha-3:n| |$knormal:24|) )
     )
   )
 )
