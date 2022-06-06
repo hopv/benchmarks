@@ -8,7 +8,7 @@ edition = "2018"
 
 [dependencies]
 error-chain = "*"
-clap = "*"
+clap = { version = "*", features = ["cargo"] }
 walkdir = "*"
 regex = "*"
 lazy_static = "*"

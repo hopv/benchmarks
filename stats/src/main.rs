@@ -1,8 +1,5 @@
 //! Extracts statistics from the benchmarks in this repository.
 
-#[macro_use]
-extern crate clap;
-
 use std::{collections::BTreeSet as Set, fmt, path::PathBuf};
 
 use error_chain::bail;
@@ -52,20 +49,22 @@ pub struct Conf {
 impl Conf {
     /// Constructor from CLAP.
     pub fn of_clap() -> Self {
-        let matches = clap_app!(myapp =>
-            (version: crate_version!())
-            (author: crate_authors!())
-            (about: "Extracts statistics from the benchmarks in this repository")
-            (@arg caml_dir:
-                +required
-                "Directory containing the caml files"
-            )
-            (@arg clause_dir:
-                +required
-                "Directory containing the clauses corresponding to the caml files"
-            )
-        )
-        .get_matches();
+        use clap::*;
+        let matches = Command::new(crate_name!())
+            .version(crate_version!())
+            .author(crate_authors!())
+            .about("Extracts statistics from the benchmarks in this repository")
+            .args([
+                Arg::new("caml_dir")
+                    .long("caml_dir")
+                    .required(true)
+                    .help("Directory containing the caml files"),
+                Arg::new("clause_dir")
+                    .long("clause_dir")
+                    .required(true)
+                    .help("Directory containing the clauses corresponding to the caml files"),
+            ])
+            .get_matches();
 
         let caml_dir = matches
             .value_of("caml_dir")
