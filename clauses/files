@@ -162,3 +162,16 @@ clauses/lia/termination/x_plus_2_pow_n04.smt2
 clauses/lia/termination/zip00.smt2
 clauses/lia/termination/zip01.smt2
 clauses/lia/termination/zip02.smt2
+clauses/lia/unsafe-aplas24/Ackermann01-2.smt2
+clauses/lia/unsafe-aplas24/ack-2.smt2
+clauses/lia/unsafe-aplas24/ack.smt2
+clauses/lia/unsafe-aplas24/add.smt2
+clauses/lia/unsafe-aplas24/fact.smt2
+clauses/lia/unsafe-aplas24/fibo-2.smt2
+clauses/lia/unsafe-aplas24/fibo.smt2
+clauses/lia/unsafe-aplas24/fibo_2calls_10-1.smt2
+clauses/lia/unsafe-aplas24/fibo_cnt.smt2
+clauses/lia/unsafe-aplas24/mc91.smt2
+clauses/lia/unsafe-aplas24/mc91_sum.smt2
+clauses/lia/unsafe-aplas24/square_sum.smt2
+clauses/lia/unsafe-aplas24/tarai2.smt2

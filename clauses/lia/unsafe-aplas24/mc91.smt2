@@ -1,0 +1,15 @@
+(set-logic HORN)
+(declare-fun mc91 (Int Int) Bool)
+(declare-fun sum_of_mc91 (Int Int) Bool)
+(assert (forall ((n Int) (r Int))
+  (=> (and (>= n 100) (= r (- n 10)))
+    (mc91 n r))))
+(assert (forall ((n Int) (r Int) (r2 Int)(r3 Int))
+  (=> (and (< n 100) (mc91 (+ n 11) r2) (mc91 r2 r) )
+  (mc91 n r )
+  )))
+
+
+(assert (forall ((n Int) (r Int))
+  (=> (and (<= n 5) (mc91 n r) ) (= r 91))))
+(check-sat)
